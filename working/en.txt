@@ -1,7 +1,3 @@
-'plugin_cache_dir'
-'Plugin cache directory path'
-<p>This setting is mainly used for plugin developers. When specified, you can put the plugin source file (not compiled) in this directory and Textpattern will load it automatically, so you can easily edit the plugin and immediately see the effect it has, without having to install/activate the plugin. Beware though that by using this method, a broken plugin (which fails to compile) will also break Textpattern.</p>
-
 'about_privileges'
 'Users: About roles'
 '<h3>Publisher</h3>
