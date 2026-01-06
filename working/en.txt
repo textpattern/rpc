@@ -1195,7 +1195,6 @@ Switching to a new language is always a two step process:
 		<li>Select the language as the currently active one</li>
 	</ol>
 
-'link'
 'Textile: Links'
 'To make a hypertext link, put the link text in =="quotation marks"== followed immediately by a colon and the URL of the link.
 
@@ -1293,24 +1292,21 @@ bc. <txp:linklist category="Friends" />.'
 </code></pre>
 
 'link_description'
-'link'
 'Links: Description'
 'Descriptions for links are optional, and are useful for captioning links, for creating @title=""@ (tooltip) attributes for links, or simply keeping your own internal documentation.'
 <p>Descriptions for links are optional, and are useful for captioning links, for creating <code>title=&quot;&quot;</code> (tooltip) attributes for links, or simply keeping your own internal documentation.</p>
 
 'link_sort'
-'link'
 'Links: Sort value'
 'Useful for natural-language sorting of link lists, e.g. on a person's last name rather than their first, or on phrases that begin with a definite or indefinite article.'
 <p>Useful for natural-language sorting of link lists, e.g. on a person&apos;s last name rather than their first, or on phrases that begin with a definite or indefinite article.</p>
 
 'link_template'
 'Preferences: Link template'
-'This is the default template used when outputting lists of links. This can be overriden when generating a list of links via a PHP snippet.'
-<p>This is the default template used when outputting lists of links. This can be overriden when generating a list of links via a <span class="caps">PHP</span> snippet.</p>
+'This is the default template used when outputting lists of links. This can be overridden when generating a list of links via a PHP snippet.'
+<p>This is the default template used when outputting lists of links. This can be overridden when generating a list of links via a <span class="caps">PHP</span> snippet.</p>
 
 'link_url'
-'link'
 'Links: URL'
 'The address of the link. If the link points to a different site, then it must be preceded by @https://@ or @https://@.'
 <p>The address of the link. If the link points to a different site, then it must be preceded by <code>https://</code> or <code>https://</code>.</p>
@@ -2347,10 +2343,10 @@ tag inside an article form.'
 
 'attach_titles_to_permalinks'
 'Preferences: Attach titles to permalinks?'
-'This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overriden in the "Advanced Options" when editing an article.
+'This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overridden in the "Advanced Options" when editing an article.
 
 This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly urls, in which case you probably want to set this to off.'
-<p>This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overriden in the &quot;Advanced Options&quot; when editing an article.</p>
+<p>This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overridden in the &quot;Advanced Options&quot; when editing an article.</p>
 <p>This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly urls, in which case you probably want to set this to off.</p>
 
 'attributes'
@@ -3368,7 +3364,6 @@ Switching to a new language is always a two step process. 1) Installing the lang
 
  
 
-'link'
 'Links'
 'To make a hypertext link, put the link text in =="quotation marks"== followed immediately by a colon and the <acronym title="Universal Resource Locator">URL</acronym> of the link.
 
@@ -3442,7 +3437,6 @@ Selective link lists such as these are output with the Textpattern 'linklist' ta
  
 
 'link_description'
-'link'
 'Link Description'
 'Descriptions for links are optional, and are useful for captioning links, or for creating <code>title=""</code> (tooltip) attributes for links, or simply keeping your own internal documentation.'
 <p>Descriptions for links are optional, and are useful for captioning links, or for creating <code>title=""</code> (tooltip) attributes for links, or simply keeping your own internal documentation.</p>
@@ -3451,21 +3445,17 @@ Selective link lists such as these are output with the Textpattern 'linklist' ta
  
 
 'link_sort'
-'link'
 'Link Sort'
-'Useful for natural-language sorting of link lists, e.g., on a person\\'s last name rather than their first, or on phrases that begin with a definite or indefinite article.
-'
 <p>Useful for natural-language sorting of link lists, e.g., on a person&apos;s last name rather than their first, or on phrases that begin with a definite or indefinite article.</p>
  
 
 'link_template'
 'Link Template'
-'This is the default template used when outputting lists of links. This can be overriden when generating a list of links via a php snippet.'
-<p>This is the default template used when outputting lists of links. This can be overriden when generating a list of links via a php snippet.</p>
+'This is the default template used when outputting lists of links. This can be overridden when generating a list of links via a php snippet.'
+<p>This is the default template used when outputting lists of links. This can be overridden when generating a list of links via a php snippet.</p>
  
 
 'link_url'
-'link'
 'Link URL'
 'The address of the link. If the link points to a different site, then it must be preceded by @https://@.'
 <p>The address of the link. If the link points to a different site, then it must be preceded by <code>https://</code>.</p>
@@ -5106,25 +5096,19 @@ None: Textpattern will pick up your dry-cleaning.'
 <p>None: Textpattern will pick up your dry-cleaning.</p>
 
 'link_url'
-'link'
 'Link URL'
 'The address of the link. If the link points to a different site, then it must be preceded by @https://@.'
 <p>The address of the link. If the link points to a different site, then it must be preceded by <code>https://</code>.</p>
 
 'link_template'
 'Link Template'
-'This is the default template used when outputting lists of links. This can be overriden when generating a list of links via a php snippet.'
-<p>This is the default template used when outputting lists of links. This can be overriden when generating a list of links via a php snippet.</p>
+<p>This is the default template used when outputting lists of links. This can be overridden when generating a list of links via a php snippet.</p>
 
 'link_sort'
-'link'
 'Link Sort'
-'Useful for natural-language sorting of link lists, e.g., on a person\\'s last name rather than their first, or on phrases that begin with a definite or indefinite article.
-'
-<p>Useful for natural-language sorting of link lists, e.g., on a person\\&apos;s last name rather than their first, or on phrases that begin with a definite or indefinite article.</p>
+<p>Useful for natural-language sorting of link lists, e.g., on a person&apos;s last name rather than their first, or on phrases that begin with a definite or indefinite article.</p>
 
 'link_description'
-'link'
 'Link Description'
 'Descriptions for links are optional, and are useful for captioning links, or for creating <code>title=""</code> (tooltip) attributes for links, or simply keeping your own internal documentation.'
 <p>Descriptions for links are optional, and are useful for captioning links, or for creating <code>title=&#34;&#34;</code> (tooltip) attributes for links, or simply keeping your own internal documentation.</p>
@@ -5141,7 +5125,6 @@ Selective link lists such as these are output with the Textpattern 'linklist' ta
 <p>Selective link lists such as these are output with the Textpattern &apos;linklist&apos; tag like so:</p>
 <p><code>&#60;txp:linklist category=&#34;Friends&#34; /&#62;</code></p>
 
-'link'
 'Links'
 'To make a hypertext link, put the link text in =="quotation marks"== followed immediately by a colon and the <acronym title="Universal Resource Locator">URL</acronym> of the link.
 
@@ -6132,10 +6115,10 @@ p[no]{color:red}. <em>A Norse of a different colour</em></h2>
 
 'attach_titles_to_permalinks'
 'Preferences: Attach titles to permalinks?'
-'This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overriden in the "Advanced Options" when editing an article.
+'This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overridden in the "Advanced Options" when editing an article.
 
 This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly urls, in which case you probably want to set this to off.'
-<p>This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overriden in the &quot;Advanced Options&quot; when editing an article.</p>
+<p>This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overridden in the &quot;Advanced Options&quot; when editing an article.</p>
 <p>This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly urls, in which case you probably want to set this to off.</p>
 
 'article_template'
