@@ -115,37 +115,6 @@ p). right indent 1em
 
 'blockquote'
 'Textile: Block quotations'
-'To make an entire paragraph into a block quotation, place @bq.@ before it.
-
-h3. Example
-
-bc.. Any old text.
-bq. A block quotation.
-Any old text.
-
-p. Will become:
-
-bc. <p>Any old text.</p>
-<blockquote>A block quotation.</blockquote>
-<p>Any old text.</p>
-
-Which, when rendered by a browser, will appear like this:
-
-Any old text.
-
-bq. A block quotation.
-
-Any old text.
-
-p(alert-block information). *Note:* Unmodified paragraphs will be wrapped in @<p>@ tags.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-blockquote" target="_blank">More information on block quotations in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote" target="_blank">The @<blockquote>@ HTML element</a>'
 <p>To make an entire paragraph into a block quotation, place <code>bq.</code> before it.</p>
 
 	<h3>Example</h3>
@@ -181,27 +150,6 @@ Any old text.
 
 'bold'
 'Textile: Strong emphasis'
-'Use ==*asterisks*== for text to be *strongly emphasised*.
-
-The @<strong>@ HTML tag is applied:
-
-bc. *a phrase* → <strong>a phrase</strong>
-
-If the text is not meant to have *structural* emphasis, but simply to be styled in **bold** (e.g. as a design element) use double asterisks:
-
-bc. **a phrase** → <b>a phrase</b>
-
-p(alert-block information). *Note:* Quick tags must open and close within a single paragraph to produce valid markup.
-
-h3. Textile documentation
-
-"(link-external)More information on strong and bold text in Textile":https://textpattern.com/textile-strong-and-b.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">The @<strong>@ HTML element</a>.
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/b" target="_blank">The @<bold>@ HTML element</a>.'
 <p>Use *asterisks* for text to be <strong>strongly emphasised</strong>.</p>
 <p>The <code>&lt;strong&gt;</code> <span class="caps">HTML</span> tag is applied:</p>
 <pre><code>*a phrase* → &lt;strong&gt;a phrase&lt;/strong&gt;
@@ -224,51 +172,6 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'bulleted'
 'Textile: Bulleted lists'
-'To make a bulleted (point form) list, place each item in its own paragraph, preceded by @*@.
-
-h3. Example
-
-bc. * A first item
-* A second item
-** A second item first sub item
-** A second item second sub item
-* A third item
-* A fourth item
-
-Will become:
-
-bc. <ul>
-  <li>A first item</li>
-  <li>A second item
-  <ul>
-    <li>A second item first sub item</li>
-    <li>A second item second sub item</li>
-  </ul>
-  </li>
-  <li>A third item</li>
-  <li>A fourth item</li>
-</ul>
-
-Which, when rendered by a browser, will appear like this:
-
-* A first item
-* A second item
-** A second item first sub item
-** A second item second sub item
-* A third item
-* A fourth item
-
-p(alert-block information). *Note:* Unmodified paragraphs will be wrapped in @<p>@ tags.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-ul-list" target="_blank">More information on bulleted lists in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ul" target="_blank">The @<ul>@ HTML element</a>.
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">The @<li>@ HTML element</a>.'
 <p>To make a bulleted (point form) list, place each item in its own paragraph, preceded by <code>*</code>.</p>
 
 	<h3>Example</h3>
@@ -321,21 +224,6 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'cite'
 'Textile: Citations'
-'Use ==??double question marks??== around ??citations??, such as the title of a work being cited.
-
-The @<cite>@ HTML tag is applied:
-
-bc. Nabokov's ??Pnin?? → Nabokov's <cite>Pnin</cite>
-
-p(alert-block information). *Note:* quick tags must open and close within a single paragraph to produce valid markup.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-cite" target="_blank">More information on citation in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/cite" target="_blank">The @<cite>@ HTML element</a>.'
 <p>Use ??double question marks?? around <cite>citations</cite>, such as the title of a work being cited.</p>
 <p>The <code>&lt;cite&gt;</code> <span class="caps">HTML</span> tag is applied:</p>
 <pre><code>Nabokov&#39;s ??Pnin?? → Nabokov&#39;s &lt;cite&gt;Pnin&lt;/cite&gt;
@@ -353,45 +241,28 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'comments_allowable_tags'
 'Preferences: Allowable HTML tags'
-'If you allow commenters to use simple HTML, these are the tags they may use.'
 <p>If you allow commenters to use simple <span class="caps">HTML</span>, these are the tags they may use.</p>
 
 'comments_allow_html'
 'Preferences: Comments allow HTML'
-'Toggles whether or not commenters may use any HTML tags.
-
-Note that you can limit which specific tags are allowable in the next field.'
 <p>Toggles whether or not commenters may use any <span class="caps">HTML</span> tags.</p>
 <p>Note that you can limit which specific tags are allowable in the next field.</p>
 
 'comments_are_ol'
 'Preferences: Present comments as a numbered list?'
-'Determines whether article comments will be wrapped with the HTML @<ol>@ tag and individual comments will be wrapped in the @<li>@ tag (causing comments to be presented as a numbered list), or whether individual comments will be wrapped with the @<div>@ tag instead.
-
-With either value, you can override the tags used on an individual form basis by modifying the <a href="https://docs.textpattern.io/tags/comments" target="_blank">@<txp:comments />@ tag</a>, found in the <a href="https://www.textpattern.net/wiki/index.php?title=Default_Forms">@comments_display@ form</a>.'
 <p>Determines whether article comments will be wrapped with the <span class="caps">HTML</span> <code>&lt;ol&gt;</code> tag and individual comments will be wrapped in the <code>&lt;li&gt;</code> tag (causing comments to be presented as a numbered list), or whether individual comments will be wrapped with the <code>&lt;div&gt;</code> tag instead.</p>
 <p>With either value, you can override the tags used on an individual form basis by modifying the <a href="https://docs.textpattern.io/tags/comments" target="_blank"><code>&lt;txp:comments /&gt;</code> tag</a>, found in the <a href="https://www.textpattern.net/wiki/index.php?title=Default_Forms"><code>comments_display</code> form</a>.</p>
 
 'comments_dateformat'
 'Preferences: Comments date format'
-'How comment dates will appear to your site visitors.'
 <p>How comment dates will appear to your site visitors.</p>
 
 'comments_date_case'
 'Preferences: Comments date case'
-'The case of the date displayed for individual comments.'
 <p>The case of the date displayed for individual comments.</p>
 
 'comments_default_invite'
 'Preferences: Default comments invite'
-'If you allow visitors to comment on your site, this is the default invitation text. For example:
-
-* Comments
-* Add a comment
-* Feedback
-* Annotate
-
-Note that the invitation text can always be changed on a per-article basis.'
 <p>If you allow visitors to comment on your site, this is the default invitation text. For example:</p>
 
 	<ul>
@@ -405,62 +276,39 @@ Note that the invitation text can always be changed on a per-article basis.'
 
 'comments_disabled_after'
 'Preferences: Comments disabled after'
-'Use this to set the amount of time after which commenting will be turned off for articles (can be set to 'Never' to allow indefinite time to comment).'
 <p>Use this to set the amount of time after which commenting will be turned off for articles (can be set to &apos;Never&apos; to allow indefinite time to comment).</p>
 
 'comments_disallow_images'
 'Preferences: Strip user images from comments?'
-'With this option set to 'Yes', any images included in comments will be stripped out.'
 <p>With this option set to &apos;Yes&apos;, any images included in comments will be stripped out.</p>
 
 'comments_mode'
 'Preferences: Comments mode'
-'If 'No popup' is selected (recommended) the current window will be refreshed to display only the current article, with comments beneath.
-
-If 'Popup' is selected, a new browser window will open when the comments link is clicked (this uses the "@popup_comments@ form":https://www.textpattern.net/wiki/index.php?title=Default_Forms).'
 <p>If &apos;No popup&apos; is selected (recommended) the current window will be refreshed to display only the current article, with comments beneath.</p>
 <p>If &apos;Popup&apos; is selected, a new browser window will open when the comments link is clicked (this uses the <a href="https://www.textpattern.net/wiki/index.php?title=Default_Forms">@popup_comments@ form</a>).</p>
 
 'comments_moderate'
 'Preferences: Moderate comments?'
-'With this set to 'Yes', every new comment will have its visibility turned off until it has been reviewed. You must manually moderate and make each comment visible (a message will be emailed to the article author when a new comment has been received).'
 <p>With this set to &apos;Yes&apos;, every new comment will have its visibility turned off until it has been reviewed. You must manually moderate and make each comment visible (a message will be emailed to the article author when a new comment has been received).</p>
 
 'comments_on_default'
 'Preferences: Comments on by default?'
-'If this is set to 'Yes', comments will be automatically enabled for every article published. If set to 'No', you must enable comments on the article 'Write' administration panel each time you want to accept comments.
-
-Note that allowing comments can be turned on or off at any time, on a per-article basis.'
 <p>If this is set to &apos;Yes&apos;, comments will be automatically enabled for every article published. If set to &apos;No&apos;, you must enable comments on the article &apos;Write&apos; administration panel each time you want to accept comments.</p>
 <p>Note that allowing comments can be turned on or off at any time, on a per-article basis.</p>
 
 'comments_require_email'
 'Preferences: Comments require user's email address?'
-'If set to 'Yes', people that want to comment on your article will have to enter an email address in the comment write form. They will be unable to post a comment if they do not supply an email address.'
 <p>If set to &apos;Yes&apos;, people that want to comment on your article will have to enter an email address in the comment write form. They will be unable to post a comment if they do not supply an email address.</p>
 
 'comments_require_name'
 'Preferences: Comments require commenter’s name?'
-'If set to 'Yes', people that want to comment on your article will have to enter a name in the comment input form. They will not be able to submit a comment if they do not supply a name.'
 <p>If set to &apos;Yes&apos;, people that want to comment on your article will have to enter a name in the comment input form. They will not be able to submit a comment if they do not supply a name.</p>
 
 'comments_sendmail'
-'Preferences: Email comments to author?'
-'If set to 'Yes', whenever a new comment is received on an article, a copy will be sent via email to that article's author.'
 <p>If set to &apos;Yes&apos;, whenever a new comment is received on an article, a copy will be sent via email to that article&apos;s author.</p>
 
 'comments_use_fat_textile'
 'Preferences: Allow more Textile markup in comments?'
-'When set to 'Yes', comments may contain "Textile":https://textpattern.com/textile-sandbox elements which would otherwise be treated as plain text, such as:
-
-* headings
-* ordered and unordered lists
-* footnotes
-* tables
-* code
-* extended block syntax (@bc..@, @bq..@, etc.)
-
-p(alert-block information). *Note:* For security reasons, raw HTML is transformed into regular text.'
 <p>When set to &apos;Yes&apos;, comments may contain <a href="https://textpattern.com/textile-sandbox">Textile</a> elements which would otherwise be treated as plain text, such as:</p>
 
 	<ul>
@@ -476,35 +324,15 @@ p(alert-block information). *Note:* For security reasons, raw HTML is transforme
 
 'comment_means_site_updated'
 'Preferences: New comment means site updated?'
-'The Textpattern database keeps track of when the most recent change to your site took place. When this setting is set to 'Yes', a new comment will also update this value. This value is used for example for @"Send Last-Modified header"@ functionality.'
 <p>The Textpattern database keeps track of when the most recent change to your site took place. When this setting is set to &apos;Yes&apos;, a new comment will also update this value. This value is used for example for <code>&quot;Send Last-Modified header&quot;</code> functionality.</p>
 
 'comment_nofollow'
 'Preferences: Apply rel="nofollow" to comments?'
-'If set to 'Yes', this will add an additional attribute to the links made in comments. It is intended to be a measure that takes away the incentive for comment spammers and was initiated by a range of search engines and software developers. You can find out more by reading "Google's announcement":https://googleblog.blogspot.com/2005/01/preventing-comment-spam.html.
-
-p(alert-block information). *Note:* This setting does not influence the functionality of your site. It may prevent or diminish the influence of your comments when some search engines rank sites linked to from those comments.'
 <p>If set to &apos;Yes&apos;, this will add an additional attribute to the links made in comments. It is intended to be a measure that takes away the incentive for comment spammers and was initiated by a range of search engines and software developers. You can find out more by reading <a href="https://googleblog.blogspot.com/2005/01/preventing-comment-spam.html">Google&apos;s announcement</a>.</p>
 <p class="alert-block information"><strong>Note:</strong> This setting does not influence the functionality of your site. It may prevent or diminish the influence of your comments when some search engines rank sites linked to from those comments.</p>
 
 'css_mode'
 'Preferences: CSS mode'
-'p(alert-clock information). *Please note:* As of Textpattern CMS v4.3.0 the 'Automatic CSS mode' feature has been removed. The information is provided for historical legacy.
-
-The Cascading Style Sheets (CSS) standard is a slim, powerful language that allows you to centralise site-wide control of content presentation. Everything from fonts and colours to sizes and positions can be governed through CSS.
-
-Ordinarily CSS data appears in the @<head>@ section of an HTML document, or is stored in a text file linked to the document. Modern browsers parse this data in advance of displaying a page, and then cache the data for use on subsequent pages or site visits. As such, CSS can greatly reduce the download size of web pages: just one of many improvements CSS formatting offers over older web design methods.
-
-Textpattern CMS offers two modes of maintaining style sheets for your pages:
-
-# In 'Manual CSS' mode, you can create (or paste in) any style sheet information you like, right in the Textpattern interface. This allows for quick editing of styles without FTP uploading. Style sheets can be generated from by hand or by WYSIWYG website editors.
-# In 'Automatic CSS' mode, style sheet editing is taken to a sophisticated new level, using an editing interface and organisational method intended to make CSS parameters more readable. Any existing style sheet can be 'poured' into the editing interface and modified indefinitely.
-
-In Automatic mode, CSS files are classified as either _layout_ or _style_. Pages on a site can share or combine either type.
-
-Layout files define large structural parameters, such as the number and size of columns on a page, headers and footers, etc.
-
-Style files in turn govern parameters like typography, colour, and the finer methods of positioning (e.g. padding and margins and relationships between objects on a page) not defined in layout files.'
 '<p class="alert-clock information"><strong>Please note:</strong> As of Textpattern <span class="caps">CMS</span> v4.3.0 the &apos;Automatic <span class="caps">CSS</span> mode&apos; feature has been removed. The information is provided for historical legacy.</p>
 <p>The Cascading Style Sheets (<span class="caps">CSS</span>) standard is a slim, powerful language that allows you to centralise site-wide control of content presentation. Everything from fonts and colours to sizes and positions can be governed through <span class="caps">CSS</span>.</p>
 <p>Ordinarily <span class="caps">CSS</span> data appears in the <code>&lt;head&gt;</code> section of an <span class="caps">HTML</span> document, or is stored in a text file linked to the document. Modern browsers parse this data in advance of displaying a page, and then cache the data for use on subsequent pages or site visits. As such, <span class="caps">CSS</span> can greatly reduce the download size of web pages: just one of many improvements <span class="caps">CSS</span> formatting offers over older web design methods.</p>
@@ -521,34 +349,15 @@ Style files in turn govern parameters like typography, colour, and the finer met
 
 'dateformat'
 'Preferences: Date format'
-'This option will affect how article dates appear on the front page of your site only.'
 <p>This option will affect how article dates appear on the front page of your site only.</p>
 
 'date_case'
 'Preferences: Front page date case'
-'Use this if you want dates for articles on the front page to appear in UPPERCASE, Upper and lowercase, or lowercase.
-
-Upper and lowercase is the default.'
 <p>Use this if you want dates for articles on the front page to appear in <span class="caps">UPPERCASE</span>, Upper and lowercase, or lowercase.</p>
 <p>Upper and lowercase is the default.</p>
 
 'delete'
 'Textile: Deleted text'
-'Use ==-hyphens-== around text that has been -deleted-. This is useful in marking changes from one version of a document to the next.
-
-The @<del>@ HTML tag is applied:
-
-bc. -a phrase- → <del>a phrase</del>
-
-p(alert-block information). *Note:* Quick tags must open and close within a single paragraph to produce valid markup.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-ins-and-del" target="_blank">More information on insertions and deletions in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">The @<del>@ HTML element</a>.'
 <p>Use -hyphens- around text that has been <del>deleted</del>. This is useful in marking changes from one version of a document to the next.</p>
 <p>The <code>&lt;del&gt;</code> <span class="caps">HTML</span> tag is applied:</p>
 <pre><code>-a phrase- → &lt;del&gt;a phrase&lt;/del&gt;
@@ -566,32 +375,18 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'dev_version_live'
 'Diagnostics: Development code on a live server'
-'You are running in-development files on a live production site which is not recommended. If you know this already and are happy to do so, you may ignore this warning.'
 <p>You are running in-development files on a live production site which is not recommended. If you know this already and are happy to do so, you may ignore this warning.</p>
 
 'dir_not_writable'
 'Diagnostics: Directory is not writable'
-'To use the file and image upload capabilities, these directories have to be writable by PHP. Usually this means you have to change permissions so the web server user has write access to the directory. This can be done with your FTP client, or alternatively on the command line by issuing a @chmod 755 /path/to/dir@ command.'
 <p>To use the file and image upload capabilities, these directories have to be writable by <span class="caps">PHP</span>. Usually this means you have to change permissions so the web server user has write access to the directory. This can be done with your <span class="caps">FTP</span> client, or alternatively on the command line by issuing a <code>chmod 755 /path/to/dir</code> command.</p>
 
 'dns_lookup_fails'
 'Diagnostics: DNS fails'
-'It appears the URL you specified as the address of your site is unreachable.'
 <p>It appears the <span class="caps">URL</span> you specified as the address of your site is unreachable.</p>
 
 'doc_root'
 'Preferences: Document root'
-'This must be the full server path to the document root of your server, regardless of where you have Textpattern installed.
-
-p(alert-block information). *Note:* There must be no trailing slash at the end of the path.
-
-h3. Examples
-
-bc. /home/user/docs/html
-
-or
-
-bc. /home/var/www'
 <p>This must be the full server path to the document root of your server, regardless of where you have Textpattern installed.</p>
 <p class="alert-block information"><strong>Note:</strong> There must be no trailing slash at the end of the path.</p>
 
@@ -606,11 +401,6 @@ bc. /home/var/www'
 
 'edit_raw_css_by_default'
 'Preferences: Edit raw CSS by default?'
-'p(alert-clock information). *Please note:* As of Textpattern CMS v4.3.0 the 'Automatic CSS mode' feature has been removed. The information is provided for historical legacy.
-
-This selects the default method of editing CSS in the 'Styles' page.
-
-If set to 'Yes', you will see one large text-area with all the content of the CSS by default ('Manual CSS' mode). If set to 'No', you will see the CSS editor by default ('Automatic CSS' mode).'
 '<p class="alert-clock information"><strong>Please note:</strong> As of Textpattern <span class="caps">CMS</span> v4.3.0 the &apos;Automatic <span class="caps">CSS</span> mode&apos; feature has been removed. The information is provided for historical legacy.</p>
 <p>This selects the default method of editing <span class="caps">CSS</span> in the &apos;Styles&apos; page.</p>
 <p>If set to &apos;Yes&apos;, you will see one large text-area with all the content of the <span class="caps">CSS</span> by default (&apos;Manual <span class="caps">CSS</span>&apos; mode). If set to &apos;No&apos;, you will see the <span class="caps">CSS</span> editor by default (&apos;Automatic <span class="caps">CSS</span>&apos; mode).</p>
