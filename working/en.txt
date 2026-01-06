@@ -5,71 +5,10 @@
 
 'plugin_cache_dir'
 'Plugin cache directory path'
-'This setting is mainly used for plugin developers. When specified, you can put the plugin source file (not compiled) in this directory and Textpattern will load it automatically, so you can easily edit the plugin and immediately see the effect it has, without having to install/activate the plugin. Beware though that by using this method, a broken plugin (which fails to compile) will also break Textpattern.'
 <p>This setting is mainly used for plugin developers. When specified, you can put the plugin source file (not compiled) in this directory and Textpattern will load it automatically, so you can easily edit the plugin and immediately see the effect it has, without having to install/activate the plugin. Beware though that by using this method, a broken plugin (which fails to compile) will also break Textpattern.</p>
 
 'about_privileges'
 'Users: About roles'
-'h3. Publisher
-
-* can manage articles, comments and links
-* can use PHP in articles if admin preference 'Allow PHP in articles?' is set to 'Yes'
-* can manage images and files
-* can manage sections and categories
-* can manage pages, forms and style
-* can view diagnostic information
-* can manage site preferences
-* can manage users
-* can manage visitor logs
-* can manage plugins
-* can import data
-
-h3. Managing Editor
-
-* can manage articles, comments and links
-* can use PHP in articles if admin preference 'Allow PHP in articles?' is set to 'Yes'
-* can manage images and files
-* can manage sections and categories
-* can manage pages, forms and style
-* can view diagnostic information
-* can manage site preferences
-* can view users
-* can manage visitor logs
-* can manage plugins
-* can import data
-
-h3. Copy Editor
-
-* can manage articles with one limitation:
-** cannot delete those belonging to other users
-* can manage comments and links
-* can manage images and files
-* can manage categories
-* can manage pages and forms
-* can view users
-* can manage visitor logs
-
-h3. Staff Writer
-
-* can manage own articles, view other users' articles
-* can manage images and files
-
-h3. Freelancer
-
-* can manage own articles in a limited sense:
-** can only modify article until is published
-** can apply status of _only_ Draft, Hidden or Pending
-* can view other users' articles
-
-h3. Designer
-
-* can manage own articles in a limited sense:
-** can only modify article until is published
-** can apply status of _only_ Draft, Hidden or Pending
-* can view other users' articles
-* can manage images
-* can manage sections
-* can manage pages, forms and style'
 '<h3>Publisher</h3>
 
 	<ul>
@@ -151,69 +90,43 @@ h3. Designer
 
 'add_new_author'
 'Users: Add new author'
-'A password, welcome message and login instructions will be emailed to the new author.'
 <p>A password, welcome message and login instructions will be emailed to the new author.</p>
 
 'admin_side_plugins'
 'Preferences: Use admin-side plugins?'
-'Admin-side plugins can change the operation of the administration interface. They might hook into already existing actions, like editing or publishing articles, or they might add new panels for added/extended functionality.
-
-If you would like to learn more about admin-side plugins, please see the "Extending Textpattern":http://www.textpattern.net/wiki/index.php?title=Extending_Textpattern page in "Textpattern User Documentation":http://docs.textpattern.io/. Plugins of all sorts are listed in the "Textpattern Resources":http://textpattern.org/ site.'
 <p>Admin-side plugins can change the operation of the administration interface. They might hook into already existing actions, like editing or publishing articles, or they might add new panels for added/extended functionality.</p>
 <p>If you would like to learn more about admin-side plugins, please see the <a href="http://www.textpattern.net/wiki/index.php?title=Extending_Textpattern">Extending Textpattern</a> page in <a href="http://docs.textpattern.io/">Textpattern User Documentation</a>. Plugins of all sorts are listed in the <a href="http://textpattern.org/">Textpattern Resources</a> site.</p>
 
 'allow_article_php_scripting'
 'Preferences: Allow PHP in articles?'
-'When enabled, this setting will allow use of PHP within articles. The author must have sufficient privileges to do so (by default, only "Publishers":http://rpc.textpattern.com/help/?item=about_privileges and "Managing Editors":http://rpc.textpattern.com/help/?item=about_privileges can).
-
-PHP code must have opening and closing PHP tags omitted, and also be enclosed within <a href="http://docs.textpattern.io/tags/php" target="_blank">@<txp:php>@ tags</a>.'
 <p>When enabled, this setting will allow use of <span class="caps">PHP</span> within articles. The author must have sufficient privileges to do so (by default, only <a href="http://rpc.textpattern.com/help/?item=about_privileges">Publishers</a> and <a href="http://rpc.textpattern.com/help/?item=about_privileges">Managing Editors</a> can).</p>
 <p><span class="caps">PHP</span> code must have opening and closing <span class="caps">PHP</span> tags omitted, and also be enclosed within <a href="http://docs.textpattern.io/tags/php" target="_blank"><code>&lt;txp:php&gt;</code> tags</a>.</p>
 
 'allow_form_override'
 'Preferences: Allow form override?'
-'This setting allows article authors to override the form to be used when their article is rendered. If enabled, an 'Override form' dropdown will be available under 'Advanced Options', when editing an article.'
 <p>This setting allows article authors to override the form to be used when their article is rendered. If enabled, an &apos;Override form&apos; dropdown will be available under &apos;Advanced Options&apos;, when editing an article.</p>
 
 'allow_page_php_scripting'
 'Preferences: Allow PHP in pages?'
-'When enabled, this setting allows PHP code within page and form templates.
-
-PHP code must have opening and closing PHP tags omitted, and also be enclosed within <a href="http://docs.textpattern.io/tags/php" target="_blank">&lt;txp:php&gt; tags</a>.'
 <p>When enabled, this setting allows <span class="caps">PHP</span> code within page and form templates.</p>
 <p><span class="caps">PHP</span> code must have opening and closing <span class="caps">PHP</span> tags omitted, and also be enclosed within <a href="http://docs.textpattern.io/tags/php" target="_blank">&lt;txp:php&gt; tags</a>.</p>
 
 'archive_dateformat'
 'Preferences: Archive date format'
-'How dates will appear on articles in sections of your site.'
 <p>How dates will appear on articles in sections of your site.</p>
 
 'archive_date_case'
 'Preferences: Subsection date case'
-'Use this if you want dates for articles in subsections to appear in UPPERCASE, Upper and lowercase, or lowercase.
-
-Upper and lowercase is the default.'
 <p>Use this if you want dates for articles in subsections to appear in <span class="caps">UPPERCASE</span>, Upper and lowercase, or lowercase.</p>
 <p>Upper and lowercase is the default.</p>
 
 'articles_use_excerpts'
 'Preferences: Use excerpts on articles?'
-'By choosing 'No' the excerpt field will not be shown to the author on the article editing screen.'
 <p>By choosing &apos;No&apos; the excerpt field will not be shown to the author on the article editing screen.</p>
 
 'article_category'
 'category'
 'Categories: Articles'
-'Unlike sections, which define the navigational structure of a site, article categories allow organization of articles by their subject matter. Once categories are assigned, lists of articles belonging to particular categories can be browsed.
-
-For example, likely article categories on a site about food might be:
-
-* raw ingredients
-* shopping
-* recipes
-* presentation
-* restaurants
-* chefs'
 <p>Unlike sections, which define the navigational structure of a site, article categories allow organization of articles by their subject matter. Once categories are assigned, lists of articles belonging to particular categories can be browsed.</p>
 <p>For example, likely article categories on a site about food might be:</p>
 
@@ -228,13 +141,6 @@ For example, likely article categories on a site about food might be:
 
 'article_image'
 'Write: Article image'
-'If you would like to associate a single image with this article, place one of the following here:
-
-# a Textpattern image ID
-# a relative URL to the image (e.g. @/images/my_pic.jpg@)
-# a fully-qualified URL (e.g. @http://example.com/path/to/images/my_pic.jpg@)
-
-The image can be displayed by placing a <a href="http://docs.textpattern.io/tags/article-image" target="_blank">@<txp:article_image />@ tag</a> inside an article form. It will output a complete HTML @<img>@ tag to your chosen image.'
 <p>If you would like to associate a single image with this article, place one of the following here:</p>
 
 	<ol>
@@ -247,51 +153,15 @@ The image can be displayed by placing a <a href="http://docs.textpattern.io/tags
 
 'article_template'
 'Preferences: Default article template'
-'This is the default template used to format articles on the front page of your site (provided none has been specified in the PHP snippet used on that page).'
 <p>This is the default template used to format articles on the front page of your site (provided none has been specified in the <span class="caps">PHP</span> snippet used on that page).</p>
 
 'attach_titles_to_permalinks'
 'Preferences: Attach titles to permalinks?'
-'This setting will attach a automatically-generated version of the article title to the URL. It is either generated automatically or can be manually overridden in 'URL-only title' when editing an article.
-
-The setting will only have an effect when you are using clean URLs. For certain languages this may result in long and ugly URLs, in which case you probably want to set this to 'Off'.'
 <p>This setting will attach a automatically-generated version of the article title to the <span class="caps">URL</span>. It is either generated automatically or can be manually overridden in &apos;<span class="caps">URL</span>-only title&apos; when editing an article.</p>
 <p>The setting will only have an effect when you are using clean <span class="caps">URL</span>s. For certain languages this may result in long and ugly <span class="caps">URL</span>s, in which case you probably want to set this to &apos;Off&apos;.</p>
 
 'attributes'
 'Textile: Attributes'
-'h3. Syntax
-
-bc. (class)
-(#id)
-(class#id) can be combined
-{style}
-[language]
-
-h3. Attributes in phrase elements
-
-bc. %{color:red}red% → <span style="color:red">red</span>
-
-bc. %[fr]rouge% → <span lang="fr">rouge</span>
-
-bc. _(big)red_ → <em class="big">red</em>
-
-h3. Attributes in block elements
-
-bc. p(bob). A paragraph → <p class="bob">A paragraph</p>
-
-bc. p{color:#ddd}. A paragraph → <p style="color:#ddd">A paragraph</p>
-
-bc. p[fr]. A paragraph → <p lang="fr">A paragraph</p>
-
-h3. Block attribute shorthand
-
-bc. p<. align left
-p>. align right
-p=. centered
-p<>. justified
-p(., p((.  left indent 1em, 2em, etc.
-p). right indent 1em'
 '<h3>Syntax</h3>
 
 <pre><code>(class)
