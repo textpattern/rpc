@@ -12,7 +12,6 @@
 <p>By choosing &apos;No&apos; the excerpt field will not be shown to the author on the article editing screen.</p>
 
 'article_category'
-'category'
 'Categories: Articles'
 <p>Unlike sections, which define the navigational structure of a site, article categories allow organization of articles by their subject matter. Once categories are assigned, lists of articles belonging to particular categories can be browsed.</p>
 <p>For example, likely article categories on a site about food might be:</p>
@@ -384,58 +383,20 @@ Any old text.
 
 'excerpt'
 'Write: Excerpt'
-'Article excerpts are optional. Excerpts could be used as a short summary of the article that is displayed as part of a table of contents, used in place of the full article body in the site's RSS/Atom feeds, or a number of other uses.'
 <p>Article excerpts are optional. Excerpts could be used as a short summary of the article that is displayed as part of a table of contents, used in place of the full article body in the site&apos;s <span class="caps">RSS</span>/Atom feeds, or a number of other uses.</p>
 
 'expire_logs_after'
 'Preferences: Logs expire after how many days?'
-'When Textpattern logging is enabled, you can specify how long (in days) the logs should be kept. '7' will keep the logs available for seven days.
-
-p(alert-block information). *Note:* The logs only get trimmed when you view the 'Visitor Logs' administration panel, and will otherwise continue to grow in size.'
 <p>When Textpattern logging is enabled, you can specify how long (in days) the logs should be kept. &apos;7&apos; will keep the logs available for seven days.</p>
 <p class="alert-block information"><strong>Note:</strong> The logs only get trimmed when you view the &apos;Visitor Logs&apos; administration panel, and will otherwise continue to grow in size.</p>
 
 'file_max_upload_size'
 'Preferences: Maximum file size of uploads (in bytes)'
-'You can restrict the maximum size (in bytes) for file uploads. Note that this value is also limited by the configuration of PHP. If Textpattern detects that your PHP configuration limits upload size to a smaller value, it will automatically correct downwards. If you want to allow larger file uploads via upload from the browser, contact your host (the relevant values in @php.ini@ are @post_max_size@, @upload_max_filesize@ and @memory_limit@).'
 <p>You can restrict the maximum size (in bytes) for file uploads. Note that this value is also limited by the configuration of <span class="caps">PHP</span>. If Textpattern detects that your <span class="caps">PHP</span> configuration limits upload size to a smaller value, it will automatically correct downwards. If you want to allow larger file uploads via upload from the browser, contact your host (the relevant values in <code>php.ini</code> are <code>post_max_size</code>, <code>upload_max_filesize</code> and <code>memory_limit</code>).</p>
 
 'form_articles'
-'form'
 'Article tags'
-'These tags are replaced with their corresponding values every time an article is output. 
 
-h3. Author
-
-The full name of the article's author.
-
-h3. Body
-
-The body of the article. Note that the body of articles processed with Textile will already have @<p>@ tags around each paragraph. Thus it is superfluous to use additional paragraph tags. 
-
-h3. Excerpt
-
-Text, if any, that was entered in the article's 'Excerpt' field.
-
-h3. Category 1, Category 2
-
-Categories, if any, assigned to the article.
-
-h3. Comments invite
-
-Will be replaced by the invitation for comments, if any, assigned to the article, as well as the current count of comments received.
-
-h3. Permanent link
-
-Text, article date or graphic that represents a permanent link to the article.
-
-h3. Posted
-
-The time associated with the article, in the format specified in the 'date format' items on the Texpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
-
-h3. Title
-
-Guess.'
 <p>These tags are replaced with their corresponding values every time an article is output. </p>
 
 	<h3>Author</h3>
@@ -471,41 +432,7 @@ Guess.'
 <p>Guess.</p>
 
 'form_place_article'
-'form'
 'Article tags'
-'These tags are replaced with their corresponding values every time an article is output. 
-
-h3. Author
-
-The full name of the article's author.
-
-h3. Body
-
-The body of the article. Note that the body of articles processed with Textile will already have @<p>@ tags around each paragraph. Thus it is superfluous to use additional paragraph tags. 
-
-h3. Excerpt
-
-Text, if any, that was entered in the article's 'Excerpt' field.
-
-h3. Category 1, Category 2
-
-Categories, if any, assigned to the article.
-
-h3. Comments invite
-
-Will be replaced by the invitation for comments, if any, assigned to the article, as well as the current count of comments received.
-
-h3. Permanent link
-
-Text, article date or graphic that represents a permanent link to the article.
-
-h3. Posted
-
-The time associated with the article, in the format specified in the 'date format' items on the Texpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
-
-h3. Title
-
-Guess.'
 <p>These tags are replaced with their corresponding values every time an article is output. </p>
 
 	<h3>Author</h3>
@@ -758,7 +685,6 @@ h3. HTML documentation (via Mozilla Developer Network)
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">The <code>&lt;a&gt;</code> <span class="caps">HTML</span> element</a>.</p>
 
 'image_category'
-'category'
 'Categories: Images'
 'Image categories are useful both for internal organization, and for defining image sets that can be displayed using the <a href="https://docs.textpattern.com/tags/image-index" target="_blank">@<txp:image_index />@</a> and <a href="https://docs.textpattern.com/tags/image-display" target="_blank">@<txp:image_display />@</a> tags.'
 <p>Image categories are useful both for internal organization, and for defining image sets that can be displayed using the <a href="https://docs.textpattern.com/tags/image-index" target="_blank"><code>&lt;txp:image_index /&gt;</code></a> and <a href="https://docs.textpattern.com/tags/image-display" target="_blank"><code>&lt;txp:image_display /&gt;</code></a> tags.</p>
@@ -1046,7 +972,6 @@ h3. HTML documentation (via Mozilla Developer Network)
 <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">The <code>&lt;a&gt;</code> <span class="caps">HTML</span> element</a>.</p>
 
 'link_category'
-'category'
 'Categories: Links'
 'Link categories are optional, and are useful if you want to display different groupings of links, e.g. 'Friends', 'Romans', 'Countrymen'.
 
@@ -2057,7 +1982,6 @@ Upper & Lower case is the default.'
 <p>By choosing <em>no</em> the excerpt field will not be shown to the author on the article-editing screen.</p>
 
 'article_category'
-'category'
 'Article Categories'
 'Unlike "sections":https://www.textpattern.com/help/?item=section_category, which define the navigational structure of a site, article categories allow organisation of articles by their subject matter. Once categories are assigned, lists of articles belonging to particular categories can be browsed.
 
@@ -2628,7 +2552,6 @@ Note: Image Uploads are *not* restricted by this value. The maximum allowed size
  
 
 'form_articles'
-'form'
 'Article Tags'
 'These tags are replaced with their corresponding values every time an article is output. 
 
@@ -2679,7 +2602,6 @@ Guess.</p>
  
 
 'form_place_article'
-'form'
 'Article Tags'
 'These tags are replaced with their corresponding values every time an article is output. 
 
@@ -2900,7 +2822,6 @@ With a link:
  
 
 'image_category'
-'category'
 'Image Categories'
 'Image categories are useful both for internal organisation, and for defining image sets that can be displayed using the @<txp:image_index />@ and @<txp:image_display />@ tags.'
 <p>Image categories are useful both for internal organisation, and for defining image sets that can be displayed using the <code>&lt;txp:image_index /&gt;</code> and <code>&lt;txp:image_display /&gt;</code> tags.</p>
@@ -3188,7 +3109,6 @@ This is a &#60;a href=&#34;https://itsbob.com/index.html&#34;&#62;link&#60;/a&#6
  
 
 'link_category'
-'category'
 'Link Categories'
 'Link categories are optional, and are useful if you want to display different groupings of links, e.g., 'Friends', 'Romans', 'Countrymen'.
 
@@ -4881,7 +4801,6 @@ None: Textpattern will pick up your dry-cleaning.'
 <p>Descriptions for links are optional, and are useful for captioning links, or for creating <code>title=&#34;&#34;</code> (tooltip) attributes for links, or simply keeping your own internal documentation.</p>
 
 'link_category'
-'category'
 'Link Categories'
 'Link categories are optional, and are useful if you want to display different groupings of links, e.g., 'Friends', 'Romans', 'Countrymen'.
 
@@ -5093,7 +5012,6 @@ Unlike other directory settings, this path is always a _relative_ path (to the d
 <p>Unlike other directory settings, this path is always a <em>relative</em> path (to the directory of your root textpattern installation). The default is <em>images</em>.</p>
 
 'image_category'
-'category'
 'Image Categories'
 'Image categories are useful both for internal organisation, and for defining image sets that can be displayed using the @<txp:image_index />@ and @<txp:image_display />@ tags.'
 <p>Image categories are useful both for internal organisation, and for defining image sets that can be displayed using the <code>&#60;txp:image_index /&#62;</code> and <code>&#60;txp:image_display /&#62;</code> tags.</p>
@@ -5259,7 +5177,6 @@ or
 <p><code>/home/var/www/mytxpsite/textpattern</code></p>
 
 'form_place_article'
-'form'
 'Article Tags'
 'These tags are replaced with their corresponding values every time an article is output. 
 
@@ -5307,7 +5224,6 @@ The time associated with the article, in the format specified in the &apos;date 
 Guess.</p>
 
 'form_articles'
-'form'
 'Article Tags'
 'These tags are replaced with their corresponding values every time an article is output. 
 
@@ -5908,7 +5824,6 @@ tag inside an article form.'
 <p>tag inside an article form.</p>
 
 'article_category'
-'category'
 'Article Categories'
 'Unlike "sections":https://www.textpattern.com/help/?item=section_category, which define the navigational structure of a site, article categories allow organisation of articles by their subject matter. Once categories are assigned, lists of articles belonging to particular categories can be browsed.
 
@@ -6280,7 +6195,6 @@ By naming a custom field in preferences, it automatically appears on the 'Write'
 <p>By naming a custom field in preferences, it automatically appears on the &apos;Write&apos; tab (any custom fields that are empty will not appear).</p>
 
 'file_category'
-'category'
 'Categories: Files'
 'File categories are optional, and are useful if you want to group certain uploaded files together.'
 <p>File categories are optional, and are useful if you want to group certain uploaded files together.</p>
@@ -6733,7 +6647,6 @@ Your @php.ini@ file, either global or local, should contain a @date.timezone@ se
 <p>While Textpattern will run without a temporary directory, some functionality may not work as expected if this preference is not set. Please visit Admin Preferences and set up the &apos;Temporary directory path&apos;.</p>
 
 'forms_overview'
-'form'
 'Forms: Introduction'
 'In Textpattern, a form is a snippet or chunk of text, HTML, and Textpattern tags that can be reused to display content.
 
@@ -6894,7 +6807,6 @@ An item with a timestamp greater than the current time (i.e. in the future) will
 <p>An item with a timestamp greater than the current time (i.e. in the future) will not appear on the front end and the <span class="caps">RSS</span>/Atom feeds until that time arrives.</p>
 
 'category_description'
-'category'
 'Categories: Description'
 'The category description is an optional component that can help search engines and website crawlers better identify and sort content.
 
