@@ -1,12 +1,3 @@
-'add_new_author'
-'Users: Add new author'
-<p>A password, welcome message and login instructions will be emailed to the new author.</p>
-
-'admin_side_plugins'
-'Preferences: Use admin-side plugins?'
-<p>Admin-side plugins can change the operation of the administration interface. They might hook into already existing actions, like editing or publishing articles, or they might add new panels for added/extended functionality.</p>
-<p>If you would like to learn more about admin-side plugins, please see the <a href="https://www.textpattern.net/wiki/index.php?title=Extending_Textpattern">Extending Textpattern</a> page in <a href="https://docs.textpattern.io/">Textpattern User Documentation</a>. Plugins of all sorts are listed in the <a href="https://textpattern.org/">Textpattern Resources</a> site.</p>
-
 'allow_article_php_scripting'
 'Preferences: Allow PHP in articles?'
 <p>When enabled, this setting will allow use of <span class="caps">PHP</span> within articles. The author must have sufficient privileges to do so (by default, only <a href="https://rpc.textpattern.com/help/?item=about_privileges">Publishers</a> and <a href="https://rpc.textpattern.com/help/?item=about_privileges">Managing Editors</a> can).</p>
