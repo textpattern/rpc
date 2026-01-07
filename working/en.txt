@@ -1,17 +1,3 @@
-'allow_article_php_scripting'
-'Preferences: Allow PHP in articles?'
-<p>When enabled, this setting will allow use of <span class="caps">PHP</span> within articles. The author must have sufficient privileges to do so (by default, only <a href="https://rpc.textpattern.com/help/?item=about_privileges">Publishers</a> and <a href="https://rpc.textpattern.com/help/?item=about_privileges">Managing Editors</a> can).</p>
-<p><span class="caps">PHP</span> code must have opening and closing <span class="caps">PHP</span> tags omitted, and also be enclosed within <a href="https://docs.textpattern.com/tags/php" target="_blank"><code>&lt;txp:php&gt;</code> tags</a>.</p>
-
-'allow_form_override'
-'Preferences: Allow form override?'
-<p>This setting allows article authors to override the form to be used when their article is rendered. If enabled, an &apos;Override form&apos; dropdown will be available under &apos;Advanced Options&apos;, when editing an article.</p>
-
-'allow_page_php_scripting'
-'Preferences: Allow PHP in pages?'
-<p>When enabled, this setting allows <span class="caps">PHP</span> code within page and form templates.</p>
-<p><span class="caps">PHP</span> code must have opening and closing <span class="caps">PHP</span> tags omitted, and also be enclosed within <a href="https://docs.textpattern.com/tags/php" target="_blank">&lt;txp:php&gt; tags</a>.</p>
-
 'archive_dateformat'
 'Preferences: Archive date format'
 <p>How dates will appear on articles in sections of your site.</p>
