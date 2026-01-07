@@ -1,7 +1,7 @@
 'allow_article_php_scripting'
 'Preferences: Allow PHP in articles?'
 <p>When enabled, this setting will allow use of <span class="caps">PHP</span> within articles. The author must have sufficient privileges to do so (by default, only <a href="https://rpc.textpattern.com/help/?item=about_privileges">Publishers</a> and <a href="https://rpc.textpattern.com/help/?item=about_privileges">Managing Editors</a> can).</p>
-<p><span class="caps">PHP</span> code must have opening and closing <span class="caps">PHP</span> tags omitted, and also be enclosed within <a href="https://docs.textpattern.io/tags/php" target="_blank"><code>&lt;txp:php&gt;</code> tags</a>.</p>
+<p><span class="caps">PHP</span> code must have opening and closing <span class="caps">PHP</span> tags omitted, and also be enclosed within <a href="https://docs.textpattern.com/tags/php" target="_blank"><code>&lt;txp:php&gt;</code> tags</a>.</p>
 
 'allow_form_override'
 'Preferences: Allow form override?'
@@ -10,7 +10,7 @@
 'allow_page_php_scripting'
 'Preferences: Allow PHP in pages?'
 <p>When enabled, this setting allows <span class="caps">PHP</span> code within page and form templates.</p>
-<p><span class="caps">PHP</span> code must have opening and closing <span class="caps">PHP</span> tags omitted, and also be enclosed within <a href="https://docs.textpattern.io/tags/php" target="_blank">&lt;txp:php&gt; tags</a>.</p>
+<p><span class="caps">PHP</span> code must have opening and closing <span class="caps">PHP</span> tags omitted, and also be enclosed within <a href="https://docs.textpattern.com/tags/php" target="_blank">&lt;txp:php&gt; tags</a>.</p>
 
 'archive_dateformat'
 'Preferences: Archive date format'
@@ -50,7 +50,7 @@
 		<li>a fully-qualified <span class="caps">URL</span> (e.g. <code>https://example.com/path/to/images/my_pic.jpg</code>)</li>
 	</ol>
 
-<p>The image can be displayed by placing a <a href="https://docs.textpattern.io/tags/article-image" target="_blank"><code>&lt;txp:article_image /&gt;</code> tag</a> inside an article form. It will output a complete <span class="caps">HTML</span> <code>&lt;img&gt;</code> tag to your chosen image.</p>
+<p>The image can be displayed by placing a <a href="https://docs.textpattern.com/tags/article-image" target="_blank"><code>&lt;txp:article_image /&gt;</code> tag</a> inside an article form. It will output a complete <span class="caps">HTML</span> <code>&lt;img&gt;</code> tag to your chosen image.</p>
 
 'article_template'
 'Preferences: Default article template'
@@ -242,7 +242,7 @@ Any old text.
 'comments_are_ol'
 'Preferences: Present comments as a numbered list?'
 <p>Determines whether article comments will be wrapped with the <span class="caps">HTML</span> <code>&lt;ol&gt;</code> tag and individual comments will be wrapped in the <code>&lt;li&gt;</code> tag (causing comments to be presented as a numbered list), or whether individual comments will be wrapped with the <code>&lt;div&gt;</code> tag instead.</p>
-<p>With either value, you can override the tags used on an individual form basis by modifying the <a href="https://docs.textpattern.io/tags/comments" target="_blank"><code>&lt;txp:comments /&gt;</code> tag</a>, found in the <a href="https://www.textpattern.net/wiki/index.php?title=Default_Forms"><code>comments_display</code> form</a>.</p>
+<p>With either value, you can override the tags used on an individual form basis by modifying the <a href="https://docs.textpattern.com/tags/comments" target="_blank"><code>&lt;txp:comments /&gt;</code> tag</a>, found in the <a href="https://www.textpattern.net/wiki/index.php?title=Default_Forms"><code>comments_display</code> form</a>.</p>
 
 'comments_dateformat'
 'Preferences: Comments date format'
@@ -774,8 +774,8 @@ h3. HTML documentation (via Mozilla Developer Network)
 'image_category'
 'category'
 'Categories: Images'
-'Image categories are useful both for internal organization, and for defining image sets that can be displayed using the <a href="https://docs.textpattern.io/tags/image-index" target="_blank">@<txp:image_index />@</a> and <a href="https://docs.textpattern.io/tags/image-display" target="_blank">@<txp:image_display />@</a> tags.'
-<p>Image categories are useful both for internal organization, and for defining image sets that can be displayed using the <a href="https://docs.textpattern.io/tags/image-index" target="_blank"><code>&lt;txp:image_index /&gt;</code></a> and <a href="https://docs.textpattern.io/tags/image-display" target="_blank"><code>&lt;txp:image_display /&gt;</code></a> tags.</p>
+'Image categories are useful both for internal organization, and for defining image sets that can be displayed using the <a href="https://docs.textpattern.com/tags/image-index" target="_blank">@<txp:image_index />@</a> and <a href="https://docs.textpattern.com/tags/image-display" target="_blank">@<txp:image_display />@</a> tags.'
+<p>Image categories are useful both for internal organization, and for defining image sets that can be displayed using the <a href="https://docs.textpattern.com/tags/image-index" target="_blank"><code>&lt;txp:image_index /&gt;</code></a> and <a href="https://docs.textpattern.com/tags/image-display" target="_blank"><code>&lt;txp:image_display /&gt;</code></a> tags.</p>
 
 'img_dir'
 'Preferences: Image directory'
@@ -1064,11 +1064,11 @@ h3. HTML documentation (via Mozilla Developer Network)
 'Categories: Links'
 'Link categories are optional, and are useful if you want to display different groupings of links, e.g. 'Friends', 'Romans', 'Countrymen'.
 
-Selective link lists such as these are output with the <a href="https://docs.textpattern.io/tags/linklist" target="_blank">@<txp:linklist />@ tag</a> like so:
+Selective link lists such as these are output with the <a href="https://docs.textpattern.com/tags/linklist" target="_blank">@<txp:linklist />@ tag</a> like so:
 
 bc. <txp:linklist category="Friends" />.'
 <p>Link categories are optional, and are useful if you want to display different groupings of links, e.g. &apos;Friends&apos;, &apos;Romans&apos;, &apos;Countrymen&apos;.</p>
-<p>Selective link lists such as these are output with the <a href="https://docs.textpattern.io/tags/linklist" target="_blank"><code>&lt;txp:linklist /&gt;</code> tag</a> like so:</p>
+<p>Selective link lists such as these are output with the <a href="https://docs.textpattern.com/tags/linklist" target="_blank"><code>&lt;txp:linklist /&gt;</code> tag</a> like so:</p>
 <pre><code>&lt;txp:linklist category=&quot;Friends&quot; /&gt;.
 </code></pre>
 
@@ -1245,8 +1245,8 @@ p(alert-block information). *Note:* If you are using a language the characters o
 
 'override_form'
 'Write: Override form'
-'If you wish for an article to use a form different from that assigned by default - for example if you want to show only an article excerpt with <a href="https://docs.textpattern.io/tags/excerpt" target="_blank">@<txp:excerpt />@</a> where you normally show the entire article with <a href="https://docs.textpattern.io/tags/body" target="_blank">@<txp:body />@</a> - this can be set here.'
-<p>If you wish for an article to use a form different from that assigned by default &#8211; for example if you want to show only an article excerpt with <a href="https://docs.textpattern.io/tags/excerpt" target="_blank"><code>&lt;txp:excerpt /&gt;</code></a> where you normally show the entire article with <a href="https://docs.textpattern.io/tags/body" target="_blank"><code>&lt;txp:body /&gt;</code></a> &#8211; this can be set here.</p>
+'If you wish for an article to use a form different from that assigned by default - for example if you want to show only an article excerpt with <a href="https://docs.textpattern.com/tags/excerpt" target="_blank">@<txp:excerpt />@</a> where you normally show the entire article with <a href="https://docs.textpattern.com/tags/body" target="_blank">@<txp:body />@</a> - this can be set here.'
+<p>If you wish for an article to use a form different from that assigned by default &#8211; for example if you want to show only an article excerpt with <a href="https://docs.textpattern.com/tags/excerpt" target="_blank"><code>&lt;txp:excerpt /&gt;</code></a> where you normally show the entire article with <a href="https://docs.textpattern.com/tags/body" target="_blank"><code>&lt;txp:body /&gt;</code></a> &#8211; this can be set here.</p>
 
 'path_from_root'
 'Preferences: Root path to Textpattern'
@@ -1311,14 +1311,14 @@ bc. /'
 
 'permlink_mode'
 'Preferences: URL pattern'
-'This defines the method by which individual articles are reached via the URL displayed using the <a href="https://docs.textpattern.io/tags/permlink">@<txp:permlink>@ tag</a>.
+'This defines the method by which individual articles are reached via the URL displayed using the <a href="https://docs.textpattern.com/tags/permlink">@<txp:permlink>@ tag</a>.
 
 '?=messy' mode is the most compatible - it will work with little to no configuration required - but least beneficial in terms of URL readability and search engine optimization (SEO). In this mode URLs for articles on your site would look like this:
 
 bc. https://example.com/index.php?id=123
 
 All other modes require the Apache @mod_rewrite@ module to be installed and enabled on your server. If your server does not support @mod_rewrite@ either contact your web host or use the '?=messy' mode outlined above.'
-<p>This defines the method by which individual articles are reached via the <span class="caps">URL</span> displayed using the <a href="https://docs.textpattern.io/tags/permlink"><code>&lt;txp:permlink&gt;</code> tag</a>.</p>
+<p>This defines the method by which individual articles are reached via the <span class="caps">URL</span> displayed using the <a href="https://docs.textpattern.com/tags/permlink"><code>&lt;txp:permlink&gt;</code> tag</a>.</p>
 <p>&apos;?=messy&apos; mode is the most compatible &#8211; it will work with little to no configuration required &#8211; but least beneficial in terms of <span class="caps">URL</span> readability and search engine optimization (<span class="caps">SEO</span>). In this mode <span class="caps">URL</span>s for articles on your site would look like this:</p>
 <pre><code>https://example.com/index.php?id=123
 </code></pre>
@@ -1398,10 +1398,10 @@ No error reporting or diagnostic information will be sent to the page. Generally
 
 'publish_expired_articles'
 'Preferences: Publish expired articles?'
-'When set to 'Yes', expired articles will continue to show on your site after their expiry date has elapsed. You can use the <a href="https://docs.textpattern.io/tags/if-expired" target="_blank">@<txp:if_expired />@ tag</a> to show alternate content or markup for expired articles.
+'When set to 'Yes', expired articles will continue to show on your site after their expiry date has elapsed. You can use the <a href="https://docs.textpattern.com/tags/if-expired" target="_blank">@<txp:if_expired />@ tag</a> to show alternate content or markup for expired articles.
 
 When set to 'No', expired articles will be removed from the public site and return a "410 Gone" HTTP status instead. The default setting is 'No'.'
-<p>When set to &apos;Yes&apos;, expired articles will continue to show on your site after their expiry date has elapsed. You can use the <a href="https://docs.textpattern.io/tags/if-expired" target="_blank"><code>&lt;txp:if_expired /&gt;</code> tag</a> to show alternate content or markup for expired articles.</p>
+<p>When set to &apos;Yes&apos;, expired articles will continue to show on your site after their expiry date has elapsed. You can use the <a href="https://docs.textpattern.com/tags/if-expired" target="_blank"><code>&lt;txp:if_expired /&gt;</code> tag</a> to show alternate content or markup for expired articles.</p>
 <p>When set to &apos;No&apos;, expired articles will be removed from the public site and return a &quot;410 Gone&quot; <span class="caps">HTTP</span> status instead. The default setting is &apos;No&apos;.</p>
 
 'record_mentions'
@@ -1534,9 +1534,9 @@ p(alert-block information). *Note:* No @https://@, @https://@ or trailing slash 
 'Diagnostics: The following PHP functions: [...] are disabled on your server'
 'This means your hosting company or server administrator has disabled one or more PHP functions, some of which may affect the running of Textpattern.
 
-Please consult <a href="https://docs.textpattern.io/administration/diagnostics-panel#diagnostic-reporting-on-php-functions" target="_blank">this FAQ entry</a> for further information.'
+Please consult <a href="https://docs.textpattern.com/administration/diagnostics-panel#diagnostic-reporting-on-php-functions" target="_blank">this FAQ entry</a> for further information.'
 <p>This means your hosting company or server administrator has disabled one or more <span class="caps">PHP</span> functions, some of which may affect the running of Textpattern.</p>
-<p>Please consult <a href="https://docs.textpattern.io/administration/diagnostics-panel#diagnostic-reporting-on-php-functions" target="_blank">this <span class="caps">FAQ</span> entry</a> for further information.</p>
+<p>Please consult <a href="https://docs.textpattern.com/administration/diagnostics-panel#diagnostic-reporting-on-php-functions" target="_blank">this <span class="caps">FAQ</span> entry</a> for further information.</p>
 
 'spam_blacklists'
 'Preferences: Spam blocklists (comma-separated)'
@@ -4169,11 +4169,11 @@ p(alert-block information). *Note:* Do not specify the same directory for both '
 'Preferences: Automatically append comments to articles?'
 'This setting determines whether comments and the comment form are automatically appended to all individual articles (by automatically including the contents of the <a href="https://www.textpattern.net/wiki/index.php?title=Default_Forms" target="_blank">@comments_display@ form</a>).
 
-The majority of the time, you will want this set to 'No', as this allows greater flexibility to the positioning of your comments in your site design. You will need to add the <a href="https://docs.textpattern.io/tags/comments" target="_blank">@<txp:comments />@ tag</a> manually in any article-based templates where you want comments to appear.
+The majority of the time, you will want this set to 'No', as this allows greater flexibility to the positioning of your comments in your site design. You will need to add the <a href="https://docs.textpattern.com/tags/comments" target="_blank">@<txp:comments />@ tag</a> manually in any article-based templates where you want comments to appear.
 
 If you are experiencing duplicate display of comments in an article, then chances are your templates have the @<txp:comments />@ tag in a template but also have 'Automatically append comments to articles?' set to 'Yes' too - see "the related FAQ entry":https://textpattern.com/faq/95/comment-display-confusion for more information.'
 <p>This setting determines whether comments and the comment form are automatically appended to all individual articles (by automatically including the contents of the <a href="https://www.textpattern.net/wiki/index.php?title=Default_Forms" target="_blank"><code>comments_display</code> form</a>).</p>
-<p>The majority of the time, you will want this set to &apos;No&apos;, as this allows greater flexibility to the positioning of your comments in your site design. You will need to add the <a href="https://docs.textpattern.io/tags/comments" target="_blank"><code>&lt;txp:comments /&gt;</code> tag</a> manually in any article-based templates where you want comments to appear.</p>
+<p>The majority of the time, you will want this set to &apos;No&apos;, as this allows greater flexibility to the positioning of your comments in your site design. You will need to add the <a href="https://docs.textpattern.com/tags/comments" target="_blank"><code>&lt;txp:comments /&gt;</code> tag</a> manually in any article-based templates where you want comments to appear.</p>
 <p>If you are experiencing duplicate display of comments in an article, then chances are your templates have the <code>&lt;txp:comments /&gt;</code> tag in a template but also have &apos;Automatically append comments to articles?&apos; set to &apos;Yes&apos; too &#8211; see <a href="https://textpattern.com/faq/95/comment-display-confusion">the related <span class="caps">FAQ</span> entry</a> for more information.</p>
 
 'warn_register_globals_or_update'
@@ -6653,8 +6653,8 @@ h3. Tips
 
 'doctype'
 'Preferences: Doctype'
-'Select which HTML doctype you wish to use (either HTML5 or XHTML). This affects comment input forms, Textile rendering of @<abbr>@ or @<acronym>@, and @<link>@ tags generated by <a href="https://docs.textpattern.io/tags/css" target="_blank">@<txp:css />@</a>.'
-<p>Select which <span class="caps">HTML</span> doctype you wish to use (either HTML5 or <span class="caps">XHTML</span>). This affects comment input forms, Textile rendering of <code>&lt;abbr&gt;</code> or <code>&lt;acronym&gt;</code>, and <code>&lt;link&gt;</code> tags generated by <a href="https://docs.textpattern.io/tags/css" target="_blank"><code>&lt;txp:css /&gt;</code></a>.</p>
+'Select which HTML doctype you wish to use (either HTML5 or XHTML). This affects comment input forms, Textile rendering of @<abbr>@ or @<acronym>@, and @<link>@ tags generated by <a href="https://docs.textpattern.com/tags/css" target="_blank">@<txp:css />@</a>.'
+<p>Select which <span class="caps">HTML</span> doctype you wish to use (either HTML5 or <span class="caps">XHTML</span>). This affects comment input forms, Textile rendering of <code>&lt;abbr&gt;</code> or <code>&lt;acronym&gt;</code>, and <code>&lt;link&gt;</code> tags generated by <a href="https://docs.textpattern.com/tags/css" target="_blank"><code>&lt;txp:css /&gt;</code></a>.</p>
 
 'create_thumbnail'
 'Images: Create thumbnail'
