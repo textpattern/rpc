@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+	<meta charset="utf-8">
+	<title>Textile: Attributes &#183; Textpattern Help</title>
+	<meta name="robots" content="noindex, follow, noodp, noydir">
+	<link rel="stylesheet" href="https://rpc.textpattern.com/assets/css/main.css">
+	<link rel="canonical" href="https://rpc.textpattern.com/help/attributes.html">
+</head>
+<body>
+	<!-- ##PREFLIGHT## -->
+	<h2>Textile: Attributes</h2>
+	<h3>Syntax</h3>
+	<pre><code>(class)
+	(#id)
+	(class#id) can be combined
+	{style}
+	[language]
+	</code></pre>
+	<h3>Attributes in phrase elements</h3>
+	<pre><code>%{color:red}red% → &lt;span style=&quot;color:red&quot;&gt;red&lt;/span&gt;
+	</code></pre>
+	<pre><code>%[fr]rouge% → &lt;span lang=&quot;fr&quot;&gt;rouge&lt;/span&gt;
+	</code></pre>
+	<pre><code>_(big)red_ → &lt;em class=&quot;big&quot;&gt;red&lt;/em&gt;
+	</code></pre>
+	<h3>Attributes in block elements</h3>
+	<pre><code>p(bob). A paragraph → &lt;p class=&quot;bob&quot;&gt;A paragraph&lt;/p&gt;
+	</code></pre>
+	<pre><code>p{color:#ddd}. A paragraph → &lt;p style=&quot;color:#ddd&quot;&gt;A paragraph&lt;/p&gt;
+	</code></pre>
+	<pre><code>p[fr]. A paragraph → &lt;p lang=&quot;fr&quot;&gt;A paragraph&lt;/p&gt;
+	</code></pre>
+	<h3>Block attribute shorthand</h3>
+	<pre><code>p&lt;. align left
+	p&gt;. align right
+	p=. centered
+	p&lt;&gt;. justified
+	p(., p((.  left indent 1em, 2em, etc.
+	p). right indent 1em
+	</code></pre>
+	<hr>
+	<!-- ##LEGACYWARNING## -->
+	<!-- ##LINKTODOCS## -->
+</body>
+</html>
