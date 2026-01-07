@@ -469,17 +469,6 @@ Any old text.
 
 'full_path'
 'Preferences: Path to Textpattern'
-'This must indicate the full server path to your @/textpattern/@ directory, which should be inside the directory containing your Textpattern site.
-
-p(alert-block information). *Note:* There must be no trailing slash at the end of the path.
-
-h3. Examples
-
-bc. /home/user/docs/html/textpattern
-
-or
-
-bc. /home/var/www/textpattern'
 <p>This must indicate the full server path to your <code>/textpattern/</code> directory, which should be inside the directory containing your Textpattern site.</p>
 <p class="alert-block information"><strong>Note:</strong> There must be no trailing slash at the end of the path.</p>
 
@@ -494,51 +483,14 @@ bc. /home/var/www/textpattern'
 
 'gmtoffset'
 'Preferences: Time zone'
-'In order to display dates in your local time zone, please select your time zone.'
 <p>In order to display dates in your local time zone, please select your time zone.</p>
 
 'gzip_compress'
 'Preferences: Use page compression'
-'When enabled, pages are GZIP(Gnu Zip) compressed at the server before being sent to the visitor. This can mean faster page loads and reduced bandwidth consumption.'
 <p>When enabled, pages are <acronym title="Gnu Zip"><span class="caps">GZIP</span></acronym> compressed at the server before being sent to the visitor. This can mean faster page loads and reduced bandwidth consumption.</p>
 
 'header'
 'Textile: Headings'
-'To make an entire paragraph into a heading, place @hn.@ at its beginning, where _n_ is a number from 1 - 6.
-
-h3. Examples
-
-bc. h1. Heading 1
-
-bc. h2. Heading 2
-
-bc. h3. Heading 3
-
-Will become:
-
-bc. <h1>Heading 1</h1>
-
-bc. <h2>Heading 2</h2>
-
-bc. <h3>Heading 3</h3>
-
-Which, when rendered by a browser, will appear like this:
-
-h1. Heading 1
-
-h2. Heading 2
-
-h3. Heading 3
-
-p(alert-block information). *Note:* Quick tags must open and close within a single paragraph to produce valid markup.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-heading" target="_blank">More information on headings in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">The @h1@ - @h6@ HTML elements</a>.'
 <p>To make an entire paragraph into a heading, place <code>hn.</code> at its beginning, where <em>n</em> is a number from 1 &#8211; 6.</p>
 
 	<h3>Examples</h3>
@@ -582,19 +534,6 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'htaccess_missing'
 'Diagnostics: .htaccess file missing'
-'You are using a permanent link mode which requires an @.htaccess@ file to be placed in your site root directory. The recommended directives are:
-
-bc. <IfModule mod_rewrite.c>
-    RewriteEngine On
-    #RewriteBase /relative/web/path/
-    RewriteCond %{REQUEST_FILENAME} -f [OR]
-    RewriteCond %{REQUEST_FILENAME} -d
-    RewriteRule ^(.+) - [PT,L]
-    RewriteCond %{REQUEST_URI} !=/favicon.ico
-    RewriteRule ^(.*) index.php
-    RewriteCond %{HTTP:Authorization}  !^$
-    RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
-</IfModule>'
 <p>You are using a permanent link mode which requires an <code>.htaccess</code> file to be placed in your site root directory. The recommended directives are:</p>
 <pre><code>&lt;IfModule mod_rewrite.c&gt;
     RewriteEngine On
@@ -610,45 +549,6 @@ bc. <IfModule mod_rewrite.c>
 </code></pre>
 
 'Textile: Images'
-'To insert an image, put the URL for the image inside exclamation marks.
-
-*Optional:* text that immediately follows the URL in (parentheses) will be used as the @alt@ text for the image (this also adds a @title@ attribute with the same content). Images on the web should always have descriptive @alt@ text for the benefit of readers using non-graphical browsers.
-
-*Optional:* place a colon followed by a URL immediately after the closing @!@ to make the image into a link.
-
-h3. Examples
-
-bc. !https://textpattern.com/hi.png(Hello World)!
-
-Will become:
-
-bc. <img src="https://textpattern.com/hi.png" alt="Textpattern icon" title="Hello World" />
-
-Which, when rendered by a browser, will appear like this:
-
-!https://textpattern.com/hi.png(Hello World)!
-
-With a link:
-
-bc. !https://textpattern.com/hi.png(Hello World)!:https://textpattern.com
-
-Will become:
-
-bc. <a href="https://textpattern.com"><img src="https://textpattern.com/hi.png" alt="Hello World" title="Hello World" /></a>
-
-Which, when rendered by a browser, will appear like this:
-
-!https://textpattern.com/hi.png(Hello World)!:https://textpattern.com
-
-h3. Textile documentation
-
-"More information on images in Textile":https://textpattern.com/textile-image.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-"The @<img>@ HTML element":https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img.
-
-"The @<a>@ HTML element":https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a.'
 <p>To insert an image, put the <span class="caps">URL</span> for the image inside exclamation marks.</p>
 <p><strong>Optional:</strong> text that immediately follows the <span class="caps">URL</span> in (parentheses) will be used as the <code>alt</code> text for the image (this also adds a <code>title</code> attribute with the same content). Images on the web should always have descriptive <code>alt</code> text for the benefit of readers using non-graphical browsers.</p>
 <p><strong>Optional:</strong> place a colon followed by a <span class="caps">URL</span> immediately after the closing <code>!</code> to make the image into a link.</p>
@@ -686,29 +586,15 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'image_category'
 'Categories: Images'
-'Image categories are useful both for internal organization, and for defining image sets that can be displayed using the <a href="https://docs.textpattern.com/tags/image-index" target="_blank">@<txp:image_index />@</a> and <a href="https://docs.textpattern.com/tags/image-display" target="_blank">@<txp:image_display />@</a> tags.'
 <p>Image categories are useful both for internal organization, and for defining image sets that can be displayed using the <a href="https://docs.textpattern.com/tags/image-index" target="_blank"><code>&lt;txp:image_index /&gt;</code></a> and <a href="https://docs.textpattern.com/tags/image-display" target="_blank"><code>&lt;txp:image_display /&gt;</code></a> tags.</p>
 
 'img_dir'
 'Preferences: Image directory'
-'If you'd like to customise the name of your images directory, you can do so here. You must first create the directory in the root of your Textpattern installation, you should also make sure that PHP is able to write to that directory.
-
-This path is always a *relative path* (to the directory of your root Textpattern installation).
-
-The default is @images@.'
 <p>If you&apos;d like to customise the name of your images directory, you can do so here. You must first create the directory in the root of your Textpattern installation, you should also make sure that <span class="caps">PHP</span> is able to write to that directory.</p>
 <p>This path is always a <strong>relative path</strong> (to the directory of your root Textpattern installation).</p>
 <p>The default is <code>images</code>.</p>
 
 'Import: Import from'
-'You can import your data into Textpattern from the following publishing tools:
-
-* Movable Type
-* Blogger
-* WordPress (including custom prefixes for your databases, if you're using them)
-* b2
-
-If you choose to import from a file exported from another content management system - that is, Movable Type or Blogger - you must place it in the @textpattern/include/import@ directory and name it @import.txt@.'
 <p>You can import your data into Textpattern from the following publishing tools:</p>
 
 	<ul>
@@ -722,46 +608,26 @@ If you choose to import from a file exported from another content management sys
 
 'import_invite'
 'Import: Default comments invite'
-'Here you can set the comments invite text for the articles you're about to import.'
 <p>Here you can set the comments invite text for the articles you&apos;re about to import.</p>
 
 'import_section'
 'Import: Section to import into'
-'Use this to select the section you want to assign to the imported articles.'
 <p>Use this to select the section you want to assign to the imported articles.</p>
 
 'import_status'
 'Import: Default article status'
-'Here you can choose the status articles will have once imported into Textpattern.'
 <p>Here you can choose the status articles will have once imported into Textpattern.</p>
 
 'include_email_atom'
 'Preferences: Include email in Atom feeds?'
-'This allows you to include the email address of the author (as set in their user account) of an article in the _author_ part of your Atom feeds.'
 <p>This allows you to include the email address of the author (as set in their user account) of an article in the <em>author</em> part of your Atom feeds.</p>
 
 'index_inaccessible'
 'Diagnostics: Site index inaccessible'
-'The main @index.php@ file specified as the index for your site is unreadable by the server. Please check permissions.'
 <p>The main <code>index.php</code> file specified as the index for your site is unreadable by the server. Please check permissions.</p>
 
 'insert'
 'Textile: Inserted text'
-'Use ==+pluses+== around text that has been +inserted+. This is useful in marking changes from one version of a document to the next.
-
-The @<ins>@ HTML tag is applied:
-
-bc. +a phrase+ → <ins>a phrase</ins>
-
-p(alert-block information). *Note:* Quick tags must open and close within a single paragraph to produce valid markup.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-ins-and-del" target="_blank">More information on insertions and deletions in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ins" target="_blank">The @<ins>@ HTML element</a>.'
 <p>Use +pluses+ around text that has been <ins>inserted</ins>. This is useful in marking changes from one version of a document to the next.</p>
 <p>The <code>&lt;ins&gt;</code> <span class="caps">HTML</span> tag is applied:</p>
 <pre><code>+a phrase+ → &lt;ins&gt;a phrase&lt;/ins&gt;
@@ -779,20 +645,6 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'intro'
 'Textile: Introduction'
-'Some of the many ways Textile makes markup easier:
-
-* Replace single and double primes (@'@ and @"@) used as quotation marks with HTML entities for opening and closing quotation marks (@‘’@ and @“”@) in readable text, while leaving untouched the primes required within HTML tags.
-* Replace double hyphens (==--==) with an em-dash (—) entity.
-* Replace single hyphens surrounded by spaces with an en-dash (–) entity.
-* Replace triplets of periods (==...==) with an ellipsis (…) entity.
-* Convert many nonstandard characters (ŸúßŠπŒ) to browser-safe entities corresponding to keyboard input.
-* Apply block- and phrase-level structural tags automatically and at the discretion of the writer via quick tags.
-* Allow the quick creation of simple and complex tables.
-* Allow the simple application of @style@, @class@, @id@ and @lang@ attributes to elements.
-* Create hyperlinks and insert images via quick tags.
-* Define abbreviations via quick tags.
-* Convert @(TM)@, @(R)@, and @(C)@ to ™, ®, and ©.
-* Convert the letter x to a dimension sign: @2x4@ to 2×4 and @8x10@ to 8×10.'
 <p>Some of the many ways Textile makes markup easier:</p>
 
 	<ul>
@@ -812,37 +664,14 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'in_rss'
 'Sections: Syndicate articles in this section?'
-'Governs whether or not articles in this 'Section' will appear in the site's RSS or Atom XML feeds.'
 <p>Governs whether or not articles in this &apos;Section&apos; will appear in the site&apos;s <span class="caps">RSS</span> or Atom <span class="caps">XML</span> feeds.</p>
 
 'is_dst'
 'Preferences: Daylight Saving Time (DST) enabled?'
-'Whether DST(Daylight Saving Time) is currently enabled for your time zone.'
 <p>Whether <acronym title="Daylight Saving Time"><span class="caps">DST</span></acronym> is currently enabled for your time zone.</p>
 
 'italic'
 'Textile: Emphasis'
-'Use ==_underscores_== around text to be _emphasised._
-
-The @<em>@ HTML tag is applied:
-
-bc. _a phrase_ → <em>a phrase</em>
-
-If the text is not meant to have *structural* emphasis, but simply to be styled in __italic__ (e.g. as a design element) use double underscores:
-
-bc. __a phrase__ → <i>a phrase</i>
-
-p(alert-block information). *Note:* Quick tags must open and close within a single paragraph to produce valid markup.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-em-and-i" target="_blank">More information on emphasised and italic text in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em" target="_blank">The @<em>@ HTML element</a>.
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i" target="_blank">The @<i>@ HTML element</a>.'
 <p>Use _underscores_ around text to be <em>emphasised.</em></p>
 <p>The <code>&lt;em&gt;</code> <span class="caps">HTML</span> tag is applied:</p>
 <pre><code>_a phrase_ → &lt;em&gt;a phrase&lt;/em&gt;
@@ -865,9 +694,6 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'keywords'
 'Write: Keywords'
-'Keywords are useful for refining the relationships between articles beyond those provided by categories.
-
-Keywords must be individual words separated by commas.'
 <p>Keywords are useful for refining the relationships between articles beyond those provided by categories.</p>
 <p>Keywords must be individual words separated by commas.</p>
 
@@ -889,47 +715,6 @@ Switching to a new language is always a two step process:
 	</ol>
 
 'Textile: Links'
-'To make a hypertext link, put the link text in =="quotation marks"== followed immediately by a colon and the URL of the link.
-
-*Optional:* text in (parentheses) following the link text, but before the closing quotation mark, will become a @title@ attribute for the link, visible as a tooltip when a cursor is above it.
-
-h3. Example (standard links)
-
-bc. "This is a link (This is a title)":https://textpattern.com
-
-Will become:
-
-bc. <a href="https://textpattern.com" title="This is a title">This is a link</a>
-
-Which, when rendered by a browser, will appear like this:
-
-"This is a link (This is a title)":https://textpattern.com
-
-h3. Example (aliased links)
-
-Textile v2.0.0 onwards also allows storage of long URLs outside of the text you're working in, and to reference them with aliases of your choosing. Simply store the URL anywhere in the document, such as at the end, using this syntax:
-
-bc. [alias (optional title)]https://url
-
-Each referenced URL must begin on a new line:
-
-bc. This is a "link":example to my website.
-
-So long as this appears elsewhere in the document:
-
-bc. [example]https://example.com/index.html
-
-Will become:
-
-bc. This is a <a href="https://example.com/index.html">link</a> to my website.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-link" target="_blank">More information on links in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">The @<a>@ HTML element</a>.'
 <p>To make a hypertext link, put the link text in "quotation marks" followed immediately by a colon and the <span class="caps">URL</span> of the link.</p>
 <p><strong>Optional:</strong> text in (parentheses) following the link text, but before the closing quotation mark, will become a <code>title</code> attribute for the link, visible as a tooltip when a cursor is above it.</p>
 
@@ -973,11 +758,6 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'link_category'
 'Categories: Links'
-'Link categories are optional, and are useful if you want to display different groupings of links, e.g. 'Friends', 'Romans', 'Countrymen'.
-
-Selective link lists such as these are output with the <a href="https://docs.textpattern.com/tags/linklist" target="_blank">@<txp:linklist />@ tag</a> like so:
-
-bc. <txp:linklist category="Friends" />.'
 <p>Link categories are optional, and are useful if you want to display different groupings of links, e.g. &apos;Friends&apos;, &apos;Romans&apos;, &apos;Countrymen&apos;.</p>
 <p>Selective link lists such as these are output with the <a href="https://docs.textpattern.com/tags/linklist" target="_blank"><code>&lt;txp:linklist /&gt;</code> tag</a> like so:</p>
 <pre><code>&lt;txp:linklist category=&quot;Friends&quot; /&gt;.
@@ -985,22 +765,18 @@ bc. <txp:linklist category="Friends" />.'
 
 'link_description'
 'Links: Description'
-'Descriptions for links are optional, and are useful for captioning links, for creating @title=""@ (tooltip) attributes for links, or simply keeping your own internal documentation.'
 <p>Descriptions for links are optional, and are useful for captioning links, for creating <code>title=&quot;&quot;</code> (tooltip) attributes for links, or simply keeping your own internal documentation.</p>
 
 'link_sort'
 'Links: Sort value'
-'Useful for natural-language sorting of link lists, e.g. on a person's last name rather than their first, or on phrases that begin with a definite or indefinite article.'
 <p>Useful for natural-language sorting of link lists, e.g. on a person&apos;s last name rather than their first, or on phrases that begin with a definite or indefinite article.</p>
 
 'link_template'
 'Preferences: Link template'
-'This is the default template used when outputting lists of links. This can be overridden when generating a list of links via a PHP snippet.'
 <p>This is the default template used when outputting lists of links. This can be overridden when generating a list of links via a <span class="caps">PHP</span> snippet.</p>
 
 'link_url'
 'Links: URL'
-'The address of the link. If the link points to a different site, then it must be preceded by @https://@ or @https://@.'
 <p>The address of the link. If the link points to a different site, then it must be preceded by <code>https://</code> or <code>https://</code>.</p>
 
 'logging'
@@ -1020,69 +796,19 @@ bc. <txp:linklist category="Friends" />.'
 
 'max_url_len'
 'Preferences: Maximum URL length (in characters)'
-'This prevents URLs that are longer than the specified length from functioning. It could be helpful in damage limitation and site security.'
 <p>This prevents <span class="caps">URL</span>s that are longer than the specified length from functioning. It could be helpful in damage limitation and site security.</p>
 
 'never_display_email'
 'Preferences: Hide commenter email address?'
-'This setting controls whether the email address of a commenter should be shown publicly.
-
-It's recommended that email addresses should not be shown, as courtesy to your users, but there may be certain situations when showing commenter email addresses is desirable.'
 <p>This setting controls whether the email address of a commenter should be shown publicly.</p>
 <p>It&apos;s recommended that email addresses should not be shown, as courtesy to your users, but there may be certain situations when showing commenter email addresses is desirable.</p>
 
 'next_page_link'
 'Preferences: Next page link'
-'When there are more current articles than those displayed on a page, this text (or URL of a graphic) appears at the bottom of the page as a link to continue reading.'
 <p>When there are more current articles than those displayed on a page, this text (or <span class="caps">URL</span> of a graphic) appears at the bottom of the page as a link to continue reading.</p>
 
 'numeric'
 'Textile: Numeric lists'
-'To make a numeric list, place each item in its own paragraph, preceded by @#@.
-
-h3. Example
-
-bc. # A first item
-# A second item
-## A second item first sub item
-## A second item second sub item
-# A third item
-# A fourth item
-
-Will become:
-
-bc. <ol>
-  <li>A first item</li>
-  <li>A second item
-  <ol>
-    <li>A second item first sub item</li>
-    <li>A second item second sub item</li>
-  </ol>
-  </li>
-  <li>A third item</li>
-  <li>A fourth item</li>
-</ol>
-
-Which, when rendered by a browser, will appear like this:
-
-# A first item
-# A second item
-## A second item first sub item
-## A second item second sub item
-# A third item
-# A fourth item
-
-p(alert-block information). *Note:* Unmodified paragraphs will be wrapped in @<p>@ tags.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-ol-list" target="_blank">More information on numeric lists in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">The @<ol>@ HTML element</a>.
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">The @<li>@ HTML element</a>.'
 <p>To make a numeric list, place each item in its own paragraph, preceded by <code>#</code>.</p>
 
 	<h3>Example</h3>
@@ -1135,22 +861,15 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'old_placeholder_exists'
 'Diagnostics: Section placeholder file exists'
-'As of Textpattern version 4.0, section placeholder files are no longer required, and will conflict with the the new @.htaccess@ scheme. If the reported files are placeholders, please delete them.'
 <p>As of Textpattern version 4.0, section placeholder files are no longer required, and will conflict with the the new <code>.htaccess</code> scheme. If the reported files are placeholders, please delete them.</p>
 
 'on_frontpage'
 'Sections: Section articles appear on front page?'
-'The articles in some sections, such as those resembling more 'static' web pages, may seem out of place in the time-sensitive flow of your site's front page.
-
-Setting this to 'No' will prevent articles assigned to this 'Section' from appearing on the front page.'
 <p>The articles in some sections, such as those resembling more &apos;static&apos; web pages, may seem out of place in the time-sensitive flow of your site&apos;s front page.</p>
 <p>Setting this to &apos;No&apos; will prevent articles assigned to this &apos;Section&apos; from appearing on the front page.</p>
 
 'override_emailcharset'
 'Preferences: Use ISO-8859-1 encoding in emails (default is UTF-8)?'
-'Textpattern uses UTF-8 encoding wherever possible by default, including for outgoing emails. However, some older email clients (including some versions of Microsoft Outlook) do not have proper UTF-8 support. If you encounter garbled characters in emails, this setting will convert text to ISO-8859-1 encoding before sending them.
-
-p(alert-block information). *Note:* If you are using a language the characters of which cannot be represented in ISO-8859-1, this setting will unfortunately not help you. You should try finding a UTF-8 (or Unicode) compatible email client.'
 <p>Textpattern uses <span class="caps">UTF</span>-8 encoding wherever possible by default, including for outgoing emails. However, some older email clients (including some versions of Microsoft Outlook) do not have proper <span class="caps">UTF</span>-8 support. If you encounter garbled characters in emails, this setting will convert text to <span class="caps">ISO</span>-8859-1 encoding before sending them.</p>
 <p class="alert-block information"><strong>Note:</strong> If you are using a language the characters of which cannot be represented in <span class="caps">ISO</span>-8859-1, this setting will unfortunately not help you. You should try finding a <span class="caps">UTF</span>-8 (or Unicode) compatible email client.</p>
 
