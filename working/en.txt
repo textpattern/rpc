@@ -875,7 +875,6 @@ Switching to a new language is always a two step process:
 
 'override_form'
 'Write: Override form'
-'If you wish for an article to use a form different from that assigned by default - for example if you want to show only an article excerpt with <a href="https://docs.textpattern.com/tags/excerpt" target="_blank">@<txp:excerpt />@</a> where you normally show the entire article with <a href="https://docs.textpattern.com/tags/body" target="_blank">@<txp:body />@</a> - this can be set here.'
 <p>If you wish for an article to use a form different from that assigned by default &#8211; for example if you want to show only an article excerpt with <a href="https://docs.textpattern.com/tags/excerpt" target="_blank"><code>&lt;txp:excerpt /&gt;</code></a> where you normally show the entire article with <a href="https://docs.textpattern.com/tags/body" target="_blank"><code>&lt;txp:body /&gt;</code></a> &#8211; this can be set here.</p>
 
 'path_from_root'
@@ -918,7 +917,6 @@ bc. /'
 
 'path_to_site_inacc'
 'Diagnostics: Site directory unreadable'
-'The directory containing the @index.php@ file specified as the index for your site is unreadable by the server. Please check permissions.'
 <p>The directory containing the <code>index.php</code> file specified as the index for your site is unreadable by the server. Please check permissions.</p>
 
 'permalink_title_format'
@@ -936,18 +934,10 @@ bc. /'
 
 'permlink'
 'Preferences: Permanent link'
-'This is text or the URL of a graphic that will be the clickable link to the permanent address of an article.'
 <p>This is text or the <span class="caps">URL</span> of a graphic that will be the clickable link to the permanent address of an article.</p>
 
 'permlink_mode'
 'Preferences: URL pattern'
-'This defines the method by which individual articles are reached via the URL displayed using the <a href="https://docs.textpattern.com/tags/permlink">@<txp:permlink>@ tag</a>.
-
-'?=messy' mode is the most compatible - it will work with little to no configuration required - but least beneficial in terms of URL readability and search engine optimization (SEO). In this mode URLs for articles on your site would look like this:
-
-bc. https://example.com/index.php?id=123
-
-All other modes require the Apache @mod_rewrite@ module to be installed and enabled on your server. If your server does not support @mod_rewrite@ either contact your web host or use the '?=messy' mode outlined above.'
 <p>This defines the method by which individual articles are reached via the <span class="caps">URL</span> displayed using the <a href="https://docs.textpattern.com/tags/permlink"><code>&lt;txp:permlink&gt;</code> tag</a>.</p>
 <p>&apos;?=messy&apos; mode is the most compatible &#8211; it will work with little to no configuration required &#8211; but least beneficial in terms of <span class="caps">URL</span> readability and search engine optimization (<span class="caps">SEO</span>). In this mode <span class="caps">URL</span>s for articles on your site would look like this:</p>
 <pre><code>https://example.com/index.php?id=123
@@ -957,42 +947,14 @@ All other modes require the Apache @mod_rewrite@ module to be installed and enab
 
 'ping_textpattern_com'
 'Preferences: Ping textpattern.com?'
-'This will send a "ping":https://en.wikipedia.org/wiki/Ping_(blogging) to textpattern.com whenever you publish a new article. We may use this data for statistical purposes.'
 <p>This will send a <a href="https://en.wikipedia.org/wiki/Ping_%28blogging">ping</a>) to textpattern.com whenever you publish a new article. We may use this data for statistical purposes.</p>
 
 'ping_weblogsdotcom'
 'Preferences: Ping pingomatic.com (Ping-O-Matic)?'
-'This will send a <a href="https://en.wikipedia.org/wiki/Ping_(blogging)">ping</a> to "Ping-O-Matic":https://pingomatic.com/ whenever you publish a new article. Ping-O-Matic is a aggregation service to notify listed websites that your website has been updated.'
 <p>This will send a <a href="https://en.wikipedia.org/wiki/Ping_(blogging)">ping</a> to <a href="https://pingomatic.com/">Ping-O-Matic</a> whenever you publish a new article. Ping-O-Matic is a aggregation service to notify listed websites that your website has been updated.</p>
 
 'production_status'
 'Preferences: Production status'
-'A Textpattern site has one of three modes:
-
-# 'Debugging'
-# 'Testing'
-# 'Live'
-
-h3. Debugging mode
-
-All PHP error reporting on your live site will be visible, as will warnings about malfunctioning code and plugins. In addition, the following information will be visible when you view the HTML source of live pages:
-
-* the time it took the server to build the page ('Runtime')
-* the number of MySQL queries executed
-* approximate peak memory usage
-* all Textpattern tags encountered while building the page (also known as a tag trace)
-
-h3. Testing mode
-
-All PHP error reporting on your live site will be visible, as will warnings about malfunctioning code and plugins. The following information will be visible when you view the HTML source of live pages:
-
-* the time it took the server to build the page ('Runtime')
-* the number of MySQL queries executed
-* approximate peak memory usage
-
-h3. Live mode
-
-No error reporting or diagnostic information will be sent to the page. Generally, Live mode is preferred, as it provides the best user experience and imposes the least overhead on the server.'
 <p>A Textpattern site has one of three modes:</p>
 
 	<ol>
@@ -1028,54 +990,30 @@ No error reporting or diagnostic information will be sent to the page. Generally
 
 'publish_expired_articles'
 'Preferences: Publish expired articles?'
-'When set to 'Yes', expired articles will continue to show on your site after their expiry date has elapsed. You can use the <a href="https://docs.textpattern.com/tags/if-expired" target="_blank">@<txp:if_expired />@ tag</a> to show alternate content or markup for expired articles.
-
-When set to 'No', expired articles will be removed from the public site and return a "410 Gone" HTTP status instead. The default setting is 'No'.'
 <p>When set to &apos;Yes&apos;, expired articles will continue to show on your site after their expiry date has elapsed. You can use the <a href="https://docs.textpattern.com/tags/if-expired" target="_blank"><code>&lt;txp:if_expired /&gt;</code> tag</a> to show alternate content or markup for expired articles.</p>
 <p>When set to &apos;No&apos;, expired articles will be removed from the public site and return a &quot;410 Gone&quot; <span class="caps">HTTP</span> status instead. The default setting is &apos;No&apos;.</p>
 
 'record_mentions'
 'Record mentions'
-'Mentions are simply a list of incoming referrers to specific articles - a quick way to get a feel for who's linking to your work.
-
-Mechanisms for displaying mentions on a Textpattern site are still in development.'
 <p>Mentions are simply a list of incoming referrers to specific articles &#8211; a quick way to get a feel for who&apos;s linking to your work.</p>
 <p>Mechanisms for displaying mentions on a Textpattern site are still in development.</p>
 
 'remember_login'
 'Remember login'
-'When checked, you will remain logged in to your Textpattern account with the current web browser, until you choose to log out. If left unchecked, you will be automatically logged out after a period of inactivity.
-
-Requires cookies to be enabled in your browser.'
 <p>When checked, you will remain logged in to your Textpattern account with the current web browser, until you choose to log out. If left unchecked, you will be automatically logged out after a period of inactivity.</p>
 <p>Requires cookies to be enabled in your browser.</p>
 
 'replace_image_form'
 'Images: Replace image'
-'An image uploaded here will simply replace the existing one associated with this entry in the database.'
 <p>An image uploaded here will simply replace the existing one associated with this entry in the database.</p>
 
 'rss_how_many'
 'Preferences: How many articles should be included in feeds?'
-'This is the maximum number of current articles to be syndicated at a time, in RSS and Atom formats.
-
-A low value, such as @5@ through @15@ is recommended.'
 <p>This is the maximum number of current articles to be syndicated at a time, in <span class="caps">RSS</span> and Atom formats.</p>
 <p>A low value, such as <code>5</code> through <code>15</code> is recommended.</p>
 
 'section_category'
 'Sections: Introduction'
-'Sections in Textpattern are best thought of as analogous to sections in a newspaper; each belong to the same publication, but each might feature a different layout, or a different style of article, and so on.
-
-For most websites, only a bare minimum of sections need be created.
-
-*A likely scenario for a website with three sections:*
-
-# *Archive:* The 'Section' to which all articles that appear on the front page belong. Whenever a reader clicks on an article's permanent link, it will be displayed in the page layout assigned to this 'Section'. To go to a paged list of the most recent articles assigned to the section "Archive", the URL would be @https://example.com/archive/@.
-# *About:* An 'about this site' page, which differs from the front page and the "Archive" section, in that it is more static, may have a different layout, and will likely contain only one article. The "About" section would be reached at @https://example.com/about/@.
-# *Photos:* A 'Section' whose differing layout (and possibly different CSS) would display photos instead of articles.
-
-Note that a special hidden section, named default, always exists. This default section uses the page named default and the style called default, and it constructs the front page of your site.'
 <p>Sections in Textpattern are best thought of as analogous to sections in a newspaper; each belong to the same publication, but each might feature a different layout, or a different style of article, and so on.</p>
 <p>For most websites, only a bare minimum of sections need be created.</p>
 <p><strong>A likely scenario for a website with three sections:</strong></p>
@@ -1090,112 +1028,69 @@ Note that a special hidden section, named default, always exists. This default s
 
 'section_is_default'
 'Sections: Default publishing section'
-'This option governs which 'Section' will be the default when wrting new articles. You can be override this per article in the 'Write' tab by selecting a different 'Section' in the 'Sort and display' pane.'
 <p>This option governs which &apos;Section&apos; will be the default when wrting new articles. You can be override this per article in the &apos;Write&apos; tab by selecting a different &apos;Section&apos; in the &apos;Sort and display&apos; pane.</p>
 
 'section_on_frontpage'
 'Sections: Section articles appear on front page?'
-'The articles in some sections, such as those resembling more 'static' web pages, may seem out of place in the time-sensitive flow of your site's front page.
-
-Setting this to 'No' will prevent articles assigned to this section from appearing on the front page.'
 <p>The articles in some sections, such as those resembling more &apos;static&apos; web pages, may seem out of place in the time-sensitive flow of your site&apos;s front page.</p>
 <p>Setting this to &apos;No&apos; will prevent articles assigned to this section from appearing on the front page.</p>
 
 'section_searchable'
 'Sections: Include this section in site search?'
-'This governs whether articles belonging to this section should appear as part of site-wide search results.'
 <p>This governs whether articles belonging to this section should appear as part of site-wide search results.</p>
 
 'section_syndicate'
 'Sections: Syndicate articles in this section?'
-'Governs whether or not articles in this section will appear in the site's RSS and Atom feeds.'
 <p>Governs whether or not articles in this section will appear in the site&apos;s <span class="caps">RSS</span> and Atom feeds.</p>
 
 'section_uses_css'
 'Sections: Uses style'
-'If you wish to override the default stylesheet for a particular section, this can be set here.
-
-This is only relevant to stylesheets held within Textpattern 'Styles' administration panel - if you host your CSS externally of Textpattern (which is highly recommended), this option has no effect.'
 <p>If you wish to override the default stylesheet for a particular section, this can be set here.</p>
 <p>This is only relevant to stylesheets held within Textpattern &apos;Styles&apos; administration panel &#8211; if you host your <span class="caps">CSS</span> externally of Textpattern (which is highly recommended), this option has no effect.</p>
 
 'section_uses_page'
 'Sections: Uses page'
-'In Textpattern, sections are married to page templates. It's kind of sweet, really...'
 <p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really&#8230;</p>
 
 'send_lastmod'
 'Preferences: Send "Last-Modified" Header?'
-'When set, Textpattern will read a visitor's HTTP @If-Modified-Since@ header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e. if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor's browser to use its cached version of the page.
-
-This can reduce bandwidth consumption, page load times, and web server load.'
 <p>When set, Textpattern will read a visitor&apos;s <span class="caps">HTTP</span> <code>If-Modified-Since</code> header (if one exists) and compare it to the last site update. If nothing has changed since the visitor last loaded the page (i.e. if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor&apos;s browser to use its cached version of the page.</p>
 <p>This can reduce bandwidth consumption, page load times, and web server load.</p>
 
 'setup_still_exists'
 'Diagnostics: /path/to/textpattern/setup still exists'
-'When Textpattern has been installed, this directory is no longer needed and should be deleted. You will continue to receive this warning until you have removed it, as this can potentially be a security concern.'
 <p>When Textpattern has been installed, this directory is no longer needed and should be deleted. You will continue to receive this warning until you have removed it, as this can potentially be a security concern.</p>
 
 'show_comment_count_in_feed'
 'Preferences: Show comment count in feeds?'
-'When set to 'Yes', this setting will append the number of comments to your article titles in RSS/Atom feeds.'
 <p>When set to &apos;Yes&apos;, this setting will append the number of comments to your article titles in <span class="caps">RSS</span>/Atom feeds.</p>
 
 'sitename'
 'Preferences: Site name'
-'The <a href="https://www.textpattern.net/wiki/index.php?title=site_name" target="_blank">name or title of your site</a>. This will appear in the title bar of a visitor's browser or syndication feed reader, and any number of other places throughout your site, at your discretion.'
 <p>The <a href="https://www.textpattern.net/wiki/index.php?title=site_name" target="_blank">name or title of your site</a>. This will appear in the title bar of a visitor&apos;s browser or syndication feed reader, and any number of other places throughout your site, at your discretion.</p>
 
 'siteurl'
 'Preferences: Site URL'
-'This is the address of your Textpattern site, for example @www.example.com@.
-
-p(alert-block information). *Note:* No @https://@, @https://@ or trailing slash @/@ is required.'
 <p>This is the address of your Textpattern site, for example <code>www.example.com</code>.</p>
 <p class="alert-block information"><strong>Note:</strong> No <code>https://</code>, <code>https://</code> or trailing slash <code>/</code> is required.</p>
 
 'site_slogan'
 'Preferences: Site slogan'
-'The "site slogan":https://www.textpattern.net/wiki/index.php?title=site_slogan is a summary or description of your site. It will be used as the description of your site wherever required, such as in your RSS/Atom feeds, and may be used at any number of places throughout your site, at your discretion.'
 <p>The <a href="https://www.textpattern.net/wiki/index.php?title=site_slogan">site slogan</a> is a summary or description of your site. It will be used as the description of your site wherever required, such as in your <span class="caps">RSS</span>/Atom feeds, and may be used at any number of places throughout your site, at your discretion.</p>
 
 'some_php_functions_disabled'
 'Diagnostics: The following PHP functions: [...] are disabled on your server'
-'This means your hosting company or server administrator has disabled one or more PHP functions, some of which may affect the running of Textpattern.
-
-Please consult <a href="https://docs.textpattern.com/administration/diagnostics-panel#diagnostic-reporting-on-php-functions" target="_blank">this FAQ entry</a> for further information.'
 <p>This means your hosting company or server administrator has disabled one or more <span class="caps">PHP</span> functions, some of which may affect the running of Textpattern.</p>
 <p>Please consult <a href="https://docs.textpattern.com/administration/diagnostics-panel#diagnostic-reporting-on-php-functions" target="_blank">this <span class="caps">FAQ</span> entry</a> for further information.</p>
 
 'spam_blacklists'
 'Preferences: Spam blocklists (comma-separated)'
-'The "blocklist":https://en.wikipedia.org/wiki/Blacklist providers entered here will be queried when a comment is posted to your blog, and the IP address of the comment poster will be checked. If the IP address is listed it means there has been one or more spamming reports made about this IP in the past, and the comment will be rejected.
-
-Additionally, checks on approved comments will take place when an article is viewed on the front-side. If you encounter slowness when displaying articles with comments, consider disabling spam blocklists by removing the blocklist address(es).
-
-You can enter a list of domain names here, separated by commas. Potential blocklists can be found via "dmoz":https://www.dmoz.org/Computers/Internet/E-mail/Spam/Blacklists/List_of_Major_Blacklists/, but please note that it is your responsibility to ensure blocklists are fit for purpose.'
 <p>The <a href="https://en.wikipedia.org/wiki/Blacklist">blocklist</a> providers entered here will be queried when a comment is posted to your blog, and the IP address of the comment poster will be checked. If the IP address is listed it means there has been one or more spamming reports made about this IP in the past, and the comment will be rejected.</p>
 <p>Additionally, checks on approved comments will take place when an article is viewed on the front-side. If you encounter slowness when displaying articles with comments, consider disabling spam blocklists by removing the blocklist address(es).</p>
 <p>You can enter a list of domain names here, separated by commas. Potential blocklists can be found via <a href="https://www.dmoz.org/Computers/Internet/E-mail/Spam/Blacklists/List_of_Major_Blacklists/">dmoz</a>, but please note that it is your responsibility to ensure blocklists are fit for purpose.</p>
 
 'subscript'
 'Textile: Subscript'
-'Use ==~tildes~== for text to be rendered ~subscript~.
-
-The @<sub>@ HTML tag is applied:
-
-bc. ~a phrase~ → <sub>a phrase</sub>
-
-p(alert-block information). *Note:* Quick tags must open and close within a single paragraph to produce valid markup.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-sub-and-sup" target="_blank">More information on superscript and subscript text in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sub" target="_blank">The @<sub>@ HTML element</a>.'
 <p>Use ~tildes~ for text to be rendered <sub>subscript</sub>.</p>
 <p>The <code>&lt;sub&gt;</code> <span class="caps">HTML</span> tag is applied:</p>
 <pre><code>~a phrase~ → &lt;sub&gt;a phrase&lt;/sub&gt;
