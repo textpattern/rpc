@@ -425,7 +425,7 @@ Any old text.
 
 	<h3>Posted</h3>
 
-<p>The time associated with the article, in the format specified in the &apos;date format&apos; items on the Texpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
+<p>The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
 
 	<h3>Title</h3>
 
@@ -461,7 +461,7 @@ Any old text.
 
 	<h3>Posted</h3>
 
-<p>The time associated with the article, in the format specified in the &apos;date format&apos; items on the Texpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
+<p>The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
 
 	<h3>Title</h3>
 
@@ -2575,7 +2575,7 @@ _Permanent link_
 Text, article date or graphic that represents a permanent link to the article.
 
 _Posted_
-The time associated with the article, in the format specified in the 'date format' items on the Texpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
+The time associated with the article, in the format specified in the 'date format' items on the Textpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
 
 _Title_
 Guess.'
@@ -2594,7 +2594,7 @@ Will be replaced by the invitation for comments, if any, assigned to the article
 <p><em>Permanent link</em><br />
 Text, article date or graphic that represents a permanent link to the article.</p>
 <p><em>Posted</em><br />
-The time associated with the article, in the format specified in the &apos;date format&apos; items on the Texpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
+The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
 <p><em>Title</em><br />
 Guess.</p>
 
@@ -2625,7 +2625,7 @@ _Permanent link_
 Text, article date or graphic that represents a permanent link to the article.
 
 _Posted_
-The time associated with the article, in the format specified in the 'date format' items on the Texpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
+The time associated with the article, in the format specified in the 'date format' items on the Textpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
 
 _Title_
 Guess.'
@@ -2644,7 +2644,7 @@ Will be replaced by the invitation for comments, if any, assigned to the article
 <p><em>Permanent link</em><br />
 Text, article date or graphic that represents a permanent link to the article.</p>
 <p><em>Posted</em><br />
-The time associated with the article, in the format specified in the &apos;date format&apos; items on the Texpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
+The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
 <p><em>Title</em><br />
 Guess.</p>
 
@@ -5200,7 +5200,7 @@ _Permanent link_
 Text, article date or graphic that represents a permanent link to the article.
 
 _Posted_
-The time associated with the article, in the format specified in the 'date format' items on the Texpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
+The time associated with the article, in the format specified in the 'date format' items on the Textpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
 
 _Title_
 Guess.'
@@ -5219,7 +5219,7 @@ Will be replaced by the invitation for comments, if any, assigned to the article
 <p><em>Permanent link</em><br />
 Text, article date or graphic that represents a permanent link to the article.</p>
 <p><em>Posted</em><br />
-The time associated with the article, in the format specified in the &apos;date format&apos; items on the Texpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
+The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
 <p><em>Title</em><br />
 Guess.</p>
 
@@ -5247,7 +5247,7 @@ _Permanent link_
 Text, article date or graphic that represents a permanent link to the article.
 
 _Posted_
-The time associated with the article, in the format specified in the 'date format' items on the Texpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
+The time associated with the article, in the format specified in the 'date format' items on the Textpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
 
 _Title_
 Guess.'
@@ -5266,7 +5266,7 @@ Will be replaced by the invitation for comments, if any, assigned to the article
 <p><em>Permanent link</em><br />
 Text, article date or graphic that represents a permanent link to the article.</p>
 <p><em>Posted</em><br />
-The time associated with the article, in the format specified in the &apos;date format&apos; items on the Texpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
+The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
 <p><em>Title</em><br />
 Guess.</p>
 
