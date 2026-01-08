@@ -44,7 +44,7 @@
 
 'css_mode'
 'Preferences: CSS mode'
-'<p class="alert-clock information"><strong>Please note:</strong> As of Textpattern <span class="caps">CMS</span> v4.3.0 the &apos;Automatic <span class="caps">CSS</span> mode&apos; feature has been removed. The information is provided for historical legacy.</p>
+<p class="alert-clock information"><strong>Please note:</strong> As of Textpattern <span class="caps">CMS</span> v4.3.0 the &apos;Automatic <span class="caps">CSS</span> mode&apos; feature has been removed. The information is provided for historical legacy.</p>
 <p>The Cascading Style Sheets (<span class="caps">CSS</span>) standard is a slim, powerful language that allows you to centralise site-wide control of content presentation. Everything from fonts and colours to sizes and positions can be governed through <span class="caps">CSS</span>.</p>
 <p>Ordinarily <span class="caps">CSS</span> data appears in the <code>&lt;head&gt;</code> section of an <span class="caps">HTML</span> document, or is stored in a text file linked to the document. Modern browsers parse this data in advance of displaying a page, and then cache the data for use on subsequent pages or site visits. As such, <span class="caps">CSS</span> can greatly reduce the download size of web pages: just one of many improvements <span class="caps">CSS</span> formatting offers over older web design methods.</p>
 <p>Textpattern <span class="caps">CMS</span> offers two modes of maintaining style sheets for your pages:</p>
@@ -112,7 +112,7 @@
 
 'edit_raw_css_by_default'
 'Preferences: Edit raw CSS by default?'
-'<p class="alert-clock information"><strong>Please note:</strong> As of Textpattern <span class="caps">CMS</span> v4.3.0 the &apos;Automatic <span class="caps">CSS</span> mode&apos; feature has been removed. The information is provided for historical legacy.</p>
+<p class="alert-clock information"><strong>Please note:</strong> As of Textpattern <span class="caps">CMS</span> v4.3.0 the &apos;Automatic <span class="caps">CSS</span> mode&apos; feature has been removed. The information is provided for historical legacy.</p>
 <p>This selects the default method of editing <span class="caps">CSS</span> in the &apos;Styles&apos; page.</p>
 <p>If set to &apos;Yes&apos;, you will see one large text-area with all the content of the <span class="caps">CSS</span> by default (&apos;Manual <span class="caps">CSS</span>&apos; mode). If set to &apos;No&apos;, you will see the <span class="caps">CSS</span> editor by default (&apos;Automatic <span class="caps">CSS</span>&apos; mode).</p>
 
@@ -433,12 +433,6 @@
 <p>Keywords must be individual words separated by commas.</p>
 
 'Languages: Introduction'
-'Textpattern CMS is available in various languages, you can always check for updates either via your'Languages' tab or by visiting "link-external)https://rpc.textpattern.com/lang/":https://rpc.textpattern.com/lang/. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.
-
-Switching to a new language is always a two step process:
-
-# Install the language
-# Select the language as the currently active one'
 <p>Textpattern <span class="caps">CMS</span> is available in various languages, you can always check for updates either via your &apos;Languages&apos; tab or by visiting <a href="https://rpc.textpattern.com/lang/">link-external)https://rpc.textpattern.com/lang/</a>. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.</p>
 <p>Switching to a new language is always a two step process:</p>
 
@@ -514,11 +508,6 @@ Switching to a new language is always a two step process:
 
 'logging'
 'Preferences: Logging'
-'You can select the level of visitor logging carried out by Textpattern:
-
-* *All hits*: Textpattern will log all page views on your site
-* *Referrers only*: Textpattern will only log visits referred from other sites
-* *None*: Textpattern will not log any page views'
 <p>You can select the level of visitor logging carried out by Textpattern:</p>
 
 	<ul>
@@ -638,10 +627,6 @@ Switching to a new language is always a two step process:
 
 'permalink_title_format'
 'Preferences: Permalink titles with hyphens or in CamelCase'
-'This setting only has an effect when'Attach titles to permalinks?' is set to'Yes'. When generating'article-titles' for use in URLs, you have the option of:
-
-# Using all lowercase letters, and replacing spaces with hyphens
-# Completely removing spaces, and using CamelCase, which means that the beginning of new words will be marked by uppercase letters'
 <p>This setting only has an effect when &apos;Attach titles to permalinks?&apos; is set to &apos;Yes&apos;. When generating &apos;article-titles&apos; for use in <span class="caps">URL</span>s, you have the option of:</p>
 
 	<ol>
@@ -1224,35 +1209,6 @@ Examples:
 
 'blockquote'
 'Block Quotes'
-'To make an entire paragraph into a block quotation, place "bq. " before it.
-
-Example
-
-bq. Any old text.
-
-bq. bq. A block quotation.
-
-bq. Any old text.
-
-Will become:
-
-bq. <p>Any old text.</p>
-
-bq. <blockquote>A block quotation.</blockquote>
-
-bq. <p>Any old text.</p>
-
-Which, when rendered by a browser, will appear like this:
-
-Any old text.
-
-bq. A block quotation.
-
-Any old text.
-
-<small>NB: Unmodified paragraphs will be wrapped in &#60;p&#62; tags.</small>
-
-"More information(blockquote reference at htmlhelp.com)":https://www.htmlhelp.com/reference/html40/block/blockquote.html'
 <p>To make an entire paragraph into a block quotation, place &quot;bq. &quot; before it.</p>
 <p>Example</p>
 
@@ -1367,18 +1323,10 @@ Which, when rendered by a browser, will appear like this:
 
 'comments_allowable_tags'
 'Preferences: Allowable HTML Tags'
-'If you allow commenters to use simple HTML(HyperText Markup Language), these are the tags they may use.
-
-'
 <p>If you allow commenters to use simple <acronym title="HyperText Markup Language">HTML</acronym>, these are the tags they may use.</p>
 
 'comments_allow_html'
 'Preferences: Comments Allow HTML'
-'Toggles whether or not commenters may use any HTML tags. 
-
-Note that you can limit which specific tags are allowable in the next field.
-
-'
 <p>Toggles whether or not commenters may use any <span class="caps">HTML</span> tags. </p>
 <p>Note that you can limit which specific tags are allowable in the next field.</p>
 
@@ -1389,7 +1337,6 @@ Note that you can limit which specific tags are allowable in the next field.
 
 'comments_dateformat'
 'Preferences: Comments Date Format'
-'Er, the comments date format!'
 <p>Er, the comments date format!</p>
 
 'comments_date_case'
@@ -1420,7 +1367,6 @@ Shave my poodle</p>
 <p>If &apos;no popup&apos; is selected, the current window will be refreshed to display only the current article, with comments beneath.</p>
 
 'comments_moderate'
-'discuss'
 'Moderate Comments'
 <p>With this option turned on, every new comment will have its visibility turned off until it has been reviewed. You must manually make each comment visible.</p>
 
@@ -1500,7 +1446,6 @@ Shave my poodle</p>
 
 'dir_not_writable'
 'Diagnostics: Directory is not writable'
-'To use the file and image upload capabilities, these directories have to be writable by PHP. Usually this means you have change permissions to 777. This can be done with your FTP client or alternatively on the command line by issuing a: chmod 777 /path/to/dir'
 <p>To use the file and image upload capabilities, these directories have to be writable by <span class="caps">PHP</span>. Usually this means you have change permissions to 777. This can be done with your <span class="caps">FTP</span> client or alternatively on the command line by issuing a: chmod 777 /path/to/dir</p>
 
 'dns_lookup_fails'
@@ -1509,17 +1454,6 @@ Shave my poodle</p>
 
 'doc_root'
 'Preferences: Document Root'
-'This must be the full server path to the document root of your server, regardless of where you have Textpattern installed.
-
-Note there must be no trailing slash at the end.
-
-Examples:
-
-<code>/home/user/docs/html</code>
-
-or
-
-<code>/home/var/www</code>'
 <p>This must be the full server path to the document root of your server, regardless of where you have Textpattern installed.</p>
 <p>Note there must be no trailing slash at the end.</p>
 <p>Examples:</p>
@@ -1568,7 +1502,6 @@ Guess.</p>
 
 'form_place_article'
 'Article Tags'
-
 <p>These tags are replaced with their corresponding values every time an article is output. </p>
 <p><em>Author</em><br />
 The full name of the article&apos;s author.</p>
@@ -1590,18 +1523,6 @@ Guess.</p>
 
 'full_path'
 'Path to Textpattern'
-'This must indicate the full server path to your /textpattern/ directory, which should be inside the directory containing your Textpattern site.
-
-Note there must be no trailing slash at the end.
-
-Examples:
-
-@/home/user/docs/html/textpattern@
-
-or
-
-@/home/var/www/mytxpsite/textpattern@
-'
 <p>This must indicate the full server path to your /textpattern/ directory, which should be inside the directory containing your Textpattern site.</p>
 <p>Note there must be no trailing slash at the end.</p>
 <p>Examples:</p>
@@ -1614,9 +1535,6 @@ or
 
 'gmtoffset'
 'Preferences: Time Zone'
-'In order to display dates in your local time zone, please indicate where you are in relation to Greenwich Mean Time/Universal Coordinated Time (by "Standard" _not_ "Daylight" time - <a href="index.php?item=is_dst&lang=en" title="Preferences: DST(Daylight Saving Time) enabled?">another preference enables/disables Daylight Saving Time</a>).
-
-Wikipedia: "Time offset":https://en.wikipedia.org/wiki/Time_offset'
 <p>In order to display dates in your local time zone, please indicate where you are in relation to Greenwich Mean Time/Universal Coordinated Time (by &quot;Standard&quot; <em>not</em> &quot;Daylight&quot; time &#8211; <a href="index.php?item=is_dst&lang=en" title="Preferences: DST(Daylight Saving Time) enabled?">another preference enables/disables Daylight Saving Time</a>).</p>
 <p>Wikipedia: <a href="https://en.wikipedia.org/wiki/Time_offset">Time offset</a></p>
 
@@ -1651,14 +1569,6 @@ Wikipedia: "Time offset":https://en.wikipedia.org/wiki/Time_offset'
 
 'htaccess_missing'
 '.htaccess File Missing'
-'You are using a Permanent Link mode which requires an .htaccess file to be placed in your site directory. The recommended directives to place in this .htaccess file are:
-
-<pre>RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.+) - [PT,L]</pre>
-
-<pre>RewriteRule ^(.*) index.php</pre>'
 <p>You are using a Permanent Link mode which requires an .htaccess file to be placed in your site directory. The recommended directives to place in this .htaccess file are:</p>
 <pre>RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -1699,16 +1609,6 @@ RewriteRule ^(.+) - [PT,L]</pre>
 <p>Unlike other directory settings, this path is always a <em>relative</em> path (to the directory of your root textpattern installation). The default is <em>images</em>.</p>
 
 'Importing Into Textpattern'
-'You can import your data into Textpattern from the following publishing tools:
-
-* Movable Type, both using an "MT import file":https://textpattern.com/help/?item=import_mt or "directly from a MySQL DataBase":https://textpattern.com/help/?item=import_mtdb
-* Blogger, creating an import file following the MT format spec. You can find an explanation about this on "importing from Blogger":https://textpattern.com/help/?item=import_blogger
-* "WordPress":https://textpattern.com/help/?item=import_wp - including custom prefixes for your databases, if you're using them
-* "b2":https://textpattern.com/help/?item=import_b2. Not recently updated, but we can offer this import option for the same price
-
-If you choose to import from a file - that is, MovableType or Blogger - you must place it under the /include/import directory of your textpattern install dir, and call it @import.txt@.
-
-'
 <p>You can import your data into Textpattern from the following publishing tools:</p>
 
 	<ul>
@@ -1854,11 +1754,6 @@ This is a &#60;a href=&#34;https://itsbob.com/index.html&#34;&#62;link&#60;/a&#6
 
 'link_category'
 'Link Categories'
-'Link categories are optional, and are useful if you want to display different groupings of links, e.g.,'Friends','Romans','Countrymen'.
-
-Selective link lists such as these are output with the Textpattern'linklist' tag like so:
-
-<code><txp:linklist category="Friends" /></code>'
 <p>Link categories are optional, and are useful if you want to display different groupings of links, e.g., &apos;Friends&apos;, &apos;Romans&apos;, &apos;Countrymen&apos;.</p>
 <p>Selective link lists such as these are output with the Textpattern &apos;linklist&apos; tag like so:</p>
 
@@ -1948,21 +1843,6 @@ Selective link lists such as these are output with the Textpattern'linklist' tag
 
 'path_from_root'
 'Root to Textpattern'
-'If your Textpattern site is located in a subdirectory away from your web server's root directory, enter that path here.
-
-Example:
-
-If the site is located at:
-
-@https://www.example.com/testing/@
-
-Then you would set this value to
-
-<code>/testing/</code>
-
-If the site *is* located in the root directory, then set the value to a single forward slash:
-
-<code>/</code>'
 <p>If your Textpattern site is located in a subdirectory away from your web server&apos;s root directory, enter that path here.</p>
 <p>Example:</p>
 <p>If the site is located at:</p>
@@ -2004,35 +1884,16 @@ If the site *is* located in the root directory, then set the value to a single f
 
 'ping_textpattern_com'
 'Preferences: Ping textpattern.com'
-'This will send a ping to textpattern.com whenever you publish a new article.
-
-Recommended: "Yes" for live sites, "No" for sites in development'
 <p>This will send a ping to textpattern.com whenever you publish a new article.</p>
 <p>Recommended: &quot;Yes&quot; for live sites, &quot;No&quot; for sites in development</p>
 
 'ping_weblogsdotcom'
 'Preferences: Ping ping-o-matic.com?'
-'Whenever you publish a new article, Textpattern will send a ping to "ping-o-matic":https://pingomatic.com/.
-
-Recommended: "Yes" for live sites, "No" for sites in development'
 <p>Whenever you publish a new article, Textpattern will send a ping to <a href="https://pingomatic.com/">ping-o-matic</a>.</p>
 <p>Recommended: &quot;Yes&quot; for live sites, &quot;No&quot; for sites in development</p>
 
 'production_status'
 'Production Status'
-'In *Debugging* mode, all PHP error reporting on your live site will be visible, as will warnings about malfunctioning code and plugins.  In addition, the following information will be visible when you view the XHTML source of live pages:
-
-* the time it took the server to build the page ('Runtime')
-* the number of MySQL queries executed
-* approximate peak memory usage
-* all Textpattern tags encountered while building the page
-
-In *Testing* mode, PHP error reporting on your live site will be visible, as will warnings about malfunctioning code and plugins. The following information will be visible when you view the XHTML source of live pages:
-
-* the time it took the server to build the page ('Runtime')
-* the number of MySQL queries executed
-* approximate peak memory usage
-
 <p>In <strong>Debugging</strong> mode, all PHP error reporting on your live site will be visible, as will warnings about malfunctioning code and plugins.  In addition, the following information will be visible when you view the XHTML source of live pages:</p>
 
 	<ul>
@@ -2073,12 +1934,6 @@ In *Testing* mode, PHP error reporting on your live site will be visible, as wil
 
 'rss_how_many'
 'Preferences: How many articles should be included in feeds?'
-'This is the maximum number of current articles to be syndicated at a time, in RSS(Really Simple Syndication)/Atom format.
-
-Recommended: a low value, such as @5@ through @15@
-
-* Wikipedia: <a href="https://en.wikipedia.org/wiki/RSS_(file_format)">RSS</a>
-* Wikipedia: <a href="https://en.wikipedia.org/wiki/Atom_(standard)">Atom</a>'
 <p>This is the maximum number of current articles to be syndicated at a time, in <acronym title="Really Simple Syndication">RSS</acronym>/Atom format.</p>
 <p>Recommended: a low value, such as <code>5</code> through <code>15</code></p>
 
@@ -2134,7 +1989,7 @@ Recommended: a low value, such as @5@ through @15@
 <p>Once Textpattern has been installed, this directory is no longer needed and is recommended for deletion. You will continue to receive this warning until you have removed it.</p>
 
 'show_comment_count_in_feed'
-'Preferences: Show comment count in feeds? 	'
+'Preferences: Show comment count in feeds?'
 <p>When set to &quot;Yes&quot;, this setting will append the number of comments to your article titles in your <span class="caps">XML</span> feeds.</p>
 
 'sitename'
@@ -2144,7 +1999,7 @@ Recommended: a low value, such as @5@ through @15@
 
 'siteurl'
 'Site URL'
-<p>This is the top-level domain of the server your site is running on. Examples: <code>www.textpattern.com</code> <code>textdrive.com/plans</code></p>
+<p>This is the top-level domain of the server your site is running on. Examples: <code>www.textpattern.com</code> <code>subdomain.example.com/subdirectory</code></p>
 <p>(Note that no <code>https://</code> or closing slash is required.)</p>
 
 'site_slogan'
@@ -2154,12 +2009,12 @@ Recommended: a low value, such as @5@ through @15@
 
 'some_php_functions_disabled'
 'Diagnostics: The following PHP functions... are disabled on your server'
-<p>This means your hosting company or server administrator has disabled one or <span class="caps">PHP</span> functions. Please <a href="https://textpattern.com/faq/266/the-following-php-functions-are-disabled" title="Textpattern FAQ: The following PHP functions... are disabled">see the folllowing <span class="caps">FAQ</span> entry for more information</a>.</p>
+<p>This means your hosting company or server administrator has disabled one or <span class="caps">PHP</span> functions. Please <a href="https://textpattern.com/faq/266/the-following-php-functions-are-disabled" title="Textpattern FAQ: The following PHP functions... are disabled">see the following <span class="caps">FAQ</span> entry for more information</a>.</p>
 
 'spam_blacklists'
 'Spam blocklists'
 <p>The blocklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.</p>
-<p>You can enter a list of domain names that should be seperated by commas. Potential blocklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blocklist-providers before you add any.</p>
+<p>You can enter a list of domain names that should be separated by commas. Potential blocklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blocklist-providers before you add any.</p>
 
 'subscript'
 'sub'
@@ -2290,7 +2145,6 @@ ForceType application/x-httpd-php <br />
 
 'uses_page'
 'Assigning Pages to Sections'
-'In Textpattern, sections are married to page templates. It’s kind of sweet, really'
 <p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really</p>
 
 'use_categories'
@@ -2323,7 +2177,6 @@ ForceType application/x-httpd-php <br />
 <p>Textile also offers a powerful but easy-to-learn set of commands with which to format text,  define structures such as lists, headers and blockquotes, and insert links and images.</p>
 
 'using_sections'
-'manual'
 'Using Sections'
 <p>Sections in Textpattern are significant in that they don&apos;t merely imply a type to which articles belong. Each section has attached to it a layout (either created by you or generated by Textpattern), a style in the form of a <acronym title="Cascading Style Sheet">CSS</acronym> file, and a physical location on the webserver.</p>
 <p>When posting new articles, all this information, which is pertinent to the future display of the article, is attached through the choice of Section.</p>
@@ -2381,7 +2234,6 @@ ForceType application/x-httpd-php <br />
 <p>On your host <span class="caps">PHP</span> is not compiled with a mail() function. Therefore Textpattern cannot send emails, and you will not be able to use some functions. For example you won&apos;t be able to receive email-notifications on comments, and you won&apos;t be able to add other users (well, you can add them, but they won&apos;t receive the email with their password).</p>
 
 'using_sections'
-'manual'
 'Using Sections'
 <p>Sections in Textpattern are significant in that they don&apos;t merely imply a type to which articles belong. Each section has attached to it a layout (either created by you or generated by Textpattern), a style in the form of a <acronym title="Cascading Style Sheet"><span class="caps">CSS</span></acronym> file, and a physical location on the webserver.</p>
 <p>When posting new articles, all this information, which is pertinent to the future display of the article, is attached through the choice of Section.</p>
@@ -2418,7 +2270,6 @@ ForceType application/x-httpd-php <br />
 
 'uses_page'
 'Assigning Pages to Sections'
-'In Textpattern, sections are married to page templates. It’s kind of sweet, really'
 <p>In Textpattern, sections are married to page templates. It’s kind of sweet, really</p>
 
 'url_title'
@@ -2428,42 +2279,6 @@ ForceType application/x-httpd-php <br />
 
 'url_mode'
 'URL Mode'
-'Governs how permanent links to archived articles will appear. 
-
-?=messy mode is the most straightforward; it will work without you having to do much mucking about. In this mode URLs for archived articles on your site will look like this:
-
-@https://www.yoursite.com/index.php?id=123@
-
-/clean/ mode is a little trickier, but it makes URLs that are elegant and easier to remember. Here are the steps to make /clean/ mode work:
-
-You must have'Use sections' set in Site Preferences
-
-Your site must be on a Unix-based server running Apache, or on a Windows server running  PHP as an Apache module
-
-For every section you have on your site (including the default section called'article'), place a text file with the exact same name in your root web directory, containing the following bit of code, replacing SECTION_NAME with the section's actual name:
-
-<code>
-<?php
-	include "./textpattern/config.php"; 
-	$s = "SECTION_NAME";
-	include $txpcfg["txpath"]."/publish.php";
-	textpattern();
-?>
-</code>
-
-Next, with a text editor create or open an existing file in your web root called <code>.htaccess</code> and paste the following inside:
-
-<code>
-<Files SECTION_NAME> 
-ForceType application/x-httpd-php 
-</Files> 
-</code>
-
-again, replace SECTION_NAME with the section's actual name.
-
-Once you select /clean/ url mode in Site Preferences, your permanent link urls will look more familiar:
-
-@https://www.example.com/article/123/@'
 <p>Governs how permanent links to archived articles will appear. </p>
 <p>?=messy mode is the most straightforward; it will work without you having to do much mucking about. In this mode <span class="caps">URL</span>s for archived articles on your site will look like this:</p>
 <p><code>https://www.yoursite.com/index.php?id=123</code></p>
@@ -2491,18 +2306,6 @@ ForceType application/x-httpd-php
 
 'upload_thumbnail'
 'Upload Thumbnail'
-'Full-size images can be assigned their own thumbnails. These are useful for linking to and indexing full-size images.
-
-A reference to the thumbnail is exactly the same as the reference to the full-size image, with the addition of't' to the filename.
-
-For example, to reference a thumbnail associated with a fullsize image stored at 
-
-@/images/12.jpg@
-
-...you would use
-
-@/images/12t.jpg@
-'
 <p>Full-size images can be assigned their own thumbnails. These are useful for linking to and indexing full-size images.</p>
 <p>A reference to the thumbnail is exactly the same as the reference to the full-size image, with the addition of &apos;t&apos; to the filename.</p>
 <p>For example, to reference a thumbnail associated with a fullsize image stored at </p>
@@ -2513,10 +2316,6 @@ For example, to reference a thumbnail associated with a fullsize image stored at
 'upload'
 'upload'
 'File Upload'
-'Use this form to upload files or images to your server. 
-
-Use the Textile code to render graphics within articles, the Textpattern code to place graphics on your page templates, or XHTML code to place the graphics elsewhere.  
-'
 <p>Use this form to upload files or images to your server. </p>
 <p>Use the Textile code to render graphics within articles, the Textpattern code to place graphics on your page templates, or <span class="caps">XHTML</span> code to place the graphics elsewhere.  </p>
 
@@ -2589,26 +2388,20 @@ ABC(Always Be Closing)</p>
 'spam_blacklists'
 'Spam blocklists'
 <p>The blocklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.</p>
-<p>You can enter a list of domain names that should be seperated by commas. Potential blocklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blocklist-providers before you add any.</p>
+<p>You can enter a list of domain names that should be separated by commas. Potential blocklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blocklist-providers before you add any.</p>
 
 'some_php_functions_disabled'
 'Diagnostics: The following PHP functions... are disabled on your server'
-<p>This means your hosting company or server administrator has disabled one or <span class="caps">PHP</span> functions. Please <a href="https://textpattern.com/faq/266/the-following-php-functions-are-disabled" title="Textpattern FAQ: The following PHP functions... are disabled">see the folllowing <span class="caps">FAQ</span> entry for more information</a>.</p>
+<p>This means your hosting company or server administrator has disabled one or <span class="caps">PHP</span> functions. Please <a href="https://textpattern.com/faq/266/the-following-php-functions-are-disabled" title="Textpattern FAQ: The following PHP functions... are disabled">see the following <span class="caps">FAQ</span> entry for more information</a>.</p>
 
 'site_slogan'
 'Preferences: Site slogan'
-'This is a brief (a maximum of 255 characters) summary or description of your site. It will be used as the description of your site wherever required, such as in your XML feeds, and may be use at any number of places throughout your site, at your discretion.
-
-Textbook: "site_slogan":https://textbook.textpattern.net/wiki/index.php?title=Txp:site_slogan_/'
 <p>This is a brief (a maximum of 255 characters) summary or description of your site. It will be used as the description of your site wherever required, such as in your <span class="caps">XML</span> feeds, and may be use at any number of places throughout your site, at your discretion.</p>
 <p>Textbook: <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:site_slogan_/">site_slogan</a></p>
 
 'siteurl'
 'Site URL'
-'This is the top-level domain of the server your site is running on. Examples: @www.textpattern.com@ @textdrive.com/plans@
-
-(Note that no @https://@ or closing slash is required.)'
-<p>This is the top-level domain of the server your site is running on. Examples: <code>www.textpattern.com</code> @textdrive.com/plans@</p>
+<p>This is the top-level domain of the server your site is running on. Examples: <code>www.textpattern.com</code> @subdomain.example.com/subdirectory@</p>
 <p>(Note that no <code>https://</code> or closing slash is required.)</p>
 
 'sitename'
@@ -2620,7 +2413,7 @@ Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:s
 <p>Textbook: <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:sitename_/">sitename</a></p>
 
 'show_comment_count_in_feed'
-'Preferences: Show comment count in feeds? 	'
+'Preferences: Show comment count in feeds?'
 <p>When set to &quot;Yes&quot;, this setting will append the number of comments to your article titles in your <span class="caps">XML</span> feeds.</p>
 
 'setup_still_exists'
@@ -2671,12 +2464,6 @@ Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:s
 
 'rss_how_many'
 'Preferences: How many articles should be included in feeds?'
-'This is the maximum number of current articles to be syndicated at a time, in RSS(Really Simple Syndication)/Atom format.
-
-Recommended: a low value, such as @5@ through @15@
-
-* Wikipedia: <a href="https://en.wikipedia.org/wiki/RSS_(file_format)">RSS</a>
-* Wikipedia: <a href="https://en.wikipedia.org/wiki/Atom_(standard)">Atom</a>'
 <p>This is the maximum number of current articles to be syndicated at a time, in <acronym title="Really Simple Syndication"><span class="caps">RSS</span></acronym>/Atom format.</p>
 <p>Recommended: a low value, such as <code>5</code> through <code>15</code></p>
 
@@ -2727,17 +2514,11 @@ Recommended: a low value, such as @5@ through @15@
 
 'ping_weblogsdotcom'
 'Preferences: Ping ping-o-matic.com?'
-'Whenever you publish a new article, Textpattern will send a ping to "ping-o-matic":https://pingomatic.com/.
-
-Recommended: "Yes" for live sites, "No" for sites in development'
 <p>Whenever you publish a new article, Textpattern will send a ping to <a href="https://pingomatic.com/">ping-o-matic</a>.</p>
 <p>Recommended: &quot;Yes&quot; for live sites, &quot;No&quot; for sites in development</p>
 
 'ping_textpattern_com'
 'Preferences: Ping textpattern.com'
-'This will send a ping to textpattern.com whenever you publish a new article.
-
-Recommended: "Yes" for live sites, "No" for sites in development'
 <p>This will send a ping to textpattern.com whenever you publish a new article.</p>
 <p>Recommended: &quot;Yes&quot; for live sites, &quot;No&quot; for sites in development</p>
 
@@ -3202,7 +2983,6 @@ Guess.</p>
 <p>Note that allowing comments can be turned on or off at any time, on a per-article basis.</p>
 
 'comments_moderate'
-'discuss'
 'Moderate Comments'
 <p>With this option turned on, every new comment will have its visibility turned off until it has been reviewed. You must manually make each comment visible.</p>
 
@@ -3251,19 +3031,11 @@ Shave my poodle</p>
 
 'comments_allow_html'
 'Preferences: Comments Allow HTML'
-'Toggles whether or not commenters may use any HTML tags. 
-
-Note that you can limit which specific tags are allowable in the next field.
-
-'
 <p>Toggles whether or not commenters may use any <span class="caps">HTML</span> tags. </p>
 <p>Note that you can limit which specific tags are allowable in the next field.</p>
 
 'comments_allowable_tags'
 'Preferences: Allowable HTML Tags'
-'If you allow commenters to use simple HTML(HyperText Markup Language), these are the tags they may use.
-
-'
 <p>If you allow commenters to use simple <acronym title="HyperText Markup Language"><span class="caps">HTML</span></acronym>, these are the tags they may use.</p>
 
 'cite'
@@ -3276,38 +3048,6 @@ Note that you can limit which specific tags are allowable in the next field.
 
 'bulleted'
 'Bulleted Lists'
-'To make a bulleted (point form) list, place each item in its own paragraph, preceded by "* ".
-
-Example
-
-<pre>
-  * A first item
-  * A second item
-  * A third item
-  * A fourth item
-</pre>
-
-Will become:
-
-<ul>
-<li>A first item</li>
-<li>A second item</li>
-<li>A third item</li>
-<li>A fourth item</li>
-</ul>
-
-Which, when rendered by a browser, will appear like this:
-
-<ul>
-	<li>A first item</li>
-	<li>A second item</li>
-	<li>A third item</li>
-	<li>A fourth item</li>
-</ul>
-
-<small>NB: Unmodified paragraphs will be wrapped in <p> tags.</small>
-
-"More information":https://www.htmlhelp.com/reference/html40/lists/ul.html'
 <p>To make a bulleted (point form) list, place each item in its own paragraph, preceded by &quot;* &quot;.</p>
 <p>Example</p>
 <pre>
@@ -3400,45 +3140,6 @@ Which, when rendered by a browser, will appear like this:
 
 'attributes'
 'Attributes'
-'Syntax:
-
-(class) 
-(#id) 
-(class#id) can be combined
-{style}
-[language]
-
-*Attributes in phrase elements*
-
-%{color:red}red% → <span style="color:red">red</span>
-
-%[fr]rouge% → <span lang="fr">rouge</span>
-
-_(big)red_ → <em class="big">red</em>
-
-*Attributes in block elements*
-
-p(bob). A paragraph → <p class="bob">A paragraph</p>
-
-p{color:#ddd}. A paragraph → <p style="color:#ddd">A paragraph</p>
-
-p[fr]. A paragraph → <p lang="fr">A paragraph</p>
-
-*Block attribute shorthand*
-
-p<. _align left_ 
-p>. _align right_
-p=. _centered_
-p<>. _justified_
-p(., p((.  _left indent 1em, 2em, etc._
-p). _right indent 1em_
-
-Examples:
-
-h2()>. _right-aligned header 2, indented 1em both sides_
-h3=. _centered header 3_
-!>/image.gif! _right-aligned image_
-p[no]{color:red}. _A Norse of a different colour_'
 <p>Syntax:</p>
 <p>(class) <br />
 (#id) <br />
@@ -3485,16 +3186,6 @@ p[no]{color:red}. <em>A Norse of a different colour</em></h2>
 
 'article_category'
 'Article Categories'
-'Unlike "sections":https://www.textpattern.com/help/?item=section_category, which define the navigational structure of a site, article categories allow organisation of articles by their subject matter. Once categories are assigned, lists of articles belonging to particular categories can be browsed.
-
-Likely article categories on a site about food might be
-
-* raw ingredients
-* shopping
-* recipes
-* presentation
-* restaurants
-* chefs'
 <p>Unlike <a href="https://www.textpattern.com/help/?item=section_category">sections</a>, which define the navigational structure of a site, article categories allow organisation of articles by their subject matter. Once categories are assigned, lists of articles belonging to particular categories can be browsed.</p>
 <p>Likely article categories on a site about food might be</p>
 
@@ -3522,11 +3213,6 @@ Likely article categories on a site about food might be
 
 'allow_page_php_scripting'
 'Preferences: Allow PHP on pages?'
-'When enabled, this setting allows PHP code within page and form templates. PHP code must be both _without_ opening and start PHP tags, and enclosed within @txp:php@ tags.
-
-Textbook: "php":https://textbook.textpattern.net/wiki/index.php?title=Txp:php
-
-'
 <p>When enabled, this setting allows <span class="caps">PHP</span> code within page and form templates. <span class="caps">PHP</span> code must be both <em>without</em> opening and start <span class="caps">PHP</span> tags, and enclosed within <code>txp:php</code> tags.</p>
 <p>Textbook: <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:php">php</a></p>
 
@@ -3549,64 +3235,6 @@ Textbook: "php":https://textbook.textpattern.net/wiki/index.php?title=Txp:php
 
 'about_privileges'
 'About Privileges'
-'h3. Publisher
-
-* can manage articles, comments and links
-* can manage images and files
-* can manage sections and categories
-* can manage pages, forms and style
-* can view diagnostic information
-* can manage site preferences
-* can manage users
-* can manage visitor logs
-* can manage plugins
-* can import data
-
-h3. Managing Editor
-
-* can manage articles, comments and links
-* can manage images and files
-* can manage sections and categories
-* can manage pages, forms and style
-* can view diagnostic information
-* can manage site preferences
-* can view users
-* can manage visitor logs
-* can manage plugins
-* can import data
-
-h3. Copy Editor
-
-* can manage articles with some limitation:
-** cannot delete those belonging to other users
-* can manage comments and links
-* can manage images and files
-* can manage sections and categories
-* can manage pages and forms
-* can view users
-* can manage visitor logs
-
-h3. Staff Writer
-
-* can manage own articles, view other users' articles
-* can manage images and files
-
-h3. Freelancer
-
-* can manage own articles in a limited sense: 
-** can only modify article until is published
-** can apply status of _only_ Draft, Hidden or Pending
-* can view other users' articles
-
-h3. Designer
-
-* can manage own articles in a limited sense: 
-** can only modify article until is published
-** can apply status of _only_ Draft, Hidden or Pending
-* can view other users' articles
-* can manage images and files
-* can manage sections
-* can manage pages, forms and style'
 '<h3>Publisher</h3>
 
 	<ul>
@@ -3690,25 +3318,18 @@ h3. Designer
 
 'allow_raw_php_scripting'
 'Preferences: Allow raw PHP?'
-'<p class="alert-block warning">This preference has been removed as of Textpattern v4.5.0 onwards for security reasons &#8211; use <a href="https://www.textpattern.net/wiki/index.php?title=php" class="link-external">@<txp:php>@ tags</a> instead.</p>
+<p class="alert-block warning">This preference has been removed as of Textpattern v4.5.0 onwards for security reasons &#8211; use <a href="https://www.textpattern.net/wiki/index.php?title=php" class="link-external">@<txp:php>@ tags</a> instead.</p>
 <p>When enabled, this setting allows raw <span class="caps">PHP</span> code to be used.</p>
 <p>Normally this isn&apos;t allowed, and <span class="caps">PHP</span> code must be <strong>without</strong> both opening and closing <span class="caps">PHP</span> tags, and enclosed within <a href="https://www.textpattern.net/wiki/index.php?title=php" class="link-external">&lt;txp:php&gt; tags</a>. This setting is for backwards compatible purposes only, and it is recommended to be set to &apos;No&apos;.</p>
 
 'allow_raw_php_scripting'
 'Preferences: Allow raw PHP?'
-'When enabled, this setting allows raw PHP code to be used.
-
-Normally this isn't allowed, and PHP code must be _without_ both opening and closing PHP tags, and enclosed within @txp:php@ tags. This setting is for backwards compatible purposes only, and it is recommended to be set to "No".
-
-Textbook: "php":https://textbook.textpattern.net/wiki/index.php?title=Txp:php'
 <p>When enabled, this setting allows raw <span class="caps">PHP</span> code to be used.</p>
 <p>Normally this isn&apos;t allowed, and <span class="caps">PHP</span> code must be <em>without</em> both opening and closing <span class="caps">PHP</span> tags, and enclosed within <code>txp:php</code> tags. This setting is for backwards compatible purposes only, and it is recommended to be set to &quot;No&quot;.</p>
 <p>Textbook: <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:php">php</a></p>
 
 'title_no_widow'
 'Prevent widowed words in article titles'
-'The term "widowed word" refers to the single final word of an article title that is shown on a new line when the article title is too long to fit on one line. Widows are considered sloppy typography and should be avoided. Setting this preference to'yes' will ensure that long article lines will never have only the last word on a separate line. Instead, the two last words will appear on a separate line.
-'
 <p>The term &quot;widowed word&quot; refers to the single final word of an article title that is shown on a new line when the article title is too long to fit on one line. Widows are considered sloppy typography and should be avoided. Setting this preference to &apos;yes&apos; will ensure that long article lines will never have only the last word on a separate line. Instead, the two last words will appear on a separate line.</p>
 
 'lastmod_keepalive'
@@ -3800,7 +3421,6 @@ This ensures that the <span class="caps">SMTP</span> envelope sender address (wh
 <p>Files are determined to be modified if their respective checksum differs from the known-good checksum list. If any files in the Textpattern installation are different to those expected, the files will be highlighted here. This is not necessarily a problem, but may be worth checking out if you are having problems with the functionality of your site.</p>
 
 'install_plugin'
-'plugin'
 'Plugins: Install plugin'
 <p>Paste the contents of the plugin text file here, then use &apos;Upload&apos; to begin installation. Any plugin you upload with the same name as one you have previously installed will be overwritten with the uploaded version.</p>
 <p>The plugin text you paste here is <strong>not</strong> the raw <span class="caps">PHP</span> code but Base64-encoded text, usually preceded by a header containing plugin information (such as plugin name, version and description, author name, etc).</p>
@@ -3978,7 +3598,6 @@ This ensures that the <span class="caps">SMTP</span> envelope sender address (wh
 <p>To install or update languages, use the &apos;Install&apos; or &apos;Update&apos; links against the corresponding language(s).</p>
 
 'setup_user_login'
-'setup'
 'Setup: User login'
 'The login name of the administrator ('Publisher') account that you will use for administering of your site.
 
@@ -3987,18 +3606,7 @@ Although there are no restrictions on the name, it is best to avoid complicated 
 <p>Although there are no restrictions on the name, it is best to avoid complicated character sequences and easily-guessed usernames (e.g. <code>admin</code>, <code>administrator</code>, etc)</p>
 
 'setup_user_pass'
-'setup'
 'Setup: User password'
-'Since this account has the highest level of access in Textpattern, choose a very strong password or, preferably, a passphrase.
-
-h3. Tips
-
-* Use a mixture of uppercase and lowercase characters
-* Use numbers
-* Use symbols
-* Make it at least eight characters in length
-* *Avoid* any personal information (dates, names, places, family members, pets etc.)
-* *Avoid* any sole or repeated dictionary words, regardless of spelling, language or case'
 <p>Since this account has the highest level of access in Textpattern, choose a very strong password or, preferably, a passphrase.</p>
 
 	<h3>Tips</h3>
@@ -4106,14 +3714,7 @@ h3. Tips
 <p>A form can be up to 64KB in size. An example for a footer might include headings, paragraphs, links, conditional tags, and references to other forms such as <code>ordinary_list</code>.</p>
 
 'table_prefix'
-'setup'
 'Setup: Table prefix'
-'You only need to use a table prefix if you require multiple Textpattern installations in one database. Each Textpattern installation needs a unique prefix.
-
-Note that the prefix must adhere to the following rules:
-
-* *1st character*: must be a-z, A-Z, or underscore
-* *Subsequent characters*: can only be a-z, A-Z, 0-9, or underscore'
 <p>You only need to use a table prefix if you require multiple Textpattern installations in one database. Each Textpattern installation needs a unique prefix.</p>
 <p>Note that the prefix must adhere to the following rules:</p>
 
