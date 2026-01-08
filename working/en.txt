@@ -466,7 +466,7 @@ Switching to a new language is always a two step process:
 	<h3>Example (aliased links)</h3>
 
 <p>Textile v2.0.0 onwards also allows storage of long <span class="caps">URL</span>s outside of the text you&apos;re working in, and to reference them with aliases of your choosing. Simply store the <span class="caps">URL</span> anywhere in the document, such as at the end, using this syntax:</p>
-<pre><code>[alias (optional title)]https://url
+<pre><code>[alias (optional title)]https://www.example.com
 </code></pre>
 
 <p>Each referenced <span class="caps">URL</span> must begin on a new line:</p>
@@ -474,11 +474,11 @@ Switching to a new language is always a two step process:
 </code></pre>
 
 <p>So long as this appears elsewhere in the document:</p>
-<pre><code>[example]https://example.com/index.html
+<pre><code>[example]https://www.example.com/index.html
 </code></pre>
 
 <p>Will become:</p>
-<pre><code>This is a &lt;a href=&quot;https://example.com/index.html&quot;&gt;link&lt;/a&gt; to my website.
+<pre><code>This is a &lt;a href=&quot;https://www.example.com/index.html&quot;&gt;link&lt;/a&gt; to my website.
 </code></pre>
 
 	<h3>Textile documentation</h3>
@@ -612,21 +612,6 @@ Switching to a new language is always a two step process:
 
 'path_from_root'
 'Preferences: Root path to Textpattern'
-'If your Textpattern site is located in a subdirectory away from your web server's root directory, enter that path here.
-
-h3. Example
-
-If the site is located at:
-
-bc. https://www.example.com/testing/
-
-Then you would set this value to:
-
-bc. /testing/
-
-If the site *is* located in the root directory, then set the value to a single forward slash:
-
-bc. /'
 <p>If your Textpattern site is located in a subdirectory away from your web server&apos;s root directory, enter that path here.</p>
 
 	<h3>Example</h3>
@@ -672,7 +657,7 @@ bc. /'
 'Preferences: URL pattern'
 <p>This defines the method by which individual articles are reached via the <span class="caps">URL</span> displayed using the <a href="https://docs.textpattern.com/tags/permlink"><code>&lt;txp:permlink&gt;</code> tag</a>.</p>
 <p>&apos;?=messy&apos; mode is the most compatible &#8211; it will work with little to no configuration required &#8211; but least beneficial in terms of <span class="caps">URL</span> readability and search engine optimization (<span class="caps">SEO</span>). In this mode <span class="caps">URL</span>s for articles on your site would look like this:</p>
-<pre><code>https://example.com/index.php?id=123
+<pre><code>https://www.example.com/index.php?id=123
 </code></pre>
 
 <p>All other modes require the Apache <code>mod_rewrite</code> module to be installed and enabled on your server. If your server does not support <code>mod_rewrite</code> either contact your web host or use the &apos;?=messy&apos; mode outlined above.</p>
@@ -751,8 +736,8 @@ bc. /'
 <p><strong>A likely scenario for a website with three sections:</strong></p>
 
 	<ol>
-		<li><strong>Archive:</strong> The &apos;Section&apos; to which all articles that appear on the front page belong. Whenever a reader clicks on an article&apos;s permanent link, it will be displayed in the page layout assigned to this &apos;Section&apos;. To go to a paged list of the most recent articles assigned to the section &quot;Archive&quot;, the <span class="caps">URL</span> would be <code>https://example.com/archive/</code>.</li>
-		<li><strong>About:</strong> An &apos;about this site&apos; page, which differs from the front page and the &quot;Archive&quot; section, in that it is more static, may have a different layout, and will likely contain only one article. The &quot;About&quot; section would be reached at <code>https://example.com/about/</code>.</li>
+		<li><strong>Archive:</strong> The &apos;Section&apos; to which all articles that appear on the front page belong. Whenever a reader clicks on an article&apos;s permanent link, it will be displayed in the page layout assigned to this &apos;Section&apos;. To go to a paged list of the most recent articles assigned to the section &quot;Archive&quot;, the <span class="caps">URL</span> would be <code>https://www.example.com/archive/</code>.</li>
+		<li><strong>About:</strong> An &apos;about this site&apos; page, which differs from the front page and the &quot;Archive&quot; section, in that it is more static, may have a different layout, and will likely contain only one article. The &quot;About&quot; section would be reached at <code>https://www.example.com/about/</code>.</li>
 		<li><strong>Photos:</strong> A &apos;Section&apos; whose differing layout (and possibly different <span class="caps">CSS</span>) would display photos instead of articles.</li>
 	</ol>
 
@@ -934,7 +919,7 @@ Hour(24hr) : Minute : Second</p>
 'Preferences: URL mode'
 <p>Governs how permanent links to archived articles will appear.</p>
 <p>&apos;?=messy&apos; mode is the most straightforward; it will work without you having to do much configuration. In this mode <span class="caps">URL</span>s for archived articles on your site would look like this:</p>
-<pre><code>https://example.com/index.php?id=123
+<pre><code>https://www.example.com/index.php?id=123
 </code></pre>
 
 <p>&apos;/clean/&apos; mode is a little trickier, but it makes <span class="caps">URL</span>s that are elegant and easier to remember. Here are the steps to make /clean/ mode work (you must also have &apos;Use sections&apos; set in site preferences):</p>
@@ -954,7 +939,7 @@ Hour(24hr) : Minute : Second</p>
 &lt;/Files&gt;
 </code></pre>
 
-<p>Once you select &apos;/clean/&apos; url mode in preferences, your permanent link <span class="caps">URL</span>s will look more familiar, for example <code>https://example.com/article/123/</code>.</p>
+<p>Once you select &apos;/clean/&apos; url mode in preferences, your permanent link <span class="caps">URL</span>s will look more familiar, for example <code>https://www.example.com/article/123/</code>.</p>
 
 'url_title'
 'Write: URL-only title'
@@ -1297,19 +1282,6 @@ Any old text.
 
 'bold'
 'Strong Emphasis'
-'Use ==*asterisks*== for text to be *strongly emphasized*.
-
-The &#60;strong&#62; <acronym title="Hypertext Markup Language">HTML</acronym> tag is applied:
-
-bq. *a phrase* &rarr; &#60;strong&#62;a phrase&#60;/strong&#62; &rarr; *a phrase*
-
-If the text is not meant to have *structural* emphasis, but simply to be styled in **bold** (e.g., as a design element) use double asterisks:
-
-bq. ==**a phrase**== &rarr; &#60;b&#62;a phrase&#60;/b&#62; &rarr; **a phrase**
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-"More information(strong reference at htmlhelp.com)":https://www.htmlhelp.com/reference/html40/phrase/strong.html'
 <p>Use *asterisks* for text to be <strong>strongly emphasized</strong>.</p>
 <p>The &#60;strong&#62; <span class="caps">HTML</span> tag is applied:</p>
 
@@ -1386,15 +1358,6 @@ Which, when rendered by a browser, will appear like this:
 
 'cite'
 'Cite'
-'Use ==??double question marks??== around ??citations,?? such as the title of a work being cited.
-
-The &#60;cite&#62; <acronym title="Hypertext Markup Language">HTML</acronym> tag is applied:
-
-Nabokov's ==??Pnin??== &rarr; Nabokov's &#60;cite&#62;Pnin&#60;/cite&#62; &rarr; Nabokov's ??Pnin??
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-"More information":https://www.htmlhelp.com/reference/html40/phrase/cite.html'
 <p>Use ??double question marks?? around <cite>citations,</cite> such as the title of a work being cited.</p>
 <p>The &#60;cite&#62; <span class="caps">HTML</span> tag is applied:</p>
 <p>Nabokov&apos;s ??Pnin?? &rarr; Nabokov&apos;s &#60;cite&#62;Pnin&#60;/cite&#62; &rarr; Nabokov&apos;s <cite>Pnin</cite></p>
@@ -1480,18 +1443,6 @@ Shave my poodle</p>
 
 'comments_use_fat_textile'
 'Preferences: Allow more Textile markup?'
-'When set to "Yes", comments may contain Textile elements which would otherwise be treated as plain text:
-
-* headings
-* ordered and unordered lists
-* foot notes
-* tables
-* code
-* extended block syntax (@bc..@, @bq..@, etc.)
-
-For security reasons, raw (X)HTML is transformed into regular text.
-
-Threshold State: "Textile":https://textile.thresholdstate.com/'
 <p>When set to &quot;Yes&quot;, comments may contain Textile elements which would otherwise be treated as plain text:</p>
 
 	<ul>
@@ -1504,7 +1455,6 @@ Threshold State: "Textile":https://textile.thresholdstate.com/'
 	</ul>
 
 <p>For security reasons, raw (X)<span class="caps">HTML</span> is transformed into regular text.</p>
-<p>Threshold State: <a href="https://textile.thresholdstate.com/">Textile</a></p>
 
 'comment_means_site_updated'
 'Preferences: New comment means site updated'
@@ -1537,15 +1487,6 @@ Threshold State: "Textile":https://textile.thresholdstate.com/'
 
 'delete'
 'Deleted Text'
-'Use ==-hyphens-== around text that has been -deleted-. This is useful in marking changes from one version of a document to the next.
-
-The &#60;del&#62; HTML(Hypertext Markup Language) tag is applied:
-
-==-a phrase-== &rarr; &#60;del&#62;a phrase&#60;/del&#62; &rarr; -a phrase-
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-"More information(del reference at htmlhelp.com)":https://www.htmlhelp.com/reference/html40/phrase/del.html'
 <p>Use -hyphens- around text that has been <del>deleted</del>. This is useful in marking changes from one version of a document to the next.</p>
 <p>The &#60;del&#62; <acronym title="Hypertext Markup Language"><span class="caps">HTM</span>L</acronym> tag is applied:</p>
 <p>-a phrase- &rarr; &#60;del&#62;a phrase&#60;/del&#62; &rarr; <del>a phrase</del></p>
@@ -1687,35 +1628,6 @@ Wikipedia: "Time offset":https://en.wikipedia.org/wiki/Time_offset'
 
 'header'
 'Headers'
-'To make an entire paragraph into a Header, place "h<em>n</em>. " at its beginning, where _n_ is a number from 1&#8211;6.
-
-Examples:
-
-==h1. Header 1==
-
-==h2. Header 2==
-
-==h3. Header 3==
-
-Will become:
-
-&#60;h1&#62;Header 1&#60;/h1&#62;
-
-&#60;h2&#62;Header 2&#60;/h2&#62;
-
-&#60;h3&#62;Header 3&#60;/h3&#62;
-
-Which, when rendered by a browser, will appear like this:
-
-h1. Header 1
-
-h2. Header 2
-
-h3. Header 3
-
-<small>NB: Unmodified paragraphs will be wrapped in &#60;p&#62; tags.</small>
-
-"More information(H1 reference at htmlhelp.com)":https://www.htmlhelp.com/reference/html40/block/h1.html'
 <p>To make an entire paragraph into a Header, place &quot;h<em>n</em>. &quot; at its beginning, where <em>n</em> is a number from 1&#8211;6.</p>
 <p>Examples:</p>
 <p>h1. Header 1</p>
@@ -1756,54 +1668,24 @@ RewriteRule ^(.+) - [PT,L]</pre>
 <pre>RewriteRule ^(.*) index.php</pre>
 
 'Images'
-'To insert an image, put the URL(Universal Resource Locator) for the image inside exclamation marks.
-
-Optional: text that immediately follows the URL in (parentheses) will be used as the Alt text for the image. Images on the web should always have descriptive Alt text for the benefit of readers using non-graphical browsers.
-
-Optional: place a colon followed by a URL immediately after the closing ! to make the image into a link.
-
-Example:
- ==!https://www.textism.com/common/textist.gif(Textist)!==
-
-With a link:
-
- ==!/common/textist.gif(Textist)!:https://textism.com==
-
-Will become:
-
-==&#60;img src="https://www.textism.com/common/textist.gif" alt="Textist" /&#62;==
-
-With a link:
-
-==&#60;a href="https://textism.com"&#62;&#60;img src="/common/textist.gif" alt="Textist" /&#62;&#60;/a&#62;==
-
-Which the browser will use to render the image:
-
-<img src="https://www.textism.com/common/textist.gif" />
-
-With a link:
-
-<a href="https://www.textism.com"><img src="https://www.textism.com/common/textist.gif" border="0" /></a>
-
-<a href="https://www.htmlhelp.com/reference/html40/special/img.html" target="_blank" title="img tag reference at htmlhelp.com">More information</a>'
 <p>To insert an image, put the <acronym title="Universal Resource Locator">URL</acronym> for the image inside exclamation marks.</p>
 <p>Optional: text that immediately follows the <span class="caps">URL</span> in (parentheses) will be used as the Alt text for the image. Images on the web should always have descriptive Alt text for the benefit of readers using non-graphical browsers.</p>
 <p>Optional: place a colon followed by a <span class="caps">URL</span> immediately after the closing ! to make the image into a link.</p>
 <p>Example:</p>
- !https://www.textism.com/common/textist.gif(Textist)!
+ !https://www.example.com/logo.png(Logo)!
 
 <p>With a link:</p>
 
- !/common/textist.gif(Textist)!:https://textism.com
+ !/logo.png(Logo)!:https://www.example.com
 
 <p>Will become:</p>
-<p>&#60;img src="https://www.textism.com/common/textist.gif" alt="Textist" /&#62;</p>
+<p>&#60;img src="https://www.example.com/logo.png" alt="Logo" /&#62;</p>
 <p>With a link:</p>
-<p>&#60;a href="https://textism.com"&#62;&#60;img src="/common/textist.gif" alt="Textist" /&#62;&#60;/a&#62;</p>
+<p>&#60;a href="https://www.example.com"&#62;&#60;img src="/logo.png" alt="Logo" /&#62;&#60;/a&#62;</p>
 <p>Which the browser will use to render the image:</p>
-<p><img src="https://www.textism.com/common/textist.gif" /></p>
+<p><img src="https://www.example.com/logo.png" /></p>
 <p>With a link:</p>
-<p><a href="https://www.textism.com"><img src="https://www.textism.com/common/textist.gif" border="0" /></a></p>
+<p><a href="https://www.example.com"><img src="https://www.example.com/logo.png" border="0" /></a></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/img.html" target="_blank" title="img tag reference at htmlhelp.com">More information</a></p>
  
 
@@ -1870,31 +1752,6 @@ If you choose to import from a file - that is, MovableType or Blogger - you must
 
 'intro'
 'What Textile Does'
-'* Replace single and double primes ==(&#39; and &#34;)== used as quotation marks with HTML(HyperText Markup Language) entities for opening and closing quotation marks (&apos;&apos; and &quot;&quot;) in readable text, while leaving untouched the primes required within HTML tags.
-
-* Replace double hyphens ==(--)== with an em-dash (&#8212;) entity.
-
-* Replace single hyphens surrounded by spaces with an en-dash (&#8211;) entity.
-
-* Replace triplets of periods (...) with an ellipsis (&#8230;) entity.
-
-* Convert many nonstandard characters (&#376;&#250;&#223;&#352;&#960;&#338;) to browser-safe entities corresponding to keyboard input.
-
-* Apply block- and phrase-level structural tags automatically and at the discretion of the writer via quick tags.
-
-* Allow the quick creation of simple and complex tables
-
-* Allow the simple application of style, class, id, language and alignment attributes to elements
-
-* Create hyperlinks and insert images via quick tags.
-
-* Define acronyms via quick tags
-
-* Wrap an &#60;acronym&#62; tag around runs of three or more capital letters automatically.
-
-* Convert ==(TM)==, ==(R)==, and ==(C)== to &trade;, &reg;, and &copy;</li>
-
-* Convert the letter x to a dimension sign: ==2x4== to 2&times;4 and 8 ==x== 10 to 8&times;10'
 '<ul>
 		<li>Replace single and double primes (&amp;#39; and &amp;#34;) used as quotation marks with <acronym title="HyperText Markup Language">HTML</acronym> entities for opening and closing quotation marks (&apos;&apos; and &quot;&quot;) in readable text, while leaving untouched the primes required within <span class="caps">HTML</span> tags.</li>
 	</ul>
@@ -1974,51 +1831,17 @@ If you choose to import from a file - that is, MovableType or Blogger - you must
 <p>Switching to a new language is always a two step process. 1) Installing the language and afterwards 2) Selecting the language as the currently active one.</p>
 
 'Links'
-'To make a hypertext link, put the link text in =="quotation marks"== followed immediately by a colon and the <acronym title="Universal Resource Locator">URL</acronym> of the link.
-
-Optional: text in (parentheses) following the link text, but before the closing quotation mark, will become a Title attribute for the link, visible as a tool tip when a cursor is above it.
-
-Example:
-
- =="This is a link (This is a title)== ==":https://www.textism.com== 
-
-Will become:
-
-&#60;a href=&#34;https://www.textism.com&#34; title=&#34;This is a title&#34;&#62;This is a link&#60;/a&#62;
-
-Which, when displayed in a browser, will look like this:
-
-<a href="https://www.textism.com" title="This is a title" style="color:blue">This is a link</a>
-
-*New* in Textile 2.0 is the ability to store long ugly urls outside of the text you're working in, and reference them with aliases of your choosing.
-
-Simply store the url anywhere in the document,  such as at the end, using this syntax:
-
-[alias (optional title)]https://url
-
-Each referenced url must begin on a new line.
-
-Example text:
-This is a &#34;link&#34;:bob to Bob's website.
-
-So long as this appears elsewhere in the document:
-[bob]https://itsbob.com/index.html
-
-...the final output will be:
-This is a &#60;a href=&#34;https://itsbob.com/index.html&#34;&#62;link&#60;/a&#62; to Bob's website.
-
-<a href="https://www.htmlhelp.com/reference/html40/special/a.html" target="_blank" title="a tag reference at htmlhelp.com">More information</a>'
 <p>To make a hypertext link, put the link text in "quotation marks" followed immediately by a colon and the <acronym title="Universal Resource Locator"><span class="caps">URL</span></acronym> of the link.</p>
 <p>Optional: text in (parentheses) following the link text, but before the closing quotation mark, will become a Title attribute for the link, visible as a tool tip when a cursor is above it.</p>
 <p>Example:</p>
-<p>"This is a link (This is a title) ":https://www.textism.com</p>
+<p>"This is a link (This is a title) ":https://www.example.com</p>
 <p>Will become:</p>
-<p>&#60;a href=&#34;https://www.textism.com&#34; title=&#34;This is a title&#34;&#62;This is a link&#60;/a&#62;</p>
+<p>&#60;a href=&#34;https://www.example.com&#34; title=&#34;This is a title&#34;&#62;This is a link&#60;/a&#62;</p>
 <p>Which, when displayed in a browser, will look like this:</p>
-<p><a href="https://www.textism.com" title="This is a title" style="color:blue">This is a link</a></p>
+<p><a href="https://www.example.com" title="This is a title" style="color:blue">This is a link</a></p>
 <p><strong>New</strong> in Textile 2.0 is the ability to store long ugly urls outside of the text you&apos;re working in, and reference them with aliases of your choosing.</p>
 <p>Simply store the url anywhere in the document,  such as at the end, using this syntax:</p>
-<p>[alias (optional title)]https://url</p>
+<p>[alias (optional title)]https://www.example.com</p>
 <p>Each referenced url must begin on a new line.</p>
 <p>Example text:<br />
 This is a &#34;link&#34;:bob to Bob&apos;s website.</p>
@@ -2340,15 +2163,6 @@ Recommended: a low value, such as @5@ through @15@
 
 'subscript'
 'sub'
-'Use ==~tildes~== for text to be rendered ~subscript~.
-
-The &#60;sub&#62; <acronym title="Hypertext Markup Language">HTML</acronym> tag is applied:
-
-==~a phrase~== &rarr; &#60;sub&#62;a phrase&#60;/sub&#62; &rarr; ~a phrase~
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-<a href="https://www.htmlhelp.com/reference/html40/special/sub.html" target="_blank" title="subscript reference at htmlhelp.com">More information</a></p>'
 <p>Use ~tildes~ for text to be rendered <sub>subscript</sub>.</p>
 <p>The &#60;sub&#62; <span class="caps">HTML</span> tag is applied:</p>
 <p>~a phrase~ &rarr; &#60;sub&#62;a phrase&#60;/sub&#62; &rarr; <sub>a phrase</sub></p>
@@ -2358,15 +2172,6 @@ The &#60;sub&#62; <acronym title="Hypertext Markup Language">HTML</acronym> tag 
 
 'super'
 'Superscript'
-'Use ==^carets^== for text to be rendered ^superscript^.
-
-The &#60;sup&#62; <acronym title="Hypertext Markup Language">HTML</acronym> tag is applied:
-
-==^a phrase^== &rarr; &#60;sup&#62;a phrase&#60;/sup&#62; &rarr; ^a phrase^
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-<a href="https://www.htmlhelp.com/reference/html40/special/sup.html" target="_blank" title="superscript reference at htmlhelp.com">More information</a>'
 <p>Use ^carets^ for text to be rendered <sup>superscript</sup>.</p>
 <p>The &#60;sup&#62; <span class="caps">HTML</span> tag is applied:</p>
 <p>^a phrase^ &rarr; &#60;sup&#62;a phrase&#60;/sup&#62; &rarr; <sup>a phrase</sup></p>
@@ -3065,12 +2870,12 @@ Recommended: "Yes" for live sites, "No" for sites in development'
 <p>Optional: text in (parentheses) following the link text, but before the closing quotation mark, will become a Title attribute for the link, visible as a tool tip when a cursor is above it.</p>
 <p>Example:</p>
 
- "This is a link (This is a title) ==&quot;:https://www.textism.com== 
+ "This is a link (This is a title) ==&quot;:https://www.example.com== 
 
 <p>Will become:</p>
-<p><a href="https://www.textism.com" title="This is a title">This is a link</a></p>
+<p><a href="https://www.example.com" title="This is a title">This is a link</a></p>
 <p>Which, when displayed in a browser, will look like this:</p>
-<p><a href="https://www.textism.com" title="This is a title" style="color:blue">This is a link</a></p>
+<p><a href="https://www.example.com" title="This is a title" style="color:blue">This is a link</a></p>
 <p><strong>New</strong> in Textile 2.0 is the ability to store long ugly urls outside of the text you&apos;re working in, and reference them with aliases of your choosing.</p>
 <p>Simply store the url anywhere in the document,  such as at the end, using this syntax:</p>
 
@@ -3176,19 +2981,19 @@ This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website
 <p>Optional: text that immediately follows the <span class="caps">URL</span> in (parentheses) will be used as the Alt text for the image. Images on the web should always have descriptive Alt text for the benefit of readers using non-graphical browsers.</p>
 <p>Optional: place a colon followed by a <span class="caps">URL</span> immediately after the closing ! to make the image into a link.</p>
 <p>Example:
- !https://www.textism.com/common/textist.gif(Textist)!</p>
+ !https://www.example.com/logo.png(Logo)!</p>
 <p>With a link:</p>
 
- !/common/textist.gif(Textist)!:https://textism.com
+ !/logo.png(Logo)!:https://www.example.com
 
 <p>Will become:</p>
-<p><img src="https://www.textism.com/common/textist.gif" alt="Textist" /></p>
+<p><img src="https://www.example.com/logo.png" alt="Logo" /></p>
 <p>With a link:</p>
-<p><a href="https://textism.com"><img src="/common/textist.gif" alt="Textist" /></a></p>
+<p><a href="https://www.example.com"><img src="/logo.png" alt="Logo" /></a></p>
 <p>Which the browser will use to render the image:</p>
-<p><img src="https://www.textism.com/common/textist.gif" /></p>
+<p><img src="https://www.example.com/logo.png" /></p>
 <p>With a link:</p>
-<p><a href="https://www.textism.com"><img src="https://www.textism.com/common/textist.gif" border="0" /></a></p>
+<p><a href="https://www.example.com"><img src="https://www.example.com/logo.png" border="0" /></a></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/img.html" target="_blank" title="img tag reference at htmlhelp.com">More information</a></p>
 
 'htaccess_missing'
@@ -3378,7 +3183,6 @@ Guess.</p>
 	</ul>
 
 <p>For security reasons, raw (X)HTML is transformed into regular text.</p>
-<p>Threshold State: <a href="https://textile.thresholdstate.com/">Textile</a></p>
 
 'comments_sendmail'
 'Preferences: Mail Comments'
@@ -3464,15 +3268,6 @@ Note that you can limit which specific tags are allowable in the next field.
 
 'cite'
 'Cite'
-'Use ==??double question marks??== around ??citations,?? such as the title of a work being cited.
-
-The <cite> <acronym title="Hypertext Markup Language">HTML</acronym> tag is applied:
-
-Nabokov's ==??Pnin??== → Nabokov's <cite>Pnin</cite> → Nabokov's ??Pnin??
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-"More information":https://www.htmlhelp.com/reference/html40/phrase/cite.html'
 <p>Use ??double question marks?? around <cite>citations,</cite> such as the title of a work being cited.</p>
 <p>The <cite> <acronym title="Hypertext Markup Language"><span class="caps">HTML</span></acronym> tag is applied:</p>
 <p>Nabokov&apos;s ??Pnin?? → Nabokov&apos;s <cite>Pnin</cite> → Nabokov&apos;s <cite>Pnin</cite></p>
@@ -3545,19 +3340,6 @@ Which, when rendered by a browser, will appear like this:
 
 'bold'
 'Strong Emphasis'
-'Use ==*asterisks*== for text to be *strongly emphasized*.
-
-The <strong> <acronym title="Hypertext Markup Language">HTML</acronym> tag is applied:
-
-bq. *a phrase* → <strong>a phrase</strong> → *a phrase*
-
-If the text is not meant to have *structural* emphasis, but simply to be styled in **bold** (e.g., as a design element) use double asterisks:
-
-bq. ==**a phrase**== → <b>a phrase</b> → **a phrase**
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-"More information(strong reference at htmlhelp.com)":https://www.htmlhelp.com/reference/html40/phrase/strong.html'
 <p>Use *asterisks* for text to be <strong>strongly emphasized</strong>.</p>
 <p>The <strong> <acronym title="Hypertext Markup Language"><span class="caps">HTML</span></acronym> tag is applied:</p>
 
@@ -3576,35 +3358,6 @@ bq. ==**a phrase**== → <b>a phrase</b> → **a phrase**
 
 'blockquote'
 'Block Quotes'
-'To make an entire paragraph into a block quotation, place "bq. " before it.
-
-Example
-
-bq. Any old text.
-
-bq. bq. A block quotation.
-
-bq. Any old text.
-
-Will become:
-
-bq. <p>Any old text.</p>
-
-bq. <blockquote>A block quotation.</blockquote>
-
-bq. <p>Any old text.</p>
-
-Which, when rendered by a browser, will appear like this:
-
-Any old text.
-
-bq. A block quotation.
-
-Any old text.
-
-<small>NB: Unmodified paragraphs will be wrapped in <p> tags.</small>
-
-"More information(blockquote reference at htmlhelp.com)":https://www.htmlhelp.com/reference/html40/block/blockquote.html'
 <p>To make an entire paragraph into a block quotation, place &quot;bq. &quot; before it.</p>
 <p>Example</p>
 
@@ -3999,7 +3752,7 @@ Textbook: "php":https://textbook.textpattern.net/wiki/index.php?title=Txp:php'
 
 'smtp_from'
 'Preferences: SMTP envelope sender address'
-<p>This preference should be left blank unless you experience problems with sending email in Textpattern (if no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you&apos;ve installed Textpattern (i.e. if your website is https://example.com, you might use &apos;you@example.com&apos;).</p>
+<p>This preference should be left blank unless you experience problems with sending email in Textpattern (if no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you&apos;ve installed Textpattern (i.e. if your website is https://www.example.com, you might use &apos;you@example.com&apos;).</p>
 <p>For those interested in the technical details:</p>
 
 	<ul>
@@ -4011,7 +3764,7 @@ Textbook: "php":https://textbook.textpattern.net/wiki/index.php?title=Txp:php'
 
 'smtp_from'
 'Preferences: SMTP envelope sender address'
-<p>This preference should be left blank unless you experience problems with sending email in <span class="caps">TXP</span> (read: no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you&apos;ve installed <span class="caps">TXP</span> (i.e. if your website is https://example.com, you might use you@example.com).</p>
+<p>This preference should be left blank unless you experience problems with sending email in <span class="caps">TXP</span> (read: no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you&apos;ve installed <span class="caps">TXP</span> (i.e. if your website is https://www.example.com, you might use you@example.com).</p>
 <p>For those interested in the technical details:<br />
 On <span class="caps">UNIX</span>/Mac servers, the entered email address is used as the 4th parameter (prefixed with &quot;-f&quot;) for the <span class="caps">PHP</span> mail() function.<br />
 On Windows servers, the entered email address is used to set (or override) the &quot;sendmail_from&quot; php.ini setting.<br />
@@ -4054,7 +3807,7 @@ This ensures that the <span class="caps">SMTP</span> envelope sender address (wh
 
 'clean_url_data_failed'
 'Diagnostics: Clean URL data failed'
-<p>It appears that either your site <span class="caps">URL</span>s (<code>https://example.com/section/article</code>) are currently not working or your server does not support the test procedure to determine if clean <span class="caps">URL</span>s work or not; if clean <span class="caps">URL</span>s on your site work, you can safely ignore this message.</p>
+<p>It appears that either your site <span class="caps">URL</span>s (<code>https://www.example.com/section/article</code>) are currently not working or your server does not support the test procedure to determine if clean <span class="caps">URL</span>s work or not; if clean <span class="caps">URL</span>s on your site work, you can safely ignore this message.</p>
 <p>If clean <span class="caps">URL</span>s are <em>not</em> working it may mean either:</p>
 
 	<ul>
@@ -4063,12 +3816,12 @@ This ensures that the <span class="caps">SMTP</span> envelope sender address (wh
 		<li>your server doesn&apos;t support clean <span class="caps">URL</span>s at all.</li>
 	</ul>
 
-<p>The clean <span class="caps">URL</span> test attempts to fetch a page from the web address specified in the &apos;Site <span class="caps">URL</span>&apos; preference in order to check that all clean <span class="caps">URL</span> parameters are working correctly. If that <span class="caps">URL</span> is a different site, or has been replaced with a static page or similar, the test will fail. Until the issue is resolved you will have to use messy <span class="caps">URL</span>s on your site instead (<code>https://example.com?s=section&amp;id=4</code>). Ensure the &apos;Permanent link mode&apos; in Admin Preferences is set accordingly.</p>
+<p>The clean <span class="caps">URL</span> test attempts to fetch a page from the web address specified in the &apos;Site <span class="caps">URL</span>&apos; preference in order to check that all clean <span class="caps">URL</span> parameters are working correctly. If that <span class="caps">URL</span> is a different site, or has been replaced with a static page or similar, the test will fail. Until the issue is resolved you will have to use messy <span class="caps">URL</span>s on your site instead (<code>https://www.example.com?s=section&amp;id=4</code>). Ensure the &apos;Permanent link mode&apos; in Admin Preferences is set accordingly.</p>
 <p>Note that using a plugin to put a site in &apos;maintenance mode&apos; may trigger this warning.</p>
 
 'clean_url_test_failed'
 'Diagnostics: Clean URL test failed'
-<p>It appears that either your site <span class="caps">URL</span>s (<code>https://example.com/section/article</code>) are currently not working or your server does not support the test procedure to determine if clean <span class="caps">URL</span>s work or not; if clean <span class="caps">URL</span>s on your site work, you can safely ignore this message.</p>
+<p>It appears that either your site <span class="caps">URL</span>s (<code>https://www.example.com/section/article</code>) are currently not working or your server does not support the test procedure to determine if clean <span class="caps">URL</span>s work or not; if clean <span class="caps">URL</span>s on your site work, you can safely ignore this message.</p>
 <p>If clean <span class="caps">URL</span>s are not working it may mean either:</p>
 
 	<ul>
@@ -4077,7 +3830,7 @@ This ensures that the <span class="caps">SMTP</span> envelope sender address (wh
 		<li>your server doesn&apos;t support clean <span class="caps">URL</span>s at all</li>
 	</ul>
 
-<p>The clean <span class="caps">URL</span> test attempts to fetch a page from the web address specified in the &apos;Site <span class="caps">URL</span>&apos; preference in order to check that all clean <span class="caps">URL</span> parameters are working correctly. If that <span class="caps">URL</span> is a different site, or has been replaced with a static page or similar, the test will fail. Until the issue is resolved you will have to use messy <span class="caps">URL</span>s on your site instead (<code>https://example.com?s=section&amp;id=4</code>). Ensure the &quot;Permanent link mode&apos; in Admin Preferences is set accordingly.</p>
+<p>The clean <span class="caps">URL</span> test attempts to fetch a page from the web address specified in the &apos;Site <span class="caps">URL</span>&apos; preference in order to check that all clean <span class="caps">URL</span> parameters are working correctly. If that <span class="caps">URL</span> is a different site, or has been replaced with a static page or similar, the test will fail. Until the issue is resolved you will have to use messy <span class="caps">URL</span>s on your site instead (<code>https://www.example.com?s=section&amp;id=4</code>). Ensure the &quot;Permanent link mode&apos; in Admin Preferences is set accordingly.</p>
 
 'mysql_table_errors'
 'Diagnostics: MySQL table errors'
@@ -4432,26 +4185,13 @@ Note that the prefix must adhere to the following rules:
 
 'permlink_format'
 'Preferences: Permalink title URL pattern'
-'This defines the method by which article URLs are constructed and assigned when a non-messy mode is used.
-
-When an article is published, its URL is generated from the article title unless a specific URL is provided in in the URL-only title field.
-
-Take the following example article title: _Ann and Bob eat cake_
-
-When permalink title URL pattern option is set to'Hyphenated (title-like-this)', the URL for the article would be:
-
-bc. https://example.com/ann-and-bob-eat-cake
-
-When permalink title URL pattern option is set to'Intercapped (TitleLikeThis)', the URL for the article would be:
-
-bc. https://example.com/AnnandBobeatcake'
 <p>This defines the method by which article <span class="caps">URL</span>s are constructed and assigned when a non-messy mode is used.</p>
 <p>When an article is published, its <span class="caps">URL</span> is generated from the article title unless a specific <span class="caps">URL</span> is provided in in the <span class="caps">URL</span>-only title field.</p>
 <p>Take the following example article title: <em>Ann and Bob eat cake</em></p>
 <p>When permalink title <span class="caps">URL</span> pattern option is set to &apos;Hyphenated (title-like-this)&apos;, the <span class="caps">URL</span> for the article would be:</p>
-<pre><code>https://example.com/ann-and-bob-eat-cake
+<pre><code>https://www.example.com/ann-and-bob-eat-cake
 </code></pre>
 
 <p>When permalink title <span class="caps">URL</span> pattern option is set to &apos;Intercapped (TitleLikeThis)&apos;, the <span class="caps">URL</span> for the article would be:</p>
-<pre><code>https://example.com/AnnandBobeatcake
+<pre><code>https://www.example.com/AnnandBobeatcake
 </code></pre>
