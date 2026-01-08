@@ -1952,7 +1952,6 @@ If you choose to import from a file - that is, MovableType or Blogger - you must
 
 'in_rss'
 'In RSS'
-'This governs whether the Section's articles are to be included in the site's RSS feed.'
 <p>This governs whether the Section&apos;s articles are to be included in the site&apos;s <span class="caps">RSS</span> feed.</p>
 
 'is_dst'
@@ -2178,7 +2177,6 @@ If the site *is* located in the root directory, then set the value to a single f
 
 'permlink'
 'Preferences: Permanent Link'
-'This is text or the url of a graphic that will be the clickable link to the permanent address of an article.'
 <p>This is text or the url of a graphic that will be the clickable link to the permanent address of an article. </p>
 
 'permlink_mode'
@@ -2272,22 +2270,6 @@ Recommended: a low value, such as @5@ through @15@
 
 'section_category'
 'Sections'
-'(An excellent "article":https://www.jdueck.net/articles/textpattern.html on the semantics of sections and categories in Textpattern has been written by Joel Dueck.)
-
-Sections in Textpattern are perhaps best thought of as analogous to sections in a newspaper: each belong to the same publication, but each might feature a different layout, or a different style of article, and so on. 
-
-For most websites, only a bare minimum of sections need be created.
-
-A likely scenario for a personal site, with three sections:
-
-*archive*: the section to which all articles that appear on the front page belong. Whenever a reader clicks on an article's permanent link (for example https://thissite/archive/123/), it will be displayed in the page layout assigned to this section. To go to a paged list of the most recent articles assigned to the section _archive_, the url would be https://thissite/archive/
-
-*about*: an'about this site' page, which differs from the front page and the _archive_ section, in that it is more static, may have a different layout, and will likely contain only one article. The about section would be reached at https://thissite/about/.
-
-*photos*: A section whose differing layout (and possibly different CSS) would display photos instead of articles.
-
-Note that a special hidden'section' always exists, named *default*. Using the layout called'default' as well as the CSS called'default', this is what makes up the front page of your site.'
-<p>(An excellent <a href="https://www.jdueck.net/articles/textpattern.html">article</a> on the semantics of sections and categories in Textpattern has been written by Joel Dueck.)</p>
 <p>Sections in Textpattern are perhaps best thought of as analogous to sections in a newspaper: each belong to the same publication, but each might feature a different layout, or a different style of article, and so on. </p>
 <p>For most websites, only a bare minimum of sections need be created.</p>
 <p>A likely scenario for a personal site, with three sections:</p>
@@ -2356,9 +2338,9 @@ Note that a special hidden'section' always exists, named *default*. Using the la
 <p>This means your hosting company or server administrator has disabled one or <span class="caps">PHP</span> functions. Please <a href="https://textpattern.com/faq/266/the-following-php-functions-are-disabled" title="Textpattern FAQ: The following PHP functions... are disabled">see the folllowing <span class="caps">FAQ</span> entry for more information</a>.</p>
 
 'spam_blacklists'
-'Spam blacklists'
-<p>The blacklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.</p>
-<p>You can enter a list of domain names that should be seperated by commas. Potential blacklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blacklist-providers before you add any.</p>
+'Spam blocklists'
+<p>The blocklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.</p>
+<p>You can enter a list of domain names that should be seperated by commas. Potential blocklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blocklist-providers before you add any.</p>
 
 'subscript'
 'sub'
@@ -2502,9 +2484,6 @@ ForceType application/x-httpd-php <br />
 
 'url_title'
 'URL Title'
-'If you would like to have a specific title attached to the permalink url for your article, enter it here. If it is left blank, the URL title will be generated from the actual article title. 
-
-This is particularly useful if the title of your article uses non-ascii characters.'
 <p>If you would like to have a specific title attached to the permalink url for your article, enter it here. If it is left blank, the URL title will be generated from the actual article title. </p>
 <p>This is particularly useful if the title of your article uses non-ascii characters.</p>
 
@@ -2533,7 +2512,7 @@ This is particularly useful if the title of your article uses non-ascii characte
 
 'use_plugins'
 'Preferences: Use plugins'
-<p>This allows you to turn off supprt for plugins. </p>
+<p>This allows you to turn off support for plugins. </p>
 <p>You might want to do this, if you find strange errors happening on your site, and you want to make sure that it is not the fault of plugins.</p>
 
 'use_textile'
@@ -2586,16 +2565,6 @@ This is particularly useful if the title of your article uses non-ascii characte
 
 'warn_register_globals_or_update'
 'Turn register_globals off or update to a newer PHP version.'
-'Recently a severe vulnerability was discovered in PHP. "The security advisory ":https://www.hardened-php.net/advisory_202005.79.html says:
-
-bq. can lead to unexpected behaviour of PHP applications, which can lead to execution of remote PHP code in many situations.
-
-Vulnerable versions are PHP4-versions <= 4.4.0 and PHP5-versions <= 5.0.5. You should either update to newer versions or make sure that register_globals is turned off.
-
-You can turn off register_globals in the php.ini file. If you are in a hosted environment, you may have an option in your hosting control panel for it (ask your host). When using mod_php (php as an apache module), it is also possible to turn register_globals off via .htaccess. Uncomment the following line from your .htaccess:
-
-@php_value register_globals off@
-'
 <p>Recently a severe vulnerability was discovered in <span class="caps">PHP</span>. <a href="https://www.hardened-php.net/advisory_202005.79.html">The security advisory</a> says:</p>
 
 	<blockquote>
@@ -2608,19 +2577,11 @@ You can turn off register_globals in the php.ini file. If you are in a hosted en
 
 'warn_mail_unavailable'
 'Diagnostics: Your PHP installation is missing the mail() function'
-'On your host PHP is not compiled with a mail() function. Therefore Textpattern cannot send emails, and you will not be able to use some functions. For example you won't be able to receive email-notifications on comments, and you won't be able to add other users (well, you can add them, but they won't receive the email with their password).'
 <p>On your host <span class="caps">PHP</span> is not compiled with a mail() function. Therefore Textpattern cannot send emails, and you will not be able to use some functions. For example you won&apos;t be able to receive email-notifications on comments, and you won&apos;t be able to add other users (well, you can add them, but they won&apos;t receive the email with their password).</p>
 
 'using_sections'
 'manual'
 'Using Sections'
-'Sections in Textpattern are significant in that they don't merely imply a type to which articles belong. Each section has attached to it a layout (either created by you or generated by Textpattern), a style in the form of a CSS(Cascading Style Sheet) file, and a physical location on the webserver.
-
-When posting new articles, all this information, which is pertinent to the future display of the article, is attached through the choice of Section.
-
-That said, the first Section we should address is one that can't be attached to articles at all, called *default*. This collection of 
-
-For a simple website, a single section (called'articles', for example) may be all that's required.'
 <p>Sections in Textpattern are significant in that they don&apos;t merely imply a type to which articles belong. Each section has attached to it a layout (either created by you or generated by Textpattern), a style in the form of a <acronym title="Cascading Style Sheet"><span class="caps">CSS</span></acronym> file, and a physical location on the webserver.</p>
 <p>When posting new articles, all this information, which is pertinent to the future display of the article, is attached through the choice of Section.</p>
 <p>That said, the first Section we should address is one that can&apos;t be attached to articles at all, called <strong>default</strong>. This collection of </p>
@@ -2628,21 +2589,13 @@ For a simple website, a single section (called'articles', for example) may be al
 
 'use_textile'
 'Preferences: Use Textile'
-'Textile is a utility intended to simplify the conversion of plain text to HTML. 
-
-When enabled, Textile will process the body text of articles and return a structurally sound XHTML version. 
-
-Textile also offers a powerful but easy-to-learn set of commands with which to format text,  define structures such as lists, headers and blockquotes, and insert links and images.'
 <p>Textile is a utility intended to simplify the conversion of plain text to <span class="caps">HTML</span>. </p>
 <p>When enabled, Textile will process the body text of articles and return a structurally sound <span class="caps">XHTML</span> version. </p>
 <p>Textile also offers a powerful but easy-to-learn set of commands with which to format text,  define structures such as lists, headers and blockquotes, and insert links and images.</p>
 
 'use_plugins'
 'Preferences: Use plugins'
-'This allows you to turn off supprt for plugins. 
-
-You might want to do this, if you find strange errors happening on your site, and you want to make sure that it is not the fault of plugins.'
-<p>This allows you to turn off supprt for plugins. </p>
+<p>This allows you to turn off support for plugins. </p>
 <p>You might want to do this, if you find strange errors happening on your site, and you want to make sure that it is not the fault of plugins.</p>
 
 'use_mail_on_feeds_id'
@@ -2652,19 +2605,14 @@ You might want to do this, if you find strange errors happening on your site, an
 
 'use_dns'
 'Preferences: Use DNS'
-'This setting only has an effect, when "Logging" in "Site Preferences" is turned on. Using DNS will allow you to translate IP adresses in your logs to host-names. For some servers this might subjectively slow down your site, in which case you might want to turn this off.'
 <p>This setting only has an effect, when &quot;Logging&quot; in &quot;Site Preferences&quot; is turned on. Using <span class="caps">DNS</span> will allow you to translate IP adresses in your logs to host-names. For some servers this might subjectively slow down your site, in which case you might want to turn this off.</p>
 
 'use_comments'
 'Preferences: Accept Comments'
-'This sets whether or not Textpattern's commenting features should be visible or completely turned off.'
 <p>This sets whether or not Textpattern&apos;s commenting features should be visible or completely turned off.</p>
 
 'use_categories'
 'Using Categories'
-'Attaching categories to articles adds a level of organization and searchability to your site, however those publishing a simple site may find categorization to be an unnecessary or unwanted step in the publishing of an article. 
-
-When set to'no', category options will be removed from the article create/edit window, as well as from the navigation options above.'
 <p>Attaching categories to articles adds a level of organization and searchability to your site, however those publishing a simple site may find categorization to be an unnecessary or unwanted step in the publishing of an article. </p>
 <p>When set to &apos;no&apos;, category options will be removed from the article create/edit window, as well as from the navigation options above.</p>
 
@@ -2675,9 +2623,6 @@ When set to'no', category options will be removed from the article create/edit w
 
 'url_title'
 'URL Title'
-'If you would like to have a specific title attached to the permalink url for your article, enter it here. If it is left blank, the URL title will be generated from the actual article title. 
-
-This is particularly useful if the title of your article uses non-ascii characters.'
 <p>If you would like to have a specific title attached to the permalink url for your article, enter it here. If it is left blank, the <span class="caps">URL</span> title will be generated from the actual article title. </p>
 <p>This is particularly useful if the title of your article uses non-ascii characters.</p>
 
@@ -2777,29 +2722,16 @@ Use the Textile code to render graphics within articles, the Textpattern code to
 
 'update_still_exists'
 'Diagnostics: _update.php Still Exists'
-'Once Textpattern has been upgraded, the update directory and its contents are no longer needed and recommended for deletion. You will continue to receive this warning until it has been removed.'
 <p>Once Textpattern has been upgraded, the update directory and its contents are no longer needed and recommended for deletion. You will continue to receive this warning until it has been removed.</p>
 
 'trackback'
 'Trackback'
-'Many content management systems offer trackbacks to individual articles or postings. 
-
-At their simplest, trackbacks offer a way to say,'I've said something about this article; here's the name of my site, a link to the mention, and a brief excerpt'. The other site's owner can then use the trackback information however she wishes.
-
-Some have likened trackbacks to'referrers you insert manually', but that's a little reductive.'
 <p>Many content management systems offer trackbacks to individual articles or postings. </p>
 <p>At their simplest, trackbacks offer a way to say, &apos;I&apos;ve said something about this article; here&apos;s the name of my site, a link to the mention, and a brief excerpt&apos;. The other site&apos;s owner can then use the trackback information however she wishes.</p>
 <p>Some have likened trackbacks to &apos;referrers you insert manually&apos;, but that&apos;s a little reductive.</p>
 
 'timestamp'
 'Time Stamp'
-'The time attributions of an article can be set for the moment it is published or revised, or to any other time.
-
-The format of the date input is:
-
-Year Month Day Hour(24hr) : Minute
-
-Articles with timestamps greater than the current time (in the future) will not appear on the site until that time passes.'
 <p>The time attributions of an article can be set for the moment it is published or revised, or to any other time.</p>
 <p>The format of the date input is:</p>
 <p>Year Month Day Hour(24hr) : Minute</p>
@@ -2807,35 +2739,14 @@ Articles with timestamps greater than the current time (in the future) will not 
 
 'timeoffset'
 'Server Time Offset'
-'If your web host is in a different time zone than where you live, use this to adjust displayed times to reflect your local time rather than that of the server.'
 <p>If your web host is in a different time zone than where you live, use this to adjust displayed times to reflect your local time rather than that of the server.</p>
 
 'textile_links'
 'Textile links description by default'
-'This allows you to set whether the link descriptions you can enter in content->links will be run through the light version of Textile. If set to _no_, descriptions will be displayed as entered.'
 <p>This allows you to set whether the link descriptions you can enter in content-&#62;links will be run through the light version of Textile. If set to <em>no</em>, descriptions will be displayed as entered.</p>
 
 'textile_comments'
 'Textile Shortcuts'
-'Formatting:
-
-==_==<em>emphasis</em>==_==
-==*==<strong>strong</strong>==*==
-==??==<cite>citation</cite>==??==
-==-==<del>deleted text</del>==-==
-==+==<ins>inserted text</ins>==+==
-==^==<sup>superscript</sup>==^==
-
-Hyperlink:
-=="link text":https://link.com/==
-
-Image:
-==!https://image.url!==
-
-To define an acronym:
-==ABC(Always Be Closing)==
-
-*Note:* All (X)HTML tags will be escaped.'
 <p>Formatting:</p>
 <p>_<em>emphasis</em>_<br />
 *<strong>strong</strong>*<br />
@@ -2853,25 +2764,14 @@ ABC(Always Be Closing)</p>
 
 'tempdir'
 'Temp folder'
-'The Temp folder sets an _absolute path_ to a temporary directory. PHP needs to have write access to this directory (usually chmod 777). This folder is used for uploads of any kind (plugins, files or images).'
 <p>The Temp folder sets an <em>absolute path</em> to a temporary directory. <span class="caps">PHP</span> needs to have write access to this directory (usually chmod 777). This folder is used for uploads of any kind (plugins, files or images).</p>
 
 'syndicate_body_or_excerpt'
 'Syndicate excerpt? (default is body)'
-'If this is set to _no_, then feeds will always contain the full article bodies. If this is set to _yes_, feed items will contain an excerpt instead of the article-body where it is available.'
 <p>If this is set to <em>no</em>, then feeds will always contain the full article bodies. If this is set to <em>yes</em>, feed items will contain an excerpt instead of the article-body where it is available.</p>
 
 'super'
 'Superscript'
-'Use ==^carets^== for text to be rendered ^superscript^.
-
-The <sup> <acronym title="Hypertext Markup Language">HTML</acronym> tag is applied:
-
-==^a phrase^== → <sup>a phrase</sup> → ^a phrase^
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-<a href="https://www.htmlhelp.com/reference/html40/special/sup.html" target="_blank" title="superscript reference at htmlhelp.com">More information</a>'
 <p>Use ^carets^ for text to be rendered <sup>superscript</sup>.</p>
 <p>The <sup> <acronym title="Hypertext Markup Language"><span class="caps">HTML</span></acronym> tag is applied:</p>
 <p>^a phrase^ → <sup>a phrase</sup> → <sup>a phrase</sup></p>
@@ -2880,15 +2780,6 @@ The <sup> <acronym title="Hypertext Markup Language">HTML</acronym> tag is appli
 
 'subscript'
 'sub'
-'Use ==~tildes~== for text to be rendered ~subscript~.
-
-The <sub> <acronym title="Hypertext Markup Language">HTML</acronym> tag is applied:
-
-==~a phrase~== → <sub>a phrase</sub> → ~a phrase~
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-<a href="https://www.htmlhelp.com/reference/html40/special/sub.html" target="_blank" title="subscript reference at htmlhelp.com">More information</a></p>'
 <p>Use ~tildes~ for text to be rendered <sub>subscript</sub>.</p>
 <p>The <sub> <acronym title="Hypertext Markup Language"><span class="caps">HTML</span></acronym> tag is applied:</p>
 <p>~a phrase~ → <sub>a phrase</sub> → <sub>a phrase</sub></p>
@@ -2896,12 +2787,9 @@ The <sub> <acronym title="Hypertext Markup Language">HTML</acronym> tag is appli
 <p><a href="https://www.htmlhelp.com/reference/html40/special/sub.html" target="_blank" title="subscript reference at htmlhelp.com">More information</a></p></p>
 
 'spam_blacklists'
-'Spam blacklists'
-'The blacklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.
-
-You can enter a list of domain names that should be seperated by commas. Potential blacklists can be found at "dmoz":https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/, but be aware that it is *your* responsibility to make sure you can trust those blacklist-providers before you add any.'
-<p>The blacklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.</p>
-<p>You can enter a list of domain names that should be seperated by commas. Potential blacklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blacklist-providers before you add any.</p>
+'Spam blocklists'
+<p>The blocklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.</p>
+<p>You can enter a list of domain names that should be seperated by commas. Potential blocklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blocklist-providers before you add any.</p>
 
 'some_php_functions_disabled'
 'Diagnostics: The following PHP functions... are disabled on your server'
@@ -2934,79 +2822,46 @@ Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:s
 
 'show_comment_count_in_feed'
 'Preferences: Show comment count in feeds? 	'
-'When set to "Yes", this setting will append the number of comments to your article titles in your XML feeds.'
 <p>When set to &quot;Yes&quot;, this setting will append the number of comments to your article titles in your <span class="caps">XML</span> feeds.</p>
 
 'setup_still_exists'
 'Diagnostics: /path/to/textpattern/setup still exists'
-'Once Textpattern has been installed, this directory is no longer needed and is recommended for deletion. You will continue to receive this warning until you have removed it.'
 <p>Once Textpattern has been installed, this directory is no longer needed and is recommended for deletion. You will continue to receive this warning until you have removed it.</p>
 
 'send_lastmod'
 'Send Last-Modified Header'
-'When set, Textpattern will read a visitor's HTTP(HyperText Transfer Protocol) @If-Modified-Since@ header (if one exists) and compares it to the last site update. If nothing has changed since the visitor last loaded the page (i.e., if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor's browser to use its cached version of the page.
-
-This can reduce bandwidth consumption, page load times, and reduce the load on the webserver.'
 <p>When set, Textpattern will read a visitor&apos;s <acronym title="HyperText Transfer Protocol"><span class="caps">HTTP</span></acronym> <code>If-Modified-Since</code> header (if one exists) and compares it to the last site update. If nothing has changed since the visitor last loaded the page (i.e., if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor&apos;s browser to use its cached version of the page.</p>
 <p>This can reduce bandwidth consumption, page load times, and reduce the load on the webserver.</p>
 
 'section_uses_page'
 'Assigning Pages to Sections'
-'In Textpattern, sections are married to page templates. It's kind of sweet, really.'
 <p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really.</p>
 
 'section_uses_css'
 'Assigning CSS to a Section'
-'If you wish to override the default style sheet for a particular section, this can be set here.'
 <p>If you wish to override the default style sheet for a particular section, this can be set here.</p>
 
 'section_syndicate'
 'Syndicate Section Articles'
-'Governs whether or not articles in this section will appear in the site's RSS or Atom XML feeds.'
 <p>Governs whether or not articles in this section will appear in the site&apos;s <span class="caps">RSS</span> or Atom <span class="caps">XML</span> feeds.</p>
 
 'section_searchable'
 'Include in Site Search'
-'This governs whether articles belonging to this section should appear as part of site-wide search results.'
 <p>This governs whether articles belonging to this section should appear as part of site-wide search results.</p>
 
 'section_on_frontpage'
 'Section Article Appear on Front Page'
-'The articles in some sections, such as those resembling more'static' web pages, may seem out of place in the time-sensitive flow of your site's front page. 
-
-Setting this to'no' will prevent articles assigned to this section from appearing on the front page.'
 <p>The articles in some sections, such as those resembling more &apos;static&apos; web pages, may seem out of place in the time-sensitive flow of your site&apos;s front page. </p>
 <p>Setting this to &apos;no&apos; will prevent articles assigned to this section from appearing on the front page.</p>
 
 'section_is_default'
 'Having a Section Selected by Default'
-'This option governs whether this section will be preselected in the'Sections' popup menu when creating a new article.
-
-If most of your articles end up belonging to this section, then set this to'yes'.
-
-Note that only one section at a time can be set to be selected by default.'
 <p>This option governs whether this section will be preselected in the &apos;Sections&apos; popup menu when creating a new article.</p>
 <p>If most of your articles end up belonging to this section, then set this to &apos;yes&apos;.</p>
 <p>Note that only one section at a time can be set to be selected by default.</p>
 
 'section_category'
 'Sections'
-'(An excellent "article":https://www.jdueck.net/articles/textpattern.html on the semantics of sections and categories in Textpattern has been written by Joel Dueck.)
-
-Sections in Textpattern are perhaps best thought of as analogous to sections in a newspaper: each belong to the same publication, but each might feature a different layout, or a different style of article, and so on. 
-
-For most websites, only a bare minimum of sections need be created.
-
-A likely scenario for a personal site, with three sections:
-
-*archive*: the section to which all articles that appear on the front page belong. Whenever a reader clicks on an article's permanent link (for example https://thissite/archive/123/), it will be displayed in the page layout assigned to this section. To go to a paged list of the most recent articles assigned to the section _archive_, the url would be https://thissite/archive/
-
-*about*: an'about this site' page, which differs from the front page and the _archive_ section, in that it is more static, may have a different layout, and will likely contain only one article. The about section would be reached at https://thissite/about/.
-
-*photos*: A section whose differing layout (and possibly different CSS) would display photos instead of articles.
-
-Note that a special hidden'section' always exists, named *default*. Using the layout called'default' as well as the CSS called'default', this is what makes up the front page of your site.'
-<p>(An excellent <a href="https://www.jdueck.net/articles/textpattern.html">article</a> on the semantics of sections and categories in Textpattern has been written by Joel Dueck.)</p>
 <p>Sections in Textpattern are perhaps best thought of as analogous to sections in a newspaper: each belong to the same publication, but each might feature a different layout, or a different style of article, and so on. </p>
 <p>For most websites, only a bare minimum of sections need be created.</p>
 <p>A likely scenario for a personal site, with three sections:</p>
