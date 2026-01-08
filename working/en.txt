@@ -1765,10 +1765,10 @@ Note: The logs only get cleared when you view the logs, and will otherwise conti
 
 'file_max_upload_size'
 'Maximum Upload Size'
-'Here you can restrict the maximim size (in bytes) for file uploads. Note that this value is also limited by the configuration of PHP. If Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in php.ini are post_max_size, upload_max_filesize and memory_limit.)
+'Here you can restrict the maximum size (in bytes) for file uploads. Note that this value is also limited by the configuration of PHP. If Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in php.ini are post_max_size, upload_max_filesize and memory_limit.)
 
 Note: Image Uploads are *not* restricted by this value. The maximum allowed size for images is always ~ 1MB (unless restricted by PHP as explained above).'
-<p>Here you can restrict the maximim size (in bytes) for file uploads. Note that this value is also limited by the configuration of PHP. If Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in php.ini are post_max_size, upload_max_filesize and memory_limit.)</p>
+<p>Here you can restrict the maximum size (in bytes) for file uploads. Note that this value is also limited by the configuration of PHP. If Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in php.ini are post_max_size, upload_max_filesize and memory_limit.)</p>
 <p>Note: Image Uploads are <strong>not</strong> restricted by this value. The maximum allowed size for images is always ~ 1MB (unless restricted by PHP as explained above).</p>
 
 
@@ -3806,31 +3806,14 @@ Recommended: "Yes" for live sites, "No" for sites in development'
 
 'path_to_site_inacc'
 'Site Directory Unreadable'
-'The directory containing the index.php file specified as the index for your site is unreadable by the webserver. Please check permissions.'
 <p>The directory containing the index.php file specified as the index for your site is unreadable by the webserver. Please check permissions.</p>
 
 'path_not_doc_root'
 'Diagnostics: path_to_site Doesn't Match'
-'Two variables set by your webserver which should match, but,  do not.'
 <p>Two variables set by your webserver which should match, but,  do not.</p>
 
 'path_from_root'
 'Root to Textpattern'
-'If your Textpattern site is located in a subdirectory away from your web server's root directory, enter that path here.
-
-Example:
-
-If the site is located at:
-
-@https://www.mysite.com/testing/@
-
-Then you would set this value to
-
-<code>/testing/</code>
-
-If the site *is* located in the root directory, then set the value to a single forward slash:
-
-<code>/</code>'
 <p>If your Textpattern site is located in a subdirectory away from your web server&apos;s root directory, enter that path here.</p>
 <p>Example:</p>
 <p>If the site is located at:</p>
@@ -3842,64 +3825,24 @@ If the site *is* located in the root directory, then set the value to a single f
 
 'override_form'
 'Override Default Form'
-'If on occasion you wish for an article to use a form different from that assigned by default - for example if you want to show only an article excerpt with @<txp:excerpt />@ where you normally show the entire article with @<txp:body />@ - this can be set here.'
 <p>If on occasion you wish for an article to use a form different from that assigned by default &#8211; for example if you want to show only an article excerpt with <code>&#60;txp:excerpt /&#62;</code> where you normally show the entire article with <code>&#60;txp:body /&#62;</code> &#8211; this can be set here.</p>
 
 'override_emailcharset'
 'Override the default characterset for emails'
-'Textpattern uses utf-8 wherever possible per default, also for outgoing emails. However some older email clients (like some versions of Outlook) do not have proper utf-8 support. If you see garbled characters in E-Mails, this setting will try to convert mails to ISO-8859-1 before sending them.
-
-Note: If you are using a language the characters of which cannot be represented in ISO-8859-1, this setting will unfortunately not help you. You should try finding a utf-8 (or unicode)-compatible email-client.'
 <p>Textpattern uses utf-8 wherever possible per default, also for outgoing emails. However some older email clients (like some versions of Outlook) do not have proper utf-8 support. If you see garbled characters in E-Mails, this setting will try to convert mails to <span class="caps">ISO</span>-8859-1 before sending them.</p>
 <p>Note: If you are using a language the characters of which cannot be represented in <span class="caps">ISO</span>-8859-1, this setting will unfortunately not help you. You should try finding a utf-8 (or unicode)-compatible email-client.</p>
 
 'on_frontpage'
 'On Front Page'
-'This governs whether the Section's articles are to appear by default on the front page of the site.
-
-If you link to articles in the Section from the front page, then this option should implicitly set to 'no'.'
 <p>This governs whether the Section&apos;s articles are to appear by default on the front page of the site.</p>
 <p>If you link to articles in the Section from the front page, then this option should implicitly set to &apos;no&apos;.</p>
 
 'old_placeholder_exists'
 'Diagnostics: Section Placeholder File Exists'
-'As of Textpattern version 4.0, section placeholder files are no longer required, and will conflict with the the new .htaccess scheme. Please delete them.'
 <p>As of Textpattern version 4.0, section placeholder files are no longer required, and will conflict with the the new .htaccess scheme. Please delete them.</p>
 
 'numeric'
 'Numeric Lists'
-'To make a numbered list, place each item in its own paragraph, preceded by “# ”.
-
-Example
-
-<pre>
-# A first item
-# A second item
-# A third item
-# A fourth item
-</pre>
-
-Will become:
-
-==<ol>
-<li>A first item</li>
-<li>A second item</li>
-<li>A third item</li>
-<li>A fourth item</li>
-</ol>==
-
-Which, when rendered by a browser, will appear like this:
-
-<ol>
-<li>A first item</li>
-<li>A second item</li>
-<li>A third item</li>
-<li>A fourth item</li>
-</ol>
-
-<small>NB: Unmodified paragraphs will be wrapped in <p> tags.</small>
-
-<a href="https://www.htmlhelp.com/reference/html40/lists/ol.html" title="Ordered list reference at htmlhelp.com" target="_blank">More information</a>'
 <p>To make a numbered list, place each item in its own paragraph, preceded by “# ”.</p>
 <p>Example</p>
 <pre>
@@ -3930,33 +3873,24 @@ Which, when rendered by a browser, will appear like this:
 
 'next_page_link'
 'Next Page Link'
-'When there are more current articles than those displayed on a page, this text (or URL of a graphic) appears at the bottom of the page as a link to continue reading.'
 <p>When there are more current articles than those displayed on a page, this text (or <span class="caps">URL</span> of a graphic) appears at the bottom of the page as a link to continue reading.</p>
 
 'never_display_email'
 'Never display email?'
-'This setting controls wether the email-adress of a commenter should never be shown publicly.'
 <p>This setting controls wether the email-adress of a commenter should never be shown publicly.</p>
 
 'max_url_len'
 'Max URL length'
-'This prevents urls that are longer than specified from functioning. It could be helpful in containing damage, if a security relevant error in Textpattern.'
 <p>This prevents urls that are longer than specified from functioning. It could be helpful in containing damage, if a security relevant error in Textpattern.</p>
 
 'logging'
 'Logging'
-'All hits: Textpattern will log all page views on your site.
-
-Referrers only: Textpattern will only log visits referred from other sites.
-
-None: Textpattern will pick up your dry-cleaning.'
 <p>All hits: Textpattern will log all page views on your site.</p>
 <p>Referrers only: Textpattern will only log visits referred from other sites.</p>
 <p>None: Textpattern will pick up your dry-cleaning.</p>
 
 'link_url'
 'Link URL'
-'The address of the link. If the link points to a different site, then it must be preceded by @https://@.'
 <p>The address of the link. If the link points to a different site, then it must be preceded by <code>https://</code>.</p>
 
 'link_template'
@@ -3969,55 +3903,15 @@ None: Textpattern will pick up your dry-cleaning.'
 
 'link_description'
 'Link Description'
-'Descriptions for links are optional, and are useful for captioning links, or for creating <code>title=""</code> (tooltip) attributes for links, or simply keeping your own internal documentation.'
 <p>Descriptions for links are optional, and are useful for captioning links, or for creating <code>title=&#34;&#34;</code> (tooltip) attributes for links, or simply keeping your own internal documentation.</p>
 
 'link_category'
 'Link Categories'
-'Link categories are optional, and are useful if you want to display different groupings of links, e.g., 'Friends', 'Romans', 'Countrymen'.
-
-Selective link lists such as these are output with the Textpattern 'linklist' tag like so:
-
-<code><txp:linklist category="Friends" /></code>'
 <p>Link categories are optional, and are useful if you want to display different groupings of links, e.g., &apos;Friends&apos;, &apos;Romans&apos;, &apos;Countrymen&apos;.</p>
 <p>Selective link lists such as these are output with the Textpattern &apos;linklist&apos; tag like so:</p>
 <p><code>&#60;txp:linklist category=&#34;Friends&#34; /&#62;</code></p>
 
 'Links'
-'To make a hypertext link, put the link text in =="quotation marks"== followed immediately by a colon and the <acronym title="Universal Resource Locator">URL</acronym> of the link.
-
-Optional: text in (parentheses) following the link text, but before the closing quotation mark, will become a Title attribute for the link, visible as a tool tip when a cursor is above it.
-
-Example:
-
- =="This is a link (This is a title)== ==":https://www.textism.com== 
-
-Will become:
-
-<a href="https://www.textism.com" title="This is a title">This is a link</a>
-
-Which, when displayed in a browser, will look like this:
-
-<a href="https://www.textism.com" title="This is a title" style="color:blue">This is a link</a>
-
-*New* in Textile 2.0 is the ability to store long ugly urls outside of the text you're working in, and reference them with aliases of your choosing.
-
-Simply store the url anywhere in the document,  such as at the end, using this syntax:
-
-[alias (optional title)]https://url
-
-Each referenced url must begin on a new line.
-
-Example text:
-This is a "link":bob to Bob's website.
-
-So long as this appears elsewhere in the document:
-[bob]https://itsbob.com/index.html
-
-...the final output will be:
-This is a <a href="https://itsbob.com/index.html">link</a> to Bob's website.
-
-<a href="https://www.htmlhelp.com/reference/html40/special/a.html" target="_blank" title="a tag reference at htmlhelp.com">More information</a>'
 <p>To make a hypertext link, put the link text in "quotation marks" followed immediately by a colon and the <acronym title="Universal Resource Locator"><span class="caps">URL</span></acronym> of the link.</p>
 <p>Optional: text in (parentheses) following the link text, but before the closing quotation mark, will become a Title attribute for the link, visible as a tool tip when a cursor is above it.</p>
 <p>Example:</p>
@@ -4042,56 +3936,30 @@ This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website
 
 'language'
 'Language'
-'Textpattern is currently available in 18 Languages, you can always check for updates either via your preferences tab ("Install Language") or by visiting <a href="https://rpc.textpattern.com/lang/">https://rpc.textpattern.com/lang/</a>. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.
-
-Switching to a new language is always a two step process. 1) Installing the language and afterwards 2) Selecting the language as the currently active one.'
 <p>Textpattern is currently available in 18 Languages, you can always check for updates either via your preferences tab (&quot;Install Language&quot;) or by visiting <a href="https://rpc.textpattern.com/lang/">https://rpc.textpattern.com/lang/</a>. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.</p>
 <p>Switching to a new language is always a two step process. 1) Installing the language and afterwards 2) Selecting the language as the currently active one.</p>
 
 'keywords'
 'Keywords'
-'Keywords are useful for refining the relationships between articles beyond those provided by categories.
-
-Keywords must be individual words separated by commas.'
 <p>Keywords are useful for refining the relationships between articles beyond those provided by categories.</p>
 <p>Keywords must be individual words separated by commas.</p>
 
 'italic'
 'Emphasis'
-'Use ==_underscores_== around text to be _emphasized._
-
-The <em> HTML(HyperText Markup Language) tag is applied:
-
-==_a phrase_=='
 <p>Use _underscores_ around text to be <em>emphasized.</em></p>
 <p>The <em> <acronym title="HyperText Markup Language"><span class="caps">HTML</span></acronym> tag is applied:</p>
 <p>_a phrase_</p>
 
 'is_dst'
 'Preferences: DST(Daylight Saving Time) enabled?'
-'Whether DST(Daylight Saving Time) is currently active for your timezone.'
 <p>Whether <acronym title="Daylight Saving Time"><span class="caps">DST</span></acronym> is currently active for your timezone.</p>
 
 'in_rss'
 'In RSS'
-'This governs whether the Section's articles are to be included in the site's RSS feed. '
 <p>This governs whether the Section&apos;s articles are to be included in the site&apos;s <span class="caps">RSS</span> feed. </p>
 
 'intro'
 'What Textile Does'
-'* Replace single and double primes (@'@ and @"@) used as quotation marks with HTML(HyperText Markup Language) entities for opening and closing quotation marks (@‘’@ and @“”@) in readable text, while leaving untouched the primes required within HTML tags.
-* Replace double hyphens (==--==) with an em-dash (—) entity.
-* Replace single hyphens surrounded by spaces with an en-dash (–) entity.
-* Replace triplets of periods (==...==) with an ellipsis (…) entity.
-* Convert many nonstandard characters (ŸúßŠπŒ) to browser-safe entities corresponding to keyboard input.
-* Apply block- and phrase-level structural tags automatically and at the discretion of the writer via quick tags.
-* Allow the quick creation of simple and complex tables.
-* Allow the simple application of style, class, id, language and alignment attributes to elements.
-* Create hyperlinks and insert images via quick tags.
-* Define acronyms via quick tags.
-* Wrap an <acronym> tag around runs of three or more capital letters automatically.
-* Convert @(TM)@, @(R)@, and @(C)@ to ™, ®, and ©.
-* Convert the letter x to a dimension sign: @2x4@ to 2×4 and @8x10@ to 8×10.'
 '<ul>
 		<li>Replace single and double primes (<code>&#39;</code> and <code>&#34;</code>) used as quotation marks with <acronym title="HyperText Markup Language"><span class="caps">HTML</span></acronym> entities for opening and closing quotation marks (<code>‘’</code> and <code>“”</code>) in readable text, while leaving untouched the primes required within <span class="caps">HTML</span> tags.</li>
 		<li>Replace double hyphens (--) with an em-dash (—) entity.</li>
@@ -4110,15 +3978,6 @@ The <em> HTML(HyperText Markup Language) tag is applied:
 
 'insert'
 'Inserted Text'
-'Use ==+pluses+== around text that has been +inserted+. This is useful in marking changes from one version of a document to the next.
-
-The <ins> HTML(Hypertext Markup Language) tag is applied:
-
-==+a phrase+== → <ins>a phrase</ins> → +a phrase+
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-"More information(del reference at htmlhelp.com)":https://www.htmlhelp.com/reference/html40/phrase/ins.html'
 <p>Use +pluses+ around text that has been <ins>inserted</ins>. This is useful in marking changes from one version of a document to the next.</p>
 <p>The <ins> <acronym title="Hypertext Markup Language"><span class="caps">HTML</span></acronym> tag is applied:</p>
 <p>+a phrase+ → <ins>a phrase</ins> → <ins>a phrase</ins></p>
@@ -4127,40 +3986,25 @@ The <ins> HTML(Hypertext Markup Language) tag is applied:
 
 'index_inaccessible'
 'Diagnostics: Site Index Inaccessible'
-'The main index.php file specified as the index for your site is unreadable by the webserver. Please check permissions.'
 <p>The main index.php file specified as the index for your site is unreadable by the webserver. Please check permissions.</p>
 
 'include_email_atom'
 'Include email in atom feeds'
-'This allows you to include the email-adress of the author (as set in their user account) of an article in the _auhor_ part of your Atom feeds.'
 <p>This allows you to include the email-adress of the author (as set in their user account) of an article in the <em>auhor</em> part of your Atom feeds.</p>
 
 'import_status'
 'Default Status'
-'Here you can choose the status articles will have once imported into Textpattern.'
 <p>Here you can choose the status articles will have once imported into Textpattern.</p>
 
 'import_section'
 'Import Section'
-'Use this to select the section you want to assign to the imported articles.'
 <p>Use this to select the section you want to assign to the imported articles.</p>
 
 'import_invite'
 'Default Comments Invite for Imported Articles'
-'Here you can set comments invite for the articles you're about to import.'
 <p>Here you can set comments invite for the articles you&apos;re about to import.</p>
 
 'Importing Into Textpattern'
-'You can import your data into Textpattern from the following publishing tools:
-
-* Movable Type, both using an "MT import file":https://textpattern.com/help/?item=import_mt or "directly from a MySQL DataBase":https://textpattern.com/help/?item=import_mtdb
-* Blogger, creating an import file following the MT format spec. You can find an explanation about this on "importing from Blogger":https://textpattern.com/help/?item=import_blogger
-* "WordPress":https://textpattern.com/help/?item=import_wp - including custom prefixes for your databases, if you're using them
-* "b2":https://textpattern.com/help/?item=import_b2. Not recently updated, but we can offer this import option for the same price
-
-If you choose to import from a file - that is, MovableType or Blogger - you must place it under the /include/import directory of your textpattern install dir, and call it @import.txt@.
-
-'
 <p>You can import your data into Textpattern from the following publishing tools:</p>
 
 	<ul>
@@ -4175,48 +4019,14 @@ If you choose to import from a file - that is, MovableType or Blogger - you must
 
 'img_dir'
 'Image Directory'
-'If you'd like to customise the name of your images directory, you can do so here. You must first create the directory in the root of your textpattern installation, you should also make sure that PHP is able to write to that directory (usually chmod 777).
-
-Unlike other directory settings, this path is always a _relative_ path (to the directory of your root textpattern installation). The default is _images_.'
 <p>If you&apos;d like to customise the name of your images directory, you can do so here. You must first create the directory in the root of your textpattern installation, you should also make sure that <span class="caps">PHP</span> is able to write to that directory (usually chmod 777).</p>
 <p>Unlike other directory settings, this path is always a <em>relative</em> path (to the directory of your root textpattern installation). The default is <em>images</em>.</p>
 
 'image_category'
 'Image Categories'
-'Image categories are useful both for internal organisation, and for defining image sets that can be displayed using the @<txp:image_index />@ and @<txp:image_display />@ tags.'
 <p>Image categories are useful both for internal organisation, and for defining image sets that can be displayed using the <code>&#60;txp:image_index /&#62;</code> and <code>&#60;txp:image_display /&#62;</code> tags.</p>
 
 'Images'
-'To insert an image, put the URL(Universal Resource Locator) for the image inside exclamation marks.
-
-Optional: text that immediately follows the URL in (parentheses) will be used as the Alt text for the image. Images on the web should always have descriptive Alt text for the benefit of readers using non-graphical browsers.
-
-Optional: place a colon followed by a URL immediately after the closing ! to make the image into a link.
-
-Example:
- ==!https://www.textism.com/common/textist.gif(Textist)!==
-
-With a link:
-
- ==!/common/textist.gif(Textist)!:https://textism.com==
-
-Will become:
-
-==<img src="https://www.textism.com/common/textist.gif" alt="Textist" />==
-
-With a link:
-
-==<a href="https://textism.com"><img src="/common/textist.gif" alt="Textist" /></a>==
-
-Which the browser will use to render the image:
-
-<img src="https://www.textism.com/common/textist.gif" />
-
-With a link:
-
-<a href="https://www.textism.com"><img src="https://www.textism.com/common/textist.gif" border="0" /></a>
-
-<a href="https://www.htmlhelp.com/reference/html40/special/img.html" target="_blank" title="img tag reference at htmlhelp.com">More information</a>'
 <p>To insert an image, put the <acronym title="Universal Resource Locator"><span class="caps">URL</span></acronym> for the image inside exclamation marks.</p>
 <p>Optional: text that immediately follows the <span class="caps">URL</span> in (parentheses) will be used as the Alt text for the image. Images on the web should always have descriptive Alt text for the benefit of readers using non-graphical browsers.</p>
 <p>Optional: place a colon followed by a <span class="caps">URL</span> immediately after the closing ! to make the image into a link.</p>
@@ -4238,14 +4048,6 @@ With a link:
 
 'htaccess_missing'
 '.htaccess File Missing'
-'You are using a Permanent Link mode which requires an .htaccess file to be placed in your site directory. The recommended directives to place in this .htaccess file are:
-
-<pre>RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.+) - [PT,L]</pre>
-
-<pre>RewriteRule ^(.*) index.php</pre>'
 <p>You are using a Permanent Link mode which requires an .htaccess file to be placed in your site directory. The recommended directives to place in this .htaccess file are:</p>
 <pre>RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} -f [OR]
@@ -4256,35 +4058,6 @@ RewriteRule ^(.+) - [PT,L]</pre>
 
 'header'
 'Headers'
-'To make an entire paragraph into a Header, place "h<em>n</em>. " at its beginning, where _n_ is a number from 1–6.
-
-Examples:
-
-==h1. Header 1==
-
-==h2. Header 2==
-
-==h3. Header 3==
-
-Will become:
-
-<h1>Header 1</h1>
-
-<h2>Header 2</h2>
-
-<h3>Header 3</h3>
-
-Which, when rendered by a browser, will appear like this:
-
-h1. Header 1
-
-h2. Header 2
-
-h3. Header 3
-
-<small>NB: Unmodified paragraphs will be wrapped in <p> tags.</small>
-
-"More information(H1 reference at htmlhelp.com)":https://www.htmlhelp.com/reference/html40/block/h1.html'
 <p>To make an entire paragraph into a Header, place &quot;h<em>n</em>. &quot; at its beginning, where <em>n</em> is a number from 1–6.</p>
 <p>Examples:</p>
 <p>h1. Header 1</p>
@@ -4311,34 +4084,16 @@ h3. Header 3
 
 'gzip_compress'
 'Use page compression'
-'When enabled, pages are GZIP(Gnu Zip) compressed at the server before being sent to the visitor.
-
-This can mean faster page loads (especially for visitors using modems) and reduced bandwidth consumption.'
 <p>When enabled, pages are <acronym title="Gnu Zip"><span class="caps">GZIP</span></acronym> compressed at the server before being sent to the visitor.</p>
 <p>This can mean faster page loads (especially for visitors using modems) and reduced bandwidth consumption.</p>
 
 'gmtoffset'
 'Preferences: Time Zone'
-'In order to display dates in your local time zone, please indicate where you are in relation to Greenwich Mean Time/Universal Coordinated Time (by "Standard" _not_ "Daylight" time - <a href="index.php?item=is_dst&lang=en" title="Preferences: DST(Daylight Saving Time) enabled?">another preference enables/disables Daylight Saving Time</a>).
-
-Wikipedia: "Time offset":https://en.wikipedia.org/wiki/Time_offset'
 <p>In order to display dates in your local time zone, please indicate where you are in relation to Greenwich Mean Time/Universal Coordinated Time (by &quot;Standard&quot; <em>not</em> &quot;Daylight&quot; time &#8211; <a href="index.php?item=is_dst&lang=en" title="Preferences: DST(Daylight Saving Time) enabled?">another preference enables/disables Daylight Saving Time</a>).</p>
 <p>Wikipedia: <a href="https://en.wikipedia.org/wiki/Time_offset">Time offset</a></p>
 
 'full_path'
 'Path to Textpattern'
-'This must indicate the full server path to your /textpattern/ directory, which should be inside the directory containing your Textpattern site.
-
-Note there must be no trailing slash at the end.
-
-Examples:
-
-@/home/user/docs/html/textpattern@
-
-or
-
-@/home/var/www/mytxpsite/textpattern@
-'
 <p>This must indicate the full server path to your /textpattern/ directory, which should be inside the directory containing your Textpattern site.</p>
 <p>Note there must be no trailing slash at the end.</p>
 <p>Examples:</p>
@@ -4348,32 +4103,6 @@ or
 
 'form_place_article'
 'Article Tags'
-'These tags are replaced with their corresponding values every time an article is output. 
-
-_Author_
-The full name of the article's author.
-
-_Body_
-The body of the article. Note that the body of articles processed with Textile will already have <code><p></code> tags around each paragraph. Thus it is superfluous to use additional paragraph tags. 
-
-_Excerpt_
-Text, if any, that was entered in the article's 'Excerpt' field.
-
-_Category 1_
-_Category 2_
-Categories, if any, assigned to the article.
-
-_Comments invite_
-Will be replaced by the invitation for comments, if any, assigned to the article, as well as the current count of comments received.
-
-_Permanent link_
-Text, article date or graphic that represents a permanent link to the article.
-
-_Posted_
-The time associated with the article, in the format specified in the 'date format' items on the Textpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
-
-_Title_
-Guess.'
 <p>These tags are replaced with their corresponding values every time an article is output. </p>
 <p><em>Author</em><br />
 The full name of the article&apos;s author.</p>
@@ -4395,32 +4124,6 @@ Guess.</p>
 
 'form_articles'
 'Article Tags'
-'These tags are replaced with their corresponding values every time an article is output. 
-
-_Author_
-The full name of the article's author.
-
-_Body_
-The body of the article. Note that the body of articles processed with Textile will already have <code><p></code> tags around each paragraph. Thus it is superfluous to use additional paragraph tags. 
-
-_Excerpt_
-Text, if any, that was entered in the article's 'Excerpt' field.
-
-_Category 1_
-_Category 2_
-Categories, if any, assigned to the article.
-
-_Comments invite_
-Will be replaced by the invitation for comments, if any, assigned to the article, as well as the current count of comments received.
-
-_Permanent link_
-Text, article date or graphic that represents a permanent link to the article.
-
-_Posted_
-The time associated with the article, in the format specified in the 'date format' items on the Textpattern preferences page. If this tag is placed between 'permanent link' tags, then the article's date becomes its clickable permanent link.
-
-_Title_
-Guess.'
 <p>These tags are replaced with their corresponding values every time an article is output. </p>
 <p><em>Author</em><br />
 The full name of the article&apos;s author.</p>
@@ -4442,43 +4145,24 @@ Guess.</p>
 
 'file_max_upload_size'
 'Maximum Upload Size'
-'Here you can restrict the maximim size (in bytes) for file uploads. Note that this value is also limited by the configuration of PHP. If Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in php.ini are post_max_size, upload_max_filesize and memory_limit.)
-
-Note: Image Uploads are *not* restricted by this value. The maximum allowed size for images is always ~ 1MB (unless restricted by PHP as explained above).'
-<p>Here you can restrict the maximim size (in bytes) for file uploads. Note that this value is also limited by the configuration of <span class="caps">PHP</span>. If Textpattern detects that your <span class="caps">PHP</span> configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in php.ini are post_max_size, upload_max_filesize and memory_limit.)</p>
+<p>Here you can restrict the maximum size (in bytes) for file uploads. Note that this value is also limited by the configuration of <span class="caps">PHP</span>. If Textpattern detects that your <span class="caps">PHP</span> configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in php.ini are post_max_size, upload_max_filesize and memory_limit.)</p>
 <p>Note: Image Uploads are <strong>not</strong> restricted by this value. The maximum allowed size for images is always ~ 1MB (unless restricted by <span class="caps">PHP</span> as explained above).</p>
 
 'expire_logs_after'
 'Preferences: Expire logs after X number of days'
-'When you are using Textpattern for logging, you can set how long (in days) those logs should be kept. "7" will keep the logs available for seven days. 
-
-Note: The logs only get cleared when you view the logs, and will otherwise continue to build in size.'
 <p>When you are using Textpattern for logging, you can set how long (in days) those logs should be kept. &quot;7&quot; will keep the logs available for seven days. </p>
 <p>Note: The logs only get cleared when you view the logs, and will otherwise continue to build in size.</p>
 
 'excerpt'
 'Article Excerpt'
-'Article excerpts are optional. These can be a short summary of the article that is displayed as part of a table of contents, or used in place of the full article body in the site's RSS/Atom feeds.'
 <p>Article excerpts are optional. These can be a short summary of the article that is displayed as part of a table of contents, or used in place of the full article body in the site&apos;s <span class="caps">RSS</span>/Atom feeds.</p>
 
 'edit_raw_css_by_default'
 'Preferences: Edit raw css by default'
-'This selects the default method of editing css (presentation > style). If set to _yes_, you will see one large text-area with all the content of the css by default. If set to _no_, you will see the css-editor by default.'
 <p>This selects the default method of editing css (presentation &#62; style). If set to <em>yes</em>, you will see one large text-area with all the content of the css by default. If set to <em>no</em>, you will see the css-editor by default.</p>
 
 'doc_root'
 'Preferences: Document Root'
-'This must be the full server path to the document root of your server, regardless of where you have Textpattern installed.
-
-Note there must be no trailing slash at the end.
-
-Examples:
-
-<code>/home/user/docs/html</code>
-
-or
-
-<code>/home/var/www</code>'
 <p>This must be the full server path to the document root of your server, regardless of where you have Textpattern installed.</p>
 <p>Note there must be no trailing slash at the end.</p>
 <p>Examples:</p>
@@ -4488,30 +4172,18 @@ or
 
 'dns_lookup_fails'
 'Diagnostics: DNS Fails'
-'It appears the URI you specified as the address of your site is unreachable on the web.'
 <p>It appears the <span class="caps">URI</span> you specified as the address of your site is unreachable on the web.</p>
 
 'dir_not_writable'
 'Diagnostics: Directory is not writable'
-'To use the file and image upload capabilities, these directories have to be writable by PHP. Usually this means you have change permissions to 777. This can be done with your FTP client or alternatively on the command line by issuing a: chmod 777 /path/to/dir'
 <p>To use the file and image upload capabilities, these directories have to be writable by <span class="caps">PHP</span>. Usually this means you have change permissions to 777. This can be done with your <span class="caps">FTP</span> client or alternatively on the command line by issuing a: chmod 777 /path/to/dir</p>
 
 'dev_version_live'
 'Diagnostics: You are running in-development files on a live server'
-'This is a warning that you are running development versions of one or more core files on a live server. This is unadvised for anyone but experienced users and is unsupported by the developers.s'
 <p>This is a warning that you are running development versions of one or more core files on a live server. This is unadvised for anyone but experienced users and is unsupported by the developers.s</p>
 
 'delete'
 'Deleted Text'
-'Use ==-hyphens-== around text that has been -deleted-. This is useful in marking changes from one version of a document to the next.
-
-The <del> HTML(Hypertext Markup Language) tag is applied:
-
-==-a phrase-== → <del>a phrase</del> → -a phrase-
-
-<small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small>
-
-"More information(del reference at htmlhelp.com)":https://www.htmlhelp.com/reference/html40/phrase/del.html'
 <p>Use -hyphens- around text that has been <del>deleted</del>. This is useful in marking changes from one version of a document to the next.</p>
 <p>The <del> <acronym title="Hypertext Markup Language"><span class="caps">HTML</span></acronym> tag is applied:</p>
 <p>-a phrase- → <del>a phrase</del> → <del>a phrase</del></p>
@@ -4520,33 +4192,15 @@ The <del> HTML(Hypertext Markup Language) tag is applied:
 
 'date_case'
 'Preferences: Front Page Date Case'
-'Use this if you want dates for articles on the front page to appear in UPPERCASE, Upper & Lower case, or lower case.
-
-Upper & Lower case is the default.'
 <p>Use this if you want dates for articles on the front page to appear in <span class="caps">UPPERCASE</span>, Upper &#38; Lower case, or lower case.</p>
 <p>Upper &#38; Lower case is the default.</p>
 
 'dateformat'
 'Preferences: Date Format'
-'This option will affect how article dates shall appear on the front page of your site only.'
 <p>This option will affect how article dates shall appear on the front page of your site only.</p>;
-INSERT INTO `txp_server_help` VALUES 'css_mode'
+
+'css_mode'
 'Preferences: CSS Mode'
-'The "Cascading Style Sheets":https://www.w3schools.com/css/default.asp standard is a slim, powerful language that allows you to centralize site-wide control of content presentation. Everything from fonts and colours to sizes and positions can be governed through CSS.
-
-Ordinarily CSS data appears in the <code>head</code> section of an HTML document, or is stored in a text file linked to the document. Modern browsers parse this data in advance of displaying a page, and then cache the data for use on subsequent pages or site visits. As such, CSS can greatly reduce the download size of web pages: just one of many improvements  CSS formatting offers over older web design methods.
-
-Textpattern offers two modes of maintaining style sheets for your pages.
-
-In Manual CSS mode, you can create (or paste in) any style sheet information you like, right in the Textpattern interface. This allows for quick editing of styles without the clumsy bother of ftp uploading. Style sheets can be generated from scratch or by WYSIWYG website editors, and are found "all over the web":https://directory.google.com/Top/Computers/Programming/Internet/CSS/Sample_Style_Sheets/Layouts/.
-
-In Automatic CSS mode, style sheet editing is taken to a sophisticated new level, using an editing interface and organizational method intended to make CSS parameters more readable and logical. Any existing style sheet can be 'poured' into the editing interface and modified indefinitely.
-
-In Automatic mode, CSS files are classified as either _layout_ or _style_. Pages on a site can share or combine either type.
-
-Layout files define large structural parameters, such as the number and size of columns on a page, headers and footers, &c.
-
-Style files in turn govern parameters like typography, colour, and the finer methods of positioning (e.g. padding and margins and relationships between objects on a page) not defined in layout files.'
 <p>The <a href="https://www.w3schools.com/css/default.asp">Cascading Style Sheets</a> standard is a slim, powerful language that allows you to centralize site-wide control of content presentation. Everything from fonts and colours to sizes and positions can be governed through <span class="caps">CSS</span>.</p>
 <p>Ordinarily <span class="caps">CSS</span> data appears in the <code>head</code> section of an <span class="caps">HTML</span> document, or is stored in a text file linked to the document. Modern browsers parse this data in advance of displaying a page, and then cache the data for use on subsequent pages or site visits. As such, <span class="caps">CSS</span> can greatly reduce the download size of web pages: just one of many improvements  <span class="caps">CSS</span> formatting offers over older web design methods.</p>
 <p>Textpattern offers two modes of maintaining style sheets for your pages.</p>
@@ -4558,31 +4212,15 @@ Style files in turn govern parameters like typography, colour, and the finer met
 
 'comment_nofollow'
 'Preferences: Use nofollow on comments?'
-'This will add an additional attribute to the links made in comments. It is intended to be a measure that takes away the incentive for comment-spammers and was initiated by a range of search engines and software-writers. You can find out more about it by reading "Google's announcement":https://googleblog.blogspot.com/2005/01/preventing-comment-spam.html .
-
-Note: This setting does not influence the functionality or ranking of your site. It will (or may) prevent or diminish the influence of your comments when some search-engines rank sites linked to from those comments.'
 <p>This will add an additional attribute to the links made in comments. It is intended to be a measure that takes away the incentive for comment-spammers and was initiated by a range of search engines and software-writers. You can find out more about it by reading <a href="https://googleblog.blogspot.com/2005/01/preventing-comment-spam.html">Google&apos;s announcement</a> .</p>
 <p>Note: This setting does not influence the functionality or ranking of your site. It will (or may) prevent or diminish the influence of your comments when some search-engines rank sites linked to from those comments.</p>
 
 'comment_means_site_updated'
 'Preferences: New comment means site updated'
-'The database keeps track of when the last change to your site has happened. When this setting is set to yes, a new comment will also update this value. This value is for example used for the "Send Last-Modified header"-functionality.'
 <p>The database keeps track of when the last change to your site has happened. When this setting is set to yes, a new comment will also update this value. This value is for example used for the &quot;Send Last-Modified header&quot;-functionality.</p>
 
 'comments_use_fat_textile'
 'Preferences: Allow more Textile markup?'
-'When set to "Yes", comments may contain Textile elements which would otherwise be treated as plain text:
-
-* headings
-* ordered and unordered lists
-* foot notes
-* tables
-* code
-* extended block syntax (@bc..@, @bq..@, etc.)
-
-For security reasons, raw (X)HTML is transformed into regular text.
-
-Threshold State: "Textile":https://textile.thresholdstate.com/'
 <p>When set to &quot;Yes&quot;, comments may contain Textile elements which would otherwise be treated as plain text:</p>
 
 	<ul>
@@ -4599,31 +4237,24 @@ Threshold State: "Textile":https://textile.thresholdstate.com/'
 
 'comments_sendmail'
 'Preferences: Mail Comments'
-'If enabled, whenever a new comment is received, a copy will be sent via email to the article's author.'
 <p>If enabled, whenever a new comment is received, a copy will be sent via email to the article&apos;s author.</p>
 
 'comments_require_name'
 'Preferences: Comments require name'
-'If set to yes, people that want to comment on your blog, will have to enter a name in the comment-form. They will get an error-message otherwise.'
 <p>If set to yes, people that want to comment on your blog, will have to enter a name in the comment-form. They will get an error-message otherwise.</p>
 
 'comments_require_email'
 'Preferences: Comments require email'
-'If set to yes, people that want to comment on your blog, will have to enter an email-adress in the comment-form. They will get an error-message otherwise.'
 <p>If set to yes, people that want to comment on your blog, will have to enter an email-adress in the comment-form. They will get an error-message otherwise.</p>
 
 'comments_on_default'
 'Preferences: Comments on by default'
-'If this is checked, comments will be automatically allowed for every article published. If it is not, you must click "allow comments" each time you want to accept comments.
-
-Note that allowing comments can be turned on or off at any time, on a per-article basis.'
 <p>If this is checked, comments will be automatically allowed for every article published. If it is not, you must click &quot;allow comments&quot; each time you want to accept comments.</p>
 <p>Note that allowing comments can be turned on or off at any time, on a per-article basis.</p>
 
 'comments_moderate'
 'discuss'
 'Moderate Comments'
-'With this option turned on, every new comment will have its visibility turned off until it has been reviewed. You must manually make each comment visible.'
 <p>With this option turned on, every new comment will have its visibility turned off until it has been reviewed. You must manually make each comment visible.</p>
 
 'comments_mode'
