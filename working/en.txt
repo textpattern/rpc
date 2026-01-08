@@ -1,32 +1,3 @@
-'comments_dateformat'
-'Preferences: Comments date format'
-<p>How comment dates will appear to your site visitors.</p>
-
-'comments_date_case'
-'Preferences: Comments date case'
-<p>The case of the date displayed for individual comments.</p>
-
-'comments_default_invite'
-'Preferences: Default comments invite'
-<p>If you allow visitors to comment on your site, this is the default invitation text. For example:</p>
-
-	<ul>
-		<li>Comments</li>
-		<li>Add a comment</li>
-		<li>Feedback</li>
-		<li>Annotate</li>
-	</ul>
-
-<p>Note that the invitation text can always be changed on a per-article basis.</p>
-
-'comments_disabled_after'
-'Preferences: Comments disabled after'
-<p>Use this to set the amount of time after which commenting will be turned off for articles (can be set to &apos;Never&apos; to allow indefinite time to comment).</p>
-
-'comments_disallow_images'
-'Preferences: Strip user images from comments?'
-<p>With this option set to &apos;Yes&apos;, any images included in comments will be stripped out.</p>
-
 'comments_mode'
 'Preferences: Comments mode'
 <p>If &apos;No popup&apos; is selected (recommended) the current window will be refreshed to display only the current article, with comments beneath.</p>
