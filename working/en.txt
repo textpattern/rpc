@@ -432,8 +432,6 @@
 <p>Keywords are useful for refining the relationships between articles beyond those provided by categories.</p>
 <p>Keywords must be individual words separated by commas.</p>
 
-'language'
-'language'
 'Languages: Introduction'
 'Textpattern CMS is available in various languages, you can always check for updates either via your'Languages' tab or by visiting "link-external)https://rpc.textpattern.com/lang/":https://rpc.textpattern.com/lang/. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.
 
@@ -1972,8 +1970,6 @@ If you choose to import from a file - that is, MovableType or Blogger - you must
 <p>Keywords are useful for refining the relationships between articles beyond those provided by categories.</p>
 <p>Keywords must be individual words separated by commas.</p>
 
-'language'
-'Language'
 <p>Textpattern is currently available in 18 Languages, you can always check for updates either via your preferences tab (&quot;Install Language&quot;) or by visiting <a href="https://rpc.textpattern.com/lang/">https://rpc.textpattern.com/lang/</a>. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.</p>
 <p>Switching to a new language is always a two step process. 1) Installing the language and afterwards 2) Selecting the language as the currently active one.</p>
 
@@ -2535,7 +2531,7 @@ ForceType application/x-httpd-php <br />
 <p>On your host <span class="caps">PHP</span> is not compiled with a mail() function. Therefore Textpattern cannot send emails, and you will not be able to use some functions. For example you won&apos;t be able to receive email-notifications on comments, and you won&apos;t be able to add other users (well, you can add them, but they won&apos;t receive the email with their password).</p>
 
 'warn_register_globals_or_update'
-'Turn register_globals off or update to a newer PHP version.'
+'Turn register_globals off or update to a newer PHP version'
 <p>Recently a severe vulnerability was discovered in PHP. <a href="https://www.hardened-php.net/advisory_202005.79.html">The security advisory</a> says:</p>
 
 	<blockquote>
@@ -2564,7 +2560,7 @@ ForceType application/x-httpd-php <br />
 <p>If you are experiencing duplicate display of comments in an article, then chances are your templates have the <code>&lt;txp:comments /&gt;</code> tag in a template but also have &apos;Automatically append comments to articles?&apos; set to &apos;Yes&apos; too &#8211; see <a href="https://textpattern.com/faq/95/comment-display-confusion">the related <span class="caps">FAQ</span> entry</a> for more information.</p>
 
 'warn_register_globals_or_update'
-'Turn register_globals off or update to a newer PHP version.'
+'Turn register_globals off or update to a newer PHP version'
 <p>Recently a severe vulnerability was discovered in <span class="caps">PHP</span>. <a href="https://www.hardened-php.net/advisory_202005.79.html">The security advisory</a> says:</p>
 
 	<blockquote>
@@ -2600,7 +2596,6 @@ ForceType application/x-httpd-php <br />
 
 'use_mail_on_feeds_id'
 'Preferences: Use mail on feeds id'
-'Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email adress or your domain name to include in these IDs. The email-adress will be the first one used when creating the site. Unless you are likely going to be changing your domain-name, it is probably safe to set this to no.'
 <p>Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email adress or your domain name to include in these IDs. The email-adress will be the first one used when creating the site. Unless you are likely going to be changing your domain-name, it is probably safe to set this to no.</p>
 
 'use_dns'
@@ -2793,7 +2788,6 @@ ABC(Always Be Closing)</p>
 
 'some_php_functions_disabled'
 'Diagnostics: The following PHP functions... are disabled on your server'
-'This means your hosting company or server administrator has disabled one or PHP functions. Please "see the folllowing FAQ entry for more information (Textpattern FAQ: The following PHP functions... are disabled)":https://textpattern.com/faq/266/the-following-php-functions-are-disabled.'
 <p>This means your hosting company or server administrator has disabled one or <span class="caps">PHP</span> functions. Please <a href="https://textpattern.com/faq/266/the-following-php-functions-are-disabled" title="Textpattern FAQ: The following PHP functions... are disabled">see the folllowing <span class="caps">FAQ</span> entry for more information</a>.</p>
 
 'site_slogan'
@@ -2888,49 +2882,25 @@ Recommended: a low value, such as @5@ through @15@
 
 'replace_image_form'
 'Replace Image'
-'An image uploaded here will simply replace the existing one associated with this entry in the database.'
 <p>An image uploaded here will simply replace the existing one associated with this entry in the database.</p>
 
 'remember_login'
 'Remember Login'
-'When checked, you will remain logged in to your Textpattern account with the current web browser, until you choose to logout. If left unchecked, you will be automatically logged out after a period of inactivity.
-
-Requires cookies to be enabled in your browser.'
 <p>When checked, you will remain logged in to your Textpattern account with the current web browser, until you choose to logout. If left unchecked, you will be automatically logged out after a period of inactivity.</p>
 <p>Requires cookies to be enabled in your browser.</p>
 
 'record_mentions'
 'Record Mentions'
-'Mentions are simply a list of incoming referrers to specific articles - a quick way to get a feel for who's linking to your work.
-
-Mechanisms for displaying mentions on a Textpattern site are still in development.'
 <p>Mentions are simply a list of incoming referrers to specific articles &#8211; a quick way to get a feel for who&apos;s linking to your work.</p>
 <p>Mechanisms for displaying mentions on a Textpattern site are still in development.</p>
 
 'publish_expired_articles'
 'Preferences: Publish Expired Articles'
-'When set to "Yes", expired articles will continue to show on your site after their expiry date has elapsed. You can use @<txp:if_expired />@ to show alternate content or markup for expired articles.
-
-When set to "No", expired articles will be removed from the public site and return a "410 Gone" HTTP status instead.  Visiors hitting an expired article will be shown a custom page template named "error_410" if it's present .'
 <p>When set to &quot;Yes&quot;, expired articles will continue to show on your site after their expiry date has elapsed. You can use <code>&#60;txp:if_expired /&#62;</code> to show alternate content or markup for expired articles.</p>
 <p>When set to &quot;No&quot;, expired articles will be removed from the public site and return a &quot;410 Gone&quot; <span class="caps">HTTP</span> status instead.  Visiors hitting an expired article will be shown a custom page template named &quot;error_410&quot; if it&apos;s present .</p>
 
 'production_status'
 'Production Status'
-'In *Debugging* mode, all PHP error reporting on your live site will be visible, as will warnings about malfunctioning code and plugins.  In addition, the following information will be visible when you view the XHTML source of live pages:
-
-* the time it took the server to build the page ('Runtime')
-* the number of MySQL queries executed
-* approximate peak memory usage
-* all Textpattern tags encountered while building the page
-
-In *Testing* mode, PHP error reporting on your live site will be visible, as will warnings about malfunctioning code and plugins. The following information will be visible when you view the XHTML source of live pages:
-
-* the time it took the server to build the page ('Runtime')
-* the number of MySQL queries executed
-* approximate peak memory usage
-
-In *Live* mode, no error reporting or diagnostic information will be sent to the page. Generally, Live mode is preferred, as it imposes the least overhead on the server.'
 <p>In <strong>Debugging</strong> mode, all <span class="caps">PHP</span> error reporting on your live site will be visible, as will warnings about malfunctioning code and plugins.  In addition, the following information will be visible when you view the <span class="caps">XHTML</span> source of live pages:</p>
 
 	<ul>
@@ -2968,20 +2938,14 @@ Recommended: "Yes" for live sites, "No" for sites in development'
 
 'permlink_mode'
 'Permanent Link Mode'
-'This defines the method by which individual articles are reached via the URL displayed by the @<txp:permlink>@ tag.'
 <p>This defines the method by which individual articles are reached via the <span class="caps">URL</span> displayed by the <code>&#60;txp:permlink&#62;</code> tag.</p>
 
 'permlink'
 'Preferences: Permanent Link'
-'This is text or the url of a graphic that will be the clickable link to the permanent address of an article.'
 <p>This is text or the url of a graphic that will be the clickable link to the permanent address of an article. </p>
 
 'permalink_title_format'
 'Preferences: Permalink Titles with hyphens or in CamelCase'
-'This setting only has an effect when "Attach titles to permalinks" is set to _on_. When dirifying article-titles for use in urls, you have the option of: 
-
-# using all lowercase letters, and replacing spaces with hyphens
-# completely removing spaces, and using CamelCase, which means that the beginning of new words will be marked by uppercase letters.'
 <p>This setting only has an effect when &quot;Attach titles to permalinks&quot; is set to <em>on</em>. When dirifying article-titles for use in urls, you have the option of: </p>
 
 	<ol>
@@ -3118,8 +3082,6 @@ This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website
 This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website.</p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/a.html" target="_blank" title="a tag reference at htmlhelp.com">More information</a></p>
 
-'language'
-'Language'
 <p>Textpattern is currently available in 18 Languages, you can always check for updates either via your preferences tab (&quot;Install Language&quot;) or by visiting <a href="https://rpc.textpattern.com/lang/">https://rpc.textpattern.com/lang/</a>. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.</p>
 <p>Switching to a new language is always a two step process. 1) Installing the language and afterwards 2) Selecting the language as the currently active one.</p>
 
@@ -3442,34 +3404,19 @@ Guess.</p>
 
 'comments_mode'
 'Preferences: Comments Mode'
-'If'popup' is selected, a new small comments window will open when the comments link is clicked.
-
-If'no popup' is selected, the current window will be refreshed to display only the current article, with comments beneath.'
 <p>If &apos;popup&apos; is selected, a new small comments window will open when the comments link is clicked.</p>
 <p>If &apos;no popup&apos; is selected, the current window will be refreshed to display only the current article, with comments beneath.</p>
 
 'comments_disallow_images'
 'Preferences: Disallow User Images?'
-'With this option set to Yes, images included in comments will be stripped out.'
 <p>With this option set to Yes, images included in comments will be stripped out.</p>
 
 'comments_disabled_after'
 'Preferences: Disabling Comments'
-'Use this to set the amount of time after which commenting will be turned off for articles.'
 <p>Use this to set the amount of time after which commenting will be turned off for articles.</p>
 
 'comments_default_invite'
 'Preferences: Default comments invite'
-'If you allow visitors to comment on your site, this is the default invitation to do so. 
-
-Possibilities:
-
-Comments
-Feedback
-Annotate
-Shave my poodle
-
-Note that the invitation can always be changed on a per-article basis.'
 <p>If you allow visitors to comment on your site, this is the default invitation to do so. </p>
 <p>Possibilities:</p>
 <p>Comments<br />
@@ -3480,7 +3427,6 @@ Shave my poodle</p>
 
 'comments_date_case'
 'Preferences: Comments Date Case'
-'The case of the date displayed for individual comments.'
 <p>The case of the date displayed for individual comments.</p>
 
 'comments_dateformat'
@@ -3490,20 +3436,12 @@ Shave my poodle</p>
 
 'comments_auto_append'
 'Preferences: Automatically append comments to articles?'
-'This setting determines whether comments and the comment form are automatically appended to individual articles (by automatically including the contents of the "comments_display form (Textbook: Default Forms, comments_display)":https://textbook.textpattern.net/wiki/index.php?title=Default_Forms#comments_display).
-
-If turned off, you will need to add the comment tags manually. "See the related FAQ entry (Textpattern FAQ: Comment display confusion)":https://textpattern.com/faq/95/comment-display-confusion.
-
-The majority of the time, you will want this setting left on, turning it off only if you need greater flexibility to the positioning of your comments in your site design.'
 <p>This setting determines whether comments and the comment form are automatically appended to individual articles (by automatically including the contents of the <a href="https://textbook.textpattern.net/wiki/index.php?title=Default_Forms#comments_display" title="Textbook: Default Forms, comments_display">comments_display form</a>).</p>
 <p>If turned off, you will need to add the comment tags manually. <a href="https://textpattern.com/faq/95/comment-display-confusion" title="Textpattern FAQ: Comment display confusion">See the related <span class="caps">FAQ</span> entry</a>.</p>
 <p>The majority of the time, you will want this setting left on, turning it off only if you need greater flexibility to the positioning of your comments in your site design.</p>
 
 'comments_are_ol'
 'Preferences: Present Comments as an Ordered List'
-'Determines whether article comments will be wrapped with the (X)HTML @<ol>@ tag, and individual comments will be wrapped in the @<li>@ tag (causing comments to be presented as a numbered list) or individual comments are wrapped with the @<div>@ tag.
-
-With either value, you can override the tags used on an individual form basis by modifying the "comments tag (Textbook: comments)":https://textbook.textpattern.net/wiki/index.php?title=Txp:comments_/, found in the "comments_display form (Textbook: Default Forms, comments_display)":https://textbook.textpattern.net/wiki/index.php?title=Default_Forms#comments_display.'
 <p>Determines whether article comments will be wrapped with the (X)HTML <code>&#60;ol&#62;</code> tag, and individual comments will be wrapped in the <code>&#60;li&#62;</code> tag (causing comments to be presented as a numbered list) or individual comments are wrapped with the <code>&#60;div&#62;</code> tag.</p>
 <p>With either value, you can override the tags used on an individual form basis by modifying the <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:comments_/" title="Textbook: comments">comments tag</a>, found in the <a href="https://textbook.textpattern.net/wiki/index.php?title=Default_Forms#comments_display" title="Textbook: Default Forms, comments_display">comments_display form</a>.</p>
 
@@ -3778,26 +3716,15 @@ p[no]{color:red}. <em>A Norse of a different colour</em></h2>
 
 'attach_titles_to_permalinks'
 'Preferences: Attach titles to permalinks?'
-'This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overridden in the "Advanced Options" when editing an article.
-
-This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly urls, in which case you probably want to set this to off.'
 <p>This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overridden in the &quot;Advanced Options&quot; when editing an article.</p>
 <p>This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly urls, in which case you probably want to set this to off.</p>
 
 'article_template'
 'Preferences: Default Article Template'
-'This is the default template used to format articles on the front page of your site, provided none has been specified in the PHP snippet used on that page.'
 <p>This is the default template used to format articles on the front page of your site, provided none has been specified in the <span class="caps">PHP</span> snippet used on that page.</p>
 
 'article_image'
 'Article Image'
-'If you would like to associate a single image with this article, place its URL (or Textpattern image ID) here.
-
-The image can be output by placing a 
-
-@<txp:article_image />@ 
-
-tag inside an article form.'
 <p>If you would like to associate a single image with this article, place its <span class="caps">URL</span> (or Textpattern image ID) here.</p>
 <p>The image can be output by placing a </p>
 <p><code>&#60;txp:article_image /&#62;</code> </p>
@@ -3829,20 +3756,15 @@ Likely article categories on a site about food might be
 
 'articles_use_excerpts'
 'Preferences: Articles use excerpts'
-'By choosing _no_ the excerpt field will not be shown to the author on the article-editing screen.'
 <p>By choosing <em>no</em> the excerpt field will not be shown to the author on the article-editing screen.</p>
 
 'archive_date_case'
 'Preferences: Subsection Date Case'
-'Use this if you want dates for articles in subsections to appear in UPPERCASE, Upper & Lower case, or lower case.
-
-Upper & Lower case is the default.'
 <p>Use this if you want dates for articles in subsections to appear in <span class="caps">UPPERCASE</span>, Upper &#38; Lower case, or lower case.</p>
 <p>Upper &#38; Lower case is the default.</p>
 
 'archive_dateformat'
 'Preferences: Archive Date Format'
-'How dates will appear on articles in subsections of your site.'
 <p>How dates will appear on articles in subsections of your site.</p>
 
 'allow_page_php_scripting'
@@ -3857,25 +3779,19 @@ Textbook: "php":https://textbook.textpattern.net/wiki/index.php?title=Txp:php
 
 'allow_form_override'
 'Preferences: Allow form override?'
-'This setting allows article authors to override the form to be used when their article is rendered. If enabled, an "Override form" dropdown will be available under "Advanced Options", when editing an article.'
 <p>This setting allows article authors to override the form to be used when their article is rendered. If enabled, an &quot;Override form&quot; dropdown will be available under &quot;Advanced Options&quot;, when editing an article.</p>
 
 'allow_article_php_scripting'
 'Preferences: Allow PHP in articles?'
-'When enabled, this setting will allow authors to use PHP within articles. The code must be enclosed within _txp:php_ tags, and the author must have sufficient privileges to do so (by default, only _Publishers_ and _Managing Editors_).'
 <p>When enabled, this setting will allow authors to use <span class="caps">PHP</span> within articles. The code must be enclosed within <em>txp:php</em> tags, and the author must have sufficient privileges to do so (by default, only <em>Publishers</em> and <em>Managing Editors</em>).</p>
 
 'admin_side_plugins'
 'Preferences: Use admin-side plugins?'
-'Admin-side plugins are those which can change the operation of the administration interface.  They might hook into already existing actions, like editing or publishing articles, or they might add new tabs for added/extended functionality.
-
-If you would like to learn more about admin-side plugins, please see the "Plugin Development entries (Textbook: Plugin Development)":https://textbook.textpattern.net/wiki/index.php?title=Designer_and_Developer_Interests#Plugin_Development in "Textbook":https://textbook.textpattern.net/. Plugins of all sorts are often listed in the "Textpattern Resources":https://textpattern.org/ site.'
 <p>Admin-side plugins are those which can change the operation of the administration interface.  They might hook into already existing actions, like editing or publishing articles, or they might add new tabs for added/extended functionality.</p>
 <p>If you would like to learn more about admin-side plugins, please see the <a href="https://textbook.textpattern.net/wiki/index.php?title=Designer_and_Developer_Interests#Plugin_Development" title="Textbook: Plugin Development">Plugin Development entries</a> in <a href="https://textbook.textpattern.net/">Textbook</a>. Plugins of all sorts are often listed in the <a href="https://textpattern.org/">Textpattern Resources</a> site.</p>
 
 'add_new_author'
 'Add New Author'
-'A password, welcome message and login instructions will be emailed to the new author.'
 <p>A password, welcome message and login instructions will be emailed to the new author.</p>
 
 'about_privileges'
@@ -4017,16 +3933,10 @@ h3. Designer
 
 'file_base_path'
 'Preferences: File directory path'
-'This sets the *absolute path* to the directory where file uploads will be permanently saved. PHP needs to have write access to this directory.'
 <p>This sets the <strong>absolute path</strong> to the directory where file uploads will be permanently saved. <span class="caps">PHP</span> needs to have write access to this directory.</p>
 
 'allow_raw_php_scripting'
 'Preferences: Allow raw PHP?'
-'p(alert-block warning). This preference has been removed as of Textpattern v4.5.0 onwards for security reasons - use "(link-external)@<txp:php>@ tags":https://www.textpattern.net/wiki/index.php?title=php instead.
-
-When enabled, this setting allows raw PHP code to be used.
-
-Normally this isn't allowed, and PHP code must be *without* both opening and closing PHP tags, and enclosed within "(link-external)&lt;txp:php&gt; tags":https://www.textpattern.net/wiki/index.php?title=php. This setting is for backwards compatible purposes only, and it is recommended to be set to'No'.'
 '<p class="alert-block warning">This preference has been removed as of Textpattern v4.5.0 onwards for security reasons &#8211; use <a href="https://www.textpattern.net/wiki/index.php?title=php" class="link-external">@<txp:php>@ tags</a> instead.</p>
 <p>When enabled, this setting allows raw <span class="caps">PHP</span> code to be used.</p>
 <p>Normally this isn&apos;t allowed, and <span class="caps">PHP</span> code must be <strong>without</strong> both opening and closing <span class="caps">PHP</span> tags, and enclosed within <a href="https://www.textpattern.net/wiki/index.php?title=php" class="link-external">&lt;txp:php&gt; tags</a>. This setting is for backwards compatible purposes only, and it is recommended to be set to &apos;No&apos;.</p>
@@ -4050,75 +3960,45 @@ Textbook: "php":https://textbook.textpattern.net/wiki/index.php?title=Txp:php'
 
 'lastmod_keepalive'
 'Preferences: Compensate for persistent connection mod_deflate bug?'
-'Some versions of the Apache @mod_deflate@ module have a bug that breaks subsequent requests when @Keep-Alive@ is used. Dropping the connection is the only reliable way to fix this. Setting this preference to'Yes' will close the connection, forcing the browser to reconnect for the next request.'
 <p>Some versions of the Apache <code>mod_deflate</code> module have a bug that breaks subsequent requests when <code>Keep-Alive</code> is used. Dropping the connection is the only reliable way to fix this. Setting this preference to &apos;Yes&apos; will close the connection, forcing the browser to reconnect for the next request.</p>
 
 'lastmod_keepalive'
 'Compensate for persistent connections mod_deflate bug'
-'Some mod_deflate versions have a bug that breaks subsequent requests when keep-alive is used. Dropping the connection is the only reliable way to fix this. Setting this preference to'yes' will close the connection, forcing the browser to reconnect for the next request.'
 <p>Some mod_deflate versions have a bug that breaks subsequent requests when keep-alive is used. Dropping the connection is the only reliable way to fix this. Setting this preference to &apos;yes&apos; will close the connection, forcing the browser to reconnect for the next request.</p>
 
 'site_url_mismatch'
 'Diagnostics: Site URL mismatch'
-'The Site URL as set in the'Preferences' administration panel does not match the actual URL you use to visit your website.
-
-If your website can be reached through multiple different URLs, or if the links on your Textpattern powered website all function correctly, you can safely ignore this warning.
-
-Otherwise, you are advised to correct the'Site URL' setting in Admin Preferences. An educated guess of the correct Site URL is shown in the pre-flight warning message on the'Diagnostics' administration panel.'
 <p>The Site <span class="caps">URL</span> as set in the &apos;Preferences&apos; administration panel does not match the actual <span class="caps">URL</span> you use to visit your website.</p>
 <p>If your website can be reached through multiple different <span class="caps">URL</span>s, or if the links on your Textpattern powered website all function correctly, you can safely ignore this warning.</p>
 <p>Otherwise, you are advised to correct the &apos;Site <span class="caps">URL</span>&apos; setting in Admin Preferences. An educated guess of the correct Site <span class="caps">URL</span> is shown in the pre-flight warning message on the &apos;Diagnostics&apos; administration panel.</p>
 
 'site_url_mismatch'
 'Diagnostics: Site URL mismatch'
-'The Site URL as set in the preferences tab does not match the actual URL you use to visit your website at this very moment. 
-
-If your website can be reached through multiple different URLs or if the links on your Textpattern powered website all function correctly, you can ignore this warning. 
-
-Otherwise, you are advised to correct the Site URL setting in the preferences tab. An educated guess of the correct Site URL is shown in the pre-flight warning message on the diagnostics tab.'
 <p>The Site <span class="caps">URL</span> as set in the preferences tab does not match the actual <span class="caps">URL</span> you use to visit your website at this very moment. </p>
 <p>If your website can be reached through multiple different <span class="caps">URL</span>s or if the links on your Textpattern powered website all function correctly, you can ignore this warning. </p>
 <p>Otherwise, you are advised to correct the Site <span class="caps">URL</span> setting in the preferences tab. An educated guess of the correct Site <span class="caps">URL</span> is shown in the pre-flight warning message on the diagnostics tab.</p>
 
 'body'
 'Write: Body'
-'The main content of an article is contained within the article body. 
-
-When composing or preparing articles for publication in Textpattern, you can switch between three views of the article: plain text, HTML markup (the code with which a web browser renders the article), and a rendered preview.'
 <p>The main content of an article is contained within the article body. </p>
 <p>When composing or preparing articles for publication in Textpattern, you can switch between three views of the article: plain text, <span class="caps">HTML</span> markup (the code with which a web browser renders the article), and a rendered preview.</p>
 
 'body'
 'Article Body'
-'The main content of an article is contained within the article body. 
-
-When composing or readying articles for publication in Textpattern, you can switch between three views of the article: plain text, XHTML (the code with which a web browser renders the article), and a rendered preview.'
 <p>The main content of an article is contained within the article body. </p>
 <p>When composing or readying articles for publication in Textpattern, you can switch between three views of the article: plain text, <span class="caps">XHTML</span> (the code with which a web browser renders the article), and a rendered preview.</p>
 
 'title'
 'Write: Title'
-'Add an appropriate title for this article.
-
-An article title is limited to a maximum of 255 characters.'
 <p>Add an appropriate title for this article.</p>
 <p>An article title is limited to a maximum of 255 characters.</p>
 
 'title'
 'Article Title'
-'Add a brief, recognisable title for this article.'
 <p>Add a brief, recognisable title for this article.</p>
 
 'smtp_from'
 'Preferences: SMTP envelope sender address'
-'This preference should be left blank unless you experience problems with sending email in Textpattern (if no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you've installed Textpattern (i.e. if your website is https://example.com, you might use'you@example.com').
-
-For those interested in the technical details:
-
-* On UNIX/Mac OS servers, the entered email address is used as the 4th parameter (prefixed with "-f") for the PHP @mail()@ function
-* On Windows servers, the entered email address is used to set (or override) the @sendmail_from@ php.ini setting
-
-This ensures that the SMTP envelope sender address (which is not necessarily the same as the "From:" header you normally see in emails) is set to the email address you've entered here, which is a requirement for sending email on some web servers.'
 <p>This preference should be left blank unless you experience problems with sending email in Textpattern (if no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you&apos;ve installed Textpattern (i.e. if your website is https://example.com, you might use &apos;you@example.com&apos;).</p>
 <p>For those interested in the technical details:</p>
 
@@ -4131,12 +4011,6 @@ This ensures that the SMTP envelope sender address (which is not necessarily the
 
 'smtp_from'
 'Preferences: SMTP envelope sender address'
-'This preference should be left blank unless you experience problems with sending email in TXP (read: no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you've installed TXP (i.e. if your website is https://example.com, you might use you@example.com).
-
-For those interested in the technical details:
-On UNIX/Mac servers, the entered email address is used as the 4th parameter (prefixed with "-f") for the PHP mail() function.
-On Windows servers, the entered email address is used to set (or override) the "sendmail_from" php.ini setting.
-This ensures that the SMTP envelope sender address (which is not necessarily the same as the "From:" header you normally see in emails) is set to the email address you've entered here, which is a requirement for sending email on some web servers.'
 <p>This preference should be left blank unless you experience problems with sending email in <span class="caps">TXP</span> (read: no email is sent at all). Should that problem arise, you can enter any valid email address here, although preferably one that has the same domain name as the website where you&apos;ve installed <span class="caps">TXP</span> (i.e. if your website is https://example.com, you might use you@example.com).</p>
 <p>For those interested in the technical details:<br />
 On <span class="caps">UNIX</span>/Mac servers, the entered email address is used as the 4th parameter (prefixed with &quot;-f&quot;) for the <span class="caps">PHP</span> mail() function.<br />
@@ -4145,68 +4019,41 @@ This ensures that the <span class="caps">SMTP</span> envelope sender address (wh
 
 'enable_xmlrpc_server'
 'Preferences: Enable XML-RPC server?'
-'If you wish to use "XML-RPC":https://en.wikipedia.org/wiki/XML-RPC for controlling Textpattern remotely (e.g. desktop or mobile apps) you must switch the XML-RPC server on by setting this to'Yes'.'
 <p>If you wish to use <a href="https://en.wikipedia.org/wiki/XML-RPC"><span class="caps">XML</span>-<span class="caps">RPC</span></a> for controlling Textpattern remotely (e.g. desktop or mobile apps) you must switch the <span class="caps">XML</span>-<span class="caps">RPC</span> server on by setting this to &apos;Yes&apos;.</p>
 
 'auto_dst'
 'Preferences: Automatically adjust Daylight Saving Time (DST) setting?'
-'This setting allows Textpattern to alter when DST(Daylight Savings Time) occurs in your locale. If this is set to'No', you will be able to change the'DST enabled' preference manually.'
 <p>This setting allows Textpattern to alter when <acronym title="Daylight Savings Time"><span class="caps">DST</span></acronym> occurs in your locale. If this is set to &apos;No&apos;, you will be able to change the &apos;<span class="caps">DST</span> enabled&apos; preference manually.</p>
 
 'default_event'
 'Preferences: Default administration panel'
-'The Textpattern administration interface panel that will appear first when anybody logs in.'
 <p>The Textpattern administration interface panel that will appear first when anybody logs in.</p>
 
 'theme_name'
 'Preferences: Admin-side theme'
-'The default admin-side theme that will be used when anybody logs into Textpattern. A number of pre-installed admin themes are included with Textpattern, and you can also add custom theme packages to the @textpattern/admin-themes@ directory to make them available for use.'
 <p>The default admin-side theme that will be used when anybody logs into Textpattern. A number of pre-installed admin themes are included with Textpattern, and you can also add custom theme packages to the <code>textpattern/admin-themes</code> directory to make them available for use.</p>
 
 'custom_1_set'
 'Preferences: Custom fields'
-'Custom fields are used to store additional data along with each article. For example, on a shopping site you might wish to store _Product code_, _Product price_ and _Delivery cost_.
-
-By naming a custom field in preferences, it automatically appears on the'Write' tab (any custom fields that are empty will not appear).'
 <p>Custom fields are used to store additional data along with each article. For example, on a shopping site you might wish to store <em>Product code</em>, <em>Product price</em> and <em>Delivery cost</em>.</p>
 <p>By naming a custom field in preferences, it automatically appears on the &apos;Write&apos; tab (any custom fields that are empty will not appear).</p>
 
 'file_category'
 'Categories: Files'
-'File categories are optional, and are useful if you want to group certain uploaded files together.'
 <p>File categories are optional, and are useful if you want to group certain uploaded files together.</p>
 
 'modified_files'
 'Diagnostics: Modified files'
-'Files are determined to be modified if their respective checksum differs from the known-good checksum list. If any files in the Textpattern installation are different to those expected, the files will be highlighted here. This is not necessarily a problem, but may be worth checking out if you are having problems with the functionality of your site.'
 <p>Files are determined to be modified if their respective checksum differs from the known-good checksum list. If any files in the Textpattern installation are different to those expected, the files will be highlighted here. This is not necessarily a problem, but may be worth checking out if you are having problems with the functionality of your site.</p>
 
 'install_plugin'
 'plugin'
 'Plugins: Install plugin'
-'Paste the contents of the plugin text file here, then use'Upload' to begin installation. Any plugin you upload with the same name as one you have previously installed will be overwritten with the uploaded version.
-
-The plugin text you paste here is *not* the raw PHP code but Base64-encoded text, usually preceded by a header containing plugin information (such as plugin name, version and description, author name, etc).'
 <p>Paste the contents of the plugin text file here, then use &apos;Upload&apos; to begin installation. Any plugin you upload with the same name as one you have previously installed will be overwritten with the uploaded version.</p>
 <p>The plugin text you paste here is <strong>not</strong> the raw <span class="caps">PHP</span> code but Base64-encoded text, usually preceded by a header containing plugin information (such as plugin name, version and description, author name, etc).</p>
 
 'clean_url_data_failed'
 'Diagnostics: Clean URL data failed'
-'h1. Diagnostics: Clean URL data failed
-
-It appears that either your site URLs (@https://example.com/section/article@) are currently not working or your server does not support the test procedure to determine if clean URLs work or not; if clean URLs on your site work, you can safely ignore this message.
-
-If clean URLs are _not_ working it may mean either:
-
-* your'Site URL' setting is incorrect, or the page at that address is not managed by this copy of Textpattern.
-* your server requires some changes to @.htaccess@ in order to make clean URLs work.
-* your server doesn't support clean URLs at all.
-
-The clean URL test attempts to fetch a page from the web address specified in the'Site URL' preference in order to check that all clean URL parameters are working correctly. If that URL is a different site, or has been replaced with a static page or similar, the test will fail. Until the issue is resolved you will have to use messy URLs on your site instead (@https://example.com?s=section&id=4@). Ensure the'Permanent link mode' in Admin Preferences is set accordingly.
-
-Note that using a plugin to put a site in'maintenance mode' may trigger this warning.'
-'<h1>Diagnostics: Clean <span class="caps">URL</span> data failed</h1>
-
 <p>It appears that either your site <span class="caps">URL</span>s (<code>https://example.com/section/article</code>) are currently not working or your server does not support the test procedure to determine if clean <span class="caps">URL</span>s work or not; if clean <span class="caps">URL</span>s on your site work, you can safely ignore this message.</p>
 <p>If clean <span class="caps">URL</span>s are <em>not</em> working it may mean either:</p>
 
@@ -4221,15 +4068,6 @@ Note that using a plugin to put a site in'maintenance mode' may trigger this war
 
 'clean_url_test_failed'
 'Diagnostics: Clean URL test failed'
-'It appears that either your site URLs (@https://example.com/section/article@) are currently not working or your server does not support the test procedure to determine if clean URLs work or not; if clean URLs on your site work, you can safely ignore this message.
-
-If clean URLs are not working it may mean either:
-
-* your'Site URL' setting is incorrect, or the page at that address is not managed by this copy of Textpattern
-* your server requires some changes to @.htaccess@ in order to make clean URLs work
-* your server doesn't support clean URLs at all
-
-The clean URL test attempts to fetch a page from the web address specified in the'Site URL' preference in order to check that all clean URL parameters are working correctly. If that URL is a different site, or has been replaced with a static page or similar, the test will fail. Until the issue is resolved you will have to use messy URLs on your site instead (@https://example.com?s=section&id=4@). Ensure the "Permanent link mode' in Admin Preferences is set accordingly.'
 <p>It appears that either your site <span class="caps">URL</span>s (<code>https://example.com/section/article</code>) are currently not working or your server does not support the test procedure to determine if clean <span class="caps">URL</span>s work or not; if clean <span class="caps">URL</span>s on your site work, you can safely ignore this message.</p>
 <p>If clean <span class="caps">URL</span>s are not working it may mean either:</p>
 
@@ -4243,127 +4081,41 @@ The clean URL test attempts to fetch a page from the web address specified in th
 
 'mysql_table_errors'
 'Diagnostics: MySQL table errors'
-'Something is probably corrupt or otherwise damaged in your MySQL database. If you have access to a MySQL access tool, such as "phpMyAdmin":https://www.phpmyadmin.net, try repairing the affected table(s).'
 <p>Something is probably corrupt or otherwise damaged in your MySQL database. If you have access to a MySQL access tool, such as <a href="https://www.phpmyadmin.net">phpMyAdmin</a>, try repairing the affected table(s).</p>
 
 'missing_files'
 'Diagnostics: Missing files'
-'Some essential files are missing from your Textpattern installation. Ensure that all the listed files are present on your server and are in the correct locations.'
 <p>Some essential files are missing from your Textpattern installation. Ensure that all the listed files are present on your server and are in the correct locations.</p>
 
 'old_files'
 'Diagnostics: Old files'
-'Some Textpattern files are out-of-date and should be replaced with the latest versions from the relevant stable release.'
 <p>Some Textpattern files are out-of-date and should be replaced with the latest versions from the relevant stable release.</p>
 
 'tmp_plugin_paths_match'
 'Diagnostics: Plugins and tmp dirs should not match'
-'Plugins should have their own directory and not share the temporary directory. This is a potential security risk and may adversely affect your site if the temporary directory is flushed. Please ensure that the temporary directory path is different to the plugin cache path.'
 <p>Plugins should have their own directory and not share the temporary directory. This is a potential security risk and may adversely affect your site if the temporary directory is flushed. Please ensure that the temporary directory path is different to the plugin cache path.</p>
 
 'upload_image'
 'Images: Upload image'
-'Upload one or more images to your server.
-
-Upon upload to the @images@ directory, the filename of your original image will be kept only internally in Textpattern's database; the image file itself will be renamed to a sequential number + file extension.'
 <p>Upload one or more images to your server.</p>
 <p>Upon upload to the <code>images</code> directory, the filename of your original image will be kept only internally in Textpattern&apos;s database; the image file itself will be renamed to a sequential number + file extension.</p>
 
 'file_reassign'
 'Files: Reassign file'
-'When you upload a file in place of one that is labelled'Missing', your chosen file is uploaded to the server and linked to the original file information in the database. This means the file name of the original file will remain, as will all other associated information such as download count and category. The file size will, however, be updated to reflect the new file.'
 <p>When you upload a file in place of one that is labelled &apos;Missing&apos;, your chosen file is uploaded to the server and linked to the original file information in the database. This means the file name of the original file will remain, as will all other associated information such as download count and category. The file size will, however, be updated to reflect the new file.</p>
 
 'file_replace'
 'Files: Replace file'
-'Uploading a file here will replace the contents of the existing file on the server but will keep the file name the same as it was before. The download count and other information associated with the file remain unaffected.'
 <p>Uploading a file here will replace the contents of the existing file on the server but will keep the file name the same as it was before. The download count and other information associated with the file remain unaffected.</p>
 
 'get_textpack'
-'language'
 'Languages: Install Textpack'
-'Paste additional language strings for your site into this box and select'Upload' to install them.
-
-The strings will often come in the form of a downloadable Textpack, distributed with a plugin to permit the plugin's language strings to be used natively within Textpattern.
-
-International authors may then translate these packs as necessary and redistribute the localised content to the community.'
 <p>Paste additional language strings for your site into this box and select &apos;Upload&apos; to install them.</p>
 <p>The strings will often come in the form of a downloadable Textpack, distributed with a plugin to permit the plugin&apos;s language strings to be used natively within Textpattern.</p>
 <p>International authors may then translate these packs as necessary and redistribute the localised content to the community.</p>
 
 'definition'
 'Textile: Definition lists'
-'To make a definition list, place the term in its own paragraph, preceded by @;@. Each definition can then be written on subsequent lines preceded by @:@.
-
-h3. Examples
-
-bc. ; Textpattern
-: An open source CMS
-: Elegant and simple to use
-: Friendly community
-
-Will become:
-
-bc. <dl>
-  <dt>Textpattern</dt>
-  <dd>An open source CMS</dd>
-  <dd>Elegant and simple to use</dd>
-  <dd>Friendly community</dd>
-</dl>
-
-Which, when rendered by a browser, will appear like this:
-
-; Textpattern
-: An open source CMS
-: Elegant and simple to use
-: Friendly community
-
-Just like bulleted and numeric lists, terms and definitions may be nested by using more than one colon / semicolon:
-
-bc. ; Textpattern
-: An open source CMS
-: Has many sister sites, for example:
-;; Plugins
-:: Plugin repository
-;; Documentation
-:: User guides and docs (wiki)
-;; Themes
-:: Customise the admin-side or public site with themes
-: Elegant and simple to use
-: Friendly community
-
-Will become:
-
-bc. <dl>
-  <dt>Textpattern</dt>
-  <dd>An open source CMS</dd>
-  <dd>Has many sister sites, for example:
-  <dl>
-    <dt>Plugins</dt>
-    <dd>Plugin repository</dd>
-    <dt>Documentation</dt>
-    <dd>User guides and docs (wiki)</dd>
-    <dt>Themes</dt>
-    <dd>Customise the admin-side or public site with themes</dd>
-  </dl>
-  </dd>
-  <dd>Elegant and simple to use</dd>
-  <dd>Friendly community</dd>
-</dl>
-
-p(alert-block information). *Note:* Unmodified paragraphs will be wrapped in @<p>@ tags.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-dl-list" target="_blank">More information on definition lists in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl" target="_blank">The @<dl>@ HTML element</a>.
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dt" target="_blank">The @<dt>@ HTML element</a>.
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dd" target="_blank">The @<dd>@ HTML element</a>.'
 <p>To make a definition list, place the term in its own paragraph, preceded by <code>;</code>. Each definition can then be written on subsequent lines preceded by <code>:</code>.</p>
 
 	<h3>Examples</h3>
@@ -4439,15 +4191,6 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'textpattern_version_update'
 'Diagnostics: Textpattern CMS version update'
-'There is a newer version of Textpattern CMS available. To take advantage of the latest features and security, it is recommended you upgrade.
-
-Please note that while we strive to make the upgrade experience as seamless and pain-free as possible:
-
-* If only the last digit differs from your current version, the upgrade is likely to be backwards compatible with plugins and themes.
-* If the last two digits differ from your current version, the upgrade might require updates to some plugins and/or themes, although it will probably continue to work anyway in a limited capacity.
-* If the first digit is different from your current version, the upgrade is likely to require updates to most plugins and themes. If you rely heavily on a particular plugin or theme feature, please check with the author or community members before commencing the upgrade.
-
-If the messages reads "There is a problem trying to connect to the RPC server" it means a new version could not be checked at this time, or the server may be down. Updates are checked for every 24 hours so it is likely that next time you visit the Diagnostics panel, all will be well.'
 <p>There is a newer version of Textpattern <span class="caps">CMS</span> available. To take advantage of the latest features and security, it is recommended you upgrade.</p>
 <p>Please note that while we strive to make the upgrade experience as seamless and pain-free as possible:</p>
 
@@ -4461,36 +4204,24 @@ If the messages reads "There is a problem trying to connect to the RPC server" i
 
 'import_wpcharset'
 'Import: Database character set'
-'Specify the character set which is used by your WordPress database.'
 <p>Specify the character set which is used by your WordPress database.</p>
 
 'publisher_email'
 'Preferences: Send login details from this email address'
-'Specify an email address which is used as the sender's'From:' address on messages with login information for new users.
-
-If this preference is left blank or contains an invalid email address, Textpattern uses the name and address of the currently logged-in user instead.'
 <p>Specify an email address which is used as the sender&apos;s &apos;From:&apos; address on messages with login information for new users.</p>
 <p>If this preference is left blank or contains an invalid email address, Textpattern uses the name and address of the currently logged-in user instead.</p>
 
 'remove_lang'
-'language'
 'Languages: Remove language'
-'You can remove this language completely and thus free the database resources that are associated with it.
-
-If you inadvertently remove a language you can re-install it.'
 <p>You can remove this language completely and thus free the database resources that are associated with it.</p>
 <p>If you inadvertently remove a language you can re-install it.</p>
 
 'install_lang_from_file'
-'language'
 'Languages: Install from file'
-'To install new language translations from file you can "download them":https://rpc.textpattern.com/lang/ and then place the file inside your @textpattern/lang@ directory.'
 <p>To install new language translations from file you can <a href="https://rpc.textpattern.com/lang/">download them</a> and then place the file inside your <code>textpattern/lang</code> directory.</p>
 
 'install_lang_from_server'
-'language'
 'Languages: Install from remote server'
-'To install or update languages, use the'Install' or'Update' links against the corresponding language(s).'
 <p>To install or update languages, use the &apos;Install&apos; or &apos;Update&apos; links against the corresponding language(s).</p>
 
 'setup_user_login'
@@ -4530,44 +4261,21 @@ h3. Tips
 
 'doctype'
 'Preferences: Doctype'
-'Select which HTML doctype you wish to use (either HTML5 or XHTML). This affects comment input forms, Textile rendering of @<abbr>@ or @<acronym>@, and @<link>@ tags generated by <a href="https://docs.textpattern.com/tags/css" target="_blank">@<txp:css />@</a>.'
 <p>Select which <span class="caps">HTML</span> doctype you wish to use (either HTML5 or <span class="caps">XHTML</span>). This affects comment input forms, Textile rendering of <code>&lt;abbr&gt;</code> or <code>&lt;acronym&gt;</code>, and <code>&lt;link&gt;</code> tags generated by <a href="https://docs.textpattern.com/tags/css" target="_blank"><code>&lt;txp:css /&gt;</code></a>.</p>
 
 'create_thumbnail'
 'Images: Create thumbnail'
-'Allows you to (re)create a thumbnail of the specified dimensions from the full size image.
-
-The thumbnail will be scaled to fit the dimensions you choose, unless you select the'Crop' checkbox. In that case, the thumbnail will be created from the centre of the image without any scaling.'
 <p>Allows you to (re)create a thumbnail of the specified dimensions from the full size image.</p>
 <p>The thumbnail will be scaled to fit the dimensions you choose, unless you select the &apos;Crop&apos; checkbox. In that case, the thumbnail will be created from the centre of the image without any scaling.</p>
 
 'section_default'
 'Sections: Default publishing section'
-'This option governs which section will be pre-selected in the Section menu when creating a new article on the'Write' administration panel.
-
-If most of your articles end up belonging to a particular section, select it from the list here. Changes will be reflected immediately.
-
-You can override this on a per-article basis in the'Write' administration panel by selecting a different section in the'Sort and display' pane.'
 <p>This option governs which section will be pre-selected in the Section menu when creating a new article on the &apos;Write&apos; administration panel.</p>
 <p>If most of your articles end up belonging to a particular section, select it from the list here. Changes will be reflected immediately.</p>
 <p>You can override this on a per-article basis in the &apos;Write&apos; administration panel by selecting a different section in the &apos;Sort and display&apos; pane.</p>
 
 'php_version_required'
 'Diagnostics: Minimum version requirements'
-'Textpattern requires certain functionality present in the PHP programming language and MySQL database server. Please consult the following table to determine the minimum system requirements for the version of Textpattern you have downloaded:
-
-|_. Textpattern version |_. PHP version |_. MySQL version |
-| 4.6.x | 5.3.3 | 4.1 |
-| 4.5.x | 5.2.3 | 4.1 |
-| 4.0.1 - 4.4.1 | 4.3 | 3.23 |
-
-In addition to the above system requirements, the following PHP extensions are required:
-
-* "MySQL":https://www.php.net/manual/en/ref.mysql.php
-* "XML":https://www.php.net/manual/en/ref.xml.php
-* "JSON":https://www.php.net/manual/en/ref.json.php
-
-Your @php.ini@ file, either global or local, should contain a @date.timezone@ setting.'
 <p>Textpattern requires certain functionality present in the <span class="caps">PHP</span> programming language and MySQL database server. Please consult the following table to determine the minimum system requirements for the version of Textpattern you have downloaded:</p>
 
 	<table>
@@ -4605,49 +4313,22 @@ Your @php.ini@ file, either global or local, should contain a @date.timezone@ se
 
 'cleanurl_only_apache'
 'Diagnostics: Clean URL support'
-'Clean URLs are only supported on Apache. If you are using another server platform, use short URLs at your own risk.'
 <p>Clean <span class="caps">URL</span>s are only supported on Apache. If you are using another server platform, use short <span class="caps">URL</span>s at your own risk.</p>
 
 'mod_rewrite_missing'
 'Diagnostics: Apache mod_rewrite missing'
-'Apache's @mod_rewrite@ module is not installed, or installed but not enabled. This is recommended for Textpattern to function correctly. Please check your @.htaccess@ file is set up correctly, or contact your host for assistance.'
 <p>Apache&apos;s <code>mod_rewrite</code> module is not installed, or installed but not enabled. This is recommended for Textpattern to function correctly. Please check your <code>.htaccess</code> file is set up correctly, or contact your host for assistance.</p>
 
 'file_uploads_disabled'
 'Diagnostics: File uploads are disabled'
-'Your current server configuration shows that file uploads are disabled so you will not be able to upload using Textpattern's'Files' and/or'Images' panel. Please check and alter the @file_uploads@ setting in @php.ini@ (or ask your host to alter it).'
 <p>Your current server configuration shows that file uploads are disabled so you will not be able to upload using Textpattern&apos;s &apos;Files&apos; and/or &apos;Images&apos; panel. Please check and alter the <code>file_uploads</code> setting in <code>php.ini</code> (or ask your host to alter it).</p>
 
 'no_temp_dir'
 'Diagnostics: No temp directory defined'
-'While Textpattern will run without a temporary directory, some functionality may not work as expected if this preference is not set. Please visit Admin Preferences and set up the'Temporary directory path'.'
 <p>While Textpattern will run without a temporary directory, some functionality may not work as expected if this preference is not set. Please visit Admin Preferences and set up the &apos;Temporary directory path&apos;.</p>
 
 'forms_overview'
 'Forms: Introduction'
-'In Textpattern, a form is a snippet or chunk of text, HTML, and Textpattern tags that can be reused to display content.
-
-Here's an example form which could be named @ordinary_list@:
-
-bc. <li>
-  <txp:permlink>
-    <txp:title />
-  </txp:permlink>
-</li>
-
-You could use it to display an HTML unordered list of related articles:
-
-bc. <txp:related_articles form="ordinary_list" wraptag="ul" />
-
-Since the role of this form is to output a list of titles, it could be applicable inside other tags, such as showing 20 articles from the current section:
-
-bc. <txp:article form="ordinary_list" limit="20" wraptag="ol" />
-
-You may also choose to employ a form to display repeated content, such as header and footer in your page templates. This means the content only exists in one place and if you decide to change it, you only need to do it once. Displaying content from a form is usually accomplished with:
-
-bc. <txp:output_form form="your_form_name" />
-
-A form can be up to 64KB in size. An example for a footer might include headings, paragraphs, links, conditional tags, and references to other forms such as @ordinary_list@.'
 <p>In Textpattern, a form is a snippet or chunk of text, <span class="caps">HTML</span>, and Textpattern tags that can be reused to display content.</p>
 <p>Here&apos;s an example form which could be named <code>ordinary_list</code>:</p>
 <pre><code>&lt;li&gt;
@@ -4690,27 +4371,6 @@ Note that the prefix must adhere to the following rules:
 
 'default_publish_status'
 'Preferences: Default publishing status'
-'Defines the publishing visibility status of newly-created Textpattern articles.
-
-Note this preference setting does not affect the status or articles created or edited prior to any change.
-
-The default publishing status is one of the following:
-
-* Draft
-* Hidden
-* Pending
-* Live
-* Sticky
-
-A *draft* article is considered a work-in-progress and is not viewable outside of the Textpattern administration area (i.e. not visible on the Textpattern front side and not syndicated in feeds).
-
-A *hidden* article is not viewable outside of the Textpattern administration area.
-
-A *pending* article is considered ready for publication and awaiting approval, but is not viewable outside of the Textpattern administration area.
-
-A *live* article is typically viewable outside the Textpattern administration area (i.e. visible on the Textpattern front side, syndicated in feeds if the preference permits). If an article is live and has an expiration date, the status will remain as live after that date has been reached, but the article only appears outside the administration area if expired articles are permitted to be published.
-
-A *sticky* article is similar to a *live* article insofar as it can be viewed outside the Textpattern administration area but will _not_ appear in article lists unless the respective @article@ or @article_custom@ tag includes a @status@ attribute with a @sticky@ value.'
 <p>Defines the publishing visibility status of newly-created Textpattern articles.</p>
 <p>Note this preference setting does not affect the status or articles created or edited prior to any change.</p>
 <p>The default publishing status is one of the following:</p>
@@ -4731,27 +4391,12 @@ A *sticky* article is similar to a *live* article insofar as it can be viewed ou
 
 'description'
 'Write: Description'
-'The article description is an optional component that can help search engines and website crawlers better identify and sort content.
-
-The article description is limited to a maximum of 255 characters. Note that some search engines place character limits on the length of a page's @meta description@ for practicality of display in search engine results pages (SERPs) and this may be less than the 255 character limit in Textpattern.
-
-Note that the article description differs from the article excerpt, though they both accept similar content. The article description should be primarily intended for use with search engines and crawlers, whereas the the article excerpt is more suited for a human-readable article summary where desired.'
 <p>The article description is an optional component that can help search engines and website crawlers better identify and sort content.</p>
 <p>The article description is limited to a maximum of 255 characters. Note that some search engines place character limits on the length of a page&apos;s <code>meta description</code> for practicality of display in search engine results pages (<span class="caps">SERP</span>s) and this may be less than the 255 character limit in Textpattern.</p>
 <p>Note that the article description differs from the article excerpt, though they both accept similar content. The article description should be primarily intended for use with search engines and crawlers, whereas the the article excerpt is more suited for a human-readable article summary where desired.</p>
 
 'expire_date'
 'Write: Expire date'
-'The time an article is labelled as expired. The time is optional and can be set to an arbitrary time in the past or future.
-
-The boxes correspond to the following information:
-
-* Year / Month / Day
-* Hour (24-hour format) : Minute : Second
-
-When the time arrives, or in the case where a time in the past is provided, the article expires.
-
-If the option to display expired articles is enabled, the article remains visible. If the option to display expired articles is disabled, visitors to the article page will be served an HTTP 410 error in place of the article content.'
 <p>The time an article is labelled as expired. The time is optional and can be set to an arbitrary time in the past or future.</p>
 <p>The boxes correspond to the following information:</p>
 
@@ -4765,14 +4410,6 @@ If the option to display expired articles is enabled, the article remains visibl
 
 'publish_date'
 'Write: Publish date'
-'The time an article or file is published or most-recently revised. The time can be set to the moment the item is published, or to an arbitrary time in the past or future.
-
-The boxes correspond to the following information:
-
-* Year / Month / Day
-* Hour (24-hour format) : Minute : Second
-
-An item with a timestamp greater than the current time (i.e. in the future) will not appear on the front end and the RSS/Atom feeds until that time arrives.'
 <p>The time an article or file is published or most-recently revised. The time can be set to the moment the item is published, or to an arbitrary time in the past or future.</p>
 <p>The boxes correspond to the following information:</p>
 
@@ -4785,17 +4422,11 @@ An item with a timestamp greater than the current time (i.e. in the future) will
 
 'category_description'
 'Categories: Description'
-'The category description is an optional component that can help search engines and website crawlers better identify and sort content.
-
-The category description is limited to a maximum of 255 characters. Note that some search engines place character limits on the length of a page's @meta description@ for practicality of display in search engine results pages (SERPs) and this may be less than the 255 character limit in Textpattern.'
 <p>The category description is an optional component that can help search engines and website crawlers better identify and sort content.</p>
 <p>The category description is limited to a maximum of 255 characters. Note that some search engines place character limits on the length of a page&apos;s <code>meta description</code> for practicality of display in search engine results pages (<span class="caps">SERP</span>s) and this may be less than the 255 character limit in Textpattern.</p>
 
 'section_description'
 'Sections: Description'
-'The section description is an optional component that can help search engines and website crawlers better identify and sort content.
-
-The article description is limited to a maximum of 255 characters. Note that some search engines place character limits on the length of a page's @meta description@ for practicality of display in search engine results pages (SERPs) and this may be less than the 255 character limit in Textpattern.'
 <p>The section description is an optional component that can help search engines and website crawlers better identify and sort content.</p>
 <p>The article description is limited to a maximum of 255 characters. Note that some search engines place character limits on the length of a page&apos;s <code>meta description</code> for practicality of display in search engine results pages (<span class="caps">SERP</span>s) and this may be less than the 255 character limit in Textpattern.</p>
 
