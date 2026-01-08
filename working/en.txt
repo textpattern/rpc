@@ -681,7 +681,6 @@ bc. /'
 
 'path_not_doc_root'
 'Diagnostics: path_to_site does not match'
-'Two variables set by your web server which should match, but do not.'
 <p>Two variables set by your web server which should match, but do not.</p>
 
 'path_to_site_inacc'
@@ -877,21 +876,6 @@ bc. /'
 
 'super'
 'Textile: Superscript'
-'Use ==^carets^== for text to be rendered ^superscript^.
-
-The @<sup>@ HTML tag is applied:
-
-bc. ^a phrase^ → <sup>a phrase</sup>
-
-p(alert-block information). *Note:* Quick tags must open and close within a single paragraph to produce valid markup.
-
-h3. Textile documentation
-
-<a href="https://textpattern.com/textile-sub-and-sup" target="_blank">More information on superscript and subscript text in Textile</a>.
-
-h3. HTML documentation (via Mozilla Developer Network)
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/sup" target="_blank">The @<sup>@ HTML element</a>.'
 <p>Use ^carets^ for text to be rendered <sup>superscript</sup>.</p>
 <p>The <code>&lt;sup&gt;</code> <span class="caps">HTML</span> tag is applied:</p>
 <pre><code>^a phrase^ → &lt;sup&gt;a phrase&lt;/sup&gt;
@@ -909,45 +893,17 @@ h3. HTML documentation (via Mozilla Developer Network)
 
 'syndicate_body_or_excerpt'
 'Preferences: Syndicate article excerpt only?'
-'If this is set to 'No', feed items will contain the full article bodies.
-
-If this is set to 'Yes', feed items will contain the article excerpt instead of the article body where it is available.'
 <p>If this is set to &apos;No&apos;, feed items will contain the full article bodies.</p>
 <p>If this is set to &apos;Yes&apos;, feed items will contain the article excerpt instead of the article body where it is available.</p>
 
 'tempdir'
 'Preferences: Temporary directory path'
-'Sets an *absolute path* to a temporary (sometimes know as 'tmp' or 'temp') directory. PHP needs to have write access to this directory. This directory is used for temporary files, for example uploads of any kind (plugins, files or images).
-
-p(alert-block information). *Note:* Do not specify the same directory for both 'temporary' and 'plugin cache', as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).'
 <p>Sets an <strong>absolute path</strong> to a temporary (sometimes know as &apos;tmp&apos; or &apos;temp&apos;) directory. <span class="caps">PHP</span> needs to have write access to this directory. This directory is used for temporary files, for example uploads of any kind (plugins, files or images).</p>
 <p class="alert-block information"><strong>Note:</strong> Do not specify the same directory for both &apos;temporary&apos; and &apos;plugin cache&apos;, as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).</p>
 
 'textile_comments'
 'Textile: Shortcuts'
-'h3. Formatting
-
-bc. _emphasis_
-*strong*
-??citation??
--deleted text-
-+inserted text+
-^superscript^
-
-h3. Hyperlink
-
-bc. "link text":https://link.com/
-
-h3. Image
-
-bc. !https://image.url!
-
-h3. Abbreviation
-
-bc. ABC(Always Be Closing)
-
-p(alert-block information). *Note:* All HTML tags will be escaped.'
-'<h3>Formatting</h3>
+<h3>Formatting</h3>
 
 <pre><code>_emphasis_
 *strong*
@@ -1195,20 +1151,15 @@ Hour(24hr) : Minute : Second</p>
 
 'archive_dateformat'
 'Preferences: Archive Date Format'
-'How dates will appear on articles in subsections of your site.'
 <p>How dates will appear on articles in subsections of your site.</p>
 
 'archive_date_case'
 'Preferences: Subsection Date Case'
-'Use this if you want dates for articles in subsections to appear in UPPERCASE, Upper & Lower case, or lower case.
-
-Upper & Lower case is the default.'
 <p>Use this if you want dates for articles in subsections to appear in <span class="caps">UPPERCASE</span>, Upper & Lower case, or lower case.</p>
 <p>Upper & Lower case is the default.</p>
 
 'articles_use_excerpts'
 'Preferences: Articles use excerpts'
-'By choosing _no_ the excerpt field will not be shown to the author on the article-editing screen.'
 <p>By choosing <em>no</em> the excerpt field will not be shown to the author on the article-editing screen.</p>
 
 'article_category'
@@ -1236,16 +1187,8 @@ Likely article categories on a site about food might be
 	</ul>
 
 
- 
-'article_image'
+ 'article_image'
 'Article Image'
-'If you would like to associate a single image with this article, place its URL (or Textpattern image ID) here.
-
-The image can be output by placing a 
-
-@<txp:article_image />@ 
-
-tag inside an article form.'
 <p>If you would like to associate a single image with this article, place its URL (or Textpattern image ID) here.</p>
 <p>The image can be output by placing a </p>
 
@@ -1254,17 +1197,12 @@ tag inside an article form.'
 <p>tag inside an article form.</p>
 
 
- 
-'article_template'
+ 'article_template'
 'Preferences: Default Article Template'
-'This is the default template used to format articles on the front page of your site, provided none has been specified in the PHP snippet used on that page.'
 <p>This is the default template used to format articles on the front page of your site, provided none has been specified in the <span class="caps">PHP</span> snippet used on that page.</p>
 
 'attach_titles_to_permalinks'
 'Preferences: Attach titles to permalinks?'
-'This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overridden in the "Advanced Options" when editing an article.
-
-This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly urls, in which case you probably want to set this to off.'
 <p>This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overridden in the &quot;Advanced Options&quot; when editing an article.</p>
 <p>This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly urls, in which case you probably want to set this to off.</p>
 
@@ -1523,36 +1461,21 @@ Note that you can limit which specific tags are allowable in the next field.
 
 'comments_are_ol'
 'Present Comments as an Ordered List'
-'With this option set to 'yes', a list of comments for an article will be wrapped in the html @<ol>@ tag, and individual comments will be wrapped in the @<li>@ tag. This will cause comments to be presented as a numbered list.
-
-If you set this option to 'no', you must edit presentation -> forms -> comments, wrapping the entire comment template in a block tag, such as @<div>@.'
 <p>With this option set to &apos;yes&apos;, a list of comments for an article will be wrapped in the html <code>&lt;ol&gt;</code> tag, and individual comments will be wrapped in the <code>&lt;li&gt;</code> tag. This will cause comments to be presented as a numbered list.</p>
 <p>If you set this option to &apos;no&apos;, you must edit presentation -> forms -> comments, wrapping the entire comment template in a block tag, such as <code>&lt;div&gt;</code>.</p>
 
 
- 
-'comments_dateformat'
+ 'comments_dateformat'
 'Preferences: Comments Date Format'
 'Er, the comments date format!'
 <p>Er, the comments date format!</p>
 
 'comments_date_case'
 'Preferences: Comments Date Case'
-'The case of the date displayed for individual comments.'
 <p>The case of the date displayed for individual comments.</p>
 
 'comments_default_invite'
 'Preferences: Default comments invite'
-'If you allow visitors to comment on your site, this is the default invitation to do so. 
-
-Possibilities:
-
-Comments
-Feedback
-Annotate
-Shave my poodle
-
-Note that the invitation can always be changed on a per-article basis.'
 <p>If you allow visitors to comment on your site, this is the default invitation to do so. </p>
 <p>Possibilities:</p>
 <p>Comments<br />
@@ -1563,35 +1486,25 @@ Shave my poodle</p>
 
 'comments_disabled_after'
 'Preferences: Disabling Comments'
-'Use this to set the amount of time after which commenting will be turned off for articles.'
 <p>Use this to set the amount of time after which commenting will be turned off for articles.</p>
 
 'comments_disallow_images'
 'Preferences: Disallow User Images?'
-'With this option set to Yes, images included in comments will be stripped out.'
 <p>With this option set to Yes, images included in comments will be stripped out.</p>
 
 'comments_mode'
 'Preferences: Comments Mode'
-'If 'popup' is selected, a new small comments window will open when the comments link is clicked.
-
-If 'no popup' is selected, the current window will be refreshed to display only the current article, with comments beneath.'
 <p>If &apos;popup&apos; is selected, a new small comments window will open when the comments link is clicked.</p>
 <p>If &apos;no popup&apos; is selected, the current window will be refreshed to display only the current article, with comments beneath.</p>
 
 'comments_moderate'
 'discuss'
 'Moderate Comments'
-'With this option turned on, every new comment will have its visibility turned off until it has been reviewed. You must manually make each comment visible.'
 <p>With this option turned on, every new comment will have its visibility turned off until it has been reviewed. You must manually make each comment visible.</p>
 
 
- 
-'comments_on_default'
+ 'comments_on_default'
 'Preferences: Comments on by default'
-'If this is checked, comments will be automatically allowed for every article published. If it is not, you must click "allow comments" each time you want to accept comments.
-
-Note that allowing comments can be turned on or off at any time, on a per-article basis.'
 <p>If this is checked, comments will be automatically allowed for every article published. If it is not, you must click &quot;allow comments&quot; each time you want to accept comments.</p>
 <p>Note that allowing comments can be turned on or off at any time, on a per-article basis.</p>
 
@@ -1754,8 +1667,7 @@ or
 <p>Article excerpts are optional. These can be a short summary of the article that is displayed as part of a table of contents, or used in place of the full article body in the site&apos;s <span class="caps">RSS</span>/Atom feeds.</p>
 
 
- 
-'expire_logs_after'
+ 'expire_logs_after'
 'Preferences: Expire logs after X number of days'
 'When you are using Textpattern for logging, you can set how long (in days) those logs should be kept. "7" will keep the logs available for seven days. 
 
@@ -1772,8 +1684,7 @@ Note: Image Uploads are *not* restricted by this value. The maximum allowed size
 <p>Note: Image Uploads are <strong>not</strong> restricted by this value. The maximum allowed size for images is always ~ 1MB (unless restricted by PHP as explained above).</p>
 
 
- 
-'form_articles'
+ 'form_articles'
 'Article Tags'
 'These tags are replaced with their corresponding values every time an article is output. 
 
@@ -1821,8 +1732,7 @@ The time associated with the article, in the format specified in the &apos;date 
 Guess.</p>
 
 
- 
-'form_place_article'
+ 'form_place_article'
 'Article Tags'
 'These tags are replaced with their corresponding values every time an article is output. 
 
@@ -1870,8 +1780,7 @@ The time associated with the article, in the format specified in the &apos;date 
 Guess.</p>
 
 
- 
-'full_path'
+ 'full_path'
 'Path to Textpattern'
 'This must indicate the full server path to your /textpattern/ directory, which should be inside the directory containing your Textpattern site.
 
@@ -1896,8 +1805,7 @@ or
 <code>/home/var/www/mytxpsite/textpattern</code>
 
 
- 
-'gmtoffset'
+ 'gmtoffset'
 'Preferences: Time Zone'
 'In order to display dates in your local time zone, please indicate where you are in relation to Greenwich Mean Time/Universal Coordinated Time (by "Standard" _not_ "Daylight" time - <a href="index.php?item=is_dst&lang=en" title="Preferences: DST(Daylight Saving Time) enabled?">another preference enables/disables Daylight Saving Time</a>).
 
@@ -1985,8 +1893,7 @@ RewriteRule ^(.+) - [PT,L]</pre>
 <pre>RewriteRule ^(.*) index.php</pre>
 
 
- 
-'Images'
+ 'Images'
 'To insert an image, put the URL(Universal Resource Locator) for the image inside exclamation marks.
 
 Optional: text that immediately follows the URL in (parentheses) will be used as the Alt text for the image. Images on the web should always have descriptive Alt text for the benefit of readers using non-graphical browsers.
@@ -2044,8 +1951,7 @@ With a link:
 <p>Image categories are useful both for internal organisation, and for defining image sets that can be displayed using the <code>&lt;txp:image_index /&gt;</code> and <code>&lt;txp:image_display /&gt;</code> tags.</p>
 
 
- 
-'img_dir'
+ 'img_dir'
 'Image Directory'
 'If you'd like to customise the name of your images directory, you can do so here. You must first create the directory in the root of your textpattern installation, you should also make sure that PHP is able to write to that directory (usually chmod 777).
 
@@ -2054,8 +1960,7 @@ Unlike other directory settings, this path is always a _relative_ path (to the d
 <p>Unlike other directory settings, this path is always a <em>relative</em> path (to the directory of your root textpattern installation). The default is <em>images</em>.</p>
 
 
- 
-'Importing Into Textpattern'
+ 'Importing Into Textpattern'
 'You can import your data into Textpattern from the following publishing tools:
 
 * Movable Type, both using an "MT import file":https://textpattern.com/help/?item=import_mt or "directly from a MySQL DataBase":https://textpattern.com/help/?item=import_mtdb
@@ -2079,36 +1984,31 @@ If you choose to import from a file - that is, MovableType or Blogger - you must
 
 
 
- 
-'import_invite'
+ 'import_invite'
 'Default Comments Invite for Imported Articles'
 'Here you can set comments invite for the articles you're about to import.'
 <p>Here you can set comments invite for the articles you&apos;re about to import.</p>
 
 
- 
-'import_section'
+ 'import_section'
 'Import Section'
 'Use this to select the section you want to assign to the imported articles.'
 <p>Use this to select the section you want to assign to the imported articles.</p>
 
 
- 
-'import_status'
+ 'import_status'
 'Default Status'
 'Here you can choose the status articles will have once imported into Textpattern.'
 <p>Here you can choose the status articles will have once imported into Textpattern.</p>
 
 
- 
-'include_email_atom'
+ 'include_email_atom'
 'Include email in atom feeds'
 'This allows you to include the email-adress of the author (as set in their user account) of an article in the _auhor_ part of your Atom feeds.'
 <p>This allows you to include the email-adress of the author (as set in their user account) of an article in the <em>auhor</em> part of your Atom feeds.</p>
 
 
- 
-'index_inaccessible'
+ 'index_inaccessible'
 'Diagnostics: Site Index Inaccessible'
 'The main index.php file specified as the index for your site is unreadable by the webserver. Please check permissions.'
 <p>The main index.php file specified as the index for your site is unreadable by the webserver. Please check permissions.</p>
@@ -2237,8 +2137,7 @@ The &#60;em&#62; HTML(HyperText Markup Language) tag is applied:
 <p>NB: quick tags must open and close within a single paragraph to produce valid markup.</p>
 <p><a href="https://www.htmlhelp.com/reference/html40/phrase/em.html" title="">More information</a></p>
 
- 
-'keywords'
+ 'keywords'
 'Keywords'
 'Keywords are useful for refining the relationships between articles beyond those provided by categories.
 
@@ -2247,8 +2146,7 @@ Keywords must be individual words separated by commas.'
 <p>Keywords must be individual words separated by commas.</p>
 
 
- 
-'language'
+ 'language'
 'Language'
 'Textpattern is currently available in 18 Languages, you can always check for updates either via your preferences tab ("Install Language") or by visiting <a href="https://rpc.textpattern.com/lang/">https://rpc.textpattern.com/lang/</a>. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.
 
@@ -2257,8 +2155,7 @@ Switching to a new language is always a two step process. 1) Installing the lang
 <p>Switching to a new language is always a two step process. 1) Installing the language and afterwards 2) Selecting the language as the currently active one.</p>
 
 
- 
-'Links'
+ 'Links'
 'To make a hypertext link, put the link text in =="quotation marks"== followed immediately by a colon and the <acronym title="Universal Resource Locator">URL</acronym> of the link.
 
 Optional: text in (parentheses) following the link text, but before the closing quotation mark, will become a Title attribute for the link, visible as a tool tip when a cursor is above it.
@@ -2327,15 +2224,13 @@ Selective link lists such as these are output with the Textpattern 'linklist' ta
 <code>&lt;txp:linklist category="Friends" /&gt;</code>
 
 
- 
-'link_description'
+ 'link_description'
 'Link Description'
 'Descriptions for links are optional, and are useful for captioning links, or for creating <code>title=""</code> (tooltip) attributes for links, or simply keeping your own internal documentation.'
 <p>Descriptions for links are optional, and are useful for captioning links, or for creating <code>title=""</code> (tooltip) attributes for links, or simply keeping your own internal documentation.</p>
 
 
- 
-'link_sort'
+ 'link_sort'
 'Link Sort'
 <p>Useful for natural-language sorting of link lists, e.g., on a person&apos;s last name rather than their first, or on phrases that begin with a definite or indefinite article.</p>
  
@@ -2352,8 +2247,7 @@ Selective link lists such as these are output with the Textpattern 'linklist' ta
 <p>The address of the link. If the link points to a different site, then it must be preceded by <code>https://</code>.</p>
 
 
- 
-'logging'
+ 'logging'
 'Logging'
 'All hits: Textpattern will log all page views on your site.
 
@@ -2365,22 +2259,19 @@ None: Textpattern will pick up your dry-cleaning.'
 <p>None: Textpattern will pick up your dry-cleaning.</p>
 
 
- 
-'max_url_len'
+ 'max_url_len'
 'Max URL length'
 'This prevents urls that are longer than specified from functioning. It could be helpful in containing damage, if a security relevant error in Textpattern.'
 <p>This prevents urls that are longer than specified from functioning. It could be helpful in containing damage, if a security relevant error in Textpattern.</p>
 
 
- 
-'never_display_email'
+ 'never_display_email'
 'Never display email?'
 'This setting controls wether the email-adress of a commenter should never be shown publicly.'
 <p>This setting controls wether the email-adress of a commenter should never be shown publicly.</p>
 
 
- 
-'next_page_link'
+ 'next_page_link'
 'Next Page Link'
 'When there are more current articles than those displayed on a page, this text (or URL of a graphic) appears at the bottom of the page as a link to continue reading.'
 <p>When there are more current articles than those displayed on a page, this text (or <span class="caps">URL</span> of a graphic) appears at the bottom of the page as a link to continue reading.</p>
@@ -2470,15 +2361,13 @@ Note: If you are using a language the characters of which cannot be represented 
 <p>Note: If you are using a language the characters of which cannot be represented in ISO-8859-1, this setting will unfortunately not help you. You should try finding a utf-8 (or unicode)-compatible email-client.</p>
 
 
- 
-'override_form'
+ 'override_form'
 'Override Default Form'
 'If on occasion you wish for an article to use a form different from that assigned by default - for example if you want to show only an article excerpt with @<txp:excerpt />@ where you normally show the entire article with @<txp:body />@ - this can be set here.'
 <p>If on occasion you wish for an article to use a form different from that assigned by default &#8211; for example if you want to show only an article excerpt with <code>&lt;txp:excerpt /&gt;</code> where you normally show the entire article with <code>&lt;txp:body /&gt;</code> &#8211; this can be set here.</p>
 
 
- 
-'path_from_root'
+ 'path_from_root'
 'Root to Textpattern'
 'If your Textpattern site is located in a subdirectory away from your web server's root directory, enter that path here.
 
@@ -2510,8 +2399,7 @@ If the site *is* located in the root directory, then set the value to a single f
 <code>/</code>
 
 
- 
-'path_not_doc_root'
+ 'path_not_doc_root'
 'Diagnostics: path_to_site Doesn't Match'
 'Two variables set by your webserver which should match, but,  do not.'
 <p>Two variables set by your webserver which should match, but,  do not.</p>
@@ -2522,8 +2410,7 @@ If the site *is* located in the root directory, then set the value to a single f
 <p>The directory containing the index.php file specified as the index for your site is unreadable by the webserver. Please check permissions.</p>
 
 
- 
-'permalink_title_format'
+ 'permalink_title_format'
 'Preferences: Permalink Titles with hyphens or in CamelCase'
 'This setting only has an effect when "Attach titles to permalinks" is set to _on_. When dirifying article-titles for use in urls, you have the option of: 
 
@@ -2547,8 +2434,7 @@ If the site *is* located in the root directory, then set the value to a single f
 <p>This defines the method by which individual articles are reached via the URL displayed by the <code>&lt;txp:permlink&gt;</code> tag.</p>
 
 
- 
-'ping_textpattern_com'
+ 'ping_textpattern_com'
 'Preferences: Ping textpattern.com'
 'This will send a ping to textpattern.com whenever you publish a new article.
 
@@ -2600,8 +2486,7 @@ In *Live* mode, no error reporting or diagnostic information will be sent to the
 <p>In <strong>Live</strong> mode, no error reporting or diagnostic information will be sent to the page. Generally, Live mode is preferred, as it imposes the least overhead on the server.</p>
 
 
- 
-'publish_expired_articles'
+ 'publish_expired_articles'
 'Preferences: Publish Expired Articles'
 'When set to "Yes", expired articles will continue to show on your site after their expiry date has elapsed. You can use @<txp:if_expired />@ to show alternate content or markup for expired articles.
 
@@ -2618,8 +2503,7 @@ Mechanisms for displaying mentions on a Textpattern site are still in developmen
 <p>Mechanisms for displaying mentions on a Textpattern site are still in development.</p>
 
 
- 
-'remember_login'
+ 'remember_login'
 'Remember Login'
 'When checked, you will remain logged in to your Textpattern account with the current web browser, until you choose to logout. If left unchecked, you will be automatically logged out after a period of inactivity.
 
@@ -2633,8 +2517,7 @@ Requires cookies to be enabled in your browser.'
 <p>An image uploaded here will simply replace the existing one associated with this entry in the database.</p>
 
 
- 
-'rss_how_many'
+ 'rss_how_many'
 'Preferences: How many articles should be included in feeds?'
 'This is the maximum number of current articles to be syndicated at a time, in RSS(Really Simple Syndication)/Atom format.
 
@@ -2677,8 +2560,7 @@ Note that a special hidden 'section' always exists, named *default*. Using the l
 <p>Note that a special hidden &apos;section&apos; always exists, named <strong>default</strong>. Using the layout called &apos;default&apos; as well as the <span class="caps">CSS</span> called &apos;default&apos;, this is what makes up the front page of your site. </p>
 
 
- 
-'section_is_default'
+ 'section_is_default'
 'Having a Section Selected by Default'
 'This option governs whether this section will be preselected in the 'Sections' popup menu when creating a new article.
 
@@ -2690,8 +2572,7 @@ Note that only one section at a time can be set to be selected by default.'
 <p>Note that only one section at a time can be set to be selected by default.</p>
 
 
- 
-'section_on_frontpage'
+ 'section_on_frontpage'
 'Section Article Appear on Front Page'
 'The articles in some sections, such as those resembling more 'static' web pages, may seem out of place in the time-sensitive flow of your site's front page. 
 
@@ -2700,36 +2581,31 @@ Setting this to 'no' will prevent articles assigned to this section from appeari
 <p>Setting this to &apos;no&apos; will prevent articles assigned to this section from appearing on the front page.</p>
 
 
- 
-'section_searchable'
+ 'section_searchable'
 'Include in Site Search'
 'This governs whether articles belonging to this section should appear as part of site-wide search results.'
 <p>This governs whether articles belonging to this section should appear as part of site-wide search results.</p>
 
 
- 
-'section_syndicate'
+ 'section_syndicate'
 'Syndicate Section Articles'
 'Governs whether or not articles in this section will appear in the site's RSS or Atom XML feeds.'
 <p>Governs whether or not articles in this section will appear in the site&apos;s <span class="caps">RSS</span> or Atom <span class="caps">XML</span> feeds.</p>
 
 
- 
-'section_uses_css'
+ 'section_uses_css'
 'Assigning CSS to a Section'
 'If you wish to override the default style sheet for a particular section, this can be set here.'
 <p>If you wish to override the default style sheet for a particular section, this can be set here.</p>
 
 
- 
-'section_uses_page'
+ 'section_uses_page'
 'Assigning Pages to Sections'
 'In Textpattern, sections are married to page templates. It's kind of sweet, really.'
 <p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really.</p>
 
 
- 
-'send_lastmod'
+ 'send_lastmod'
 'Send Last-Modified Header'
 'When set, Textpattern will read a visitor's HTTP(HyperText Transfer Protocol) @If-Modified-Since@ header (if one exists) and compares it to the last site update. If nothing has changed since the visitor last loaded the page (i.e., if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor's browser to use its cached version of the page.
 
@@ -2764,8 +2640,7 @@ Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:s
 <p>(Note that no <code>https://</code> or closing slash is required.)</p>
 
 
- 
-'site_slogan'
+ 'site_slogan'
 'Preferences: Site slogan'
 'This is a brief (a maximum of 255 characters) summary or description of your site. It will be used as the description of your site wherever required, such as in your XML feeds, and may be use at any number of places throughout your site, at your discretion.
 
@@ -2787,8 +2662,7 @@ You can enter a list of domain names that should be seperated by commas. Potenti
 <p>You can enter a list of domain names that should be seperated by commas. Potential blacklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blacklist-providers before you add any.</p>
 
 
- 
-'subscript'
+ 'subscript'
 'sub'
 'Use ==~tildes~== for text to be rendered ~subscript~.
 
@@ -2830,15 +2704,13 @@ The &#60;sup&#62; <acronym title="Hypertext Markup Language">HTML</acronym> tag 
 <p>If this is set to <em>no</em>, then feeds will always contain the full article bodies. If this is set to <em>yes</em>, feed items will contain an excerpt instead of the article-body where it is available.</p>
 
 
- 
-'tempdir'
+ 'tempdir'
 'Temp folder'
 'The Temp folder sets an _absolute path_ to a temporary directory. PHP needs to have write access to this directory (usually chmod 777). This folder is used for uploads of any kind (plugins, files or images).'
 <p>The Temp folder sets an <em>absolute path</em> to a temporary directory. PHP needs to have write access to this directory (usually chmod 777). This folder is used for uploads of any kind (plugins, files or images).</p>
 
 
- 
-'textile_comments'
+ 'textile_comments'
 'Textile Shortcuts'
 'Formatting:
 
@@ -2880,8 +2752,7 @@ ABC(Always Be Closing)</p>
 <p>This allows you to set whether the link descriptions you can enter in content->links will be run through the light version of Textile. If set to <em>no</em>, descriptions will be displayed as entered.</p>
 
 
- 
-'timeoffset'
+ 'timeoffset'
 'Server Time Offset'
 'If your web host is in a different time zone than where you live, use this to adjust displayed times to reflect your local time rather than that of the server.'
 <p>If your web host is in a different time zone than where you live, use this to adjust displayed times to reflect your local time rather than that of the server.</p>
@@ -2902,8 +2773,7 @@ Articles with timestamps greater than the current time (in the future) will not 
 <p>Articles with timestamps greater than the current time (in the future) will not appear on the site until that time passes.</p>
 
 
- 
-'trackback'
+ 'trackback'
 'Trackback'
 'Many content management systems offer trackbacks to individual articles or postings. 
 
@@ -2955,8 +2825,7 @@ For example, to reference a thumbnail associated with a fullsize image stored at
 <code>/images/12t.jpg</code>
 
 
- 
-'url_mode'
+ 'url_mode'
 'URL Mode'
 'Governs how permanent links to archived articles will appear. 
 
@@ -3027,8 +2896,7 @@ ForceType application/x-httpd-php <br />
 <code>https://www.mysite.com/article/123/</code>
 
 
- 
-'url_title'
+ 'url_title'
 'URL Title'
 'If you would like to have a specific title attached to the permalink url for your article, enter it here. If it is left blank, the URL title will be generated from the actual article title. 
 
@@ -3037,15 +2905,13 @@ This is particularly useful if the title of your article uses non-ascii characte
 <p>This is particularly useful if the title of your article uses non-ascii characters.</p>
 
 
- 
-'uses_page'
+ 'uses_page'
 'Assigning Pages to Sections'
 'In Textpattern, sections are married to page templates. It’s kind of sweet, really'
 <p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really</p>
 
 
- 
-'use_categories'
+ 'use_categories'
 'Using Categories'
 'Attaching categories to articles adds a level of organization and searchability to your site, however those publishing a simple site may find categorization to be an unnecessary or unwanted step in the publishing of an article. 
 
@@ -3133,8 +2999,7 @@ You can turn off register_globals in the php.ini file. If you are in a hosted en
 <code>php_value register_globals off</code>
 
 
- 
-'plugin_cache_dir'
+ 'plugin_cache_dir'
 'Preferences: Plugin cache directory path'
 'This setting is mainly used for plugin developers. When specified, you can put the plugin source file (not compiled) in this directory and Textpattern will load it automatically, so you can easily edit the plugin and immediately see the effect it has without having to install/activate the plugin. *Beware* though that by using this method, a broken plugin (which fails to compile) may also break Textpattern!
 
