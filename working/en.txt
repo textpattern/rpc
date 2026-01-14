@@ -1,23 +1,3 @@
-'comments_moderate'
-'Preferences: Moderate comments?'
-<p>With this set to &apos;Yes&apos;, every new comment will have its visibility turned off until it has been reviewed. You must manually moderate and make each comment visible (a message will be emailed to the article author when a new comment has been received).</p>
-
-'comments_on_default'
-'Preferences: Comments on by default?'
-<p>If this is set to &apos;Yes&apos;, comments will be automatically enabled for every article published. If set to &apos;No&apos;, you must enable comments on the article &apos;Write&apos; administration panel each time you want to accept comments.</p>
-<p>Note that allowing comments can be turned on or off at any time, on a per-article basis.</p>
-
-'comments_require_email'
-'Preferences: Comments require user's email address?'
-<p>If set to &apos;Yes&apos;, people that want to comment on your article will have to enter an email address in the comment write form. They will be unable to post a comment if they do not supply an email address.</p>
-
-'comments_require_name'
-'Preferences: Comments require commenter’s name?'
-<p>If set to &apos;Yes&apos;, people that want to comment on your article will have to enter a name in the comment input form. They will not be able to submit a comment if they do not supply a name.</p>
-
-'comments_sendmail'
-<p>If set to &apos;Yes&apos;, whenever a new comment is received on an article, a copy will be sent via email to that article&apos;s author.</p>
-
 'comments_use_fat_textile'
 'Preferences: Allow more Textile markup in comments?'
 <p>When set to &apos;Yes&apos;, comments may contain <a href="https://textpattern.com/textile-sandbox">Textile</a> elements which would otherwise be treated as plain text, such as:</p>
@@ -383,7 +363,7 @@
 <p>Some of the many ways Textile makes markup easier:</p>
 
 	<ul>
-		<li>Replace single and double primes (<code>&#39;</code> and <code>&quot;</code>) used as quotation marks with <span class="caps">HTML</span> entities for opening and closing quotation marks (<code>‘’</code> and <code>“”</code>) in readable text, while leaving untouched the primes required within <span class="caps">HTML</span> tags.</li>
+		<li>Replace single and double primes (<code>&#39;</code> and <code>&quot;</code>) used as quotation marks with <span class="caps">HTML</span> entities for opening and closing quotation marks (<code>&apos;&apos;</code> and <code>&quot;&quot;</code>) in readable text, while leaving untouched the primes required within <span class="caps">HTML</span> tags.</li>
 		<li>Replace double hyphens (--) with an em-dash (—) entity.</li>
 		<li>Replace single hyphens surrounded by spaces with an en-dash (–) entity.</li>
 		<li>Replace triplets of periods (...) with an ellipsis (…) entity.</li>
@@ -2270,7 +2250,7 @@ ForceType application/x-httpd-php <br />
 
 'uses_page'
 'Assigning Pages to Sections'
-<p>In Textpattern, sections are married to page templates. It’s kind of sweet, really</p>
+<p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really</p>
 
 'url_title'
 'URL Title'
@@ -2578,7 +2558,7 @@ Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:s
 
 'numeric'
 'Numeric Lists'
-<p>To make a numbered list, place each item in its own paragraph, preceded by “# ”.</p>
+<p>To make a numbered list, place each item in its own paragraph, preceded by &quot;# &quot;.</p>
 <p>Example</p>
 <pre>
 # A first item
@@ -2693,7 +2673,7 @@ This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website
 'intro'
 'What Textile Does'
 '<ul>
-		<li>Replace single and double primes (<code>&#39;</code> and <code>&#34;</code>) used as quotation marks with <acronym title="HyperText Markup Language"><span class="caps">HTML</span></acronym> entities for opening and closing quotation marks (<code>‘’</code> and <code>“”</code>) in readable text, while leaving untouched the primes required within <span class="caps">HTML</span> tags.</li>
+		<li>Replace single and double primes (<code>&#39;</code> and <code>&#34;</code>) used as quotation marks with <acronym title="HyperText Markup Language"><span class="caps">HTML</span></acronym> entities for opening and closing quotation marks (<code>&apos;&apos;</code> and <code>&quot;&quot;</code>) in readable text, while leaving untouched the primes required within <span class="caps">HTML</span> tags.</li>
 		<li>Replace double hyphens (--) with an em-dash (—) entity.</li>
 		<li>Replace single hyphens surrounded by spaces with an en-dash (–) entity.</li>
 		<li>Replace triplets of periods (...) with an ellipsis (…) entity.</li>
