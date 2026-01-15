@@ -67,7 +67,6 @@
 
 'form_articles'
 'Article tags'
-
 <p>These tags are replaced with their corresponding values every time an article is output. </p>
 
 	<h3>Author</h3>
@@ -355,6 +354,7 @@
 <p>Keywords are useful for refining the relationships between articles beyond those provided by categories.</p>
 <p>Keywords must be individual words separated by commas.</p>
 
+'lang'
 'Languages: Introduction'
 <p>Textpattern <span class="caps">CMS</span> is available in various languages, you can always check for updates either via your &apos;Languages&apos; tab or by visiting <a href="https://rpc.textpattern.com/lang/">link-external)https://rpc.textpattern.com/lang/</a>. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.</p>
 <p>Switching to a new language is always a two step process:</p>
@@ -364,6 +364,7 @@
 		<li>Select the language as the currently active one</li>
 	</ol>
 
+'links'
 'Textile: Links'
 <p>To make a hypertext link, put the link text in "quotation marks" followed immediately by a colon and the <span class="caps">URL</span> of the link.</p>
 <p><strong>Optional:</strong> text in (parentheses) following the link text, but before the closing quotation mark, will become a <code>title</code> attribute for the link, visible as a tooltip when a cursor is above it.</p>
@@ -674,7 +675,7 @@
 
 'sitename'
 'Preferences: Site name'
-<p>The <a href="https://www.textpattern.net/wiki/index.php?title=site_name" target="_blank">name or title of your site</a>. This will appear in the title bar of a visitor&apos;s browser or syndication feed reader, and any number of other places throughout your site, at your discretion.</p>
+<p>The <a href="https://docs.textpattern.com/tags/site_name" target="_blank">name or title of your site</a>. This will appear in the title bar of a visitor&apos;s browser or syndication feed reader, and any number of other places throughout your site, at your discretion.</p>
 
 'siteurl'
 'Preferences: Site URL'
@@ -879,63 +880,9 @@ Hour(24hr) : Minute : Second</p>
 <pre><code>php_value register_globals 0
 </code></pre>
 
-'date_case'
-'Preferences: Front Page Date Case'
-<p>Use this if you want dates for articles on the front page to appear in <span class="caps">UPPERCASE</span>, Upper & Lower case, or lower case.</p>
-<p>Upper & Lower case is the default.</p>
-
-'delete'
-'Deleted Text'
-<p>Use -hyphens- around text that has been <del>deleted</del>. This is useful in marking changes from one version of a document to the next.</p>
-<p>The &lt;del&gt; <acronym title="Hypertext Markup Language"><span class="caps">HTM</span>L</acronym> tag is applied:</p>
-<p>-a phrase- &rarr; &lt;del&gt;a phrase&lt;/del&gt; &rarr; <del>a phrase</del></p>
-<p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/phrase/del.html" title="del reference at htmlhelp.com">More information</a></p>
-
-'dev_version_live'
-'Diagnostics: You are running in-development files on a live server'
-<p>This is a warning that you are running development versions of one or more core files on a live server. This is unadvised for anyone but experienced users and is unsupported by the developers.</p>
-
-'dir_not_writable'
-'Diagnostics: Directory is not writable'
-<p>To use the file and image upload capabilities, these directories have to be writable by <span class="caps">PHP</span>. Usually this means you have change permissions to 777. This can be done with your <span class="caps">FTP</span> client or alternatively on the command line by issuing a: chmod 777 /path/to/dir</p>
-
-'dns_lookup_fails'
-'Diagnostics: DNS Fails'
-<p>It appears the <span class="caps">URI</span> you specified as the address of your site is unreachable on the web.</p>
-
-'doc_root'
-'Preferences: Document Root'
-<p>This must be the full server path to the document root of your server, regardless of where you have Textpattern installed.</p>
-<p>Note there must be no trailing slash at the end.</p>
-<p>Examples:</p>
-<p><code>/home/user/docs/html</code></p>
-<p>or</p>
-<p><code>/home/var/www</code></p>
-
-'import_section'
-'Import Section'
-<p>Use this to select the section you want to assign to the imported articles.</p>
-
 'import_status'
 'Default Status'
 <p>Here you can choose the status articles will have once imported into Textpattern.</p>
-
-'include_email_atom'
-'Include email in atom feeds'
-<p>This allows you to include the email-adress of the author (as set in their user account) of an article in the <em>auhor</em> part of your Atom feeds.</p>
-
-'index_inaccessible'
-'Diagnostics: Site Index Inaccessible'
-<p>The main index.php file specified as the index for your site is unreadable by the webserver. Please check permissions.</p>
-
-'keywords'
-'Keywords'
-<p>Keywords are useful for refining the relationships between articles beyond those provided by categories.</p>
-<p>Keywords must be individual words separated by commas.</p>
-
-<p>Textpattern is currently available in 18 Languages, you can always check for updates either via your preferences tab (&quot;Install Language&quot;) or by visiting <a href="https://rpc.textpattern.com/lang/">https://rpc.textpattern.com/lang/</a>. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.</p>
-<p>Switching to a new language is always a two step process. 1) Installing the language and afterwards 2) Selecting the language as the currently active one.</p>
 
 'links'
 'Links'
@@ -987,11 +934,6 @@ This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; t
 <p>This governs whether the Section&apos;s articles are to appear by default on the front page of the site.</p>
 <p>If you link to articles in the Section from the front page, then this option should implicitly set to &apos;no&apos;.</p>
  
-'override_emailcharset'
-'Override the default characterset for emails'
-<p>Textpattern uses utf-8 wherever possible per default, also for outgoing emails. However some older email clients (like some versions of Outlook) do not have proper utf-8 support. If you see garbled characters in E-Mails, this setting will try to convert mails to ISO-8859-1 before sending them.</p>
-<p>Note: If you are using a language the characters of which cannot be represented in ISO-8859-1, this setting will unfortunately not help you. You should try finding a utf-8 (or unicode)-compatible email-client.</p>
-
 'override_form'
 'Override Default Form'
 <p>If on occasion you wish for an article to use a form different from that assigned by default &ndash; for example if you want to show only an article excerpt with <code>&lt;txp:excerpt /&gt;</code> where you normally show the entire article with <code>&lt;txp:body /&gt;</code> &ndash; this can be set here.</p>
@@ -1083,46 +1025,6 @@ This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; t
 <p>When set, Textpattern will read a visitor&apos;s <acronym title="HyperText Transfer Protocol">HTTP</acronym> <code>If-Modified-Since</code> header (if one exists) and compares it to the last site update. If nothing has changed since the visitor last loaded the page (i.e., if the timestamp the browser sends is the same as the last site update), then a header is sent back instructing the visitor&apos;s browser to use its cached version of the page.</p>
 <p>This can reduce bandwidth consumption, page load times, and reduce the load on the webserver.</p>
 
-'setup_still_exists'
-'Diagnostics: /path/to/textpattern/setup still exists'
-<p>Once Textpattern has been installed, this directory is no longer needed and is recommended for deletion. You will continue to receive this warning until you have removed it.</p>
-
-'show_comment_count_in_feed'
-'Preferences: Show comment count in feeds?'
-<p>When set to &quot;Yes&quot;, this setting will append the number of comments to your article titles in your <span class="caps">XML</span> feeds.</p>
-
-'sitename'
-'Preferences: Site name'
-<p>The name or title of your site. This will appear in the title bar of a visitor&apos;s browser or syndication feed reader, and any number of other places throughout your site, at your discretion.</p>
-<p>Textbook: <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:sitename_/">sitename</a></p>
-
-'siteurl'
-'Site URL'
-<p>This is the top-level domain of the server your site is running on. Examples: <code>www.textpattern.com</code> <code>subdomain.example.com/subdirectory</code></p>
-<p>(Note that no <code>https://</code> or closing slash is required.)</p>
-
-'site_slogan'
-'Preferences: Site slogan'
-<p>This is a brief (a maximum of 255 characters) summary or description of your site. It will be used as the description of your site wherever required, such as in your <span class="caps">XML</span> feeds, and may be use at any number of places throughout your site, at your discretion.</p>
-<p>Textbook: <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:site_slogan_/">site_slogan</a></p>
-
-'some_php_functions_disabled'
-'Diagnostics: The following PHP functions... are disabled on your server'
-<p>This means your hosting company or server administrator has disabled one or <span class="caps">PHP</span> functions. Please <a href="https://textpattern.com/faq/266/the-following-php-functions-are-disabled" title="Textpattern FAQ: The following PHP functions... are disabled">see the following <span class="caps">FAQ</span> entry for more information</a>.</p>
-
-'spam_blacklists'
-'Spam blocklists'
-<p>The blocklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.</p>
-<p>You can enter a list of domain names that should be separated by commas. Potential blocklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blocklist-providers before you add any.</p>
-
-'subscript'
-'sub'
-<p>Use ~tildes~ for text to be rendered <sub>subscript</sub>.</p>
-<p>The &lt;sub&gt; <span class="caps">HTML</span> tag is applied:</p>
-<p>~a phrase~ &rarr; &lt;sub&gt;a phrase&lt;/sub&gt; &rarr; <sub>a phrase</sub></p>
-<p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/special/sub.html" target="_blank" title="subscript reference at htmlhelp.com">More information</a></p>
- 
 'super'
 'Superscript'
 <p>Use ^carets^ for text to be rendered <sup>superscript</sup>.</p>
@@ -1131,31 +1033,6 @@ This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; t
 <p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/sup.html" target="_blank" title="superscript reference at htmlhelp.com">More information</a></p>
  
-'tempdir'
-'Temp folder'
-<p>The Temp folder sets an <em>absolute path</em> to a temporary directory. PHP needs to have write access to this directory (usually chmod 777). This folder is used for uploads of any kind (plugins, files or images).</p>
-
-'textile_comments'
-'Textile Shortcuts'
-<p>Formatting:</p>
-<p>_<em>emphasis</em>_<br />
-*<strong>strong</strong>*<br />
-??<cite>citation</cite>??<br />
--<del>deleted text</del>-<br />
-+<ins>inserted text</ins>+<br />
-^<sup>superscript</sup>^</p>
-<p>Hyperlink:<br />
-"link text":https://link.com/</p>
-<p>Image:<br />
-!https://image.url!</p>
-<p>To define an acronym:<br />
-ABC(Always Be Closing)</p>
-<p><strong>Note:</strong> All (X)<span class="caps">HTML</span> tags will be escaped.</p>
-
-'textile_links'
-'Textile links description by default'
-<p>This allows you to set whether the link descriptions you can enter in content->links will be run through the light version of Textile. If set to <em>no</em>, descriptions will be displayed as entered.</p>
-
 'upload_thumbnail'
 'Upload Thumbnail'
 <p>Full-size images can be assigned their own thumbnails. These are useful for linking to and indexing full-size images.</p>
@@ -1235,31 +1112,6 @@ ForceType application/x-httpd-php <br />
 'Diagnostics: _update.php Still Exists'
 <p>Once Textpattern has been upgraded, the update directory and its contents are no longer needed and recommended for deletion. You will continue to receive this warning until it has been removed.</p>
 
-'textile_links'
-'Textile links description by default'
-<p>This allows you to set whether the link descriptions you can enter in content-&gt;links will be run through the light version of Textile. If set to <em>no</em>, descriptions will be displayed as entered.</p>
-
-'textile_comments'
-'Textile Shortcuts'
-<p>Formatting:</p>
-<p>_<em>emphasis</em>_<br />
-*<strong>strong</strong>*<br />
-??<cite>citation</cite>??<br />
--<del>deleted text</del>-<br />
-+<ins>inserted text</ins>+<br />
-^<sup>superscript</sup>^</p>
-<p>Hyperlink:<br />
-"link text":https://link.com/</p>
-<p>Image:<br />
-!https://image.url!</p>
-<p>To define an acronym:<br />
-ABC(Always Be Closing)</p>
-<p><strong>Note:</strong> All (X)HTML tags will be escaped.</p>
-
-'tempdir'
-'Temp folder'
-<p>The Temp folder sets an <em>absolute path</em> to a temporary directory. <span class="caps">PHP</span> needs to have write access to this directory (usually chmod 777). This folder is used for uploads of any kind (plugins, files or images).</p>
-
 'super'
 'Superscript'
 <p>Use ^carets^ for text to be rendered <sup>superscript</sup>.</p>
@@ -1267,49 +1119,6 @@ ABC(Always Be Closing)</p>
 <p>^a phrase^ → <sup>a phrase</sup> → <sup>a phrase</sup></p>
 <p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/sup.html" target="_blank" title="superscript reference at htmlhelp.com">More information</a></p>
-
-'subscript'
-'sub'
-<p>Use ~tildes~ for text to be rendered <sub>subscript</sub>.</p>
-<p>The <sub> <acronym title="Hypertext Markup Language"><span class="caps">HTML</span></acronym> tag is applied:</p>
-<p>~a phrase~ → <sub>a phrase</sub> → <sub>a phrase</sub></p>
-<p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/special/sub.html" target="_blank" title="subscript reference at htmlhelp.com">More information</a></p></p>
-
-'spam_blacklists'
-'Spam blocklists'
-<p>The blocklist providers entered here, will be contacted when a comment is posted to your blog and the IP of the comment poster will be checked. If the IP is listed, it means there have been spamming complaints made about this IP in the past and a comment will be rejected.</p>
-<p>You can enter a list of domain names that should be separated by commas. Potential blocklists can be found at <a href="https://dmoz.org/Computers/Internet/Abuse/Spam/Blacklists/">dmoz</a>, but be aware that it is <strong>your</strong> responsibility to make sure you can trust those blocklist-providers before you add any.</p>
-
-'some_php_functions_disabled'
-'Diagnostics: The following PHP functions... are disabled on your server'
-<p>This means your hosting company or server administrator has disabled one or <span class="caps">PHP</span> functions. Please <a href="https://textpattern.com/faq/266/the-following-php-functions-are-disabled" title="Textpattern FAQ: The following PHP functions... are disabled">see the following <span class="caps">FAQ</span> entry for more information</a>.</p>
-
-'site_slogan'
-'Preferences: Site slogan'
-<p>This is a brief (a maximum of 255 characters) summary or description of your site. It will be used as the description of your site wherever required, such as in your <span class="caps">XML</span> feeds, and may be use at any number of places throughout your site, at your discretion.</p>
-<p>Textbook: <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:site_slogan_/">site_slogan</a></p>
-
-'siteurl'
-'Site URL'
-<p>This is the top-level domain of the server your site is running on. Examples: <code>www.textpattern.com</code> @subdomain.example.com/subdirectory@</p>
-<p>(Note that no <code>https://</code> or closing slash is required.)</p>
-
-'sitename'
-'Preferences: Site name'
-'The name or title of your site. This will appear in the title bar of a visitor's browser or syndication feed reader, and any number of other places throughout your site, at your discretion.
-
-Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:sitename_/'
-<p>The name or title of your site. This will appear in the title bar of a visitor&apos;s browser or syndication feed reader, and any number of other places throughout your site, at your discretion.</p>
-<p>Textbook: <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:sitename_/">sitename</a></p>
-
-'show_comment_count_in_feed'
-'Preferences: Show comment count in feeds?'
-<p>When set to &quot;Yes&quot;, this setting will append the number of comments to your article titles in your <span class="caps">XML</span> feeds.</p>
-
-'setup_still_exists'
-'Diagnostics: /path/to/textpattern/setup still exists'
-<p>Once Textpattern has been installed, this directory is no longer needed and is recommended for deletion. You will continue to receive this warning until you have removed it.</p>
 
 'send_lastmod'
 'Send Last-Modified Header'
@@ -1413,11 +1222,6 @@ Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:s
 'Override Default Form'
 <p>If on occasion you wish for an article to use a form different from that assigned by default &ndash; for example if you want to show only an article excerpt with <code>&lt;txp:excerpt /&gt;</code> where you normally show the entire article with <code>&lt;txp:body /&gt;</code> &ndash; this can be set here.</p>
 
-'override_emailcharset'
-'Override the default characterset for emails'
-<p>Textpattern uses utf-8 wherever possible per default, also for outgoing emails. However some older email clients (like some versions of Outlook) do not have proper utf-8 support. If you see garbled characters in E-Mails, this setting will try to convert mails to <span class="caps">ISO</span>-8859-1 before sending them.</p>
-<p>Note: If you are using a language the characters of which cannot be represented in <span class="caps">ISO</span>-8859-1, this setting will unfortunately not help you. You should try finding a utf-8 (or unicode)-compatible email-client.</p>
-
 'on_frontpage'
 'On Front Page'
 <p>This governs whether the Section&apos;s articles are to appear by default on the front page of the site.</p>
@@ -1467,29 +1271,9 @@ This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website
 This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website.</p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/a.html" target="_blank" title="a tag reference at htmlhelp.com">More information</a></p>
 
-<p>Textpattern is currently available in 18 Languages, you can always check for updates either via your preferences tab (&quot;Install Language&quot;) or by visiting <a href="https://rpc.textpattern.com/lang/">https://rpc.textpattern.com/lang/</a>. After you have updated to a new Textpattern version, it is generally a good idea to check wether there were any updates for your installed languages.</p>
-<p>Switching to a new language is always a two step process. 1) Installing the language and afterwards 2) Selecting the language as the currently active one.</p>
-
-'keywords'
-'Keywords'
-<p>Keywords are useful for refining the relationships between articles beyond those provided by categories.</p>
-<p>Keywords must be individual words separated by commas.</p>
-
-'index_inaccessible'
-'Diagnostics: Site Index Inaccessible'
-<p>The main index.php file specified as the index for your site is unreadable by the webserver. Please check permissions.</p>
-
-'include_email_atom'
-'Include email in atom feeds'
-<p>This allows you to include the email-adress of the author (as set in their user account) of an article in the <em>auhor</em> part of your Atom feeds.</p>
-
 'import_status'
 'Default Status'
 <p>Here you can choose the status articles will have once imported into Textpattern.</p>
-
-'import_section'
-'Import Section'
-<p>Use this to select the section you want to assign to the imported articles.</p>
 
 'import'
 'Importing Into Textpattern'
@@ -1508,40 +1292,6 @@ This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website
 'Preferences: Time Zone'
 <p>In order to display dates in your local time zone, please indicate where you are in relation to Greenwich Mean Time/Universal Coordinated Time (by &quot;Standard&quot; <em>not</em> &quot;Daylight&quot; time &ndash; <a href="index.php?item=is_dst&lang=en" title="Preferences: DST(Daylight Saving Time) enabled?">another preference enables/disables Daylight Saving Time</a>).</p>
 <p>Wikipedia: <a href="https://en.wikipedia.org/wiki/Time_offset">Time offset</a></p>
-
-'doc_root'
-'Preferences: Document Root'
-<p>This must be the full server path to the document root of your server, regardless of where you have Textpattern installed.</p>
-<p>Note there must be no trailing slash at the end.</p>
-<p>Examples:</p>
-<p><code>/home/user/docs/html</code></p>
-<p>or</p>
-<p><code>/home/var/www</code></p>
-
-'dns_lookup_fails'
-'Diagnostics: DNS Fails'
-<p>It appears the <span class="caps">URI</span> you specified as the address of your site is unreachable on the web.</p>
-
-'dir_not_writable'
-'Diagnostics: Directory is not writable'
-<p>To use the file and image upload capabilities, these directories have to be writable by <span class="caps">PHP</span>. Usually this means you have change permissions to 777. This can be done with your <span class="caps">FTP</span> client or alternatively on the command line by issuing a: chmod 777 /path/to/dir</p>
-
-'dev_version_live'
-'Diagnostics: You are running in-development files on a live server'
-<p>This is a warning that you are running development versions of one or more core files on a live server. This is unadvised for anyone but experienced users and is unsupported by the developers.s</p>
-
-'delete'
-'Deleted Text'
-<p>Use -hyphens- around text that has been <del>deleted</del>. This is useful in marking changes from one version of a document to the next.</p>
-<p>The <del> <acronym title="Hypertext Markup Language"><span class="caps">HTML</span></acronym> tag is applied:</p>
-<p>-a phrase- → <del>a phrase</del> → <del>a phrase</del></p>
-<p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/phrase/del.html" title="del reference at htmlhelp.com">More information</a></p>
-
-'date_case'
-'Preferences: Front Page Date Case'
-<p>Use this if you want dates for articles on the front page to appear in <span class="caps">UPPERCASE</span>, Upper &#38; Lower case, or lower case.</p>
-<p>Upper &#38; Lower case is the default.</p>
 
 'file_base_path'
 'Preferences: File directory path'
