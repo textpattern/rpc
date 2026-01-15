@@ -918,411 +918,6 @@ Hour(24hr) : Minute : Second</p>
 <pre><code>php_value register_globals 0
 </code></pre>
 
-'about_privileges'
-'About Privileges'
-'<h3>Publisher</h3>
-
-	<ul>
-		<li>can manage articles, comments and links</li>
-		<li>can manage images and files</li>
-		<li>can manage sections and categories</li>
-		<li>can manage pages, forms and style</li>
-		<li>can view diagnostic information</li>
-		<li>can manage site preferences</li>
-		<li>can manage users</li>
-		<li>can manage visitor logs</li>
-		<li>can manage plugins</li>
-		<li>can import data</li>
-	</ul>
-
-	<h3>Managing Editor</h3>
-
-	<ul>
-		<li>can manage articles, comments and links</li>
-		<li>can manage images and files</li>
-		<li>can manage sections and categories</li>
-		<li>can manage pages, forms and style</li>
-		<li>can view diagnostic information</li>
-		<li>can manage site preferences</li>
-		<li>can view users</li>
-		<li>can manage visitor logs</li>
-		<li>can manage plugins</li>
-		<li>can import data</li>
-	</ul>
-
-	<h3>Copy Editor</h3>
-
-	<ul>
-		<li>can manage articles with some limitation:
-	<ul>
-		<li>cannot delete those belonging to other users</li>
-	</ul></li>
-		<li>can manage comments and links</li>
-		<li>can manage images and files</li>
-		<li>can manage sections and categories</li>
-		<li>can manage pages and forms</li>
-		<li>can view users</li>
-		<li>can manage visitor logs</li>
-	</ul>
-
-	<h3>Staff Writer</h3>
-
-	<ul>
-		<li>can manage own articles, view other users&apos; articles</li>
-		<li>can manage images and files</li>
-	</ul>
-
-	<h3>Freelancer</h3>
-
-	<ul>
-		<li>can manage own articles in a limited sense: 
-	<ul>
-		<li>can only modify article until is published</li>
-		<li>can apply status of <em>only</em> Draft, Hidden or Pending</li>
-	</ul></li>
-		<li>can view other users&apos; articles</li>
-	</ul>
-
-	<h3>Designer</h3>
-
-	<ul>
-		<li>can manage own articles in a limited sense: 
-	<ul>
-		<li>can only modify article until is published</li>
-		<li>can apply status of <em>only</em> Draft, Hidden or Pending</li>
-	</ul></li>
-		<li>can view other users&apos; articles</li>
-		<li>can manage images and files</li>
-		<li>can manage sections</li>
-		<li>can manage pages, forms and style</li>
-	</ul>
-
-'add_new_author'
-'Add New Author'
-<p>A password, welcome message and login instructions will be emailed to the new author.</p>
-
-'admin_side_plugins'
-'Preferences: Use admin-side plugins?'
-<p>Admin-side plugins are those which can change the operation of the administration interface.  They might hook into already existing actions, like editing or publishing articles, or they might add new tabs for added/extended functionality.</p>
-<p>If you would like to learn more about admin-side plugins, please see the <a href="https://textbook.textpattern.net/wiki/index.php?title=Designer_and_Developer_Interests#Plugin_Development" title="Textbook: Plugin Development">Plugin Development entries</a> in <a href="https://textbook.textpattern.net/">Textbook</a>. Plugins of all sorts are often listed in the <a href="https://textpattern.org/">Textpattern Resources</a> site.</p>
-
-'allow_article_php_scripting'
-'Preferences: Allow PHP in articles?'
-<p>When enabled, this setting will allow authors to use <span class="caps">PHP</span> within articles. The code must be enclosed within <em>txp:php</em> tags, and the author must have sufficient privileges to do so (by default, only <em>Publishers</em> and <em>Managing Editors</em>).</p>
-
-'allow_form_override'
-'Preferences: Allow form override?'
-<p>This setting allows article authors to override the form to be used when their article is rendered. If enabled, an &quot;Override form&quot; dropdown will be available under &quot;Advanced Options&quot;, when editing an article.</p>
-
-'allow_page_php_scripting'
-'Preferences: Allow PHP on pages?'
-<p>When enabled, this setting allows <span class="caps">PHP</span> code within page and form templates. <span class="caps">PHP</span> code must be both <em>without</em> opening and start <span class="caps">PHP</span> tags, and enclosed within <code>txp:php</code> tags.</p>
-<p>Textbook: <a href="https://textbook.textpattern.net/wiki/index.php?title=Txp:php">php</a></p>
-
-'archive_dateformat'
-'Preferences: Archive Date Format'
-<p>How dates will appear on articles in subsections of your site.</p>
-
-'archive_date_case'
-'Preferences: Subsection Date Case'
-<p>Use this if you want dates for articles in subsections to appear in <span class="caps">UPPERCASE</span>, Upper & Lower case, or lower case.</p>
-<p>Upper & Lower case is the default.</p>
-
-'articles_use_excerpts'
-'Preferences: Articles use excerpts'
-<p>By choosing <em>no</em> the excerpt field will not be shown to the author on the article-editing screen.</p>
-
-'article_category'
-'Article Categories'
-'Unlike "sections":https://www.textpattern.com/help/?item=section_category, which define the navigational structure of a site, article categories allow organisation of articles by their subject matter. Once categories are assigned, lists of articles belonging to particular categories can be browsed.
-
-Likely article categories on a site about food might be
-
-* raw ingredients
-* shopping
-* recipes
-* presentation
-* restaurants
-* chefs'
-<p>Unlike <a href="https://www.textpattern.com/help/?item=section_category">sections</a>, which define the navigational structure of a site, article categories allow organisation of articles by their subject matter. Once categories are assigned, lists of articles belonging to particular categories can be browsed.</p>
-<p>Likely article categories on a site about food might be</p>
-
-	<ul>
-	<li>raw ingredients</li>
-		<li>shopping</li>
-		<li>recipes</li>
-		<li>presentation</li>
-		<li>restaurants</li>
-		<li>chefs</li>
-	</ul>
-
-'article_image'
-'Article Image'
-<p>If you would like to associate a single image with this article, place its URL (or Textpattern image ID) here.</p>
-<p>The image can be output by placing a </p>
-
-<code>&lt;txp:article_image /&gt;</code> 
-
-<p>tag inside an article form.</p>
-
-'article_template'
-'Preferences: Default Article Template'
-<p>This is the default template used to format articles on the front page of your site, provided none has been specified in the <span class="caps">PHP</span> snippet used on that page.</p>
-
-'attach_titles_to_permalinks'
-'Preferences: Attach titles to permalinks?'
-<p>This setting will attach a dirified version of your article-title to your url, it is either generated automatically or can be manually overridden in the &quot;Advanced Options&quot; when editing an article.</p>
-<p>This setting will only have an effect when you are using clean urls. For certain languages this may result in long and ugly urls, in which case you probably want to set this to off.</p>
-
-'attributes'
-'Attributes'
-<p>Syntax:</p>
-<p>(class)<br />
-(#id)<br />
-(class#id) can be combined<br />
-{style}<br />
-[language]</p>
-<p><strong>Attributes in phrase elements</strong></p>
-<p>&#37;{color:red}red&#37; &rarr; &lt;span style=&#34;color:red&#34;&gt;red&lt;/span&gt;</p>
-<p>&#37;[fr]rouge&#37; &rarr; &lt;span lang=&#34;fr&#34;&gt;rouge&lt;/span&gt;</p>
-<p>&#95;(big)red&#95; &rarr; &lt;em class=&#34;big&#34;&gt;red&lt;/em&gt;</p>
-<p><strong>Attributes in block elements</strong></p>
-<p>&#112;(bob). A paragraph &rarr; &lt;p class=&#34;bob&#34;&gt;A paragraph&lt;/p&gt;</p>
-<p>&#112;{color:#ddd}. A paragraph &rarr; &lt;p style=&#34;color:#ddd&#34;&gt;A paragraph&lt;/p&gt;</p>
-<p>&#112;[fr]. A paragraph &rarr; &lt;p lang=&#34;fr&#34;&gt;A paragraph&lt;/p&gt;</p>
-<p><strong>Block attribute shorthand</strong></p>
-<p>&#112;<. <em>align left</em><br />
-&#112;>. <em>align right</em><br />
-&#112;=. <em>centered</em><br />
-&#112;<>. <em>justified</em><br />
-&#112;(., &#112;((.  <em>left indent 1em, 2em, etc.</em><br />
-&#112;). <em>right indent 1em</em></p>
-<p>Examples:</p>
-<p>&#104;2()>. <em>right-aligned header 2, indented 1em both sides</em><br />
-&#104;3=. <em>centered header 3</em><br />
-&#33;>/image.gif! <em>right-aligned image</em><br />
-&#112;[no]{color:red}. <em>A Norse of a different colour</em></p>
- 
-
-'blockquote'
-'Block Quotes'
-<p>To make an entire paragraph into a block quotation, place &quot;bq. &quot; before it.</p>
-<p>Example</p>
-
-	<blockquote>Any old text.</blockquote>
-
-	<blockquote>bq. A block quotation.</blockquote>
-
-	<blockquote>Any old text.</blockquote>
-
-<p>Will become:</p>
-
-	<blockquote>Any old text.</blockquote>
-
-	<blockquote>A block quotation.</blockquote>
-
-	<blockquote>Any old text.</blockquote>
-
-<p>Which, when rendered by a browser, will appear like this:</p>
-<p>Any old text.</p>
-
-	<blockquote>A block quotation.</blockquote>
-
-<p>Any old text.</p>
-<p><small>NB: Unmodified paragraphs will be wrapped in &lt;p&gt; tags.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/block/blockquote.html" title="blockquote reference at htmlhelp.com">More information</a></p>
- 
-
-'bold'
-'Strong Emphasis'
-<p>Use *asterisks* for text to be <strong>strongly emphasized</strong>.</p>
-<p>The &lt;strong&gt; <span class="caps">HTML</span> tag is applied:</p>
-
-	<blockquote><strong>a phrase</strong> &rarr; &lt;strong&gt;a phrase&lt;/strong&gt; &rarr; <strong>a phrase</strong></blockquote>
-
-<p>If the text is not meant to have <strong>structural</strong> emphasis, but simply to be styled in <b>bold</b> (e.g., as a design element) use double asterisks:</p>
-
-	<blockquote>**a phrase** &rarr; &lt;b&gt;a phrase&lt;/b&gt; &rarr; <b>a phrase</b></blockquote>
-
-<p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/phrase/strong.html" title="strong reference at htmlhelp.com">More information</a></p>
- 
-
-'bulleted'
-'Bulleted Lists'
-'To make a bulleted (point form) list, place each item in its own paragraph, preceded by "* ".
-
-Example
-
-<pre>
-  * A first item
-  * A second item
-  * A third item
-  * A fourth item
-</pre>
-
-Will become:
-
-&lt;ul&gt;
-&lt;li&gt;A first item&lt;/li&gt;
-&lt;li&gt;A second item&lt;/li&gt;
-&lt;li&gt;A third item&lt;/li&gt;
-&lt;li&gt;A fourth item&lt;/li&gt;
-&lt;/ul&gt;
-
-Which, when rendered by a browser, will appear like this:
-
-<ul>
-	<li>A first item</li>
-	<li>A second item</li>
-	<li>A third item</li>
-	<li>A fourth item</li>
-</ul>
-
-<small>NB: Unmodified paragraphs will be wrapped in &lt;p&gt; tags.</small>
-
-"More information":https://www.htmlhelp.com/reference/html40/lists/ul.html'
-<p>To make a bulleted (point form) list, place each item in its own paragraph, preceded by &quot;* &quot;.</p>
-<p>Example</p>
-<pre>
-  * A first item
-  * A second item
-  * A third item
-  * A fourth item
-</pre>
-
-<p>Will become:</p>
-<p>&lt;ul&gt;<br />
-&lt;li&gt;A first item&lt;/li&gt;<br />
-&lt;li&gt;A second item&lt;/li&gt;<br />
-&lt;li&gt;A third item&lt;/li&gt;<br />
-&lt;li&gt;A fourth item&lt;/li&gt;<br />
-&lt;/ul&gt;</p>
-<p>Which, when rendered by a browser, will appear like this:</p>
-<p><ul></p>
-<p><li>A first item</li><br />
-<li>A second item</li><br />
-<li>A third item</li><br />
-<li>A fourth item</li><br />
-</ul></p>
-<p><small>NB: Unmodified paragraphs will be wrapped in &lt;p&gt; tags.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/lists/ul.html" title="">More information</a></p>
- 
-
-'cite'
-'Cite'
-<p>Use ??double question marks?? around <cite>citations,</cite> such as the title of a work being cited.</p>
-<p>The &lt;cite&gt; <span class="caps">HTML</span> tag is applied:</p>
-<p>Nabokov&apos;s ??Pnin?? &rarr; Nabokov&apos;s &lt;cite&gt;Pnin&lt;/cite&gt; &rarr; Nabokov&apos;s <cite>Pnin</cite></p>
-<p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/phrase/cite.html" title="">More information</a></p>
- 
-
-'comments_allowable_tags'
-'Preferences: Allowable HTML Tags'
-<p>If you allow commenters to use simple <acronym title="HyperText Markup Language">HTML</acronym>, these are the tags they may use.</p>
-
-'comments_allow_html'
-'Preferences: Comments Allow HTML'
-<p>Toggles whether or not commenters may use any <span class="caps">HTML</span> tags. </p>
-<p>Note that you can limit which specific tags are allowable in the next field.</p>
-
-'comments_are_ol'
-'Present Comments as an Ordered List'
-<p>With this option set to &apos;yes&apos;, a list of comments for an article will be wrapped in the html <code>&lt;ol&gt;</code> tag, and individual comments will be wrapped in the <code>&lt;li&gt;</code> tag. This will cause comments to be presented as a numbered list.</p>
-<p>If you set this option to &apos;no&apos;, you must edit presentation -> forms -> comments, wrapping the entire comment template in a block tag, such as <code>&lt;div&gt;</code>.</p>
-
-'comments_dateformat'
-'Preferences: Comments Date Format'
-<p>Er, the comments date format!</p>
-
-'comments_date_case'
-'Preferences: Comments Date Case'
-<p>The case of the date displayed for individual comments.</p>
-
-'comments_default_invite'
-'Preferences: Default comments invite'
-<p>If you allow visitors to comment on your site, this is the default invitation to do so. </p>
-<p>Possibilities:</p>
-<p>Comments<br />
-Feedback<br />
-Annotate<br />
-Shave my poodle</p>
-<p>Note that the invitation can always be changed on a per-article basis.</p>
-
-'comments_disabled_after'
-'Preferences: Disabling Comments'
-<p>Use this to set the amount of time after which commenting will be turned off for articles.</p>
-
-'comments_disallow_images'
-'Preferences: Disallow User Images?'
-<p>With this option set to Yes, images included in comments will be stripped out.</p>
-
-'comments_mode'
-'Preferences: Comments Mode'
-<p>If &apos;popup&apos; is selected, a new small comments window will open when the comments link is clicked.</p>
-<p>If &apos;no popup&apos; is selected, the current window will be refreshed to display only the current article, with comments beneath.</p>
-
-'comments_moderate'
-'Moderate Comments'
-<p>With this option turned on, every new comment will have its visibility turned off until it has been reviewed. You must manually make each comment visible.</p>
-
-'comments_on_default'
-'Preferences: Comments on by default'
-<p>If this is checked, comments will be automatically allowed for every article published. If it is not, you must click &quot;allow comments&quot; each time you want to accept comments.</p>
-<p>Note that allowing comments can be turned on or off at any time, on a per-article basis.</p>
-
-'comments_require_email'
-'Preferences: Comments require email'
-<p>If set to yes, people that want to comment on your blog, will have to enter an email-adress in the comment-form. They will get an error-message otherwise.</p>
-
-'comments_require_name'
-'Preferences: Comments require name'
-<p>If set to yes, people that want to comment on your blog, will have to enter a name in the comment-form. They will get an error-message otherwise.</p>
-
-'comments_sendmail'
-'Preferences: Mail Comments'
-<p>If enabled, whenever a new comment is received, a copy will be sent via email to the article&apos;s author.</p>
-
-'comments_use_fat_textile'
-'Preferences: Allow more Textile markup?'
-<p>When set to &quot;Yes&quot;, comments may contain Textile elements which would otherwise be treated as plain text:</p>
-
-	<ul>
-		<li>headings</li>
-		<li>ordered and unordered lists</li>
-		<li>foot notes</li>
-		<li>tables</li>
-		<li>code</li>
-		<li>extended block syntax (<code>bc..</code>, <code>bq..</code>, etc.)</li>
-	</ul>
-
-<p>For security reasons, raw (X)<span class="caps">HTML</span> is transformed into regular text.</p>
-
-'comment_means_site_updated'
-'Preferences: New comment means site updated'
-<p>The database keeps track of when the last change to your site has happened. When this setting is set to yes, a new comment will also update this value. This value is for example used for the &quot;Send Last-Modified header&quot;-functionality.</p>
-
-'comment_nofollow'
-'Preferences: Use nofollow on comments?'
-<p>This will add an additional attribute to the links made in comments. It is intended to be a measure that takes away the incentive for comment-spammers and was initiated by a range of search engines and software-writers. You can find out more about it by reading <a href="https://googleblog.blogspot.com/2005/01/preventing-comment-spam.html">Google&apos;s announcement</a> .</p>
-<p>Note: This setting does not influence the functionality or ranking of your site. It will (or may) prevent or diminish the influence of your comments when some search-engines rank sites linked to from those comments.</p>
-
-'css_mode'
-'Preferences: CSS Mode'
-<p>The <a href="https://www.w3schools.com/css/default.asp">Cascading Style Sheets</a> standard is a slim, powerful language that allows you to centralize site-wide control of content presentation. Everything from fonts and colours to sizes and positions can be governed through <span class="caps">CSS</span>.</p>
-<p>Ordinarily <span class="caps">CSS</span> data appears in the <code>head</code> section of an <span class="caps">HTML</span> document, or is stored in a text file linked to the document. Modern browsers parse this data in advance of displaying a page, and then cache the data for use on subsequent pages or site visits. As such, <span class="caps">CSS</span> can greatly reduce the download size of web pages: just one of many improvements  <span class="caps">CSS</span> formatting offers over older web design methods.</p>
-<p>Textpattern offers two modes of maintaining style sheets for your pages.</p>
-<p>In Manual <span class="caps">CSS</span> mode, you can create (or paste in) any style sheet information you like, right in the Textpattern interface. This allows for quick editing of styles without the clumsy bother of ftp uploading. Style sheets can be generated from scratch or by <span class="caps">WYSIWYG</span> website editors, and are found <a href="https://directory.google.com/Top/Computers/Programming/Internet/CSS/Sample_Style_Sheets/Layouts/">all over the web</a>.</p>
-<p>In Automatic <span class="caps">CSS</span> mode, style sheet editing is taken to a sophisticated new level, using an editing interface and organizational method intended to make <span class="caps">CSS</span> parameters more readable and logical. Any existing style sheet can be &apos;poured&apos; into the editing interface and modified indefinitely.</p>
-<p>In Automatic mode, <span class="caps">CSS</span> files are classified as either <em>layout</em> or <em>style</em>. Pages on a site can share or combine either type.</p>
-<p>Layout files define large structural parameters, such as the number and size of columns on a page, headers and footers, &c.</p>
-<p>Style files in turn govern parameters like typography, colour, and the finer methods of positioning (e.g. padding and margins and relationships between objects on a page) not defined in layout files.</p>
-
-'dateformat'
-'Preferences: Date Format'
-<p>This option will affect how article dates shall appear on the front page of your site only.</p>
-
 'date_case'
 'Preferences: Front Page Date Case'
 <p>Use this if you want dates for articles on the front page to appear in <span class="caps">UPPERCASE</span>, Upper & Lower case, or lower case.</p>
@@ -1335,7 +930,6 @@ Shave my poodle</p>
 <p>-a phrase- &rarr; &lt;del&gt;a phrase&lt;/del&gt; &rarr; <del>a phrase</del></p>
 <p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/phrase/del.html" title="del reference at htmlhelp.com">More information</a></p>
- 
 
 'dev_version_live'
 'Diagnostics: You are running in-development files on a live server'
@@ -1375,27 +969,6 @@ Shave my poodle</p>
 'Maximum Upload Size'
 <p>Here you can restrict the maximum size (in bytes) for file uploads. Note that this value is also limited by the configuration of PHP. If Textpattern detects that your PHP configuration only allows smaller downloads it will automatically correct this value downwards. If you want to allow larger file uploads via upload from the browser you have to talk with your host. (The relevant values in php.ini are post_max_size, upload_max_filesize and memory_limit.)</p>
 <p>Note: Image Uploads are <strong>not</strong> restricted by this value. The maximum allowed size for images is always ~ 1MB (unless restricted by PHP as explained above).</p>
-
-'form_articles'
-'Article Tags'
-<p>These tags are replaced with their corresponding values every time an article is output. </p>
-<p><em>Author</em><br />
-The full name of the article&apos;s author.</p>
-<p><em>Body</em><br />
-The body of the article. Note that the body of articles processed with Textile will already have <code>&lt;p&gt;</code> tags around each paragraph. Thus it is superfluous to use additional paragraph tags. </p>
-<p><em>Excerpt</em><br />
-Text, if any, that was entered in the article&apos;s &apos;Excerpt&apos; field.</p>
-<p><em>Category 1</em><br />
-<em>Category 2</em><br />
-Categories, if any, assigned to the article.</p>
-<p><em>Comments invite</em><br />
-Will be replaced by the invitation for comments, if any, assigned to the article, as well as the current count of comments received.</p>
-<p><em>Permanent link</em><br />
-Text, article date or graphic that represents a permanent link to the article.</p>
-<p><em>Posted</em><br />
-The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
-<p><em>Title</em><br />
-Guess.</p>
 
 'form_place_article'
 'Article Tags'
@@ -1440,62 +1013,6 @@ Guess.</p>
 <p>When enabled, pages are <acronym title="Gnu Zip"><span class="caps">GZI</span>P</acronym> compressed at the server before being sent to the visitor.</p>
 <p>This can mean faster page loads (especially for visitors using modems) and reduced bandwidth consumption.</p>
  
-
-'header'
-'Headers'
-<p>To make an entire paragraph into a Header, place &quot;h<em>n</em>. &quot; at its beginning, where <em>n</em> is a number from 1&ndash;6.</p>
-<p>Examples:</p>
-<p>h1. Header 1</p>
-<p>h2. Header 2</p>
-<p>h3. Header 3</p>
-<p>Will become:</p>
-<p>&lt;h1&gt;Header 1&lt;/h1&gt;</p>
-<p>&lt;h2&gt;Header 2&lt;/h2&gt;</p>
-<p>&lt;h3&gt;Header 3&lt;/h3&gt;</p>
-<p>Which, when rendered by a browser, will appear like this:</p>
-
-	<h1>Header 1</h1>
-
-	<h2>Header 2</h2>
-
-	<h3>Header 3</h3>
-
-<p><small>NB: Unmodified paragraphs will be wrapped in &lt;p&gt; tags.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/block/h1.html" title="H1 reference at htmlhelp.com">More information</a></p>
- 
-
-'htaccess_missing'
-'.htaccess File Missing'
-<p>You are using a Permanent Link mode which requires an .htaccess file to be placed in your site directory. The recommended directives to place in this .htaccess file are:</p>
-<pre>RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.+) - [PT,L]</pre>
-
-<pre>RewriteRule ^(.*) index.php</pre>
-
-'Images'
-<p>To insert an image, put the <acronym title="Universal Resource Locator">URL</acronym> for the image inside exclamation marks.</p>
-<p>Optional: text that immediately follows the <span class="caps">URL</span> in (parentheses) will be used as the Alt text for the image. Images on the web should always have descriptive Alt text for the benefit of readers using non-graphical browsers.</p>
-<p>Optional: place a colon followed by a <span class="caps">URL</span> immediately after the closing ! to make the image into a link.</p>
-<p>Example:</p>
- !https://www.example.com/logo.png(Logo)!
-
-<p>With a link:</p>
-
- !/logo.png(Logo)!:https://www.example.com
-
-<p>Will become:</p>
-<p>&lt;img src="https://www.example.com/logo.png" alt="Logo" /&gt;</p>
-<p>With a link:</p>
-<p>&lt;a href="https://www.example.com"&gt;&lt;img src="/logo.png" alt="Logo" /&gt;&lt;/a&gt;</p>
-<p>Which the browser will use to render the image:</p>
-<p><img src="https://www.example.com/logo.png" /></p>
-<p>With a link:</p>
-<p><a href="https://www.example.com"><img src="https://www.example.com/logo.png" border="0" /></a></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/special/img.html" target="_blank" title="img tag reference at htmlhelp.com">More information</a></p>
- 
-
 'image_category'
 'Image Categories'
 <p>Image categories are useful both for internal organisation, and for defining image sets that can be displayed using the <code>&lt;txp:image_index /&gt;</code> and <code>&lt;txp:image_display /&gt;</code> tags.</p>
@@ -1546,7 +1063,6 @@ RewriteRule ^(.+) - [PT,L]</pre>
 <p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/phrase/ins.html" title="del reference at htmlhelp.com">More information</a></p>
  
-
 'intro'
 'What Textile Does'
 '<ul>
@@ -1601,7 +1117,6 @@ RewriteRule ^(.+) - [PT,L]</pre>
 		<li>Convert the letter x to a dimension sign: 2x4 to 2&times;4 and 8 x 10 to 8&times;10</li>
 	</ul>
  
-
 'in_rss'
 'In RSS'
 <p>This governs whether the Section&apos;s articles are to be included in the site&apos;s <span class="caps">RSS</span> feed.</p>
@@ -1648,7 +1163,6 @@ This is a &#34;link&#34;:bob to Bob&apos;s website.</p>
 This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; to Bob&apos;s website.</p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/a.html" target="_blank" title="a tag reference at htmlhelp.com">More information</a></p>
  
-
 'link_category'
 'Link Categories'
 <p>Link categories are optional, and are useful if you want to display different groupings of links, e.g., &apos;Friends&apos;, &apos;Romans&apos;, &apos;Countrymen&apos;.</p>
@@ -1718,7 +1232,6 @@ This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; t
 <p><small>NB: Unmodified paragraphs will be wrapped in &lt;p&gt; tags.</small></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/lists/ol.html" title="Ordered list reference at htmlhelp.com" target="_blank">More information</a></p>
  
-
 'old_placeholder_exists'
 'Diagnostics: Section Placeholder File Exists'
 <p>As of Textpattern version 4.0, section placeholder files are no longer required, and will conflict with the the new .htaccess scheme. Please delete them.</p>
@@ -1728,7 +1241,6 @@ This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; t
 <p>This governs whether the Section&apos;s articles are to appear by default on the front page of the site.</p>
 <p>If you link to articles in the Section from the front page, then this option should implicitly set to &apos;no&apos;.</p>
  
-
 'override_emailcharset'
 'Override the default characterset for emails'
 <p>Textpattern uses utf-8 wherever possible per default, also for outgoing emails. However some older email clients (like some versions of Outlook) do not have proper utf-8 support. If you see garbled characters in E-Mails, this setting will try to convert mails to ISO-8859-1 before sending them.</p>
@@ -1921,7 +1433,6 @@ This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; t
 <p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/sub.html" target="_blank" title="subscript reference at htmlhelp.com">More information</a></p>
  
-
 'super'
 'Superscript'
 <p>Use ^carets^ for text to be rendered <sup>superscript</sup>.</p>
@@ -1930,7 +1441,6 @@ This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; t
 <p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/sup.html" target="_blank" title="superscript reference at htmlhelp.com">More information</a></p>
  
-
 'syndicate_body_or_excerpt'
 'Syndicate excerpt? (default is body)'
 <p>If this is set to <em>no</em>, then feeds will always contain the full article bodies. If this is set to <em>yes</em>, feed items will contain an excerpt instead of the article-body where it is available.</p>
@@ -1964,7 +1474,6 @@ ABC(Always Be Closing)</p>
 'Server Time Offset'
 <p>If your web host is in a different time zone than where you live, use this to adjust displayed times to reflect your local time rather than that of the server.</p>
  
-
 'timestamp'
 'Time Stamp'
 <p>The time attributions of an article can be set for the moment it is published or revised, or to any other time.</p>
@@ -1978,7 +1487,6 @@ ABC(Always Be Closing)</p>
 <p>At their simplest, trackbacks offer a way to say, &apos;I&apos;ve said something about this article; here&apos;s the name of my site, a link to the mention, and a brief excerpt&apos;. The other site&apos;s owner can then use the trackback information however she wishes.</p>
 <p>Some have likened trackbacks to &apos;referrers you insert manually&apos;, but that&apos;s a little reductive.</p>
  
-
 'update_still_exists'
 'Diagnostics: _update.php Still Exists'
 <p>Once Textpattern has been upgraded, the update directory and its contents are no longer needed and recommended for deletion. You will continue to receive this warning until it has been removed.</p>
@@ -2006,7 +1514,7 @@ ABC(Always Be Closing)</p>
 <p>Governs how permanent links to archived articles will appear. </p>
 <p>?=messy mode is the most straightforward; it will work without you having to do much mucking about. In this mode URLs for archived articles on your site will look like this:</p>
 
-<code>https://www.yoursite.com/index.php?id=123</code>
+<code>https://www.example.com/index.php?id=123</code>
 
 <p>/clean/ mode is a little trickier, but it makes URLs that are elegant and easier to remember. Here are the steps to make /clean/ mode work:</p>
 <p>You must have &apos;Use sections&apos; set in Site Preferences</p>
@@ -2035,11 +1543,6 @@ ForceType application/x-httpd-php <br />
 
 <code>https://www.example.com/article/123/</code>
 
-'url_title'
-'URL Title'
-<p>If you would like to have a specific title attached to the permalink url for your article, enter it here. If it is left blank, the URL title will be generated from the actual article title. </p>
-<p>This is particularly useful if the title of your article uses non-ascii characters.</p>
-
 'uses_page'
 'Assigning Pages to Sections'
 <p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really</p>
@@ -2049,7 +1552,6 @@ ForceType application/x-httpd-php <br />
 <p>Attaching categories to articles adds a level of organization and searchability to your site, however those publishing a simple site may find categorization to be an unnecessary or unwanted step in the publishing of an article.</p>
 <p>When set to &apos;no&apos;, category options will be removed from the article create/edit window, as well as from the navigation options above.</p>
  
-
 'use_comments'
 'Preferences: Accept Comments'
 <p>This sets whether or not Textpattern&apos;s commenting features should be visible or completely turned off.</p>
@@ -2061,25 +1563,6 @@ ForceType application/x-httpd-php <br />
 'use_mail_on_feeds_id'
 'Preferences: Use mail on feeds id'
 <p>Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email adress or your domain name to include in these IDs. The email-adress will be the first one used when creating the site. Unless you are likely going to be changing your domain-name, it is probably safe to set this to no.</p>
-
-'use_plugins'
-'Preferences: Use plugins'
-<p>This allows you to turn off support for plugins. </p>
-<p>You might want to do this, if you find strange errors happening on your site, and you want to make sure that it is not the fault of plugins.</p>
-
-'use_textile'
-'Preferences: Use Textile'
-<p>Textile is a utility intended to simplify the conversion of plain text to <span class="caps">HTML</span>. </p>
-<p>When enabled, Textile will process the body text of articles and return a structurally sound <span class="caps">XHTML</span> version. </p>
-<p>Textile also offers a powerful but easy-to-learn set of commands with which to format text,  define structures such as lists, headers and blockquotes, and insert links and images.</p>
-
-'using_sections'
-'Using Sections'
-<p>Sections in Textpattern are significant in that they don&apos;t merely imply a type to which articles belong. Each section has attached to it a layout (either created by you or generated by Textpattern), a style in the form of a <acronym title="Cascading Style Sheet">CSS</acronym> file, and a physical location on the webserver.</p>
-<p>When posting new articles, all this information, which is pertinent to the future display of the article, is attached through the choice of Section.</p>
-<p>That said, the first Section we should address is one that can&apos;t be attached to articles at all, called <strong>default</strong>. This collection of </p>
-<p>For a simple website, a single section (called &apos;articles&apos;, for example) may be all that&apos;s required. </p>
- 
 
 'warn_mail_unavailable'
 'Diagnostics: Your PHP installation is missing the mail() function'
@@ -2130,24 +1613,6 @@ ForceType application/x-httpd-php <br />
 'Diagnostics: Your PHP installation is missing the mail() function'
 <p>On your host <span class="caps">PHP</span> is not compiled with a mail() function. Therefore Textpattern cannot send emails, and you will not be able to use some functions. For example you won&apos;t be able to receive email-notifications on comments, and you won&apos;t be able to add other users (well, you can add them, but they won&apos;t receive the email with their password).</p>
 
-'using_sections'
-'Using Sections'
-<p>Sections in Textpattern are significant in that they don&apos;t merely imply a type to which articles belong. Each section has attached to it a layout (either created by you or generated by Textpattern), a style in the form of a <acronym title="Cascading Style Sheet"><span class="caps">CSS</span></acronym> file, and a physical location on the webserver.</p>
-<p>When posting new articles, all this information, which is pertinent to the future display of the article, is attached through the choice of Section.</p>
-<p>That said, the first Section we should address is one that can&apos;t be attached to articles at all, called <strong>default</strong>. This collection of </p>
-<p>For a simple website, a single section (called &apos;articles&apos;, for example) may be all that&apos;s required. </p>
-
-'use_textile'
-'Preferences: Use Textile'
-<p>Textile is a utility intended to simplify the conversion of plain text to <span class="caps">HTML</span>. </p>
-<p>When enabled, Textile will process the body text of articles and return a structurally sound <span class="caps">XHTML</span> version. </p>
-<p>Textile also offers a powerful but easy-to-learn set of commands with which to format text,  define structures such as lists, headers and blockquotes, and insert links and images.</p>
-
-'use_plugins'
-'Preferences: Use plugins'
-<p>This allows you to turn off support for plugins. </p>
-<p>You might want to do this, if you find strange errors happening on your site, and you want to make sure that it is not the fault of plugins.</p>
-
 'use_mail_on_feeds_id'
 'Preferences: Use mail on feeds id'
 <p>Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email adress or your domain name to include in these IDs. The email-adress will be the first one used when creating the site. Unless you are likely going to be changing your domain-name, it is probably safe to set this to no.</p>
@@ -2169,16 +1634,11 @@ ForceType application/x-httpd-php <br />
 'Assigning Pages to Sections'
 <p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really</p>
 
-'url_title'
-'URL Title'
-<p>If you would like to have a specific title attached to the permalink url for your article, enter it here. If it is left blank, the <span class="caps">URL</span> title will be generated from the actual article title. </p>
-<p>This is particularly useful if the title of your article uses non-ascii characters.</p>
-
 'url_mode'
 'URL Mode'
 <p>Governs how permanent links to archived articles will appear. </p>
 <p>?=messy mode is the most straightforward; it will work without you having to do much mucking about. In this mode <span class="caps">URL</span>s for archived articles on your site will look like this:</p>
-<p><code>https://www.yoursite.com/index.php?id=123</code></p>
+<p><code>https://www.example.com/index.php?id=123</code></p>
 <p>/clean/ mode is a little trickier, but it makes <span class="caps">URL</span>s that are elegant and easier to remember. Here are the steps to make /clean/ mode work:</p>
 <p>You must have &apos;Use sections&apos; set in Site Preferences</p>
 <p>Your site must be on a Unix-based server running Apache, or on a Windows server running  <span class="caps">PHP</span> as an Apache module</p>
@@ -2550,7 +2010,6 @@ Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:s
 <p>Example:</p>
 
  "This is a link (This is a title) ==&quot;:https://www.example.com== 
-
 <p>Will become:</p>
 <p><a href="https://www.example.com" title="This is a title">This is a link</a></p>
 <p>Which, when displayed in a browser, will look like this:</p>
@@ -2676,42 +2135,6 @@ This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website
 <p><a href="https://www.example.com"><img src="https://www.example.com/logo.png" border="0" /></a></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/img.html" target="_blank" title="img tag reference at htmlhelp.com">More information</a></p>
 
-'htaccess_missing'
-'.htaccess File Missing'
-<p>You are using a Permanent Link mode which requires an .htaccess file to be placed in your site directory. The recommended directives to place in this .htaccess file are:</p>
-<pre>RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^(.+) - [PT,L]</pre>
-
-<pre>RewriteRule ^(.*) index.php</pre>
-
-'header'
-'Headers'
-<p>To make an entire paragraph into a Header, place &quot;h<em>n</em>. &quot; at its beginning, where <em>n</em> is a number from 1–6.</p>
-<p>Examples:</p>
-<p>h1. Header 1</p>
-<p>h2. Header 2</p>
-<p>h3. Header 3</p>
-<p>Will become:</p>
-
-<h1>Header 1</h1>
-
-<h2>Header 2</h2>
-
-<h3>Header 3</h3>
-
-<p>Which, when rendered by a browser, will appear like this:</p>
-
-	<h1>Header 1</h1>
-
-	<h2>Header 2</h2>
-
-	<h3>Header 3</h3>
-
-<p><small>NB: Unmodified paragraphs will be wrapped in <p> tags.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/block/h1.html" title="H1 reference at htmlhelp.com">More information</a></p>
-
 'gzip_compress'
 'Use page compression'
 <p>When enabled, pages are <acronym title="Gnu Zip"><span class="caps">GZIP</span></acronym> compressed at the server before being sent to the visitor.</p>
@@ -2732,27 +2155,6 @@ RewriteRule ^(.+) - [PT,L]</pre>
 <p><code>/home/var/www/mytxpsite/textpattern</code></p>
 
 'form_place_article'
-'Article Tags'
-<p>These tags are replaced with their corresponding values every time an article is output. </p>
-<p><em>Author</em><br />
-The full name of the article&apos;s author.</p>
-<p><em>Body</em><br />
-The body of the article. Note that the body of articles processed with Textile will already have <code>&lt;p&gt;</code> tags around each paragraph. Thus it is superfluous to use additional paragraph tags. </p>
-<p><em>Excerpt</em><br />
-Text, if any, that was entered in the article&apos;s &apos;Excerpt&apos; field.</p>
-<p><em>Category 1</em><br />
-<em>Category 2</em><br />
-Categories, if any, assigned to the article.</p>
-<p><em>Comments invite</em><br />
-Will be replaced by the invitation for comments, if any, assigned to the article, as well as the current count of comments received.</p>
-<p><em>Permanent link</em><br />
-Text, article date or graphic that represents a permanent link to the article.</p>
-<p><em>Posted</em><br />
-The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
-<p><em>Title</em><br />
-Guess.</p>
-
-'form_articles'
 'Article Tags'
 <p>These tags are replaced with their corresponding values every time an article is output. </p>
 <p><em>Author</em><br />
