@@ -262,16 +262,6 @@
 <p>This path is always a <strong>relative path</strong> (to the directory of your root Textpattern installation).</p>
 <p>The default is <code>images</code>.</p>
 
-'Import: Import from'
-<p>You can import your data into Textpattern from the following publishing tools:</p>
-
-	<ul>
-		<li>Movable Type</li>
-		<li>Blogger</li>
-		<li>WordPress (including custom prefixes for your databases, if you&apos;re using them)</li>
-		<li>b2</li>
-	</ul>
-
 <p>If you choose to import from a file exported from another content management system &ndash; that is, Movable Type or Blogger &ndash; you must place it in the <code>textpattern/include/import</code> directory and name it <code>import.txt</code>.</p>
 
 'import_invite'
@@ -801,10 +791,6 @@ Hour(24hr) : Minute : Second</p>
 <p>At their simplest, trackbacks offer a way to say, &quot;I&apos;ve said something about this article; here&apos;s the name of my site, a link to the mention, and a brief excerpt&quot;. The other site&apos;s owner can then use the trackback information however she wishes.</p>
 <p>Some have likened trackbacks to &apos;referrers you insert manually&apos;, but that&apos;s a little reductive.</p>
 
-'update_still_exists'
-'Diagnostics: _update.php still exists'
-<p>When Textpattern has been upgraded, the <code>textpattern/update</code> directory and its contents are no longer needed and recommended for deletion. You will continue to receive this warning until it has been removed.</p>
-
 'upload'
 'Files: Upload file'
 <p>Use this form to upload files or images to your server.</p>
@@ -884,10 +870,6 @@ Hour(24hr) : Minute : Second</p>
 <p>When posting new articles, all this information, which is pertinent to the future display of the article, is attached through the choice of &apos;Section&apos;.</p>
 <p>That said, the first &apos;Section&apos; we should address is one that can&apos;t be attached to articles at all, called <strong>default</strong>.</p>
 <p>For a simple website, a single &apos;Section&apos; (called &apos;articles&apos;, for example) may be all that&apos;s required.</p>
-
-'warn_mail_unavailable'
-'Diagnostics: Your PHP installation is missing the mail() function'
-<p><span class="caps">PHP</span>&apos;s <a href="https://php.net/manual/en/function.mail.php">mail</a> function is disabled. Therefore, Textpattern cannot send emails and some functionality will not be available. For example, email notifications for new comments will not be sent, and new users will not receive a welcome email. Users can still be added, however.</p>
 
 'warn_register_globals_or_update'
 'Diagnostics: Turn register_globals off or update to a newer PHP version'
@@ -996,59 +978,9 @@ This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; t
 'Link Template'
 <p>This is the default template used when outputting lists of links. This can be overridden when generating a list of links via a php snippet.</p>
 
-'link_url'
-'Link URL'
-<p>The address of the link. If the link points to a different site, then it must be preceded by <code>https://</code>.</p>
-
-'logging'
-'Logging'
-<p>All hits: Textpattern will log all page views on your site.</p>
-<p>Referrers only: Textpattern will only log visits referred from other sites.</p>
-<p>None: Textpattern will pick up your dry-cleaning.</p>
-
 'max_url_len'
 'Max URL length'
 <p>This prevents urls that are longer than specified from functioning. It could be helpful in containing damage, if a security relevant error in Textpattern.</p>
-
-'never_display_email'
-'Never display email?'
-<p>This setting controls wether the email-adress of a commenter should never be shown publicly.</p>
-
-'next_page_link'
-'Next Page Link'
-<p>When there are more current articles than those displayed on a page, this text (or <span class="caps">URL</span> of a graphic) appears at the bottom of the page as a link to continue reading.</p>
-
-'numeric'
-'Numeric Lists'
-<p>To make a numbered list, place each item in its own paragraph, preceded by &quot;# &quot;.</p>
-<p>Example</p>
-<pre>
-# A first item
-# A second item
-# A third item
-# A fourth item
-</pre>
-
-<p>Will become:</p>
-<p>&lt;ol&gt;<br />
-&lt;li&gt;A first item&lt;/li&gt;<br />
-&lt;li&gt;A second item&lt;/li&gt;<br />
-&lt;li&gt;A third item&lt;/li&gt;<br />
-&lt;li&gt;A fourth item&lt;/li&gt;<br />
-&lt;/ol&gt;</p>
-<p>Which, when rendered by a browser, will appear like this:</p>
-<p><ol></p>
-<p><li>A first item</li><br />
-<li>A second item</li><br />
-<li>A third item</li><br />
-<li>A fourth item</li><br />
-</ol></p>
-<p><small>NB: Unmodified paragraphs will be wrapped in &lt;p&gt; tags.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/lists/ol.html" title="Ordered list reference at htmlhelp.com" target="_blank">More information</a></p>
- 
-'old_placeholder_exists'
-'Diagnostics: Section Placeholder File Exists'
-<p>As of Textpattern version 4.0, section placeholder files are no longer required, and will conflict with the the new .htaccess scheme. Please delete them.</p>
 
 'on_frontpage'
 'On Front Page'
@@ -1199,10 +1131,6 @@ This is a &lt;a href=&#34;https://itsbob.com/index.html&#34;&gt;link&lt;/a&gt; t
 <p><small>NB: quick tags must open and close within a single paragraph to produce valid markup.</small></p>
 <p><a href="https://www.htmlhelp.com/reference/html40/special/sup.html" target="_blank" title="superscript reference at htmlhelp.com">More information</a></p>
  
-'syndicate_body_or_excerpt'
-'Syndicate excerpt? (default is body)'
-<p>If this is set to <em>no</em>, then feeds will always contain the full article bodies. If this is set to <em>yes</em>, feed items will contain an excerpt instead of the article-body where it is available.</p>
-
 'tempdir'
 'Temp folder'
 <p>The Temp folder sets an <em>absolute path</em> to a temporary directory. PHP needs to have write access to this directory (usually chmod 777). This folder is used for uploads of any kind (plugins, files or images).</p>
@@ -1227,33 +1155,6 @@ ABC(Always Be Closing)</p>
 'textile_links'
 'Textile links description by default'
 <p>This allows you to set whether the link descriptions you can enter in content->links will be run through the light version of Textile. If set to <em>no</em>, descriptions will be displayed as entered.</p>
-
-'timeoffset'
-'Server Time Offset'
-<p>If your web host is in a different time zone than where you live, use this to adjust displayed times to reflect your local time rather than that of the server.</p>
- 
-'timestamp'
-'Time Stamp'
-<p>The time attributions of an article can be set for the moment it is published or revised, or to any other time.</p>
-<p>The format of the date input is:</p>
-<p>Year Month Day Hour(24hr) : Minute</p>
-<p>Articles with timestamps greater than the current time (in the future) will not appear on the site until that time passes.</p>
-
-'trackback'
-'Trackback'
-<p>Many content management systems offer trackbacks to individual articles or postings.</p>
-<p>At their simplest, trackbacks offer a way to say, &apos;I&apos;ve said something about this article; here&apos;s the name of my site, a link to the mention, and a brief excerpt&apos;. The other site&apos;s owner can then use the trackback information however she wishes.</p>
-<p>Some have likened trackbacks to &apos;referrers you insert manually&apos;, but that&apos;s a little reductive.</p>
- 
-'update_still_exists'
-'Diagnostics: _update.php Still Exists'
-<p>Once Textpattern has been upgraded, the update directory and its contents are no longer needed and recommended for deletion. You will continue to receive this warning until it has been removed.</p>
-
-'upload'
-'upload'
-'File Upload'
-<p>Use this form to upload files or images to your server. </p>
-<p>Use the Textile code to render graphics within articles, the Textpattern code to place graphics on your page templates, or <span class="caps">XHTML</span> code to place the graphics elsewhere.  </p>
 
 'upload_thumbnail'
 'Upload Thumbnail'
@@ -1301,44 +1202,6 @@ ForceType application/x-httpd-php <br />
 
 <code>https://www.example.com/article/123/</code>
 
-'uses_page'
-'Assigning Pages to Sections'
-<p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really</p>
-
-'use_categories'
-'Using Categories'
-<p>Attaching categories to articles adds a level of organization and searchability to your site, however those publishing a simple site may find categorization to be an unnecessary or unwanted step in the publishing of an article.</p>
-<p>When set to &apos;no&apos;, category options will be removed from the article create/edit window, as well as from the navigation options above.</p>
- 
-'use_comments'
-'Preferences: Accept Comments'
-<p>This sets whether or not Textpattern&apos;s commenting features should be visible or completely turned off.</p>
-
-'use_dns'
-'Preferences: Use DNS'
-<p>This setting only has an effect, when &quot;Logging&quot; in &quot;Site Preferences&quot; is turned on. Using <span class="caps">DNS</span> will allow you to translate IP adresses in your logs to host-names. For some servers this might subjectively slow down your site, in which case you might want to turn this off.</p>
-
-'use_mail_on_feeds_id'
-'Preferences: Use mail on feeds id'
-<p>Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email adress or your domain name to include in these IDs. The email-adress will be the first one used when creating the site. Unless you are likely going to be changing your domain-name, it is probably safe to set this to no.</p>
-
-'warn_mail_unavailable'
-'Diagnostics: Your PHP installation is missing the mail() function'
-<p>On your host <span class="caps">PHP</span> is not compiled with a mail() function. Therefore Textpattern cannot send emails, and you will not be able to use some functions. For example you won&apos;t be able to receive email-notifications on comments, and you won&apos;t be able to add other users (well, you can add them, but they won&apos;t receive the email with their password).</p>
-
-'warn_register_globals_or_update'
-'Turn register_globals off or update to a newer PHP version'
-<p>Recently a severe vulnerability was discovered in PHP. <a href="https://www.hardened-php.net/advisory_202005.79.html">The security advisory</a> says:</p>
-
-	<blockquote>
-	<p>can lead to unexpected behaviour of PHP applications, which can lead to execution of remote PHP code in many situations.</p>
-	</blockquote>
-
-<p>Vulnerable versions are PHP4-versions <= 4.4.0 and PHP5-versions <= 5.0.5. You should either update to newer versions or make sure that register_globals is turned off.</p>
-<p>You can turn off register_globals in the php.ini file. If you are in a hosted environment, you may have an option in your hosting control panel for it (ask your host). When using mod_php (php as an apache module), it is also possible to turn register_globals off via .htaccess. Uncomment the following line from your .htaccess:</p>
-
-<code>php_value register_globals off</code>
-
 'plugin_cache_dir'
 'Preferences: Plugin cache directory path'
 <p>This setting is mainly used for plugin developers. When specified, you can put the plugin source file (not compiled) in this directory and Textpattern will load it automatically, so you can easily edit the plugin and immediately see the effect it has without having to install/activate the plugin. <strong>Beware</strong> though that by using this method, a broken plugin (which fails to compile) may also break Textpattern!</p>
@@ -1355,69 +1218,9 @@ ForceType application/x-httpd-php <br />
 <p>The majority of the time, you will want this set to &apos;No&apos;, as this allows greater flexibility to the positioning of your comments in your site design. You will need to add the <a href="https://docs.textpattern.com/tags/comments" target="_blank"><code>&lt;txp:comments /&gt;</code> tag</a> manually in any article-based templates where you want comments to appear.</p>
 <p>If you are experiencing duplicate display of comments in an article, then chances are your templates have the <code>&lt;txp:comments /&gt;</code> tag in a template but also have &apos;Automatically append comments to articles?&apos; set to &apos;Yes&apos; too &ndash; see <a href="https://textpattern.com/faq/95/comment-display-confusion">the related <span class="caps">FAQ</span> entry</a> for more information.</p>
 
-'warn_register_globals_or_update'
-'Turn register_globals off or update to a newer PHP version'
-<p>Recently a severe vulnerability was discovered in <span class="caps">PHP</span>. <a href="https://www.hardened-php.net/advisory_202005.79.html">The security advisory</a> says:</p>
-
-	<blockquote>
-	<p>can lead to unexpected behaviour of <span class="caps">PHP</span> applications, which can lead to execution of remote <span class="caps">PHP</span> code in many situations.</p>
-	</blockquote>
-
-<p>Vulnerable versions are PHP4-versions &lt;= 4.4.0 and PHP5-versions &lt;= 5.0.5. You should either update to newer versions or make sure that register_globals is turned off.</p>
-<p>You can turn off register_globals in the php.ini file. If you are in a hosted environment, you may have an option in your hosting control panel for it (ask your host). When using mod_php (php as an apache module), it is also possible to turn register_globals off via .htaccess. Uncomment the following line from your .htaccess:</p>
-<p><code>php_value register_globals off</code></p>
-
 'warn_mail_unavailable'
 'Diagnostics: Your PHP installation is missing the mail() function'
 <p>On your host <span class="caps">PHP</span> is not compiled with a mail() function. Therefore Textpattern cannot send emails, and you will not be able to use some functions. For example you won&apos;t be able to receive email-notifications on comments, and you won&apos;t be able to add other users (well, you can add them, but they won&apos;t receive the email with their password).</p>
-
-'use_mail_on_feeds_id'
-'Preferences: Use mail on feeds id'
-<p>Feed items in Atom, require a unique ID. To generate IDs unique to your site, Textpattern allows you to choose between either an email adress or your domain name to include in these IDs. The email-adress will be the first one used when creating the site. Unless you are likely going to be changing your domain-name, it is probably safe to set this to no.</p>
-
-'use_dns'
-'Preferences: Use DNS'
-<p>This setting only has an effect, when &quot;Logging&quot; in &quot;Site Preferences&quot; is turned on. Using <span class="caps">DNS</span> will allow you to translate IP adresses in your logs to host-names. For some servers this might subjectively slow down your site, in which case you might want to turn this off.</p>
-
-'use_comments'
-'Preferences: Accept Comments'
-<p>This sets whether or not Textpattern&apos;s commenting features should be visible or completely turned off.</p>
-
-'use_categories'
-'Using Categories'
-<p>Attaching categories to articles adds a level of organization and searchability to your site, however those publishing a simple site may find categorization to be an unnecessary or unwanted step in the publishing of an article. </p>
-<p>When set to &apos;no&apos;, category options will be removed from the article create/edit window, as well as from the navigation options above.</p>
-
-'uses_page'
-'Assigning Pages to Sections'
-<p>In Textpattern, sections are married to page templates. It&apos;s kind of sweet, really</p>
-
-'url_mode'
-'URL Mode'
-<p>Governs how permanent links to archived articles will appear. </p>
-<p>?=messy mode is the most straightforward; it will work without you having to do much mucking about. In this mode <span class="caps">URL</span>s for archived articles on your site will look like this:</p>
-<p><code>https://www.example.com/index.php?id=123</code></p>
-<p>/clean/ mode is a little trickier, but it makes <span class="caps">URL</span>s that are elegant and easier to remember. Here are the steps to make /clean/ mode work:</p>
-<p>You must have &apos;Use sections&apos; set in Site Preferences</p>
-<p>Your site must be on a Unix-based server running Apache, or on a Windows server running  <span class="caps">PHP</span> as an Apache module</p>
-<p>For every section you have on your site (including the default section called &apos;article&apos;), place a text file with the exact same name in your root web directory, containing the following bit of code, replacing <span class="caps">SECTION</span>_NAME with the section&apos;s actual name:</p>
-<p><code>
-&lt;?php
-	include &#34;./textpattern/config.php&#34;; 
-	$s = &#34;SECTION_NAME&#34;;
-	include $txpcfg[&#34;txpath&#34;].&#34;/publish.php&#34;;
-	textpattern();
-?&gt;
-</code></p>
-<p>Next, with a text editor create or open an existing file in your web root called <code>.htaccess</code> and paste the following inside:</p>
-<p><code>
-&lt;Files SECTION_NAME&gt; 
-ForceType application/x-httpd-php 
-&lt;/Files&gt; 
-</code></p>
-<p>again, replace <span class="caps">SECTION</span>_NAME with the section&apos;s actual name.</p>
-<p>Once you select /clean/ url mode in Site Preferences, your permanent link urls will look more familiar:</p>
-<p><code>https://www.example.com/article/123/</code></p>
 
 'upload_thumbnail'
 'Upload Thumbnail'
@@ -1428,32 +1231,9 @@ ForceType application/x-httpd-php
 <p>&#8230;you would use</p>
 <p><code>/images/12t.jpg</code></p>
 
-'upload'
-'upload'
-'File Upload'
-<p>Use this form to upload files or images to your server. </p>
-<p>Use the Textile code to render graphics within articles, the Textpattern code to place graphics on your page templates, or <span class="caps">XHTML</span> code to place the graphics elsewhere.  </p>
-
 'update_still_exists'
 'Diagnostics: _update.php Still Exists'
 <p>Once Textpattern has been upgraded, the update directory and its contents are no longer needed and recommended for deletion. You will continue to receive this warning until it has been removed.</p>
-
-'trackback'
-'Trackback'
-<p>Many content management systems offer trackbacks to individual articles or postings. </p>
-<p>At their simplest, trackbacks offer a way to say, &apos;I&apos;ve said something about this article; here&apos;s the name of my site, a link to the mention, and a brief excerpt&apos;. The other site&apos;s owner can then use the trackback information however she wishes.</p>
-<p>Some have likened trackbacks to &apos;referrers you insert manually&apos;, but that&apos;s a little reductive.</p>
-
-'timestamp'
-'Time Stamp'
-<p>The time attributions of an article can be set for the moment it is published or revised, or to any other time.</p>
-<p>The format of the date input is:</p>
-<p>Year Month Day Hour(24hr) : Minute</p>
-<p>Articles with timestamps greater than the current time (in the future) will not appear on the site until that time passes.</p>
-
-'timeoffset'
-'Server Time Offset'
-<p>If your web host is in a different time zone than where you live, use this to adjust displayed times to reflect your local time rather than that of the server.</p>
 
 'textile_links'
 'Textile links description by default'
@@ -1479,10 +1259,6 @@ ABC(Always Be Closing)</p>
 'tempdir'
 'Temp folder'
 <p>The Temp folder sets an <em>absolute path</em> to a temporary directory. <span class="caps">PHP</span> needs to have write access to this directory (usually chmod 777). This folder is used for uploads of any kind (plugins, files or images).</p>
-
-'syndicate_body_or_excerpt'
-'Syndicate excerpt? (default is body)'
-<p>If this is set to <em>no</em>, then feeds will always contain the full article bodies. If this is set to <em>yes</em>, feed items will contain an excerpt instead of the article-body where it is available.</p>
 
 'super'
 'Superscript'
@@ -1647,61 +1423,9 @@ Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:s
 <p>This governs whether the Section&apos;s articles are to appear by default on the front page of the site.</p>
 <p>If you link to articles in the Section from the front page, then this option should implicitly set to &apos;no&apos;.</p>
 
-'old_placeholder_exists'
-'Diagnostics: Section Placeholder File Exists'
-<p>As of Textpattern version 4.0, section placeholder files are no longer required, and will conflict with the the new .htaccess scheme. Please delete them.</p>
-
-'numeric'
-'Numeric Lists'
-<p>To make a numbered list, place each item in its own paragraph, preceded by &quot;# &quot;.</p>
-<p>Example</p>
-<pre>
-# A first item
-# A second item
-# A third item
-# A fourth item
-</pre>
-
-<p>Will become:</p>
-<p><ol>
-<li>A first item</li>
-<li>A second item</li>
-<li>A third item</li>
-<li>A fourth item</li>
-</ol></p>
-<p>Which, when rendered by a browser, will appear like this:</p>
-
-<ol>
-<li>A first item</li>
-<li>A second item</li>
-<li>A third item</li>
-<li>A fourth item</li>
-</ol>
-
-<p><small>NB: Unmodified paragraphs will be wrapped in <p> tags.</small></p>
-<p><a href="https://www.htmlhelp.com/reference/html40/lists/ol.html" title="Ordered list reference at htmlhelp.com" target="_blank">More information</a></p>
-
-'next_page_link'
-'Next Page Link'
-<p>When there are more current articles than those displayed on a page, this text (or <span class="caps">URL</span> of a graphic) appears at the bottom of the page as a link to continue reading.</p>
-
-'never_display_email'
-'Never display email?'
-<p>This setting controls wether the email-adress of a commenter should never be shown publicly.</p>
-
 'max_url_len'
 'Max URL length'
 <p>This prevents urls that are longer than specified from functioning. It could be helpful in containing damage, if a security relevant error in Textpattern.</p>
-
-'logging'
-'Logging'
-<p>All hits: Textpattern will log all page views on your site.</p>
-<p>Referrers only: Textpattern will only log visits referred from other sites.</p>
-<p>None: Textpattern will pick up your dry-cleaning.</p>
-
-'link_url'
-'Link URL'
-<p>The address of the link. If the link points to a different site, then it must be preceded by <code>https://</code>.</p>
 
 'link_template'
 'Link Template'
