@@ -2543,6 +2543,7 @@ Textbook: "sitename":https://textbook.textpattern.net/wiki/index.php?title=Txp:s
 <p>Selective link lists such as these are output with the Textpattern &apos;linklist&apos; tag like so:</p>
 <p><code>&lt;txp:linklist category=&#34;Friends&#34; /&gt;</code></p>
 
+'links'
 'Links'
 <p>To make a hypertext link, put the link text in "quotation marks" followed immediately by a colon and the <acronym title="Universal Resource Locator"><span class="caps">URL</span></acronym> of the link.</p>
 <p>Optional: text in (parentheses) following the link text, but before the closing quotation mark, will become a Title attribute for the link, visible as a tool tip when a cursor is above it.</p>
@@ -2654,6 +2655,7 @@ This is a <a href="https://itsbob.com/index.html">link</a> to Bob&apos;s website
 'Image Categories'
 <p>Image categories are useful both for internal organisation, and for defining image sets that can be displayed using the <code>&lt;txp:image_index /&gt;</code> and <code>&lt;txp:image_display /&gt;</code> tags.</p>
 
+'images'
 'Images'
 <p>To insert an image, put the <acronym title="Universal Resource Locator"><span class="caps">URL</span></acronym> for the image inside exclamation marks.</p>
 <p>Optional: text that immediately follows the <span class="caps">URL</span> in (parentheses) will be used as the Alt text for the image. Images on the web should always have descriptive Alt text for the benefit of readers using non-graphical browsers.</p>
