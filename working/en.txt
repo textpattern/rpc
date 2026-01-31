@@ -503,8 +503,6 @@
 <p>Sets an <strong>absolute path</strong> to a temporary (sometimes know as &apos;tmp&apos; or &apos;temp&apos;) directory. <span class="caps">PHP</span> needs to have write access to this directory. This directory is used for temporary files, for example uploads of any kind (plugins, files or images).</p>
 <p class="alert-block information"><strong>Note:</strong> Do not specify the same directory for both &apos;temporary&apos; and &apos;plugin cache&apos;, as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).</p>
 
-
-
 'textile_links'
 'Preferences: Textile links description by default?'
 <p>This allows you to set whether the link descriptions you can enter in the admin &apos;Links&apos; page will be run through the light version of Textile. If set to &apos;No&apos;, descriptions will be displayed as entered.</p>
