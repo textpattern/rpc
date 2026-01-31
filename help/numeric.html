@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+	<meta charset="utf-8">
+	<title>Textile: Numeric lists &#183; Textpattern Help</title>
+	<meta name="robots" content="noindex, follow, noodp, noydir">
+	<link rel="stylesheet" href="https://rpc.textpattern.com/assets/css/main.css">
+	<link rel="canonical" href="https://rpc.textpattern.com/help/numeric.html">
+</head>
+<body>
+	<!-- ##PREFLIGHT## -->
+	<h2>Textile: Numeric lists</h2>
+	<p>To make a numeric list, place each item in its own paragraph, preceded by <code>#</code>.</p>
+	<h3>Example</h3>
+	<pre><code># A first item
+	# A second item
+	## A second item first sub item
+	## A second item second sub item
+	# A third item
+	# A fourth item
+	</code></pre>
+	<p>Will become:</p>
+	<pre><code>&lt;ol&gt;
+	  &lt;li&gt;A first item&lt;/li&gt;
+	  &lt;li&gt;A second item
+	  &lt;ol&gt;
+		&lt;li&gt;A second item first sub item&lt;/li&gt;
+		&lt;li&gt;A second item second sub item&lt;/li&gt;
+	  &lt;/ol&gt;
+	  &lt;/li&gt;
+	  &lt;li&gt;A third item&lt;/li&gt;
+	  &lt;li&gt;A fourth item&lt;/li&gt;
+	&lt;/ol&gt;
+	</code></pre>
+	<p>Which, when rendered by a browser, will appear like this:</p>
+	<ol>
+		<li>A first item</li>
+		<li>A second item
+	<ol>
+		<li>A second item first sub item</li>
+		<li>A second item second sub item</li>
+	</ol></li>
+		<li>A third item</li>
+		<li>A fourth item</li>
+	</ol>
+	<p class="alert-block information"><strong>Note:</strong> Unmodified paragraphs will be wrapped in <code>&lt;p&gt;</code> tags.</p>
+	<h3>Textile documentation</h3>
+	<p><a href="https://textpattern.com/textile-ol-list" target="_blank">More information on numeric lists in Textile</a>.</p>
+	<h3><span class="caps">HTML</span> documentation (via Mozilla Developer Network)</h3>
+	<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">The <code>&lt;ol&gt;</code> <span class="caps">HTML</span> element</a>.</p>
+	<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">The <code>&lt;li&gt;</code> <span class="caps">HTML</span> element</a>.</p>
+	<hr>
+	<!-- ##LEGACYWARNING## -->
+	<!-- ##LINKTOANNOUNCE## -->
+	<!-- ##LINKTODOCS## -->
+</body>
+</html>

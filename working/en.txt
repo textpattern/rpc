@@ -1,37 +1,3 @@
-'date_case'
-'Preferences: Front page date case'
-<p>Use this if you want dates for articles on the front page to appear in <span class="caps">UPPERCASE</span>, Upper and lowercase, or lowercase.</p>
-<p>Upper and lowercase is the default.</p>
-
-'delete'
-'Textile: Deleted text'
-<p>Use -hyphens- around text that has been <del>deleted</del>. This is useful in marking changes from one version of a document to the next.</p>
-<p>The <code>&lt;del&gt;</code> <span class="caps">HTML</span> tag is applied:</p>
-<pre><code>-a phrase- → &lt;del&gt;a phrase&lt;/del&gt;
-</code></pre>
-
-<p class="alert-block information"><strong>Note:</strong> Quick tags must open and close within a single paragraph to produce valid markup.</p>
-
-	<h3>Textile documentation</h3>
-
-<p><a href="https://textpattern.com/textile-ins-and-del" target="_blank">More information on insertions and deletions in Textile</a>.</p>
-
-	<h3><span class="caps">HTML</span> documentation (via Mozilla Developer Network)</h3>
-
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/del" target="_blank">The <code>&lt;del&gt;</code> <span class="caps">HTML</span> element</a>.</p>
-
-'dev_version_live'
-'Diagnostics: Development code on a live server'
-<p>You are running in-development files on a live production site which is not recommended. If you know this already and are happy to do so, you may ignore this warning.</p>
-
-'dir_not_writable'
-'Diagnostics: Directory is not writable'
-<p>To use the file and image upload capabilities, these directories have to be writable by <span class="caps">PHP</span>. Usually this means you have to change permissions so the web server user has write access to the directory. This can be done with your <span class="caps">FTP</span> client, or alternatively on the command line by issuing a <code>chmod 755 /path/to/dir</code> command.</p>
-
-'dns_lookup_fails'
-'Diagnostics: DNS fails'
-<p>It appears the <span class="caps">URL</span> you specified as the address of your site is unreachable.</p>
-
 'doc_root'
 'Preferences: Document root'
 <p>This must be the full server path to the document root of your server, regardless of where you have Textpattern installed.</p>
@@ -65,78 +31,6 @@
 'Preferences: Maximum file size of uploads (in bytes)'
 <p>You can restrict the maximum size (in bytes) for file uploads. Note that this value is also limited by the configuration of <span class="caps">PHP</span>. If Textpattern detects that your <span class="caps">PHP</span> configuration limits upload size to a smaller value, it will automatically correct downwards. If you want to allow larger file uploads via upload from the browser, contact your host (the relevant values in <code>php.ini</code> are <code>post_max_size</code>, <code>upload_max_filesize</code> and <code>memory_limit</code>).</p>
 
-'form_articles'
-'Article tags'
-<p>These tags are replaced with their corresponding values every time an article is output. </p>
-
-	<h3>Author</h3>
-
-<p>The full name of the article&apos;s author.</p>
-
-	<h3>Body</h3>
-
-<p>The body of the article. Note that the body of articles processed with Textile will already have <code>&lt;p&gt;</code> tags around each paragraph. Thus it is superfluous to use additional paragraph tags. </p>
-
-	<h3>Excerpt</h3>
-
-<p>Text, if any, that was entered in the article&apos;s &apos;Excerpt&apos; field.</p>
-
-	<h3>Category 1, Category 2</h3>
-
-<p>Categories, if any, assigned to the article.</p>
-
-	<h3>Comments invite</h3>
-
-<p>Will be replaced by the invitation for comments, if any, assigned to the article, as well as the current count of comments received.</p>
-
-	<h3>Permanent link</h3>
-
-<p>Text, article date or graphic that represents a permanent link to the article.</p>
-
-	<h3>Posted</h3>
-
-<p>The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
-
-	<h3>Title</h3>
-
-<p>Guess.</p>
-
-'form_place_article'
-'Article tags'
-<p>These tags are replaced with their corresponding values every time an article is output. </p>
-
-	<h3>Author</h3>
-
-<p>The full name of the article&apos;s author.</p>
-
-	<h3>Body</h3>
-
-<p>The body of the article. Note that the body of articles processed with Textile will already have <code>&lt;p&gt;</code> tags around each paragraph. Thus it is superfluous to use additional paragraph tags. </p>
-
-	<h3>Excerpt</h3>
-
-<p>Text, if any, that was entered in the article&apos;s &apos;Excerpt&apos; field.</p>
-
-	<h3>Category 1, Category 2</h3>
-
-<p>Categories, if any, assigned to the article.</p>
-
-	<h3>Comments invite</h3>
-
-<p>Will be replaced by the invitation for comments, if any, assigned to the article, as well as the current count of comments received.</p>
-
-	<h3>Permanent link</h3>
-
-<p>Text, article date or graphic that represents a permanent link to the article.</p>
-
-	<h3>Posted</h3>
-
-<p>The time associated with the article, in the format specified in the &apos;date format&apos; items on the Textpattern preferences page. If this tag is placed between &apos;permanent link&apos; tags, then the article&apos;s date becomes its clickable permanent link.</p>
-
-	<h3>Title</h3>
-
-<p>Guess.</p>
-
 'full_path'
 'Preferences: Path to Textpattern'
 <p>This must indicate the full server path to your <code>/textpattern/</code> directory, which should be inside the directory containing your Textpattern site.</p>
@@ -155,49 +49,6 @@
 'Preferences: Use page compression'
 <p>When enabled, pages are <acronym title="Gnu Zip"><span class="caps">GZIP</span></acronym> compressed at the server before being sent to the visitor. This can mean faster page loads and reduced bandwidth consumption.</p>
 
-'header'
-'Textile: Headings'
-<p>To make an entire paragraph into a heading, place <code>hn.</code> at its beginning, where <em>n</em> is a number from 1 &ndash; 6.</p>
-
-	<h3>Examples</h3>
-
-<pre><code>h1. Heading 1
-</code></pre>
-
-<pre><code>h2. Heading 2
-</code></pre>
-
-<pre><code>h3. Heading 3
-</code></pre>
-
-<p>Will become:</p>
-<pre><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
-</code></pre>
-
-<pre><code>&lt;h2&gt;Heading 2&lt;/h2&gt;
-</code></pre>
-
-<pre><code>&lt;h3&gt;Heading 3&lt;/h3&gt;
-</code></pre>
-
-<p>Which, when rendered by a browser, will appear like this:</p>
-
-	<h1>Heading 1</h1>
-
-	<h2>Heading 2</h2>
-
-	<h3>Heading 3</h3>
-
-<p class="alert-block information"><strong>Note:</strong> Quick tags must open and close within a single paragraph to produce valid markup.</p>
-
-	<h3>Textile documentation</h3>
-
-<p><a href="https://textpattern.com/textile-heading" target="_blank">More information on headings in Textile</a>.</p>
-
-	<h3><span class="caps">HTML</span> documentation (via Mozilla Developer Network)</h3>
-
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">The <code>h1</code> &ndash; <code>h6</code> <span class="caps">HTML</span> elements</a>.</p>
-
 'htaccess_missing'
 'Diagnostics: .htaccess file missing'
 <p>You are using a permanent link mode which requires an <code>.htaccess</code> file to be placed in your site root directory. The recommended directives are:</p>
@@ -213,43 +64,6 @@
     RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
 &lt;/IfModule&gt;
 </code></pre>
-
-'images'
-'Textile: Images'
-<p>To insert an image, put the <span class="caps">URL</span> for the image inside exclamation marks.</p>
-<p><strong>Optional:</strong> text that immediately follows the <span class="caps">URL</span> in (parentheses) will be used as the <code>alt</code> text for the image (this also adds a <code>title</code> attribute with the same content). Images on the web should always have descriptive <code>alt</code> text for the benefit of readers using non-graphical browsers.</p>
-<p><strong>Optional:</strong> place a colon followed by a <span class="caps">URL</span> immediately after the closing <code>!</code> to make the image into a link.</p>
-
-	<h3>Examples</h3>
-
-<pre><code>!https://textpattern.com/hi.png(Hello World)!
-</code></pre>
-
-<p>Will become:</p>
-<pre><code>&lt;img src=&quot;https://textpattern.com/hi.png&quot; alt=&quot;Textpattern icon&quot; title=&quot;Hello World&quot; /&gt;
-</code></pre>
-
-<p>Which, when rendered by a browser, will appear like this:</p>
-<p><img src="https://textpattern.com/hi.png" title="Hello World" alt="Hello World" /></p>
-<p>With a link:</p>
-<pre><code>!https://textpattern.com/hi.png(Hello World)!:https://textpattern.com
-</code></pre>
-
-<p>Will become:</p>
-<pre><code>&lt;a href=&quot;https://textpattern.com&quot;&gt;&lt;img src=&quot;https://textpattern.com/hi.png&quot; alt=&quot;Hello World&quot; title=&quot;Hello World&quot; /&gt;&lt;/a&gt;
-</code></pre>
-
-<p>Which, when rendered by a browser, will appear like this:</p>
-<p><a href="https://textpattern.com"><img src="https://textpattern.com/hi.png" title="Hello World" alt="Hello World" /></a></p>
-
-	<h3>Textile documentation</h3>
-
-<p><a href="https://textpattern.com/textile-image">More information on images in Textile</a>.</p>
-
-	<h3><span class="caps">HTML</span> documentation (via Mozilla Developer Network)</h3>
-
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img">The <code>&lt;img&gt;</code> <span class="caps">HTML</span> element</a>.</p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a">The <code>&lt;a&gt;</code> <span class="caps">HTML</span> element</a>.</p>
 
 'image_category'
 'Categories: Images'
@@ -308,7 +122,7 @@
 		<li>Replace single and double primes (<code>&#39;</code> and <code>&quot;</code>) used as quotation marks with <span class="caps">HTML</span> entities for opening and closing quotation marks (<code>&apos;&apos;</code> and <code>&quot;&quot;</code>) in readable text, while leaving untouched the primes required within <span class="caps">HTML</span> tags.</li>
 		<li>Replace double hyphens (--) with an em-dash (—) entity.</li>
 		<li>Replace single hyphens surrounded by spaces with an en-dash (–) entity.</li>
-		<li>Replace triplets of periods (...) with an ellipsis (…) entity.</li>
+		<li>Replace triplets of periods (&hellip;) with an ellipsis (…) entity.</li>
 		<li>Convert many nonstandard characters (ŸúßŠπŒ) to browser-safe entities corresponding to keyboard input.</li>
 		<li>Apply block- and phrase-level structural tags automatically and at the discretion of the writer via quick tags.</li>
 		<li>Allow the quick creation of simple and complex tables.</li>
@@ -452,58 +266,6 @@
 'next_page_link'
 'Preferences: Next page link'
 <p>When there are more current articles than those displayed on a page, this text (or <span class="caps">URL</span> of a graphic) appears at the bottom of the page as a link to continue reading.</p>
-
-'numeric'
-'Textile: Numeric lists'
-<p>To make a numeric list, place each item in its own paragraph, preceded by <code>#</code>.</p>
-
-	<h3>Example</h3>
-
-<pre><code># A first item
-# A second item
-## A second item first sub item
-## A second item second sub item
-# A third item
-# A fourth item
-</code></pre>
-
-<p>Will become:</p>
-<pre><code>&lt;ol&gt;
-  &lt;li&gt;A first item&lt;/li&gt;
-  &lt;li&gt;A second item
-  &lt;ol&gt;
-    &lt;li&gt;A second item first sub item&lt;/li&gt;
-    &lt;li&gt;A second item second sub item&lt;/li&gt;
-  &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;A third item&lt;/li&gt;
-  &lt;li&gt;A fourth item&lt;/li&gt;
-&lt;/ol&gt;
-</code></pre>
-
-<p>Which, when rendered by a browser, will appear like this:</p>
-
-	<ol>
-		<li>A first item</li>
-		<li>A second item
-	<ol>
-		<li>A second item first sub item</li>
-		<li>A second item second sub item</li>
-	</ol></li>
-		<li>A third item</li>
-		<li>A fourth item</li>
-	</ol>
-
-<p class="alert-block information"><strong>Note:</strong> Unmodified paragraphs will be wrapped in <code>&lt;p&gt;</code> tags.</p>
-
-	<h3>Textile documentation</h3>
-
-<p><a href="https://textpattern.com/textile-ol-list" target="_blank">More information on numeric lists in Textile</a>.</p>
-
-	<h3><span class="caps">HTML</span> documentation (via Mozilla Developer Network)</h3>
-
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">The <code>&lt;ol&gt;</code> <span class="caps">HTML</span> element</a>.</p>
-<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li" target="_blank">The <code>&lt;li&gt;</code> <span class="caps">HTML</span> element</a>.</p>
 
 'old_placeholder_exists'
 'Diagnostics: Section placeholder file exists'
@@ -687,7 +449,7 @@
 <p>The <a href="https://www.textpattern.net/wiki/index.php?title=site_slogan">site slogan</a> is a summary or description of your site. It will be used as the description of your site wherever required, such as in your <span class="caps">RSS</span>/Atom feeds, and may be used at any number of places throughout your site, at your discretion.</p>
 
 'some_php_functions_disabled'
-'Diagnostics: The following PHP functions: [...] are disabled on your server'
+'Diagnostics: The following PHP functions: [&hellip;] are disabled on your server'
 <p>This means your hosting company or server administrator has disabled one or more <span class="caps">PHP</span> functions, some of which may affect the running of Textpattern.</p>
 <p>Please consult <a href="https://docs.textpattern.com/administration/diagnostics-panel#diagnostic-reporting-on-php-functions" target="_blank">this <span class="caps">FAQ</span> entry</a> for further information.</p>
 
@@ -741,34 +503,7 @@
 <p>Sets an <strong>absolute path</strong> to a temporary (sometimes know as &apos;tmp&apos; or &apos;temp&apos;) directory. <span class="caps">PHP</span> needs to have write access to this directory. This directory is used for temporary files, for example uploads of any kind (plugins, files or images).</p>
 <p class="alert-block information"><strong>Note:</strong> Do not specify the same directory for both &apos;temporary&apos; and &apos;plugin cache&apos;, as this will cause problems (Textpattern would try to run the contents of temporary log files as plugins).</p>
 
-'textile_comments'
-'Textile: Shortcuts'
-<h3>Formatting</h3>
 
-<pre><code>_emphasis_
-*strong*
-??citation??
--deleted text-
-+inserted text+
-^superscript^
-</code></pre>
-
-	<h3>Hyperlink</h3>
-
-<pre><code>&quot;link text&quot;:https://link.com/
-</code></pre>
-
-	<h3>Image</h3>
-
-<pre><code>!https://image.url!
-</code></pre>
-
-	<h3>Abbreviation</h3>
-
-<pre><code>ABC(Always Be Closing)
-</code></pre>
-
-<p class="alert-block information"><strong>Note:</strong> All <span class="caps">HTML</span> tags will be escaped.</p>
 
 'textile_links'
 'Preferences: Textile links description by default?'
@@ -893,8 +628,8 @@ Hour(24hr) : Minute : Second</p>
 <p>Sections in Textpattern are perhaps best thought of as analogous to sections in a newspaper: each belong to the same publication, but each might feature a different layout, or a different style of article, and so on. </p>
 <p>For most websites, only a bare minimum of sections need be created.</p>
 <p>A likely scenario for a personal site, with three sections:</p>
-<p><strong>archive</strong>: the section to which all articles that appear on the front page belong. Whenever a reader clicks on an article&apos;s permanent link (for example https://thissite/archive/123/), it will be displayed in the page layout assigned to this section. To go to a paged list of the most recent articles assigned to the section <em>archive</em>, the url would be https://thissite/archive/</p>
-<p><strong>about</strong>: an &apos;about this site&apos; page, which differs from the front page and the <em>archive</em> section, in that it is more static, may have a different layout, and will likely contain only one article. The about section would be reached at https://thissite/about/.</p>
+<p><strong>archive</strong>: the section to which all articles that appear on the front page belong. Whenever a reader clicks on an article&apos;s permanent link (for example https://example.com/archive/123/), it will be displayed in the page layout assigned to this section. To go to a paged list of the most recent articles assigned to the section <em>archive</em>, the url would be https://example.com/archive/</p>
+<p><strong>about</strong>: an &apos;about this site&apos; page, which differs from the front page and the <em>archive</em> section, in that it is more static, may have a different layout, and will likely contain only one article. The about section would be reached at https://example.com/about/.</p>
 <p><strong>photos</strong>: A section whose differing layout (and possibly different <span class="caps">CSS</span>) would display photos instead of articles.</p>
 <p>Note that a special hidden &apos;section&apos; always exists, named <strong>default</strong>. Using the layout called &apos;default&apos; as well as the <span class="caps">CSS</span> called &apos;default&apos;, this is what makes up the front page of your site. </p>
 
@@ -935,7 +670,7 @@ Hour(24hr) : Minute : Second</p>
 
 <code>/images/12.jpg</code>
 
-<p>...you would use</p>
+<p>&hellip;you would use</p>
 
 <code>/images/12t.jpg</code>
 
@@ -1040,8 +775,8 @@ ForceType application/x-httpd-php <br />
 <p>Sections in Textpattern are perhaps best thought of as analogous to sections in a newspaper: each belong to the same publication, but each might feature a different layout, or a different style of article, and so on. </p>
 <p>For most websites, only a bare minimum of sections need be created.</p>
 <p>A likely scenario for a personal site, with three sections:</p>
-<p><strong>archive</strong>: the section to which all articles that appear on the front page belong. Whenever a reader clicks on an article&apos;s permanent link (for example https://thissite/archive/123/), it will be displayed in the page layout assigned to this section. To go to a paged list of the most recent articles assigned to the section <em>archive</em>, the url would be https://thissite/archive/</p>
-<p><strong>about</strong>: an &apos;about this site&apos; page, which differs from the front page and the <em>archive</em> section, in that it is more static, may have a different layout, and will likely contain only one article. The about section would be reached at https://thissite/about/.</p>
+<p><strong>archive</strong>: the section to which all articles that appear on the front page belong. Whenever a reader clicks on an article&apos;s permanent link (for example https://example.com/archive/123/), it will be displayed in the page layout assigned to this section. To go to a paged list of the most recent articles assigned to the section <em>archive</em>, the url would be https://example.com/archive/</p>
+<p><strong>about</strong>: an &apos;about this site&apos; page, which differs from the front page and the <em>archive</em> section, in that it is more static, may have a different layout, and will likely contain only one article. The about section would be reached at https://example.com/about/.</p>
 <p><strong>photos</strong>: A section whose differing layout (and possibly different <span class="caps">CSS</span>) would display photos instead of articles.</p>
 <p>Note that a special hidden &apos;section&apos; always exists, named <strong>default</strong>. Using the layout called &apos;default&apos; as well as the <span class="caps">CSS</span> called &apos;default&apos;, this is what makes up the front page of your site. </p>
 
